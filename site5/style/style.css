@@ -1,0 +1,65 @@
+#site5a1{
+
+border:1px solid silver;
+border-radius: 25px ;
+
+background-color:gray;
+
+}
+
+#site5a2{
+height:100%;
+border:1px solid black;
+border-radius: 25px ;
+display: flex;
+
+}
+
+#site5a3{
+background-color:silver;
+border-radius: 25px ;
+
+width:10%;
+
+margin:1%;
+
+border:1px solid;
+
+}
+
+#site5a4{
+background-color:silver;
+margin:1%;
+border-radius:25px;
+border:1px solid;
+width:70%;
+
+}
+
+#site5a5{
+background-color:silver;
+border-radius:25px;
+border:1px solid;
+width:13%;
+margin:1%;
+
+}
+
+#site5a6{
+background-color:silver;
+margin:1%;
+border:1px solid;
+height:20%;
+border-radius: 25px ;
+}
+
+#site5menu{
+height:20%;
+width:99%;
+margin-top:0.8%;
+margin-bottom:2%;
+border-radius:25px;
+border:1px solid black;
+background-color:silver;
+
+}

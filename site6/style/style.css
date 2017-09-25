@@ -1,0 +1,59 @@
+
+#site6a1{
+background-color:rgb(219,219,219);
+
+}
+
+#site6a2{
+background-color:navy;
+border:1px solid;
+height:15%;
+margin-left:1%;
+color:white;
+
+}
+
+#site6a3{
+
+border:1px solid;
+margin-top:2%;
+margin-left:5%;
+
+width:88%;
+
+height:70%;
+
+}
+
+#site6a4{
+margin-left:5%;
+width:88%;
+border:1px solid;
+margin-top:1%;
+
+position:relative;
+height:10%;
+
+}
+
+#site6a5{
+height:40%;
+
+}
+
+#site6a6{
+
+ display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: auto;
+  grid-auto-rows: minmax(1%, auto);
+
+height:96%;
+
+}
+
+#site6a7{
+margin:1%;
+border:1px solid;
+}

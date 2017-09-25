@@ -1,0 +1,9 @@
+
+AuthName "Page d'administration protégée"
+
+AuthType Basic
+
+AuthUserFile "/opt/lampp/htdocs/corsicanet/admin/.htpasswd"
+
+Require valid-user
+
