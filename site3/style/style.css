@@ -1,0 +1,57 @@
+
+#site3a1{
+
+height:10%;
+
+border:1px solid black;
+
+}
+
+#site3a2{
+
+
+display: flex;
+
+flex-wrap: nowrap;
+
+height:80%;
+
+width:100%;
+
+
+}
+
+#site3a3{
+
+width:20%;
+
+height:80%;
+
+border:1px solid black;
+
+position:relative;
+
+left:79.80%;
+
+}
+
+#site3a4{
+
+position:relative;
+
+}
+
+#site3a5{
+
+border:1px solid black;
+
+width:100%;
+
+position:relative;
+
+top:1%;
+
+height:90%;
+
+
+}
