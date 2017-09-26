@@ -10,7 +10,6 @@ include_once("./head.php");
 
 include_once("./header.php");
 
-include_once("./nav.php");
 
 
 $des1 = "cliquer pour agrandir";
