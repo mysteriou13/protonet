@@ -10,58 +10,13 @@ include_once("./head.php");
 
 include_once("./header.php");
 
-
-
 $des1 = "cliquer pour agrandir";
 
 ?>
 
-<script>
-
-var f = 0;
-
-function conteneur(){
-
-f = f+1;
-
-if(f == 1){
-
-document.getElementById("g").innerHTML = "reduire";
-document.getElementById("c").style.display = "block";
-
-}
-
-if(f == 2){
-
-  document.getElementById("g").innerHTML = "agrandir";
 
 
-document.getElementById("c").style.display = "none";
 
-}
-
-if(f == 3){
-
-document.getElementById("g").innerHTML = "reduire";
-
-
-document.getElementById("c").style.display = "block";
-
-f = 0;
-
-}
-
-if(f == 0){
-
-f = f+1;
-
-}
-
-
-}
-
-
-</script>
 <div>
 
 <center>
