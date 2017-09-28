@@ -1,5 +1,6 @@
-
-
+<div style = "
+padding-right:2%;
+" >
 <form method = "POST" action = "<?php $_SERVER['PHP_SELF']?>" >
 <p>
 connection
@@ -8,12 +9,16 @@ connection
 pseudo
 </label>
 
-<input type = "text" name = "pseudo">
+<p style = "">
+
+<input style = " width:90%;" type = "text" name = "pseudo">
+
+</p>
 
 <label>
 pass
 </label>
-<input type = "password" name = "pass">
+<input style = "width:90%;"; type = "password" name = "pass">
 <input type = "submit" style = "
 color:black;
 ">
@@ -76,4 +81,4 @@ echo '</p>';
 <a href = "./inscription.php" style = "color:white;"> par encore membre?</a>
 </span>
 </form>
-
+</div>

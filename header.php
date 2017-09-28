@@ -208,6 +208,7 @@ $login = "./formlogin.php";
 
 </div>
 
+<div >
 <?php 
 
 $login = "./formlogin.php";
@@ -225,6 +226,8 @@ include_once($login);
 }
 
 ?>
+
+</div>
 
 </div>
 
