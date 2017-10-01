@@ -237,6 +237,9 @@ font-size:2em;">
 <a href = "contact.php" style = "color:white"; >contact</a>
 </div>
 
+<div>
+
+</div>
 
 </div>
 
