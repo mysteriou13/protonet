@@ -239,10 +239,6 @@ margin-left:70%;
 <a href = "contact.php" style = "color:white"; >contact</a>
 </div>
 
-<div>
-
-</div>
-
 </div>
 
 </div>
@@ -262,7 +258,7 @@ color:white;
 <center>
 
 <p>
-je  mets toutes mes comptences et mon savoir faire &agrave; votre disposition  pour mettre avant votre activit&eacute;  dans un monde toujours
+Je  mets toutes mes comptences et mon savoir faire &agrave; votre disposition  pour mettre avant votre activit&eacute;  dans un monde toujours
 plus connect&eacute;
 </p>
 
