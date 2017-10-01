@@ -228,13 +228,17 @@ include_once($login);
 ?>
 </div>
 
-<div style =" 
+<div style ="
 display: flex;
 flex-direction: column;
-margin-left:50%;  font-size:2em;">
+font-size:2em;">
 
+<div>
 <a href = "contact.php" style = "color:white"; >contact</a>
+</div>
 
+
+</div>
 
 </div>
 
