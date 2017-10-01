@@ -74,7 +74,7 @@ echo '</p>';
 
 <div>
 
-<a href = "inscription.php" style = "color:white;">pas encore en membre? </a>
+<a href = "inscription.php#inscription" style = "color:white;">pas encore en membre? </a>
 
 </div>
 </form>
