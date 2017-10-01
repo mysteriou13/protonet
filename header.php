@@ -262,12 +262,8 @@ color:white;
 <p>
 je  mets toutes mes comptences et mon savoir faire &agrave; votre disposition  pour mettre avant votre activit&eacute;  dans un monde toujours
 plus connect&eacute;
-
 </p>
 
-<p>
-
-</p>
 
 </center>
 </div>
