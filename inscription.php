@@ -37,7 +37,7 @@ echo "erro connect";
 
 ?>
 
-<div
+<div id = "inscription"
 style = "
 color:white;
 font-size:5em;
