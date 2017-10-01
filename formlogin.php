@@ -1,30 +1,24 @@
 <div style = "
-padding-right:2%;
-" >
-<form method = "POST" action = "<?php $_SERVER['PHP_SELF']?>" >
-<p>
-connection
-</p>
-<label>
-pseudo
-</label>
-
-<p style = "">
-
-<input style = " width:90%;" type = "text" name = "pseudo">
-
-</p>
-
-<label>
-pass
-</label>
-<input style = "width:90%;"; type = "password" name = "pass">
-<input type = "submit" style = "
-color:black;
+ display: flex;
+ flex-wrap: nowrap;
+ margin-left:50%;
 ">
-</br>
-<center>
-<div style = "color:red;"> 
+<form method = "POST" action = "<?php $_SERVER['PHP_SELF']?>" >
+
+<div>
+pseudo
+
+<input style = "width:90%" type = "text" name = "pseudo"/>
+</div>
+
+<div>
+pass
+
+<input style = "width:90%" type = "password" name = "pass"/>
+</div>
+
+<input type = "submit" style = "color:black;"/>
+
 
 <?php
 
@@ -73,12 +67,7 @@ echo '</p>';
 }
 
 ?>
-</div>
-</center>
-</span>
-</br>
-<span>
-<a href = "./inscription.php" style = "color:white;"> par encore membre?</a>
-</span>
+
 </form>
 </div>
+

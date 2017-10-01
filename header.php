@@ -83,13 +83,10 @@ $space = 'space-between;';
 
 <div style = "
 
-background-image: url(<?php echo  $image;?>); background-repeat:no-repeat;  background-size: 15%; 100%;
+background-image: url(<?php echo  $image;?>); background-repeat:no-repeat;background-size: 15%; 100%;
 margin-right: auto;
 margin-bottom:20px;
 width: 600px;
-height:100%;
-
-
 ">
 
 
@@ -99,7 +96,6 @@ style = "
 color:silver;
 font-size:5em;
 padding-left:20%;
-
 "
 
 >
@@ -110,10 +106,13 @@ protonet
 
 <div>
 <div
-style = " color:silver; font-size:2em; margin-left:20%;"
+style = "
+color:silver; font-size:2em;"
  >
 
-cr&eacute;ation de site web 
+<center>
+cr&eacute;ateur de  site web 
+</center>
 
 </div>
 
@@ -123,44 +122,57 @@ cr&eacute;ation de site web
 
 </div>
 
-<div style = "color:white; font-size:2em; display:<?php echo $block1;?>">
-bonjour <?php echo $_SESSION['pseudo'];?>
-</div>
 
 <div
 style = "
-display:flex;
-width:98%;
 color:white;
 ";
 >
 
 
 <div style = "
-width:80%;
 display:flex;
+flex-wrap: wrap;
 
-justify-content:space-around;
+<?php 
+if(isset($_SESSION['pseudo'])){
+
+echo "justify-content: space-around;";
+
+}
+
+?>
+
 ">
 
 <div>
 
-&nbsp; &nbsp;<a href = "http://localhost/corsicanet/index.php" style = "color:white; font-size:2em;<?php 
+&nbsp; &nbsp;<a href = "./index.php" style = "color:white; font-size:2em;<?php 
 
-if(isset($_SESSION['pseudo'])){
 
-echo $coloraccueil;
+?>">accueil</a> 
+</div>
+
+<div>
+
+<?php
+
+$login = "./formlogin.php";
+
+if(!file_exists($login)){
+
+$login = "../formlogin.php";
 
 }
 
-?>"> accueil</a> 
-</div>
+if(!isset($_SESSION['pseudo'])){
 
-<?php 
+include_once($login);
 
-include_once("./menupresentation.php");
+}
 
 ?>
+</div>
 
 
 <div style = "display:<?php echo $block1;?>;" >
@@ -193,23 +205,11 @@ echo "background-color:gray;";
 
 </div>
 
-</div>
+<div>
 
-  
-<div style = "
 
-margin-left:auto;";>
-
-<?php 
-
-$login = "./formlogin.php";
-
-?>
-
-</div>
-
-<div >
-<?php 
+<div>
+<?php
 
 $login = "./formlogin.php";
 
@@ -226,9 +226,39 @@ include_once($login);
 }
 
 ?>
+</div>
+
+<div style =" margin-left:50%;  font-size:2em;">
+
+<a href = "contact.php" style = "color:white"; >contact</a>
 
 </div>
 
+</div>
+
+</div>
+
+<div
+style = "
+padding-top:2%;
+font-size:2em;
+margin-top:1%;
+color:white;
+";
+>
+<center>
+
+<p>
+je  mets toutes mes comptences et mon savoir faire &agrave; votre disposition  pour mettre avant votre activit&eacute;  dans un monde toujours
+plus connect&eacute;
+
+</p>
+
+<p>
+
+</p>
+
+</center>
 </div>
 
 </div>
