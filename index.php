@@ -21,9 +21,6 @@ $des1 = "cliquer pour agrandir";
 
 <center>
 
-
-</br> 
-
 <div style = "background-color:white; margin-bottom:3%; padding-bottom:3%; ">
 
 <div>
