@@ -1,11 +1,15 @@
+
 <div style = "
  display: flex;
  flex-wrap: nowrap;
- margin-left:50%;
+ margin-left:40%;
+ font-size:2em;
 ">
 <form method = "POST" action = "<?php $_SERVER['PHP_SELF']?>" >
 
 <div>
+connection
+</br>
 pseudo
 
 <input style = "width:90%" type = "text" name = "pseudo"/>
