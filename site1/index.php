@@ -31,8 +31,7 @@ $url = str_replace('site1/','',$monUrl);;
 <div id = "c1" >
 <center>
 votre titre
-</br>
-</br>
+
 </center>
 </div>
 
