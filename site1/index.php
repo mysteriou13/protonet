@@ -14,7 +14,11 @@ if($nb == 1){
 
 $des1 = "cliquer pour retourner a l'index";
 
-$url = str_replace('site1/','',$monUrl);;
+$url = str_replace('site1/','#site1',$monUrl);;
+}else{
+
+$url = $url."site1/";
+
 }
 
 
