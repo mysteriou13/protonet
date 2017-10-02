@@ -17,15 +17,20 @@ include_once("../des.php");
 
 }
 
-$monUrl = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+$monUrl = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; 
 
-$nb = mb_substr_count($monUrl,"site2");
+ $url = $monUrl;
 
-$url = "http://localhost/corsicanet/site2/index.php";
+$nb = mb_substr_count($monUrl, "site2");
 
 if($nb == 1){
 
- $url = "http://localhost/corsicanet/#site2 ";
+$des1 = "cliquer pour retourner a l'index";
+
+$url = str_replace('site2/','#site2',$monUrl);;
+}else{
+
+$url = $url."site2/";
 
 }
 
