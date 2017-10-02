@@ -2,7 +2,7 @@
 <?php 
 $monUrl = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 
-$url = "http://localhost/corsicanet/site6/index.php";
+$url = $monUrl;
 
 $nb = mb_substr_count($monUrl, "site6");
 
@@ -12,14 +12,20 @@ if($nb == 1){
 
 $des1 = "cliquer pour retourner a l'index";
 
-$url = "http://localhost/corsicanet/#site6";
+$url = "http://localhost/protonet/#site6";
+}else{
+
+$url = $url."./site6";
+
 }
 
 if($produit == 1){
 
-$url = "http://localhost/corsicanet/site6/index.php";
+$u = explode("pageproduit.php",$monUrl);
 
+$url = $u[0]."#site6";
 }
+
 
 ?>
 
