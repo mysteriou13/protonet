@@ -10,12 +10,15 @@ $produit = mb_substr_count($monUrl, "pageproduit");
 
 if($nb == 1){
 
+
 $des1 = "cliquer pour retourner a l'index";
 
 $url = "http://localhost/protonet/#site6";
+
 }else{
 
-$url = $url."./site6";
+
+$url = $url."/site6";
 
 }
 
@@ -25,6 +28,7 @@ $u = explode("pageproduit.php",$monUrl);
 
 $url = $u[0]."#site6";
 }
+
 
 
 ?>
