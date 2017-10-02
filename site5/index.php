@@ -16,9 +16,9 @@ include_once("../des.php");
 
 }
 
-$monUrl = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+$monUrl = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; 
 
-$url = "http://localhost/corsicanet/site5/index.php";
+ $url = $monUrl;
 
 $nb = mb_substr_count($monUrl, "site5");
 
@@ -26,9 +26,12 @@ if($nb == 1){
 
 $des1 = "cliquer pour retourner a l'index";
 
-$url = "http://localhost/corsicanet/#site5";
-}
+$url = str_replace('site5/','#site5',$monUrl);;
+}else{
 
+$url = $url."site5/";
+
+}
 ?>
 
 <center>
