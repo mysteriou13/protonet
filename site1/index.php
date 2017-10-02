@@ -1,11 +1,12 @@
 
-<link rel = "stylesheet" href = "http://localhost/corsicanet/site1/style/style.css">
+<link rel = "stylesheet" href = "http://localhost/protonet/site1/style/style.css">
 
 <?php 
 
-$monUrl = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; 
 
-$url = "http://localhost/corsicanet/site1/index.php";
+ $monUrl = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; 
+
+ $url = $monUrl;
 
 $nb = mb_substr_count($monUrl, "site1");
 
@@ -13,8 +14,7 @@ if($nb == 1){
 
 $des1 = "cliquer pour retourner a l'index";
 
-$url = "http://localhost/corsicanet/#site1";
-
+$url = str_replace('site1/','',$monUrl);;
 }
 
 
