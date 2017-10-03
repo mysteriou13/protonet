@@ -35,7 +35,6 @@ $url = $url."site1/";
 <div id = "c1" >
 <center>
 votre titre
-
 </center>
 
 <div id = "c4">
@@ -43,8 +42,6 @@ votre titre
 </div>
 
 </div>
-
-
 
 <div id = "c2" >
 
