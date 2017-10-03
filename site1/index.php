@@ -39,6 +39,14 @@ votre titre
 
 <div id = "c4">
 
+<div>
+accueil
+</div>
+
+<div>
+a propros
+</div>
+
 </div>
 
 </div>
