@@ -44,7 +44,7 @@ accueil
 </div>
 
 <div>
-a propros
+a propos
 </div>
 
 <div>
