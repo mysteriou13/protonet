@@ -38,6 +38,8 @@ $url = $url."site1/";
 
 $url1 = str_replace("/site1","",$url);
 
+$background = '/../../protonet/coiffure.jpeg';
+
 ?>
 
 <center>
@@ -46,7 +48,7 @@ $url1 = str_replace("/site1","",$url);
 
 </center>
 
-<div id = "conteneur1" style = " width:100% height:100%; background-image: url(../protonet/coiffure.jpeg); background-repeat:no-repeat;  background-size: 100% 100%; " >
+<div id = "conteneur1" style = " width:100% height:100%; background-image: url(<?php echo $background; ?>); background-repeat:no-repeat;  background-size: 100% 100%; " >
 <div id = "c1"
 onclick = "
 
