@@ -62,7 +62,7 @@ onclick = "
 
 <?php 
 
-echo "onclick = document.location = ' ";
+echo " document.location = ' ";
 
 if($nb == 0){
 
