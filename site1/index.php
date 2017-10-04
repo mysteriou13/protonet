@@ -8,7 +8,9 @@
 
  $url = $monUrl;
 
-$nb = mb_substr_count($monUrl, "site1");
+ $nb = mb_substr_count($monUrl, "site1");
+
+ $nb1 = mb_substr_count($monUrl, "#");
 
 if($nb == 1){
 
@@ -21,6 +23,7 @@ $url = $url."site1/";
 
 }
 
+$url1 = str_replace("/site1","",$url);
 
 ?>
 
@@ -32,7 +35,24 @@ $url = $url."site1/";
 
 <div id = "conteneur1" style = " width:100% height:100%; background-image: url(http://localhost/corsicanet/coiffure.jpeg); background-repeat:no-repeat;  background-size: 100% 100%; " >
 
-<div id = "c1" >
+<div id = "c1"
+onclick = "
+
+<?php 
+
+echo "onclick = document.location = ' ";
+
+if($nb == 0){
+
+echo $url1."#site1";
+
+}
+echo "'";
+
+?>
+"
+>
+
 <center>
 votre titre
 </center>
