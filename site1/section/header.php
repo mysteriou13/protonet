@@ -43,6 +43,7 @@ accueil
 
 <?php 
 
+
 echo " document.location = ' ";
 
 echo $propos;
