@@ -12,7 +12,7 @@ include_once("./header.php");
 
 $des1 = "cliquer pour agrandir";
 
-echo $monUrl = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+ $monUrl = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 
 
 $nb = mb_substr_count($monUrl, "#");
