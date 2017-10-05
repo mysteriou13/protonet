@@ -29,6 +29,9 @@ $style = '../site1/style/style.css';
 
  $nb3 = mb_substr_count(getcwd(),"site1");
 
+ $nb4 = str_replace("site1","",getcwd());
+
+
 if($nb == 1){
 
 $des1 = "cliquer pour retourner a l'index";
@@ -59,14 +62,20 @@ $url1 = str_replace("/site1","",$url);
 
 $background = '/../../protonet/coiffure.jpeg';
 
+$accueil =$nb4."/site1/page/accueil.php";
 
 ?>
 
 <center>
 
-<a href = "<?php echo $url;?>"><?php echo $des1?> </a>
+<a href = "<?php echo $url;?>"><?php echo $des1;?> </a>
 
 </center>
 
+<?php 
 
+
+include_once($accueil);
+
+?>
 
