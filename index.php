@@ -12,10 +12,13 @@ include_once("./header.php");
 
 $des1 = "cliquer pour agrandir";
 
+echo $monUrl = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+
+
+$nb = mb_substr_count($monUrl, "#");
+
+
 ?>
-
-
-
 
 <div>
 
@@ -77,6 +80,7 @@ background-size :50%; 50%;
 
 
 <div id = "site1" style = "border:1px solid black; background-color:white; ">
+
 
 <div id = "element"  alt="Description"  >
 

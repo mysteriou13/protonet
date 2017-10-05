@@ -25,18 +25,36 @@ $style = '../site1/style/style.css';
 
  $nb1 = mb_substr_count($monUrl, "#");
 
+ $nb2 = mb_substr_count($monUrl, "index.php");
+
 if($nb == 1){
 
 $des1 = "cliquer pour retourner a l'index";
 
-$url = str_replace('site1/','#site1',$monUrl);;
+$url = str_replace('site1/','index.php#site1',$monUrl);;
 }else{
 
-$url = $url."site1/";
+$url = $url."/site1";
 
 }
 
+if($nb2 == 1){
+
+$c = explode('/index.php',$url);
+
+$url = $c[0]."/site1/index.php";
+
+if($nb == 1 ){
+
+$url = $c[0]."#site1";
+
+}
+
+}
+
+
 $url1 = str_replace("/site1","",$url);
+
 
 $background = '/../../protonet/coiffure.jpeg';
 
