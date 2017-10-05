@@ -27,6 +27,8 @@ $style = '../site1/style/style.css';
 
  $nb2 = mb_substr_count($monUrl, "index.php");
 
+ $nb3 = mb_substr_count(getcwd(),"site1");
+
 if($nb == 1){
 
 $des1 = "cliquer pour retourner a l'index";
@@ -52,11 +54,11 @@ $url = $c[0]."#site1";
 
 }
 
-
 $url1 = str_replace("/site1","",$url);
 
 
 $background = '/../../protonet/coiffure.jpeg';
+
 
 ?>
 
