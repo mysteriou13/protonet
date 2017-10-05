@@ -73,7 +73,9 @@ $accueil =$nb4."/site1/page/accueil.php";
 </center>
 
 <?php 
+$header = $nb4."/site1/section/header.php";
 
+include_once($header);
 
 include_once($accueil);
 

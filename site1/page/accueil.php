@@ -1,11 +1,4 @@
 
-<?php 
-
-$header = $nb4."/site1/section/header.php";
-
-include_once($header);
-
-?>
 
 <div id = "c2" >
 
