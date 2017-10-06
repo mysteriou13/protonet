@@ -65,6 +65,9 @@ $background = '/../../protonet/coiffure.jpeg';
 
 $accueil =$nb4."/site1/page/accueil.php";
 
+$propos1 = $nb4."/site1/section/propos.php";
+
+
 ?>
 
 <center>
@@ -102,10 +105,18 @@ include_once($accueil);
 
 }
 
-if(isset($_GET['parametre']) && !empty($_GET['parametre']) && 
-$_GET['parametre'] == 1){
+if(isset($_GET['parametre']) && !empty($_GET['parametre'])){
+if( $_GET['parametre'] == 1 ){
 
 include_once($accueil);
+
+}
+
+if($_GET['parametre'] == 2){
+
+include($propos1);
+
+}
 
 }
 
