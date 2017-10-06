@@ -25,14 +25,38 @@ $style = '../site1/style/style.css';
 
  $nb1 = mb_substr_count($monUrl, "#");
 
+ $nb2 = mb_substr_count($monUrl, "index.php");
+
+ $nb3 = mb_substr_count(getcwd(),"/site1");
+
+ $nb4 = str_replace("site1","",getcwd());
+
+ $nb5 = mb_substr_count($monUrl,"/site1/index.php");
+
+
+ 
 if($nb == 1){
 
 $des1 = "cliquer pour retourner a l'index";
 
-$url = str_replace('site1/','#site1',$monUrl);;
+$url = str_replace('site1/','index.php#site1',$monUrl);;
 }else{
 
-$url = $url."site1/";
+$url = $url."/site1/index.php";
+
+}
+
+if($nb2 == 1){
+
+$c = explode('/index.php',$url);
+
+$url = $c[0]."/site1/index.php";
+
+if($nb == 1 ){
+
+$url = $c[0]."/index.php#site1";
+
+}
 
 }
 
@@ -40,83 +64,56 @@ $url1 = str_replace("/site1","",$url);
 
 $background = '/../../protonet/coiffure.jpeg';
 
+$accueil =$nb4."/site1/page/accueil.php";
+
 ?>
 
 <center>
 
-<a href = "<?php echo $url;?>"><?php echo $des1?> </a>
+<a href = "<?php echo $url;?>"><?php echo $des1;?> </a>
 
 </center>
 
-<div id = "conteneur1" style = " width:100% height:100%; background-image: url(<?php echo $background; ?>); background-repeat:no-repeat;  background-size: 100% 100%; " >
-<div id = "c1">
+<?php
 
-<center>
-votre titre
-</center>
+echo $nb2."</br>".$nb3."</br>";
 
-<div id = "c4">
+$ancre = "<script> document.write(url) </script>";
 
-<div
-onclick = "
 
-<?php 
 
-echo "onclick = document.location = ' ";
+$header = $nb4."/site1/section/header.php";
 
-if($nb == 0){
+include_once($header);
 
-echo $url1."#site1";
+if($nb2 == 1 && $nb3 == 1){
+
+include_once($accueil);
 
 }
-echo "'";
+
+if($nb3 == 0){
+
+if($nb2 ==0 && $nb5 == 0 && !isset($_GET['parametre'])){
+
+include_once($accueil);
+
+}
+
+if($nb2 ==1 && $nb5 == 0 && !isset($_GET['parametre'])){
+
+include_once($accueil);
+
+}
+
+if(isset($_GET['parametre']) && !empty($_GET['parametre']) && 
+$_GET['parametre'] == 1){
+
+include_once($accueil);
+
+}
+
+}
 
 ?>
-"
-
-
->
-accueil
-</div>
-
-<div>
-a propos
-</div>
-
-<div>
-contact
-</div>
-
-</div>
-
-</div>
-
-<div id = "c2" >
-
-<div style = "
-width:70%;
-border:1px solid;
-margin:1%;
-">
-votre text
-</div>
-
-<div
-style = "
-width:28%;
-border:1px solid;
-margin:1%;
-";
->
-complement text
-</div>
-
-</div>
-
-<div id = "c3">
-mention l&eacute;gal
-</br>
-</ br>
-</div>
-</div>
 
