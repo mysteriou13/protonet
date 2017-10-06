@@ -32,8 +32,7 @@ $style = '../site1/style/style.css';
  $nb4 = str_replace("site1","",getcwd());
 
  $nb5 = mb_substr_count($monUrl,"/site1/index.php");
-
-
+ 
  
 if($nb == 1){
 
@@ -76,15 +75,12 @@ $accueil =$nb4."/site1/page/accueil.php";
 
 <?php
 
-echo $nb2."</br>".$nb3."</br>";
-
-$ancre = "<script> document.write(url) </script>";
-
-
-
 $header = $nb4."/site1/section/header.php";
 
+$footer = $nb4."/site1/section/footer.php";
+
 include_once($header);
+
 
 if($nb2 == 1 && $nb3 == 1){
 
@@ -114,6 +110,6 @@ include_once($accueil);
 }
 
 }
-
+include_once($footer);
 ?>
 
