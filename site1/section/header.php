@@ -1,10 +1,10 @@
 
 <?php 
 
+$url = explode("/index",$monUrl);
 
-$url = explode("/index.php",$monUrl);
+$propos = $url1."?parametre=2#site1";
 
-$propos = $url[0]."/site1/propos.php";
 
 ?>
 
@@ -26,7 +26,7 @@ echo " document.location = ' ";
 
 if($nb == 0){
 
-echo $url1."#site1";
+echo $url1."?parametre=1#site1";
 
 }
 echo "'";
@@ -39,16 +39,16 @@ echo "'";
 accueil
 </div>
 
+
 <div onclick = "
-
 <?php 
-
-
 echo " document.location = ' ";
 
 echo $propos;
 
 echo "'";
+
+
 
 ?>
 ">

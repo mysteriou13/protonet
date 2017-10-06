@@ -33,9 +33,8 @@ $style = '../site1/style/style.css';
 
  $nb5 = mb_substr_count($monUrl,"/site1/index.php");
 
- $nb6 = mb_substr_count($monUrl,"protonet");
 
-
+ 
 if($nb == 1){
 
 $des1 = "cliquer pour retourner a l'index";
@@ -63,7 +62,6 @@ $url = $c[0]."/index.php#site1";
 
 $url1 = str_replace("/site1","",$url);
 
-
 $background = '/../../protonet/coiffure.jpeg';
 
 $accueil =$nb4."/site1/page/accueil.php";
@@ -76,14 +74,44 @@ $accueil =$nb4."/site1/page/accueil.php";
 
 </center>
 
-<?php 
+<?php
+
+echo $nb2."</br>".$nb3."</br>";
+
+$ancre = "<script> document.write(url) </script>";
+
+
+
 $header = $nb4."/site1/section/header.php";
 
 include_once($header);
 
-if($nb2 == 1 or $nb6 == 1){
+if($nb2 == 1 && $nb3 == 1){
 
 include_once($accueil);
+
+}
+
+if($nb3 == 0){
+
+if($nb2 ==0 && $nb5 == 0 && !isset($_GET['parametre'])){
+
+include_once($accueil);
+
+}
+
+if($nb2 ==1 && $nb5 == 0 && !isset($_GET['parametre'])){
+
+include_once($accueil);
+
+}
+
+if(isset($_GET['parametre']) && !empty($_GET['parametre']) && 
+$_GET['parametre'] == 1){
+
+include_once($accueil);
+
+}
 
 }
 
