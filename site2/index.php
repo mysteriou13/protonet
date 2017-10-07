@@ -35,12 +35,20 @@ $url = $url."site2/";
 }
 
 
+$page = str_replace("/site2","",getcwd());
+
+$header = $page."/site2/section/header.php";
 
 ?>
 <center>
 <a href = "<?php echo $url;?>"><?php echo $des1?></a>
 </center>
 
+<?php 
+
+include_once($header);
+
+?>
 
 <div id = "c1c">
 
