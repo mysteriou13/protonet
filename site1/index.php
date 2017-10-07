@@ -59,6 +59,16 @@ $url = $c[0]."/index.php#site1";
 
 }
 
+if(isset($_GET['parametre'])){
+
+
+$url = str_replace("index.php#site1","",$url);
+
+$url = $url."?parametre=".$_GET['parametre']."#site1";
+
+
+}
+
 $url1 = str_replace("/site1","",$url);
 
 $background = '/../../protonet/coiffure.jpeg';
