@@ -40,6 +40,7 @@ $page = str_replace("/site2","",getcwd());
 $header = $page."/site2/section/header.php";
 
 $accueil = $page."/site2/section/accueil.php";
+$footer = $page."/site2/section/footer.php";
 
 ?>
 <center>
@@ -49,17 +50,7 @@ $accueil = $page."/site2/section/accueil.php";
 <?php 
 
 include_once($header);
-
 include_once($accueil);
+include_once($footer);
 
 ?>
-
-<div id = "c1e">
-<p id = "blanc">
-mention l&eacute;gal
-</p>
-
-</div>
-
-</div>
-
