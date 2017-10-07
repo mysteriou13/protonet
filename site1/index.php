@@ -59,11 +59,24 @@ $url = $c[0]."/index.php#site1";
 
 }
 
+if(isset($_GET['parametre'])){
+
+
+$url = str_replace("index.php#site1","",$url);
+
+$url = $url."?parametre=".$_GET['parametre']."#site1";
+
+
+}
+
 $url1 = str_replace("/site1","",$url);
 
 $background = '/../../protonet/coiffure.jpeg';
 
 $accueil =$nb4."/site1/page/accueil.php";
+
+$propos1 = $nb4."/site1/section/propos.php";
+
 
 ?>
 
@@ -82,34 +95,27 @@ $footer = $nb4."/site1/section/footer.php";
 include_once($header);
 
 
-if($nb2 == 1 && $nb3 == 1){
+
+if(isset($_GET['parametre']) && !empty($_GET['parametre'])){
+if( $_GET['parametre'] == 1 ){
 
 include_once($accueil);
 
 }
 
-if($nb3 == 0){
+if($_GET['parametre'] == 2){
 
-if($nb2 ==0 && $nb5 == 0 && !isset($_GET['parametre'])){
+include($propos1);
+
+}
+
+}else{
 
 include_once($accueil);
 
 }
 
-if($nb2 ==1 && $nb5 == 0 && !isset($_GET['parametre'])){
 
-include_once($accueil);
-
-}
-
-if(isset($_GET['parametre']) && !empty($_GET['parametre']) && 
-$_GET['parametre'] == 1){
-
-include_once($accueil);
-
-}
-
-}
 include_once($footer);
 ?>
 
