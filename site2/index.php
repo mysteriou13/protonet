@@ -39,6 +39,8 @@ $page = str_replace("/site2","",getcwd());
 
 $header = $page."/site2/section/header.php";
 
+$accueil = $page."/site2/section/accueil.php";
+
 ?>
 <center>
 <a href = "<?php echo $url;?>"><?php echo $des1?></a>
@@ -47,6 +49,8 @@ $header = $page."/site2/section/header.php";
 <?php 
 
 include_once($header);
+
+include_once($accueil);
 
 ?>
 
