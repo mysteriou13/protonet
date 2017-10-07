@@ -46,7 +46,9 @@ accueil
 </div>
 
 
-<div onclick = "
+<div 
+
+onclick = "
 <?php 
 echo " document.location = ' ";
 
@@ -63,7 +65,24 @@ echo "'";
 a propos
 </div>
 
-<div>
+<div
+
+onclick = "
+<?php 
+echo " document.location = ' ";
+
+
+echo $page."?parametre=3#site1";
+
+
+echo "'";
+
+
+
+?>
+"
+
+>
 contact
 </div>
 
