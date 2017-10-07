@@ -3,9 +3,15 @@
 
 $url = explode("/index",$monUrl);
 
-if($nb3 == 0){
- $propos = $url1."?parametre=2#site1";
-}
+
+
+echo "</br>";
+
+
+  $propos =  str_replace("index.php#site1","",$monUrl);
+
+
+ $page = "http://".$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];
 
 ?>
 
@@ -25,11 +31,9 @@ onclick = "
 
 echo " document.location = ' ";
 
-if($nb == 0){
 
-echo $url1."?parametre=1#site1";
+echo $page."?parametre=1#site1";
 
-}
 echo "'";
 
 ?>
@@ -45,7 +49,9 @@ accueil
 <?php 
 echo " document.location = ' ";
 
-echo $propos;
+
+echo $page."?parametre=2#site1";
+
 
 echo "'";
 

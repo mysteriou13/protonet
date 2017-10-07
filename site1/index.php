@@ -85,25 +85,6 @@ $footer = $nb4."/site1/section/footer.php";
 include_once($header);
 
 
-if($nb2 == 1 && $nb3 == 1){
-
-include_once($accueil);
-
-}
-
-if($nb3 == 0){
-
-if($nb2 ==0 && $nb5 == 0 && !isset($_GET['parametre'])){
-
-include_once($accueil);
-
-}
-
-if($nb2 ==1 && $nb5 == 0 && !isset($_GET['parametre'])){
-
-include_once($accueil);
-
-}
 
 if(isset($_GET['parametre']) && !empty($_GET['parametre'])){
 if( $_GET['parametre'] == 1 ){
@@ -118,9 +99,13 @@ include($propos1);
 
 }
 
-}
+}else{
+
+include_once($accueil);
 
 }
+
+
 include_once($footer);
 ?>
 
