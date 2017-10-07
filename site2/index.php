@@ -50,16 +50,6 @@ include_once($header);
 
 ?>
 
-<div id = "c1c">
-
-<p id = "blanc" > 
-
-Votre text
-
-</p>
-
-</div>
-
 <div id = "c1e">
 <p id = "blanc">
 mention l&eacute;gal
