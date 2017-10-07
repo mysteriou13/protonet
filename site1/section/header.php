@@ -3,8 +3,9 @@
 
 $url = explode("/index",$monUrl);
 
-$propos = $url1."?parametre=2#site1";
-
+if($nb3 == 0){
+ $propos = $url1."?parametre=2#site1";
+}
 
 ?>
 
