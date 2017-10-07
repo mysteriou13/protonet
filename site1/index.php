@@ -33,6 +33,7 @@ $style = '../site1/style/style.css';
 
  $nb5 = mb_substr_count($monUrl,"/site1/index.php");
  
+ $page = "http://".$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];
  
 if($nb == 1){
 
@@ -76,6 +77,7 @@ $background = '/../../protonet/coiffure.jpeg';
 $accueil =$nb4."/site1/page/accueil.php";
 
 $propos1 = $nb4."/site1/section/propos.php";
+
 
 
 ?>
