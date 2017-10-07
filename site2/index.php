@@ -34,22 +34,13 @@ $url = $url."site2/";
 
 }
 
+
+
 ?>
 <center>
 <a href = "<?php echo $url;?>"><?php echo $des1?></a>
 </center>
-<div id = "c1a"   alt="Description">
-<div id = "c1b" >
 
-<div id = "blanc" >
-
-
-titre
-
-
-</div>
-
-</div>
 
 <div id = "c1c">
 
