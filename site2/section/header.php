@@ -2,16 +2,17 @@
 <div id = "c1a"   alt="Description">
 <div id = "c1b" >
 
-<div style = "
-display:flex;
-justify-content:space-around;
-">
-
 <div id = "blanc">
 
 titre
 
 </div>
+
+
+<div style = "
+display:flex;
+justify-content:space-around;
+">
 
 <div 
 
