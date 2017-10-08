@@ -103,13 +103,13 @@ include_once($accueil);
 
 if($_GET['parametre2'] == 2){
 
-include($propos1);
+include($contact);
 
 }
 
 if($_GET['parametre2'] == 3){
 
-include_once($contact);
+include_once($propos);
 
 }
 
