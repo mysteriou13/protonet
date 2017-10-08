@@ -92,7 +92,33 @@ $footer = $page."/site2/section/footer.php";
 <?php 
 
 include_once($header);
+
+
+if(isset($_GET['parametre2']) && !empty($_GET['parametre2'])){
+if( $_GET['parametre2'] == 1 ){
+
 include_once($accueil);
+
+}
+
+if($_GET['parametre2'] == 2){
+
+include($propos1);
+
+}
+
+if($_GET['parametre2'] == 3){
+
+include_once($contact);
+
+}
+
+}else{
+
+include_once($accueil);
+
+}
+
 include_once($footer);
 
 ?>
