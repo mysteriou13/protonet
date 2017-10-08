@@ -24,41 +24,74 @@ include_once("../des.php");
 
  $nb = mb_substr_count($monUrl, "site2");
 
- $nb1 = mb_substr_count($monUrl, "#");
+  $nb1 = mb_substr_count($monUrl, "#");
+ 
 
- $nb2 = mb_substr_count($monUrl, "index.php");
+  $nb2 = mb_substr_count($monUrl, "index.php");
 
- $nb3 = mb_substr_count(getcwd(),"/site2");
 
- $nb4 = str_replace("site1","",getcwd());
+  $nb3 = mb_substr_count(getcwd(),"/site2");
+
+
+ $nb4 = str_replace("site2","",getcwd());
 
  $nb5 = mb_substr_count($monUrl,"/site2/index.php");
  
- 
-if($nb == 1){
+ $c = explode("site2",$url);
 
-$des1 = "cliquer pour retourner a l'index";
 
-$url = str_replace('site2/','index.php#site1',$monUrl);;
+if($nb1 == 0){
+if($nb2 == 1){
+if($nb3 == 0){
+
+ if(isset($_GET['parametre2'])){
+ $a = "index.php?parametre2=".$_GET['parametre2']; 
+
+ $a1 = "?parametre2=".$_GET['parametre2'];
+
+ $url = str_replace($a1,"site2/",$url);
+
+  $url = str_replace("index.php","",$url);
+  
+
+  $url = $url."index.php?parametre2=".$_GET['parametre2'];
 }else{
 
-$url = $url."/site2/index.php";
+
+ $url = str_replace("/index.php","",$url);
+  $url = $url."/site2";
 
 }
+
+}
+}
+
 
 if($nb2 == 1){
-
-$c = explode('/index.php',$url);
-
-$url = $c[0]."/site2/index.php";
-
-if($nb == 1 ){
-
-$url = $c[0]."/index.php#site2";
+if($nb3 == 1){
+$url = $c[0]."index.php#site2";
 
 }
+}
+
+if($nb2 == 0){
+if($nb3 == 1){
+$url = str_replace("site2","",$c[0]);
+
+$url = $url."index.php#site2";
 
 }
+if($nb3 == 0){
+
+$url = $c[0];
+
+ $a = explode("?",$c[0]);
+
+ $url = $a[0]."site2";
+}
+}
+}
+
 
 if(isset($_GET['parametre2'])){
 
@@ -87,7 +120,6 @@ $contact = $page."/site2/section/contact.php";
 $propos = $page."/site2/section/propos.php";
 
 $footer = $page."/site2/section/footer.php";
-
 
 ?>
 <center>
