@@ -38,7 +38,22 @@ accueil
 </div>
 
 
-<div id = "blanc">
+<div
+
+onclick = "
+
+<?php 
+
+echo " document.location = ' ";
+
+
+echo $lien."?parametre =3#site2";
+
+echo "'";
+
+?>
+"
+ id = "blanc">
 contact
 </div>
 
