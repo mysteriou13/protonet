@@ -77,6 +77,7 @@ $accueil =$nb4."/site1/page/accueil.php";
 
 $propos1 = $nb4."/site1/section/propos.php";
 
+$contact = $nb4."/site1/section/contact.php";
 
 ?>
 
@@ -106,6 +107,12 @@ include_once($accueil);
 if($_GET['parametre'] == 2){
 
 include($propos1);
+
+}
+
+if($_GET['parametre'] == 3){
+
+include_once($contact);
 
 }
 
