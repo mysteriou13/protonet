@@ -17,7 +17,14 @@ include_once("../des.php");
 
 }
 
-include_once("/opt/lampp/htdocs/protonet/fonction/url.php");
+$lien3 = getcwd();
+
+$lien3 = str_replace("site2","",$lien3);
+
+$lien3 = $lien3."/fonction/url.php";
+
+include_once($lien3);
+
 
 $lien2 = new lien();
 
