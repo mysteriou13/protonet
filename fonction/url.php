@@ -2,11 +2,11 @@
 
 class lien{
 
-function url(){
+function url($n){
 
  $monUrl = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; 
 
- $nbsite = 2;
+ $nbsite = $n;
 
  $parametre = "parametre".$nbsite;
  

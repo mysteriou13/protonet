@@ -28,7 +28,7 @@ include_once($lien3);
 
 $lien2 = new lien();
 
-$url =  $lien2->url();
+$url =  $lien2->url("2");
 
 $lien = "http://".$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];
 
