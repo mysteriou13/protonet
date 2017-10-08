@@ -84,6 +84,8 @@ $accueil = $page."/site2/section/accueil.php";
 
 $contact = $page."/site2/section/contact.php";
 
+$propos = $page."/site2/section/propos.php";
+
 $footer = $page."/site2/section/footer.php";
 
 
