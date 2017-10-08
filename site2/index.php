@@ -60,12 +60,12 @@ $url = $c[0]."/index.php#site2";
 
 }
 
-if(isset($_GET['parametre'])){
+if(isset($_GET['parametre2'])){
 
 
 $url = str_replace("index.php#site2","",$url);
 
-$url = $url."?parametre=".$_GET['parametre']."#site2";
+$url = $url."?parametre2=".$_GET['parametre2']."#site2";
 
 
 }
