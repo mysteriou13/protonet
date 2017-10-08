@@ -39,7 +39,7 @@ accueil
 
 
 <div
-v
+
 onclick = "
 
 <?php 
@@ -59,6 +59,19 @@ contact
 
 <div
 
+onclick = "
+
+<?php 
+
+echo " document.location = ' ";
+
+
+echo $lien."?parametre2 =3#site2";
+
+echo "'";
+
+?>
+"
  id = "blanc">
 a propos
 </div>
