@@ -39,7 +39,7 @@ accueil
 
 
 <div
-
+v
 onclick = "
 
 <?php 
@@ -47,7 +47,7 @@ onclick = "
 echo " document.location = ' ";
 
 
-echo $lien."?parametre =3#site2";
+echo $lien."?parametre2 =2#site2";
 
 echo "'";
 
@@ -57,7 +57,9 @@ echo "'";
 contact
 </div>
 
-<div id = "blanc">
+<div
+
+ id = "blanc">
 a propos
 </div>
 
