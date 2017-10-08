@@ -81,6 +81,9 @@ $page = str_replace("/site2","",getcwd());
 $header = $page."/site2/section/header.php";
 
 $accueil = $page."/site2/section/accueil.php";
+
+$contact = $page."/site2/section/contact.php";
+
 $footer = $page."/site2/section/footer.php";
 
 
