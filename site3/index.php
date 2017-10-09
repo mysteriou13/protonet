@@ -18,24 +18,6 @@ include_once("../des.php");
 
 }
 
-$monUrl = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; 
-
- $url = $monUrl;
-
-$nb = mb_substr_count($monUrl, "site3");
-
-if($nb == 1){
-
-$des1 = "cliquer pour retourner a l'index";
-
-$url = str_replace('site3/','#site3',$monUrl);;
-}else{
-
-$url = $url."site3/";
-
-}
-
-
 ?>
 
 <center>
