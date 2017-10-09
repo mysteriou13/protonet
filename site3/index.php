@@ -45,14 +45,8 @@ $url = $url."site3/";
 <div   alt="Description" >
 <div style = "background-color:gray; color:white; ">
 
-<
+
 <div id = "site3a2" >
-
-
-
-<div style = "border:1px solid black; width:20%; margin-top:1%; ">
-d
-</div>
 
 </div>
 
