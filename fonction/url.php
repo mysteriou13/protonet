@@ -26,7 +26,7 @@ function url($n){
 
  $nb5 = mb_substr_count($monUrl, $site."/"."/index.php");
  
- $c = explode("site2",$url);
+ $c = explode("site".$n,$url);
 
 
 if($nb1 == 0){

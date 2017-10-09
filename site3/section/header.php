@@ -38,7 +38,7 @@ onclick = "
 
 echo " document.location = ' ";
 
-echo $lien."#site3";
+echo $lien."?parametre3=2#site3";
 
 echo "'";
 
@@ -58,7 +58,7 @@ onclick = "
 echo " document.location = ' ";
 
 
-echo $lien."?parametre3=3#site2";
+echo $lien."?parametre3=3#site3";
 
 echo "'";
 

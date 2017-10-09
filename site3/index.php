@@ -18,6 +18,35 @@ include_once("../des.php");
 
 }
 
+
+$lien3 = getcwd();
+
+$lien3 = str_replace("site3","",$lien3);
+
+$lien3 = $lien3."/fonction/url.php";
+
+include_once($lien3);
+
+
+$lien2 = new lien();
+
+$url =  $lien2->url("3");
+
+$lien = "http://".$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];
+
+$page = str_replace("/site3","",getcwd());
+
+$header = $page."/site3/section/header.php";
+
+$accueil = $page."/site3/section/accueil.php";
+
+$contact = $page."/site3/section/contact.php";
+
+$propos = $page."/site3/section/propos.php";
+
+$footer = $page."/site3/section/footer.php";
+$aside = $page."/site3/section/aside.php";
+
 ?>
 
 <center>
@@ -28,14 +57,34 @@ include_once("../des.php");
 <div style = "background-color:gray; color:white; ">
 <?php 
 
-include_once("./section/header.php");
+include_once($header);
 
 ?>
 
 <div id = "site3a2" >
+<?php 
 
+if(isset($_GET['parametre3']) && !empty($_GET['parametre3'])){
+if( $_GET['parametre3'] == 1 ){
+
+include_once($accueil);
+
+}
+
+}else{
+
+include_once($accueil);
+
+include_once($aside);
+
+}
+?>
 </div>
+<?php 
 
+include_once($footer);
+
+?>
 
 
 
