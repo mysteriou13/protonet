@@ -8,6 +8,9 @@ width:98%;
 border:1px solid black;
 display:flex;
 justify-content:space-around;
+
+padding-bottom:2%;
+
  ">
 
 <div
