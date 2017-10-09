@@ -67,7 +67,7 @@ include_once($header);
 if(isset($_GET['parametre3']) && !empty($_GET['parametre3'])){
 if( $_GET['parametre3'] == 1 ){
 
-include_once($accueil);
+include($accueil);
 
 }
 
@@ -81,7 +81,6 @@ include_once($accueil);
 
 include_once($aside);
 
-}
 }
 ?>
 </div>
