@@ -26,7 +26,11 @@ include_once("../des.php");
 
 <div   alt="Description" >
 <div style = "background-color:gray; color:white; ">
+<?php 
 
+include_once("./section/header.php");
+
+?>
 
 <div id = "site3a2" >
 
