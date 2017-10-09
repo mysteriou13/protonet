@@ -75,6 +75,13 @@ if( $_GET['parametre3'] == 2 ){
 
 include_once($contact);
 
+}
+
+if( $_GET['parametre3'] == 3 ){
+
+include_once($propos);
+
+}
 }else{
 
 include_once($accueil);
