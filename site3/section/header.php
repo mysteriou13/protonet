@@ -1,6 +1,8 @@
 
 <div style = "">
+<center>
 titre
+</center>
 </div>
 
 <div style = "
