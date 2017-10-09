@@ -1,4 +1,4 @@
-<link rel  = "stylesheet" href = "http://localhost/corsicanet/site2/style/style.css">
+<link rel  = "stylesheet" href = "http://localhost/protonet/site2/style/style.css">
 
 <?php
 
