@@ -71,12 +71,17 @@ include_once($accueil);
 
 }
 
+if( $_GET['parametre3'] == 2 ){
+
+include_once($contact);
+
 }else{
 
 include_once($accueil);
 
 include_once($aside);
 
+}
 }
 ?>
 </div>
