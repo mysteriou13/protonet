@@ -35,7 +35,7 @@ $page = str_replace("/site4","",getcwd());
 
 $header = $page."/site4/section/header.php";
 
-
+$accueil = $page."/site4/section/accueil.php";
 
 ?>
 
@@ -55,6 +55,15 @@ include_once($header);
 
 <div id = "site4a2">
 
+<?php 
+if(isset($_GET['parametre4']) && !empty($_GET['parametre4'])){
+
+}else{
+
+include($accueil);
+}
+
+?>
 
 </div>
 
