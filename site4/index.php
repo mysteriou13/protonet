@@ -44,25 +44,15 @@ $url = $url."site4/";
 
 
 <div id = "site4a2">
-<div id =  "site4a3">
 
-<?php
-
-$text = "votre menu";
-$newtext = wordwrap($text, 10, "</br>", true);
-
-echo "$newtext\n";
-
-?>
-
-
-</div>
 
 <div id = "site4a4" >
 <center>
 votre text
 </center>
+
 </div>
+
 </div>
 
 </div>
