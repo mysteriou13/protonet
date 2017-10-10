@@ -42,11 +42,6 @@ $url = $url."site4/";
 
 <div id = "site4a7" style= "background-color:rgb(164,249,112);"  alt="Description"  >
 
-<div id= "site4a1" style = "background-color:rgb(75,138,36);">
-<center>
-votre titre
-</center>
-</div>
 
 <div id = "site4a2">
 <div id =  "site4a3">
