@@ -33,6 +33,8 @@ $lien = "http://".$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];
 
 $page = str_replace("/site4","",getcwd());
 
+$header = $page."/site4/section/header.php";
+
 
 
 ?>
@@ -45,6 +47,11 @@ $page = str_replace("/site4","",getcwd());
 
 <div id = "site4a7" style= "background-color:rgb(164,249,112);"  alt="Description"  >
 
+<?php 
+
+include_once($header);
+
+?>
 
 <div id = "site4a2">
 
