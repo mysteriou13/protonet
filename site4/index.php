@@ -50,7 +50,17 @@ votre titre
 
 <div id = "site4a2">
 <div id =  "site4a3">
-votre menu
+
+<?php
+
+$text = "votre menu";
+$newtext = wordwrap($text, 10, "</br>", true);
+
+echo "$newtext\n";
+
+?>
+
+
 </div>
 
 <div id = "site4a4" >
