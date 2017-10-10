@@ -58,11 +58,6 @@ votre menu
 votre text
 </center>
 </div>
-
-<div id = "site4a5">
-
-</div>
-
 </div>
 
 <div id = "site4a6">
