@@ -46,13 +46,6 @@ $url = $url."site4/";
 <div id = "site4a2">
 
 
-<div id = "site4a4" >
-<center>
-votre text
-</center>
-
-</div>
-
 </div>
 
 </div>
