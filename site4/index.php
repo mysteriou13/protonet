@@ -37,6 +37,8 @@ $header = $page."/site4/section/header.php";
 
 $accueil = $page."/site4/section/accueil.php";
 
+$nav = $page."/site4/section/nav.php";
+
 ?>
 
 <center>
@@ -61,6 +63,7 @@ if(isset($_GET['parametre4']) && !empty($_GET['parametre4'])){
 }else{
 
 include($accueil);
+include($nav);
 }
 
 ?>
