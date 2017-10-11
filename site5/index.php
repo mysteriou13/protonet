@@ -32,6 +32,8 @@ $url = str_replace('site5/','#site5',$monUrl);;
 $url = $url."site5/";
 
 }
+
+
 ?>
 
 <center>
@@ -42,10 +44,7 @@ $url = $url."site5/";
 
 <div id = "site5a1"  alt = "Description"  >
 
-<center>
 
-
-</center>
 
 <div id = "site5a2">
 
