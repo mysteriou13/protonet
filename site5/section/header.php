@@ -3,6 +3,7 @@
 
 <div style = "
 margin:1%;
+display:flex;
 ">
 
 <div>
