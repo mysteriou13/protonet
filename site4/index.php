@@ -43,6 +43,8 @@ $contact= $page."/site4/section/contact.php";
 
 $propos = $page."/site4/section/propos.php";
 
+$footer = $page."/site4/section/footer.php";
+
 ?>
 
 <center>
@@ -80,9 +82,10 @@ include($propos);
 include($accueil);
 include($nav);
 }
+?>
+</div>
+<?php 
+include($footer);
 
 ?>
-
-</div>
-
 </div>
