@@ -18,8 +18,10 @@ include_once("../des.php");
 
 $monUrl = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; 
 
- $url = $monUrl;
-
+$url = $monUrl;
+$lien3 = getcwd();
+$lien3 = str_replace("/site5","",$lien3);
+$header = $lien3."/site5/section/header.php";
 $nb = mb_substr_count($monUrl, "site5");
 
 if($nb == 1){
@@ -44,10 +46,11 @@ $url = $url."site5/";
 
 <div id = "site5a1"  alt = "Description"  >
 
-
+<?php 
+include($header);
+?>
 
 <div id = "site5a2">
-
 
 </div>
 
