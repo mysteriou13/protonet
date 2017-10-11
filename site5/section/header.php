@@ -3,11 +3,15 @@
 
 <div style = "
 margin:1%;
-display:flex;
+display: flex;
+
+    justify-content: space-around;
 ">
 
 <div>
+
 accueil
+
 </div>
 
 <div>
