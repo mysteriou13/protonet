@@ -22,6 +22,7 @@ $url = $monUrl;
 $page = str_replace("/site5","",getcwd());
 $header = $page."/site5/section/header.php";
 $footer = $page."/site5/section/footer.php";
+$element = $page."/site5/section/element.php";
 $nb = mb_substr_count($monUrl, "site5");
 
 if($nb == 1){
@@ -51,7 +52,9 @@ include($header);
 ?>
 
 <div id = "site5a2">
-
+<?php 
+include_once($element);
+?>
 </div>
 <?php 
 include($footer);

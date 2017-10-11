@@ -12,7 +12,10 @@ display: flex;
 justify-content: space-around;
 ">
 
-<div>
+<div onclick = '
+document.getElementById("e").innerHTML = "<center>accueil</center>";
+
+'>
 
 accueil
 
