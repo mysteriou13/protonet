@@ -52,8 +52,5 @@ $url = $url."site5/";
 
 </div>
 
-<div id = "site5a6">
-
-</div>
 </div>
 
