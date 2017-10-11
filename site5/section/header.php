@@ -1,6 +1,8 @@
 <div>
 
+<center>
 votre titre
+</center>
 
 </div>
 
