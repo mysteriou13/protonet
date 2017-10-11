@@ -62,7 +62,11 @@ include_once($header);
 <?php 
 if(isset($_GET['parametre4']) && !empty($_GET['parametre4'])){
 
+if($_GET['parametre4'] == 2){
+
 include($contact);
+
+}
 
 }else{
 
