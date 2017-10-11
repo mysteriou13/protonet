@@ -20,7 +20,7 @@ justify-content: space-around;
 echo " document.location = ' ";
 
 
-echo $lien."#site4";
+echo $lien."#site5";
 
 echo "'";
 
@@ -31,11 +31,40 @@ accueil
 
 </div>
 
-<div>
+<div
+onclick = "
+
+<?php 
+
+echo " document.location = ' ";
+
+
+echo $lien."?parametre5=2#site5";
+
+echo "'";
+
+?>
+"
+
+>
 contact 
 </div>
 
-<div>
+<div
+onclick = "
+
+<?php 
+
+echo " document.location = ' ";
+
+
+echo $lien."?parametre5=3#site5";
+
+echo "'";
+
+?>
+"
+>
 a propos
 </div>
 
