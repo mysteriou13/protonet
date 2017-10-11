@@ -19,9 +19,8 @@ include_once("../des.php");
 $monUrl = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; 
 
 $url = $monUrl;
-$lien3 = getcwd();
-$lien3 = str_replace("/site5","",$lien3);
-$header = $lien3."/site5/section/header.php";
+$page = str_replace("/site5","",getcwd());
+$header = $page."/site5/section/header.php";
 $nb = mb_substr_count($monUrl, "site5");
 
 if($nb == 1){
