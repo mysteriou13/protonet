@@ -36,6 +36,7 @@ $lien = "http://".$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];
 $page = str_replace("/site5","",getcwd());
 $header = $page."/site5/section/header.php";
 $footer = $page."/site5/section/footer.php";
+$nav = $page."/site5/section/nav.php";
 $element = $page."/site5/section/element.php";
 
 ?>
@@ -53,8 +54,9 @@ include($header);
 ?>
 
 <div id = "site5a2">
-<?php 
+<?php
 include_once($element);
+include_once($nav);
 ?>
 </div>
 <?php 
