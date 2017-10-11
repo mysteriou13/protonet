@@ -38,7 +38,7 @@ $url = $url."site5/";
 <a href = "<?php echo $url?>"><?php echo $des1?> </a>
 </center>
 
-<link rel = "stylesheet" href = "http://localhost/corsicanet/site5/style/style.css">
+<link rel = "stylesheet" href = "http://localhost/protonet/site5/style/style.css">
 
 <div id = "site5a1"  alt = "Description"  >
 
