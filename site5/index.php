@@ -44,9 +44,6 @@ $url = $url."site5/";
 
 <center>
 
-<div id = "site5menu">
-
-</div>
 
 </center>
 
