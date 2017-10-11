@@ -41,6 +41,8 @@ $nav = $page."/site4/section/nav.php";
 
 $contact= $page."/site4/section/contact.php";
 
+$propos = $page."/site4/section/propos.php";
+
 ?>
 
 <center>
@@ -68,6 +70,11 @@ include($contact);
 
 }
 
+if($_GET['parametre4'] == 3){
+
+include($propos);
+
+}
 }else{
 
 include($accueil);
