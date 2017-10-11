@@ -17,10 +17,9 @@ include_once("../des.php");
 }
 
 
-
 $lien3 = getcwd();
 
-$lien3 = str_replace("site4","",$lien3);
+$lien3 = str_replace("/site5","",$lien3);
 
 $lien3 = $lien3."/fonction/url.php";
 
@@ -30,25 +29,10 @@ $lien2 = new lien();
 
 $url =  $lien2->url("5");
 
-$lien = "http://".$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];
-
 $page = str_replace("/site5","",getcwd());
 $header = $page."/site5/section/header.php";
 $footer = $page."/site5/section/footer.php";
 $element = $page."/site5/section/element.php";
-$nb = mb_substr_count($monUrl, "site5");
-
-if($nb == 1){
-
-$des1 = "cliquer pour retourner a l'index";
-
-$url = str_replace('site5/','#site5',$monUrl);;
-}else{
-
-$url = $url."site5/";
-
-}
-
 
 ?>
 

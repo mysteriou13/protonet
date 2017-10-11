@@ -12,10 +12,18 @@ display: flex;
 justify-content: space-around;
 ">
 
-<div onclick = '
-document.getElementById("e").innerHTML = "<center>accueil</center>";
+<div onclick = " 
+<?php 
 
-'>
+echo " document.location = ' ";
+
+
+echo $lien."#site4";
+
+echo "'";
+
+?>
+">
 
 accueil
 
