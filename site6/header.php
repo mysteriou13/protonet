@@ -1,5 +1,6 @@
 
 <?php 
+
 $monUrl = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 
 $url = $monUrl;
@@ -29,7 +30,11 @@ $u = explode("pageproduit.php",$monUrl);
 $url = $u[0]."#site6";
 }
 
+$e = explode("site6",$monUrl);
 
+$url1 = $e[0]."site6/index.php#categorie1";
+
+echo $nb;
 
 ?>
 
@@ -38,18 +43,33 @@ $url = $u[0]."#site6";
 </center>
 <div  style =  "border:1px solid white ;background-color:navy; color:white;"   alt = "Description">
 
-<center>
+<center style = "
+margin-bottom:2%;
+">
 votre titre
 </center>
 
 <div style = "
 position:relative;
-left:0%;
 display: flex;
 justify-content: space-around;
+
 ">
 
-<div>
+<div id = "categorie1" onclick = "
+
+<?php 
+
+echo " document.location = ' ";
+
+echo $url1;
+
+echo "'";
+
+?>
+
+
+">
 
 cat&eacute;gorie 1
 </div>
