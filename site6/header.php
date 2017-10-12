@@ -36,13 +36,37 @@ $url = $u[0]."#site6";
 <center>
 <a href = "<?php echo $url?>"><?php echo $des1;?></a>
 </center>
+<div  style =  "border:1px solid white ;background-color:navy; color:white;"   alt = "Description">
 
-<div id ="site6a2"  alt = "Description">
 <center>
-
 votre titre
-
 </center>
+
+<div style = "
+position:relative;
+left:0%;
+display: flex;
+justify-content: space-around;
+">
+
+<div>
+
+cat&eacute;gorie 1
+</div>
+
+<div>
+cat&eacute;gorie 2
+</div>
+
+<div>
+cat&eacute;gorie 3
 
 </div>
 
+<div>
+cat&eacute;gorie 4
+</div>
+
+</div>
+
+</div>
