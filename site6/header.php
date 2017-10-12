@@ -34,7 +34,6 @@ $e = explode("site6",$monUrl);
 
 $url1 = $e[0]."site6/index.php#categorie1";
 
-echo $nb;
 
 ?>
 
