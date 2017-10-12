@@ -9,6 +9,11 @@ $text = "<center>contact</center>";
 
 }
 
+if($_GET['parametre5'] == 3){
+
+$text = " <center> a propos </center>";
+
+}
 
 }else{
 
