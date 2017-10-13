@@ -2,7 +2,6 @@
 
 <?php
 
-$file = "./des.php";
 
 $site= "site6";
 
@@ -17,16 +16,6 @@ include_once("./produit.php");
 
 }
 
-if(file_exists($file)){
-include_once("./des.php");
-
-}
-
-if(file_exists("../des.php")){
-
-include_once("../des.php");
-
-}
 
 $d = 1;
 

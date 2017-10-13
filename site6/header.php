@@ -1,6 +1,14 @@
 
 <?php 
 
+$des = str_replace("/site6","",getcwd());
+
+$site = "site6";
+
+$des = $des."/des.php";
+
+include_once($des);
+
 $monUrl = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 
 $url = $monUrl;

@@ -1,7 +1,6 @@
 <?php
 
 
-
 $monUrl = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 
 $des1 = "clicker pour agrandir";
