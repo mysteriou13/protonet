@@ -9,6 +9,9 @@ $nb = mb_substr_count($monUrl, "site6");
 
 $produit = mb_substr_count($monUrl, "pageproduit");
 
+$site6 = mb_substr_count($monUrl, "?categorie");
+
+$site6a1 = mb_substr_count($monUrl, "/site6");
 
 if($produit == 1){
 
@@ -31,6 +34,29 @@ $lien2 = new lien();
 $url =  $lien2->url("6");
 
 $lien = "http://".$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];
+
+if($site6 == 1){
+
+$site61 = explode("?",$lien);
+
+ $url = $site61[0]."/site6/?categorie=".$_GET['categorie'];
+
+ $url = str_replace("index.php/","",$url);
+
+if($site6a1 == 1){
+
+$url = str_replace("/site6","",$url);
+
+$urla = explode("?",$url);
+
+$url = $urla[0]."index.php?categorie=".$_GET['categorie']."#site6";
+
+}
+
+
+
+}
+
 
 ?>
 
