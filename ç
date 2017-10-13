@@ -9,6 +9,19 @@ $nb = mb_substr_count($monUrl, "site6");
 
 $produit = mb_substr_count($monUrl, "pageproduit");
 
+if($nb == 1){
+
+
+$des1 = "cliquer pour retourner a l'index";
+
+$url = "http://localhost/protonet/#site6";
+
+}else{
+
+
+$url = $url."/site6";
+
+}
 
 if($produit == 1){
 
@@ -17,21 +30,17 @@ $u = explode("pageproduit.php",$monUrl);
 $url = $u[0]."#site6";
 }
 
+$e = explode("site6",$monUrl);
 
-$lien3 = getcwd();
+if($nb == 1){
+$url1 = $e[0]."site6/index.php#categor:w1?categorie1=1";
+}else{
 
-$lien3 = str_replace("site6","",$lien3);
+$url1 = $e[0]."#site6?categ=1";
 
-$lien3 = $lien3."/fonction/url.php";
+}
 
-include_once($lien3);
-
-$lien2 = new lien();
-
-$url =  $lien2->url("6");
-
-$lien = "http://".$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];
-
+echo $_GET['catee'];
 ?>
 
 <center>
@@ -58,7 +67,7 @@ justify-content: space-around;
 
 echo " document.location = ' ";
 
-echo $lien."?categorie=1#site6";
+echo $url1;
 
 echo "'";
 
