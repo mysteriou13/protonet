@@ -21,6 +21,8 @@ $site6 = mb_substr_count($monUrl, "?categorie");
 
 $site6a1 = mb_substr_count($monUrl, "/site6");
 
+$pageproduit = "pageproduit.php";
+
 if($produit == 1){
 
 $u = explode("pageproduit.php",$monUrl);

@@ -1,8 +1,19 @@
 
+<?php 
+
+echo $site6a1;
+
+if($site6a1 == 0){
+
+$pageproduit = "./site6/pageproduit.php";
+
+}
+
+?>
 
 
 
-<div  id = "site6a7" onclick = "reply(<?php echo $s4;?>,'produit','pageproduit.php')" >
+<div  id = "site6a7" onclick = "reply(<?php echo $s4;?>,'produit','<?php echo $pageproduit;?>')" >
 <?php
 
 
