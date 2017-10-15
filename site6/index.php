@@ -80,13 +80,21 @@ include($categorie);
 <center>
 
 <?php 
+$index = "./index.php";
 
 
 while($s0 <= $page){
 
 $s0++;
 
-echo "<a href = './index.php?page=$s0' >"; echo $s0; echo "</a>"; echo "&nbsp &nbsp &nbsp"  ;
+if($NB == 0){
+
+$index = "?page=".$s0."#site6";
+
+}else{
+ $index = "./index.php?page=".$s0;
+}
+echo "<a href = '$index' >"; echo $s0; echo "</a>"; echo "&nbsp &nbsp &nbsp"  ;
 
 }
 

@@ -15,6 +15,8 @@ $url = $monUrl;
 
 $nb = mb_substr_count($monUrl, "site6");
 
+$NB = mb_substr_count($monUrl, "site6");
+
 $produit = mb_substr_count($monUrl, "pageproduit");
 
 $site6 = mb_substr_count($monUrl, "?categorie");
