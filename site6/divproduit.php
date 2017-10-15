@@ -1,7 +1,6 @@
 
 <?php 
 
-echo $site6a1;
 
 if($site6a1 == 0){
 
