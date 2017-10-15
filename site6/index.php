@@ -46,7 +46,7 @@ include_once("./header.php");
 
 function reply(d,c,p){
 
-document.location = p+'?='+c+"="+d;
+document.location = p+'?'+c+"="+d;
 
 }
 
