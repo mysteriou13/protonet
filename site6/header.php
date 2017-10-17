@@ -33,7 +33,7 @@ $categorie1 = 1;
 
 if(isset($_GET['categorie'])){
 
-$categorie = $_GET['categorie'];
+$categorie1 = $_GET['categorie'];
 
 }
 
@@ -173,7 +173,18 @@ echo "'";
 cat&eacute;gorie 1
 </div>
 
-<div id = "categorie2">
+<div id = "categorie2" onclick ="
+<?php
+
+echo " document.location = ' ";
+
+echo $lien."?categorie=2&page".$page."#site6";
+
+echo "'";
+
+?>
+
+">
 cat&eacute;gorie 2
 </div>
 
