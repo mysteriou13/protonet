@@ -188,7 +188,19 @@ echo "'";
 cat&eacute;gorie 2
 </div>
 
-<div>
+<div id = "categorie3" onclick = "
+<?php
+
+echo " document.location = ' ";
+
+echo $lien."?categorie=3&page".$page."#site6";
+
+echo "'";
+
+?>
+
+
+">
 cat&eacute;gorie 3
 
 </div>
