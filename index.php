@@ -78,6 +78,10 @@ background-size :50%; 50%;
 </div>
 </div>
 
+<div id = "site">
+&nbsp;
+
+</div>
 
 <div id = "site1" style = "border:1px solid black; background-color:white; ">
 

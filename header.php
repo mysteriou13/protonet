@@ -234,7 +234,6 @@ flex-direction: column;
 font-size:2em;
 margin-left:70%;
 ">
-
 <div>
 <a href = "contact.php" style = "color:white"; >contact</a>
 </div>
@@ -258,12 +257,31 @@ color:white;
 <center>
 
 <p>
-Je  mets toutes mes comptences et mon savoir faire &agrave; votre disposition  pour mettre avant votre activit&eacute;  dans un monde toujours
-plus connect&eacute;
+
+Je mets toutes mes comptences et mon savoir faire pour  concevoir et entretenir votre image
+ 
+en ligne dans un monde toujours plus connecté
+
 </p>
 
 
 </center>
+
+<div style = "
+display:flex;
+justify-content:space-bettewen;
+
+">
+
+<div onclick = "
+document.location = '#site';
+">
+exemple de design
+</div>
+
+
+</div>
+
 </div>
 
 </div>
