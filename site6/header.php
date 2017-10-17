@@ -205,7 +205,17 @@ cat&eacute;gorie 3
 
 </div>
 
-<div>
+<div id = "categorie4" onclick = "
+<?php
+
+echo " document.location = ' ";
+
+echo $lien."?categorie=4&page".$page."#site6";
+
+echo "'";
+
+?>
+">
 cat&eacute;gorie 4
 </div>
 
