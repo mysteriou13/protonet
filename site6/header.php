@@ -173,7 +173,7 @@ echo "'";
 cat&eacute;gorie 1
 </div>
 
-<div>
+<div id = "categorie2">
 cat&eacute;gorie 2
 </div>
 
