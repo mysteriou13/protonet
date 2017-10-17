@@ -2,21 +2,35 @@
 
 <?php 
 
-$s = 8;
+$s = 7;
 
-$nbpage = 57;
+$nbproduit =50;
 
-$nombre = $nbpage/$s;
+$nbpage = $nbproduit;
+
+$nbpage1 = $nbproduit;
+
+ $nombre = $nbpage1/$s;
 
 $nb = explode('.', $nombre); //on explose la chaine au niveau du point
 
-$entier = $nb[0]; //on recupere la premiere caine, situee avant le point
-
+ $entier = $nb[0]; //on recupere la premiere caine, situee avant le point
 
 $page = $entier-1;
 
+$pagea = 1;
+
+if(isset($_GET['page'])){
+
+$pagea = $_GET['page'];
+
+}
 
 $s0 = 0;
+
+$divproduit1 = str_replace("/site6","",getcwd());
+
+ $divproduit2 = $divproduit1."/site6/divproduit.php";
 
 if(isset($_GET['page']) && !empty($_GET['page']) && $_GET['page'] >=2){
 
@@ -28,68 +42,33 @@ $s1 = 1;
 
 }
 
-$s3 = $s*$s1;
+ $s3 = $s1;
 
-$s4 = $s3-$s;
+$s3 = $s3;
 
-$total = $entier*$s;
+if($s3 <= $nbpage1-1){
+$s3 = $s1*8;
 
-if($s4 < $nbpage ){
-if($s1 >=1){
+ $s3 = $s3-1;
+
+
+ $s4 = $s3-8;
+
+
 
 while($s4 < $s3){
 
 $s4++;
 
-if($s4 <$total+1){
+if($nbpage1 >= $s4){
 
-if(file_exists('./divproduit.php')){
-
-include("./divproduit.php");
-
-}else{
-
-include('./site6/divproduit.php');
+include($divproduit2);
 
 }
 
 }
 
 }
-
-}
-
-}
-
-
-
-$page1 = $entier*$s;
-
-$nbpage1 = $nbpage-1;
-
-if($entier != $nombre && isset($_GET['page'])  && !empty($_GET['page'] ) && $_GET['page'] > $entier ){
-
-$page1 = $page1;
-
-while($page1-1 < $nbpage-1){
-
-$page1++;
-
-if(file_exists('./divproduit.php')){
-
-include("./divproduit.php");
-
-}else{
-
-include('./site6/divproduit.php');
-
-}
-
-
-}
-
-}
-
 
 ?>
 

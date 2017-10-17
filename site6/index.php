@@ -44,10 +44,9 @@ include_once("./header.php");
 
 <script>
 
-function reply(d,c,p){
+function reply(d,c,p,ca,pagea){
 
-document.location = p+'?'+c+"="+d;
-
+document.location = p+'?'+c+"="+d+"&categorie="+ca+"&page="+pagea;
 }
 
 
@@ -89,36 +88,25 @@ $s0++;
 
 if($NB == 0){
 
-$index = "?page=".$s0."#site6";
+$index = "?page=".$s0."&categorie=".$categorie1."#site6";
 
 }else{
- $index = "./index.php?page=".$s0;
+ $index = "./index.php?page=".$s0."&categorie=".$categorie1;
 }
 echo "<a href = '$index' >"; echo $s0; echo "</a>"; echo "&nbsp &nbsp &nbsp"  ;
 
 }
 
 
- $s0= $s0+1;
+if($s3 != $nbpage1){
 
 
-
-if($s4 != $nbpage){
-
-while($s4-1 < $nbpage-1){
- $s4++;
+$index = "?page=".$s0."&categorie=".$categorie1."#site6";
 
 
 }
 
-}
 
-
-if($nombre  != $entier){
-
-echo "<a href = './index.php?page=$s0' >"; echo $s0; echo "</a>"; echo "&nbsp &nbsp &nbsp";
-
-}
 
 ?>
 

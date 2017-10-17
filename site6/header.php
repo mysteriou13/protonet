@@ -23,13 +23,43 @@ $site6 = mb_substr_count($monUrl, "?categorie");
 
 $site6a1 = mb_substr_count($monUrl, "/site6");
 
+$site6a2 = mb_substr_count($monUrl, "#site6");
+
+$nbpage = mb_substr_count($monUrl, "?page");
+
 $pageproduit = "pageproduit.php";
+
+$categorie1 = 1;
+
+if(isset($_GET['categorie'])){
+
+$categorie = $_GET['categorie'];
+
+}
+
+$page = 1;
+
+if(isset($_GET['page'])){
+
+$page = $_GET['page'];
+
+}
+
+
+$pagea = 1;
+
+if(isset($_GET['page'])){
+
+$pagea = $_GET['page'];
+
+}
 
 if($produit == 1){
 
 $u = explode("pageproduit.php",$monUrl);
 
-$url = $u[0]."#site6";
+ $url = $u[0]."#site6";
+
 }
 
 
@@ -51,7 +81,7 @@ if($site6 == 1){
 
 $site61 = explode("?",$lien);
 
- $url = $site61[0]."/site6/?categorie=".$_GET['categorie'];
+ $url = $site61[0]."/site6/?categorie=".$_GET['categorie']."&page=".$page;
 
  $url = str_replace("index.php/","",$url);
 
@@ -61,11 +91,46 @@ $url = str_replace("/site6","",$url);
 
 $urla = explode("?",$url);
 
-$url = $urla[0]."index.php?categorie=".$_GET['categorie']."#site6";
+ $url = $urla[0]."index.php?categorie=".$_GET['categorie']."&page=".$page."#site6";
 
 }
 
 
+}
+
+if($site6 == 0){
+if(isset($_GET['page'])){
+
+$url1 = explode("?",$url);
+
+$url = $url1[0]."/site6/?page=".$_GET['page']."&categorie=".$categorie1;
+
+if($site6a1 == 1){
+
+
+$url = str_replace("#site6/site6/","",$url);
+
+$url = $url."#site6";
+
+}
+
+
+}
+}
+
+ $site6ab1 = mb_substr_count($url, "/site6");
+
+if($site6a1 == 2){
+
+$url = str_replace("/site6/site6/","/site6",$url);
+
+}
+
+if($site6 == 0 && $nbpage ==0){
+
+ $url= str_replace("#site6","",$url);
+
+ $url = $url."?page=".$page."&categorie=".$categorie1."#site6";
 
 }
 
@@ -96,7 +161,7 @@ justify-content: space-around;
 
 echo " document.location = ' ";
 
-echo $lien."?categorie=1#site6";
+echo $lien."?categorie=1&page".$page."#site6";
 
 echo "'";
 
