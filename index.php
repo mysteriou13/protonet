@@ -97,6 +97,10 @@ include("./site1/index.php");
 </div>
 </div>
 
+<div>
+<a href ="./index.php">haut de la plage</a>
+</div>
+
 <div id = "site2" style = "border:1px solid black; background-color:white; margin:2%;">
 
 
