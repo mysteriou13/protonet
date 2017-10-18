@@ -276,7 +276,7 @@ justify-content:space-bettewen;
 <div onclick = "
 document.location = '#site';
 ">
-exemple de design
+design 
 </div>
 
 
