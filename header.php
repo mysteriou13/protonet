@@ -293,6 +293,14 @@ design3
 
 </div>
 
+<div onclick = "
+document.location = '#site4';
+">
+
+design4
+
+</div>
+
 </div>
 
 </div>
