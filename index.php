@@ -114,9 +114,13 @@ include("./site2/index.php");
 
 </div>
 
+<div id = "site3">
+<a href = "./index.php">haut de la page</a>
 </div>
 
-<div id = "site3" style = "border:1px solid black; background-color:white; margin:2%;">
+</div>
+
+<div id = "" style = "border:1px solid black; background-color:white; margin:2%;">
 <div id = "element" alt="Description"  >
 
 <?php 
