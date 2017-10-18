@@ -84,8 +84,6 @@ background-size :50%; 50%;
 </div>
 
 <div id = "site1" style = "border:1px solid black; background-color:white; ">
-
-
 <div id = "element"  alt="Description"  >
 
 <?php 
@@ -102,8 +100,6 @@ include("./site1/index.php");
 </div>
 
 <div id = "site2" style = "border:1px solid black; background-color:white; margin:2%;">
-
-
 <div id = "element"  >
 
 <?php 
@@ -113,7 +109,7 @@ include("./site2/index.php");
 ?>
 
 </div>
-
+</div>
 <div id = "site3">
 <a href = "./index.php">haut de la page</a>
 </div>
