@@ -307,6 +307,14 @@ document.location = '#site5';
 design5
 </div>
 
+
+<div onclick = "
+document.location = '#site6';
+">
+design6
+</div>
+
+
 </div>
 
 </div>
