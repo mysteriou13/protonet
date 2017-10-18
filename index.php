@@ -80,7 +80,7 @@ background-size :50%; 50%;
 
 <div id = "site">
 &nbsp;
-<a href = "./index.php"> haut de la place </a>
+<a href = "./index.php"> haut de la page </a>
 </div>
 
 <div id = "site1" style = "border:1px solid black; background-color:white; ">
@@ -98,7 +98,7 @@ include("./site1/index.php");
 </div>
 
 <div>
-<a href ="./index.php">haut de la plage</a>
+<a href ="./index.php">haut de la page</a>
 </div>
 
 <div id = "site2" style = "border:1px solid black; background-color:white; margin:2%;">
