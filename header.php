@@ -269,7 +269,7 @@ en ligne dans un monde toujours plus connecté
 
 <div style = "
 display:flex;
-justify-content:space-bettewen;
+justify-content:space-around;
 
 ">
 
@@ -279,6 +279,11 @@ document.location = '#site';
 design1 
 </div>
 
+<div onclick = "
+document.location = '#site2';
+">
+design2
+</div>
 
 </div>
 
