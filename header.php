@@ -254,6 +254,20 @@ margin-top:1%;
 color:white;
 ";
 >
+
+<div onclick = "
+document.location = '#tarif';
+"
+style = "
+display:flex;
+justify-content:center;
+";
+>
+<div>
+nos tarif
+</div>
+</div>
+
 <center>
 
 <p>
