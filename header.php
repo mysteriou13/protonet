@@ -301,6 +301,10 @@ design4
 
 </div>
 
+<div onclick = "
+document.location = '#site5';
+">
+design5
 </div>
 
 </div>
