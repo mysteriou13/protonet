@@ -235,7 +235,7 @@ en ligne dans un monde toujours plus connecté
 </p>
 
 <p>
-support tecchique a 30 euro par mois pour toute creation original <a href = "support.php" style = "color:white;">en savoir plus</a>
+support technique a 30 euro par mois pour toute creation original <a href = "support.php" style = "color:white;">en savoir plus</a>
 </p>
 
 </center>
