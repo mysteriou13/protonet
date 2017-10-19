@@ -235,7 +235,7 @@ en ligne dans un monde toujours plus connecté
 </p>
 
 <p>
-support a 30 euro par mois pour toute creation
+support a 30 euro par mois pour toute creation original
 </p>
 </center>
 
