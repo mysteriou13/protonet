@@ -293,4 +293,8 @@ design6
 </div>
 
 </header>
-
+<center>
+<?php 
+include("./formlogin.php");
+?>
+</center>

@@ -1,9 +1,11 @@
 
 <div style = "
- display: flex;
- flex-wrap: nowrap;
- margin-left:40%;
- font-size:2em;
+font-size:2em;
+display: flex;
+
+    justify-content: center;
+
+    align-items: center;
 ">
 <form method = "POST" action = "<?php $_SERVER['PHP_SELF']?>" >
 
