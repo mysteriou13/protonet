@@ -238,9 +238,12 @@ en ligne dans un monde toujours plus connecté
 </center>
 
 <div style = "
-display:flex;
-justify-content:space-around;
+">
 
+<div style = "
+display:flex;
+flex-wrap:wrap;
+justify-content:space-around;
 ">
 
 <div onclick = "
@@ -286,7 +289,7 @@ design6
 
 
 </div>
-
+</div>
 </div>
 
 </header>
