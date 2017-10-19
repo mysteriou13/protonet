@@ -19,6 +19,9 @@ $nb = mb_substr_count($monUrl, "#");
 
 ?>
 
+<center>
+</center>
+
 <?php
 include_once("./footer.php");
 ?>
