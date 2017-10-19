@@ -153,27 +153,6 @@ echo "justify-content: space-around;";
 ?>">accueil</a> 
 </div>
 
-<div>
-
-<?php
-
-$login = "./formlogin.php";
-
-if(!file_exists($login)){
-
-$login = "../formlogin.php";
-
-}
-
-if(!isset($_SESSION['pseudo'])){
-
-include_once($login);
-
-}
-
-?>
-</div>
-
 
 <div style = "display:<?php echo $block1;?>;" >
 
@@ -207,26 +186,6 @@ echo "background-color:gray;";
 
 <div>
 
-
-<div>
-<?php
-
-$login = "./formlogin.php";
-
-if(!file_exists($login)){
-
-$login = "../formlogin.php";
-
-}
-
-if(!isset($_SESSION['pseudo'])){
-
-include_once($login);
-
-}
-
-?>
-</div>
 
 <div style ="
 display: flex;
@@ -263,9 +222,6 @@ display:flex;
 justify-content:center;
 ";
 >
-<div>
-nos tarif
-</div>
 </div>
 
 <center>
