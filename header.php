@@ -15,6 +15,8 @@ $coloraccueil = null;
 
 $colorproduit = null;
 
+$support = null;
+
 if($base == "corsicanet" or $base == "index.php"){
 
 $coloraccueil =  "background-color:silver";
