@@ -254,37 +254,10 @@ justify-content:center;
 <center>
 
 <p id= "tech" align = "left">
-support technique a 30 euro par mois pour toute nos produit </br> <span 
-
-onclick = '
-if(document.getElementById("support").style.display =="none"){
-
-document.getElementById("support").style.display ="block";
-
-document.location="#support1";
-
-}
-'>
-
- <u> pour en savoir plus clicker ici</u> </span>
-</p>
-
-<p id = "support" style  = "display:none">
-
-support
-
-</br>
-
-<span onclick = '
-document.getElementById("support").style.display ="none";
-
-'>
-
-reduire
-
-</span>
+support technique a 30 euro par mois pour toute nos produit </br> <span>
 
 </p>
+
 </center>
 
 <div style = "
