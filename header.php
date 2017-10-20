@@ -237,7 +237,7 @@ en ligne dans un monde toujours plus connecté
 </p>
 
 <p>
-support technique a 30 euro par mois pour toute creation original </br> <span 
+support technique a 30 euro par mois pour toute nos produit </br> <span 
 
 onclick = '
 if(document.getElementById("support").style.display =="none"){
