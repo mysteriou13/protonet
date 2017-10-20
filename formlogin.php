@@ -1,9 +1,8 @@
 
 <div style = "
-font-size:2em;
 display: flex;
 
-    justify-content: center;
+    justify-content: flex-end;
 
     align-items: center;
 ">

@@ -199,6 +199,7 @@ margin-left:70%;
 <a href = "contact.php" style = "color:white"; >contact</a>
 </div>
 
+
 </div>
 
 </div>
@@ -215,6 +216,9 @@ margin-top:1%;
 color:white;
 ";
 >
+<?php
+include_once("./formlogin.php");
+?>
 
 <div onclick = "
 document.location = '#tarif';
