@@ -261,6 +261,8 @@ if(document.getElementById("support").style.display =="none"){
 
 document.getElementById("support").style.display ="block";
 
+document.location="#support1";
+
 }
 '>
 
