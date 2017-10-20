@@ -242,7 +242,8 @@ support technique a 30 euro par mois pour toute creation original </br> <span  s
  <span> <u>clicker ici</u> </span>
 </p>
 
-<p id = "support">
+<p id = "support" style  = "display = none">
+
 <p>
 </center>
 
