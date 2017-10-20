@@ -256,7 +256,7 @@ document.getElementById("support").style.display ="none";
 
 <p id = "support" style  = "display:none">
 support
-<p>
+</p>
 </center>
 
 <div style = "
