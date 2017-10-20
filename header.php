@@ -237,13 +237,25 @@ en ligne dans un monde toujours plus connecté
 </p>
 
 <p>
-support technique a 30 euro par mois pour toute creation original </br> <span  style = "color:white;">pour en savoir sur plus le support tecchinique</span>
+support technique a 30 euro par mois pour toute creation original </br> <span 
 
- <span onclick = ""> <u>clicker ici</u> </span>
+onclick = '
+if(document.getElementById("support").style.display =="none"){
+
+document.getElementById("support").style.display ="block";
+
+}else{
+
+document.getElementById("support").style.display ="none";
+
+}
+'>
+
+ <u>clicker ici</u> </span>
 </p>
 
-<p id = "support" style  = "display = none">
-
+<p id = "support" style  = "display:none">
+support
 <p>
 </center>
 
