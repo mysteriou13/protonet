@@ -244,10 +244,6 @@ if(document.getElementById("support").style.display =="none"){
 
 document.getElementById("support").style.display ="block";
 
-}else{
-
-document.getElementById("support").style.display ="none";
-
 }
 '>
 
@@ -255,7 +251,19 @@ document.getElementById("support").style.display ="none";
 </p>
 
 <p id = "support" style  = "display:none">
+
 support
+
+</br>
+
+<span onclick = '
+document.getElementById("support").style.display ="none";
+'>
+
+reduire
+
+</span>
+
 </p>
 </center>
 
