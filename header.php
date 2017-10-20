@@ -216,9 +216,30 @@ margin-top:1%;
 color:white;
 ";
 >
+
+<div style = 
+"display:flex;
+justify-content: space-around;
+">
+
+<div>
 <?php
-include_once("./formlogin.php");
+$text = "Je mets toutes mes comptences et mon savoir faire pour  concevoir et entretenir votre image
+
+en ligne dans un monde toujours plus connecté";
+$newtext = wordwrap($text, 50, "<br />\n");
+
+echo $newtext;
 ?>
+</div>
+
+<div>
+<?php 
+include("./formlogin.php");
+?>
+</div>
+
+</div>
 
 <div onclick = "
 document.location = '#tarif';
@@ -232,15 +253,7 @@ justify-content:center;
 
 <center>
 
-<p>
-
-Je mets toutes mes comptences et mon savoir faire pour  concevoir et entretenir votre image
- 
-en ligne dans un monde toujours plus connecté
-
-</p>
-
-<p>
+<p align = "left">
 support technique a 30 euro par mois pour toute nos produit </br> <span 
 
 onclick = '
@@ -328,7 +341,4 @@ design6
 
 </header>
 <center>
-<?php 
-include("./formlogin.php");
-?>
 </center>
