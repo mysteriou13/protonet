@@ -251,7 +251,7 @@ document.getElementById("support").style.display ="none";
 }
 '>
 
- <u>clicker ici</u> </span>
+ <u> pour en savoir plus clicker ici</u> </span>
 </p>
 
 <p id = "support" style  = "display:none">
