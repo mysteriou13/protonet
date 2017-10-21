@@ -24,7 +24,7 @@ $nb = mb_substr_count($monUrl, "#");
 
 <form>
 <center>
-<strong style = "color:white">
+<strong style = "color:white; font-size:2em">
 formulaire  de contact
 </strong>
 </br>
