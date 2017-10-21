@@ -158,7 +158,7 @@ echo "justify-content: space-around;";
 
 <div>
 
-&nbsp; &nbsp;<a href = "./contact.php" style = "color:white; font-size:2em;<?php
+&nbsp; &nbsp;<a href = "./contact.php#contact" style = "color:white; font-size:2em;<?php
 
 
 ?>">contact</a>
