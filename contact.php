@@ -20,5 +20,9 @@ $nb = mb_substr_count($monUrl, "#");
 
 ?>
 
+<div id = "contact">
+
+</div>
+
 </body>
 </html>
