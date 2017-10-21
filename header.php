@@ -222,7 +222,9 @@ color:white;
 justify-content: space-around;
 ">
 
-<div>
+<div style = "
+margin-right:5%;
+">
 <?php
 $text = "Je mets toutes mes comptences et mon savoir faire pour  concevoir et entretenir votre image
 
