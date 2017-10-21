@@ -56,8 +56,6 @@ justify-content: center;
 
 <div style = "
 height:100%;
-display:flex;
-justify-content: center;
 
 ">
 message
