@@ -23,6 +23,7 @@ $nb = mb_substr_count($monUrl, "#");
 <div id = "contact">
 <form>
 <input type = "text" name = "name">
+</br>
 
 </form>
 
