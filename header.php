@@ -156,6 +156,14 @@ echo "justify-content: space-around;";
 </div>
 
 
+<div>
+
+&nbsp; &nbsp;<a href = "./contact.php" style = "color:white; font-size:2em;<?php
+
+
+?>">contact</a>
+</div>
+
 <div style = "display:<?php echo $block1;?>;" >
 
 <a href = './parametre.php' style = 'color:white;
@@ -179,9 +187,14 @@ echo "background-color:gray;";
 <a href = './commande.php' style = 'color:white; font-size:2em;<?php echo $colorproduit ?>'> mes produits </a>
 
 </div>
+
 <div style = "display :<?php echo $block1;?>">
 
 <a href = "deconnection.php" style = "color:white; font-size:2em;"> deconnection </a>
+
+</div>
+
+<div>
 
 </div>
 
@@ -194,10 +207,6 @@ flex-direction: column;
 font-size:2em;
 margin-left:70%;
 ">
-<div>
-<a href = "contact.php" style = "color:white"; >contact</a>
-</div>
-
 
 </div>
 
