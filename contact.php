@@ -26,7 +26,10 @@ $nb = mb_substr_count($monUrl, "#");
 </br>
 <input type = "text" name = "email">
 </br>
-<input type = "text" name = "message">
+<textarea name="textarea" style = "height:50%; width:50%">
+
+</textarea>
+
 </form>
 
 </div>
