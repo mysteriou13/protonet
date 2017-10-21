@@ -29,6 +29,8 @@ $nb = mb_substr_count($monUrl, "#");
 <textarea name="textarea" style = "height:50%; width:50%">
 
 </textarea>
+</br>
+<input type = "submit">
 
 </form>
 
