@@ -179,7 +179,6 @@ echo "background-color:gray;";
 <a href = './commande.php' style = 'color:white; font-size:2em;<?php echo $colorproduit ?>'> mes produits </a>
 
 </div>
-
 <div style = "display :<?php echo $block1;?>">
 
 <a href = "deconnection.php" style = "color:white; font-size:2em;"> deconnection </a>
@@ -243,9 +242,15 @@ support technique a 30 euro par mois pour toute nos produit </br> <span>
 </div>
 
 <div>
+
 <?php 
+
+if(!isset($_SESSION['pseudo'])){
 include("./formlogin.php");
+}
+
 ?>
+
 </div>
 
 </div>
