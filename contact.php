@@ -24,19 +24,55 @@ $nb = mb_substr_count($monUrl, "#");
 
 <form>
 <center>
+<div style = "
+color:white;
+height:100%;
+display:flex;
+flex-direction:column;
+">
+
+<div>
 <strong style = "color:white; font-size:2em">
 formulaire  de contact
 </strong>
-</br>
-<input type = "text" name = "name">
-</br>
-<input type = "text" name = "email">
-</br>
+</div>
+
+<div style = "
+display:flex;
+justify-content: center;
+">
+
+<div>name</div> <input type = "text" name = "name">
+
+</div>
+
+<div style = "
+display:flex;
+justify-content: center;
+
+">
+ pseudo<input type = "text" name = "email">
+</div>
+
+<div style = "
+height:100%;
+display:flex;
+justify-content: center;
+
+">
+message
+
 <textarea name="textarea" style = "height:50%; width:50%">
 
 </textarea>
-</br>
+</div>
+
+<div>
 <input type = "submit">
+</div>
+
+</div>
+
 </center>
 
 </form>
