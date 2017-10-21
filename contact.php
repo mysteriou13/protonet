@@ -24,7 +24,9 @@ $nb = mb_substr_count($monUrl, "#");
 
 <form>
 <center>
+<strong>
 
+</strong>
 </br>
 <input type = "text" name = "name">
 </br>
