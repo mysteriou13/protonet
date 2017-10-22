@@ -14,6 +14,8 @@ $des1 = "cliquer pour agrandir";
 
  $monUrl = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
    $c =  mysqli_connect("localhost","root","elio13790","corsicanet"); 
+  $mysqli = new mysqli("localhost", "root", "elio13790", "corsicanet");
+
 $name = null;
 $email = null;
 
@@ -103,6 +105,18 @@ message
 <?php 
 
  $resul = $name+$email;
+
+  if($resul == 2){
+
+ $pseudo = $mysqli->real_escape_string($_POST['name']); 
+
+ $message = $mysqli->real_escape_string($_POST['textarea']); 
+
+ $mail = $mysqli->real_escape_string($_POST['email']);
+
+  $mysqli->query("INSERT into commentaire VALUES(NULL,'$pseudo','$mail','$message')");
+  
+   }
 
 ?>
 <input type = "submit">
