@@ -14,7 +14,7 @@ $des1 = "cliquer pour agrandir";
 
  $monUrl = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 
-
+$name = null;
 $nb = mb_substr_count($monUrl, "#");
 
 
