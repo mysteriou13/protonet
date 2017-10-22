@@ -78,6 +78,8 @@ echo "error email vide";
 if(isset($_POST['email']) && !empty($_POST['email'])){
 if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
 
+$email = 1;
+
 }else{
 echo "format email non valide";
 
