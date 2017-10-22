@@ -53,6 +53,12 @@ echo "error name vide";
 
 }
 
+if(isset($_POST['name']) && !empty($_POST['name'])){
+
+$name = 1;
+
+}
+
 ?>
 </div>
 
