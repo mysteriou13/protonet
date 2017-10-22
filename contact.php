@@ -61,9 +61,18 @@ justify-content: center;
 ">
  email<input type = "text" name = "email">
 <?php 
-if(isset($_POST['email']) && empty($_POST['name'])){
+if(isset($_POST['email']) && empty($_POST['email'])){
 
 echo "error email vide";
+
+}
+
+if(isset($_POST['email']) && !empty($_POST['email'])){
+if(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
+
+echo "format email no valide";
+
+}
 
 }
 ?>
