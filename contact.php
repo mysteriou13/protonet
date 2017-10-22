@@ -22,7 +22,8 @@ $nb = mb_substr_count($monUrl, "#");
 
 <div id = "contact">
 
-<form method = "POST">
+
+<form method = "POST" action = "<?php echo $_SERVER['PHP_SELF']."#contact"?>">
 <center>
 <div style = "
 color:white;
