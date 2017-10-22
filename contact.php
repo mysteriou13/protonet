@@ -100,6 +100,9 @@ message
 
 </textarea>
 </br>
+<?php 
+ $resul = $name+$email;
+?>
 <input type = "submit">
 </div>
 
