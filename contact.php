@@ -51,7 +51,7 @@ display:flex;
 justify-content: center;
 
 ">
- pseudo<input type = "text" name = "email">
+ email<input type = "text" name = "email">
 </div>
 
 <div style = "
