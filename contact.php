@@ -44,7 +44,14 @@ justify-content: center;
 ">
 
 <div>name</div> <input type = "text" name = "name">
+<?php 
+if(isset($_POST['name']) && empty($_POST['name'])){
 
+echo "error name vide";
+
+}
+
+?>
 </div>
 
 <div style = "
