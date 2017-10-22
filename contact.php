@@ -59,7 +59,7 @@ height:100%;
 
 ">
 message
-
+</br>
 <textarea name="textarea" style = "height:50%; width:50%">
 
 </textarea>
