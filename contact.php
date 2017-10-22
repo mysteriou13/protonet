@@ -63,9 +63,7 @@ message
 <textarea name="textarea" style = "height:50%; width:50%">
 
 </textarea>
-</div>
-
-<div>
+</br>
 <input type = "submit">
 </div>
 
