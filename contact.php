@@ -60,6 +60,13 @@ justify-content: center;
 
 ">
  email<input type = "text" name = "email">
+<?php 
+if(isset($_POST['email']) && empty($_POST['name'])){
+
+echo "error email vide";
+
+}
+?>
 </div>
 
 <div style = "
