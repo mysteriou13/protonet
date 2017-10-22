@@ -22,7 +22,7 @@ $nb = mb_substr_count($monUrl, "#");
 
 <div id = "contact">
 
-<form>
+<form method = "POST">
 <center>
 <div style = "
 color:white;
