@@ -63,7 +63,6 @@ $name = 1;
 
 ?>
 </div>
-
 <div style = "
 display:flex;
 justify-content: center;
@@ -90,6 +89,10 @@ echo "format email non valide";
 
 }
 ?>
+</div>
+
+<div>
+<input type = "file" name = "fichier">
 </div>
 
 <div style = "
