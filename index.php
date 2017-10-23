@@ -78,7 +78,7 @@ background-size :50%; 50%;
 </div>
 </div>
 
-<div id = "site">
+<div id = "site1">
 &nbsp;
 <a href = "./index.php"> haut de la page </a>
 </div>

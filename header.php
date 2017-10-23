@@ -284,7 +284,7 @@ justify-content:space-around;
 ">
 
 <div onclick = "
-document.location = 'index.php#site';
+document.location = 'index.php#site1';
 ">
 design1 
 </div>
