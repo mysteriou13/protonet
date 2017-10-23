@@ -78,7 +78,17 @@ display:flex;
 justify-content: center;
 
 ">
- email<input type = "text" name = "email">
+ email<input type = "text" name = "email" value = "
+<?php 
+
+if(isset($_POST['email']) && !empty($_POST['email'])){
+
+echo $_POST['email'];
+
+}
+
+?>
+">
 <?php 
 if(isset($_POST['email']) && empty($_POST['email'])){
 
