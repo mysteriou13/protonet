@@ -49,7 +49,15 @@ display:flex;
 justify-content: center;
 ">
 
-<div>name</div> <input type = "text" name = "name">
+<div>name</div> <input type = "text" name = "name" value = "
+<?php 
+if(isset($_POST['name']) && !empty($_POST['name'])){
+
+echo $_POST['name'];
+
+}
+?>
+">
 <?php 
 if(isset($_POST['name']) && empty($_POST['name'])){
 
