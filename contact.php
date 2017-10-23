@@ -162,6 +162,14 @@ height:100%;
 message
 </br>
 <textarea name="textarea" style = "height:50%; width:50%">
+<?php
+ 
+if(isset($_POST['textarea']) && !empty($_POST['textarea'])){
+
+echo $_POST['textarea'];
+
+}
+?>
 
 </textarea>
 </br>
