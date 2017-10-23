@@ -284,19 +284,19 @@ justify-content:space-around;
 ">
 
 <div onclick = "
-document.location = '#site';
+document.location = 'index.php#site';
 ">
 design1 
 </div>
 
 <div onclick = "
-document.location = '#site2';
+document.location = 'index.php#site2';
 ">
 design2
 </div>
 
 <div onclick = "
-document.location = '#site3';
+document.location = 'index.php#site3';
 ">
 
 design3
@@ -304,7 +304,7 @@ design3
 </div>
 
 <div onclick = "
-document.location = '#site4';
+document.location = 'index.php#site4';
 ">
 
 design4
@@ -312,14 +312,14 @@ design4
 </div>
 
 <div onclick = "
-document.location = '#site5';
+document.location = 'index.php#site5';
 ">
 design5
 </div>
 
 
 <div onclick = "
-document.location = '#site6';
+document.location = 'index.php#site6';
 ">
 design6
 </div>
