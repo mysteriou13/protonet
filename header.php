@@ -27,7 +27,7 @@ $coloraccueil =  "background-color:silver";
 
 if($base == "commande.php"){
 
-$colorproduit = "background-color:silver";
+$colorproduit = "background-color:gray";
 
 }
 
