@@ -251,10 +251,7 @@ $newtext = wordwrap($text, $wrap, "<br />\n");
 echo $newtext;
 ?>
 
-<p id= "tech" align = "left">
-support technique a 30 euro par mois pour toute nos produit </br> <span>
 
-</p>
 
 
 </div>
