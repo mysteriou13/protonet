@@ -15,6 +15,8 @@ $coloraccueil = null;
 
 $colorproduit = null;
 
+$colorproduit1 = null; 
+
 $support = null;
 
 if($base == "corsicanet" or $base == "index.php"){
