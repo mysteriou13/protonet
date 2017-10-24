@@ -244,8 +244,7 @@ $wrap = 300;
 }
 
 $text = "Je mets toutes mes comptences et mon savoir faire pour  concevoir et entretenir votre image
-
-en ligne dans un monde toujours plus connecté";
+         dans un monde toujours plus connecté";
 $newtext = wordwrap($text, $wrap, "<br />\n");
 
 echo $newtext;
