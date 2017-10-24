@@ -234,10 +234,19 @@ justify-content: space-around;
 margin-right:5%;
 ">
 <?php
+
+$wrap = 50;
+
+if(isset($_SESSION['pseudo'])){
+
+$wrap = 300;
+
+}
+
 $text = "Je mets toutes mes comptences et mon savoir faire pour  concevoir et entretenir votre image
 
 en ligne dans un monde toujours plus connecté";
-$newtext = wordwrap($text, 50, "<br />\n");
+$newtext = wordwrap($text, $wrap, "<br />\n");
 
 echo $newtext;
 ?>
