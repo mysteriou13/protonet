@@ -236,7 +236,7 @@ margin-right:5%;
 ">
 <?php
 
-$wrap = 50;
+$wrap = 90;
 
 if(isset($_SESSION['pseudo'])){
 
