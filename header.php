@@ -236,7 +236,7 @@ margin-right:5%;
 ">
 <?php
 
-$wrap = 90;
+$wrap = 120;
 
 if(isset($_SESSION['pseudo'])){
 
@@ -245,7 +245,11 @@ $wrap = 300;
 }
 
 $text = "Je mets toutes mes comptences et mon savoir faire pour  concevoir et entretenir votre image
-         dans un monde toujours plus connecté";
+         dans un monde toujours plus connecté nos produit:
+         </br>
+         mutlisupport: aussi agr&eacute;able sur pc tablette et telephone.</br>
+          
+";
 $newtext = wordwrap($text, $wrap, "<br />\n");
 
 echo $newtext;
