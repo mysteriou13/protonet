@@ -55,6 +55,12 @@ include("./site1/index.php");
 <a href ="./index.php">haut de la page</a>
 </div>
 
+<div>
+<strong>
+desgin2
+</strong>
+</div>
+
 <div  style = "border:1px solid black; background-color:white; margin:2%;">
 <div id = "element"  >
 
