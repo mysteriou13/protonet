@@ -30,7 +30,7 @@ pseudo:&nbsp;&nbsp; <?php  echo $_SESSION['pseudo']?>
 email:&nbsp;&nbsp; <?php  echo $row['email'];?>&nbsp;&nbsp;etat:
 <?php 
 if($row['verifemail'] == 0){
-echo "<a href ='verfiemail.php'> non verifi&eacute; </a>";
+echo "<a href ='verfiemail.php' style = 'color:white'> non verifi&eacute; </a>";
 
 }else{
 

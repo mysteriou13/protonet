@@ -1,4 +1,3 @@
-
 <html>
 <body>
 <?php 
@@ -9,8 +8,9 @@ $d = "mes produits -protonet";
 include_once("./head.php");
 include_once("./header.php");
 ?>
+</br>
 
-<div id = "conteneur">
+<div id = "contact">
 
 </div>
 

@@ -15,6 +15,8 @@ $coloraccueil = null;
 
 $colorproduit = null;
 
+$colorproduit1 = null; 
+
 $support = null;
 
 if($base == "corsicanet" or $base == "index.php"){
@@ -25,7 +27,7 @@ $coloraccueil =  "background-color:silver";
 
 if($base == "commande.php"){
 
-$colorproduit = "background-color:silver";
+$colorproduit = "background-color:gray";
 
 }
 
