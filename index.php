@@ -32,6 +32,13 @@ $nb = mb_substr_count($monUrl, "#");
 <a href = "./index.php"> haut de la page </a>
 </div>
 
+<div>
+<strong>
+design1
+</strong>
+
+</div>
+
 <div id = "site1" style = "border:1px solid black; background-color:white; ">
 <div id = "element"  alt="Description"  >
 
