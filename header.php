@@ -233,10 +233,11 @@ justify-content: space-around;
 <div style = "
 margin-left:5%;
 margin-right:5%;
+padding-left:2%;
 ">
 <?php
 
-$wrap = 120;
+$wrap = 90;
 
 if(isset($_SESSION['pseudo'])){
 
@@ -245,12 +246,25 @@ $wrap = 300;
 }
 
 $text = "Je mets toutes mes comptences et mon savoir faire pour  concevoir et entretenir votre image
-         dans un monde toujours plus connecté nos produit:
-         </br>
-         mutlisupport: aussi agr&eacute;able sur pc tablette et telephone.</br>
-          
+         dans un monde toujours plus connecté nos produits sont tous garantie:
+</br>
+</b>         
+<ul>
+<li>
+          navigation aussi agr&eacute;able , intuitif et rapide  sur pc tablette et telephone.
+ </li>
+ 
+<li>
+   s&eacute;curis&eacute;: la s&eacute;curit&eacute; n'est pas luxe, elle primordiale.</br></br>
+</li>
+
+<li>
+une assitance technique: vous ne serais jamais seul
+</li>
+
+</ul>      
 ";
-$newtext = wordwrap($text, $wrap, "<br />\n");
+$newtext = wordwrap($text, $wrap, "\n");
 
 echo $newtext;
 ?>
@@ -267,7 +281,6 @@ echo $newtext;
 if(!isset($_SESSION['pseudo'])){
 include("./formlogin.php");
 }
-
 ?>
 
 </div>
@@ -287,7 +300,7 @@ justify-content:center;
 <div style = "
 ">
 
-<div style = "
+<div id = "design" style = "
 display:flex;
 flex-wrap:wrap;
 justify-content:space-around;
