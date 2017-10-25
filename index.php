@@ -24,59 +24,8 @@ $nb = mb_substr_count($monUrl, "#");
 
 <center>
 
-<div style = "background-color:white; margin-bottom:3%; padding-bottom:3%; ">
-
-<div>
-<p style = "font-size:2em;" >
-
-des sites web:
-
-</p>
-<div style = "font-size:3em;">
-mutlisupport
-</div>
-
-<div style = "
-width:50%;
-height:50%;
-background-image:url(multisupport_footer.png);
-background-repeat: no-repeat;
-background-size :50%; 50%;
-">
 
 
-</div>
-
-<div style = "font-size:3em;">
-securis&eacute;
-</div>
-
-<div style = "
-width:50%;
-height:50%;
-background-image:url(icone-securite.png);
-background-repeat: no-repeat;
-background-size :50%; 50%;
-
-">
-
-</div>
-
-<div style = "font-size:3em;">
-avec un support technique
-</div>
-
-<div style = "
-width:50%;
-height:50%;
-background-image:url(support-technique_318-64401.jpg);
-background-repeat: no-repeat;
-background-size :50%; 50%;
-";>
-
-</div>
-</div>
-</div>
 
 <div id = "site1">
 &nbsp;
