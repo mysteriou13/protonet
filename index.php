@@ -72,10 +72,16 @@ include("./site2/index.php");
 
 </div>
 </div>
+
+</div>
+
+
 <div id = "site3">
 <a href = "./index.php">haut de la page</a>
 </div>
 
+<div>
+<strong>design3 </strong>
 </div>
 
 <div id = "" style = "border:1px solid black; background-color:white; margin:2%;">
@@ -92,6 +98,10 @@ include("./site3/index.php");
 
 <div id = "site4">
 <a href = "./index.php">haut de la page </a>
+</div>
+
+<div>
+<strong>design4</strong>
 </div>
 
 <div id = "" style = "border:1px solid black; background-color:white; margin:2%;">
