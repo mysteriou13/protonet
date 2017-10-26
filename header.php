@@ -19,6 +19,8 @@ $colorproduit1 = null;
 
 $support = null;
 
+$colorcontact = null;
+
 if($base == "protonet" or $base == "index.php"){
 
 $coloraccueil =  "background-color:silver";
@@ -31,6 +33,11 @@ $colorproduit = "background-color:gray";
 
 }
 
+if($base == "contact.php"){
+
+$colorcontact = "background-color:silver;";
+
+}
 $block = "none";
 
 if(isset($_SESSION['pseudo'])){
@@ -161,8 +168,9 @@ echo $coloraccueil;
 
 <div>
 
-&nbsp; &nbsp;<a href = "./contact.php#contact" style = "color:white; font-size:2em;<?php
+&nbsp; &nbsp;<a href = "./contact.php#contact1" style = "color:white; font-size:2em;<?php
 
+echo  $colorcontact;
 
 ?>">contact</a>
 </div>
