@@ -80,15 +80,15 @@ include("./site2/index.php");
 
 </div>
 
-
-<div id = "site3">
-<a href = "./index.php">haut de la page</a>
+</br>
+<div id = "site3" style = "background-color:gray;">
+<a href = "./index.php" style = "color:white; font-size:2em;">haut de la page</a>
 </div>
 
-<div>
+<div style = "background-color:gray; color:white; font-size:2em;">
 <strong>design3 </strong>
 </div>
-
+</br>
 <div id = "" style = "border:1px solid black; background-color:white; margin:2%;">
 <div id = "element" alt="Description"  >
 
