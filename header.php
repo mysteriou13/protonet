@@ -186,7 +186,7 @@ echo "background-color:gray;";
 
 <div style = "display :<?php echo $block1;?>" >
 
-<a href = './commande.php#command#commande' style = 'color:white; font-size:2em;<?php echo $colorproduit ?>'> mes produits </a>
+<a href = './commande.php#commande' style = 'color:white; font-size:2em;<?php echo $colorproduit ?>'> mes produits </a>
 
 </div>
 
