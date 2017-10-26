@@ -262,13 +262,19 @@ $text = "Je mets toutes mes comptences et mon savoir faire pour  concevoir et en
 <li>
           navigation aussi agr&eacute;able , intuitif et rapide  sur pc tablette et telephone.
  </li>
- 
+</br> 
 <li>
    s&eacute;curis&eacute;: la s&eacute;curit&eacute; n'est pas luxe, elle primordiale.</br></br>
 </li>
 
 <li>
-une assitance technique: vous ne serais jamais seul
+une assitance technique: vous ne serais jamais seul.
+</li>
+
+</br>
+
+<li>
+nous occupon de toute les formalité des hergement.
 </li>
 
 </ul>      
