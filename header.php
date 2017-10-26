@@ -31,6 +31,11 @@ $colorproduit = "background-color:silver";
 
 }
 
+if($base == "contact.php"){
+
+$colorcontact = "background-color:silver;";
+
+}
 $block = "none";
 
 if(isset($_SESSION['pseudo'])){
