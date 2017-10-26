@@ -18,11 +18,12 @@ include_once("./header.php");
 
 </div>
 
-<div onclick = "
-document.location='./parametre.php';
-">
-
+<div onclick = "document.location='./parametre.php';" style = "color:white; font-size:2em;">
+<center>
+<strong>
 haut depage
+</strong>
+<center>
 
 <div>
 
