@@ -17,6 +17,8 @@ $colorproduit = null;
 
 $support = null;
 
+$colorcontact = null;
+
 if($base == "protonet" or $base == "index.php"){
 
 $coloraccueil =  "background-color:silver";
