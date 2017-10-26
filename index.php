@@ -101,11 +101,11 @@ include("./site3/index.php");
 </div>
 </div>
 
-<div id = "site4">
-<a href = "./index.php">haut de la page </a>
+<div id = "site4" style = "background-color:gray;">
+<a href = "./index.php" style = "color:white; font-size:2em;">haut de la page </a>
 </div>
 
-<div>
+<div style = "background-color:gray; color:white; font-size:2em;">
 <strong>design4</strong>
 </div>
 
