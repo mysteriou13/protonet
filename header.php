@@ -258,8 +258,6 @@ $wrap = 300;
 
 $text = "Je mets toutes mes comptences et mon savoir faire pour  concevoir et entretenir votre image
          dans un monde toujours plus connecté nos produits sont tous garantie:
-</br>
-</b>         
 <ul>
 <li>
           navigation aussi agr&eacute;able , intuitif et rapide  sur pc tablette et telephone.
