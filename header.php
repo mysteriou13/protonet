@@ -19,7 +19,7 @@ $colorproduit1 = null;
 
 $support = null;
 
-if($base == "corsicanet" or $base == "index.php"){
+if($base == "protonet" or $base == "index.php"){
 
 $coloraccueil =  "background-color:silver";
 
@@ -151,8 +151,9 @@ echo "justify-content: space-around;";
 
 <div>
 
-&nbsp; &nbsp;<a href = "./index.php" style = "color:white; font-size:2em;<?php 
+&nbsp; &nbsp;<a href = "./index.php" style = "color:white; <?php ?> font-size:2em;<?php 
 
+echo $coloraccueil;
 
 ?>">accueil</a> 
 </div>
