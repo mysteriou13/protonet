@@ -159,7 +159,7 @@ echo $coloraccueil;
 
 <div>
 
-&nbsp; &nbsp;<a href = "./contact.php#contact" style = "color:white; font-size:2em;<?php
+&nbsp; &nbsp;<a href = "./contact.php#contact1" style = "color:white; font-size:2em;<?php
 
 
 ?>">contact</a>
