@@ -10,7 +10,7 @@ include_once("./header.php");
 ?>
 </br>
 
-<div  onclick = "document.location='./commande.php'">
+<div id = 'commande' onclick = "document.location='./commande.php'">
 
 haute de page
 
