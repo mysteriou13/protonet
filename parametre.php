@@ -14,7 +14,9 @@ include_once("./header.php");
 
  ?>
 
+<div id = "parametre2">
 
+</div>
 
 <div id  ="parametre">
 
