@@ -26,18 +26,20 @@ $nb = mb_substr_count($monUrl, "#");
 
 
 
-
-<div id = "site1">
+</br>
+<div id = "site1"  style = "background-color:gray;">
 &nbsp;
-<a href = "./index.php"> haut de la page </a>
+<a href = "./index.php" style = "color:white; font-size:2em;"> haut de la page </a>
 </div>
 
-<div>
+<div style = "color:white; font-size:2em; background-color:gray;">
 <strong>
 design1
 </strong>
 
 </div>
+
+</br>
 
 <div id = "site1" style = "border:1px solid black; background-color:white; ">
 <div id = "element"  alt="Description"  >
