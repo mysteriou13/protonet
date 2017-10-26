@@ -26,7 +26,7 @@ $nb = mb_substr_count($monUrl, "#");
 
 ?>
 </br>
-<div id = "contact1" onclick = "document.location ='./contact.php'">
+<div id = "contact1"  style= "color:white; font-size:2em;"onclick = "document.location ='./contact.php'">
 <center>
 <strong>haut de la page</strong>
 </center>
