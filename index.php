@@ -53,15 +53,18 @@ include("./site1/index.php");
 </div>
 </div>
 
-<div id = "site2">
-<a href ="./index.php">haut de la page</a>
-</div>
+</br>
 
-<div>
+<div id = "site2" style = "background-color:gray">
+<a href ="./index.php" style = "color:white; font-size:2em;">haut de la page</a>
+</div>
+<div style = "color:white; font-size:2em; background-color:gray">
 <strong>
 desgin2
 </strong>
 </div>
+
+</br>
 
 <div  style = "border:1px solid black; background-color:white; margin:2%;">
 <div id = "element"  >
