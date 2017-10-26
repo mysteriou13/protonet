@@ -139,11 +139,11 @@ include("./site5/index.php");
 </div>
 </div>
 
-<div id = "site6">
-<a href = "./index.php"> haut de page</a>
+<div id = "site6" style = "background-color:gray;">
+<a href = "./index.php" style = "color:white; font-size:2em"> haut de page</a>
 </div>
 
-<div>
+<div style = "background-color:gray; color:white; font-size:2em;">
 <strong>
 design6
 </strong>
