@@ -168,7 +168,7 @@ echo "justify-content: space-around;";
 
 <div style = "display:<?php echo $block1;?>;" >
 
-<a href = './parametre.php' style = 'color:white;
+<a href = './parametre.php#parametre2' style = 'color:white;
 
 <?php
 

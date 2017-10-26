@@ -18,6 +18,14 @@ include_once("./header.php");
 
 </div>
 
+<div onclick = "
+document.location='./parametre.php';
+">
+
+haut depage
+
+<div>
+
 <div id  ="parametre">
 
 <p id = "parametre1">
