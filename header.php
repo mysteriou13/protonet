@@ -256,7 +256,7 @@ $wrap = 300;
 }
 
 $text = "Je mets toutes mes comptences et mon savoir faire pour  concevoir et entretenir votre image
-           travers des  produit web unique et personnalisé.  pour tous nos site nous vous garantissons:
+           travers des  produits web unique et personnalisé.  pour tous nos sites nous vous garantissons:
 <ul>
 <li>
           une navigation aussi agr&eacute;able , intuitif et  fluide sur pc tablette et telephone.
