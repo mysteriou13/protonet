@@ -1,26 +1,21 @@
 
+
+
 <div style = "
-display: flex;
-
-    justify-content: flex-end;
-
-    align-items: center;
+margin-left:2%;
 ">
 <form method = "POST" action = "<?php $_SERVER['PHP_SELF']?>" >
 
-<div>
 connection
-</br>
+
+<label>
 pseudo
 
-<input style = "width:90%" type = "text" name = "pseudo"/>
-</div>
-
-<div>
+<input style = "width:20%" type = "text" name = "pseudo"/>
+</label>
 pass
 
-<input style = "width:90%" type = "password" name = "pass"/>
-</div>
+<input style = "width:20%" type = "password" name = "pass"/>
 
 <input type = "submit" style = "color:black;"/>
 
@@ -73,12 +68,8 @@ echo '</p>';
 
 ?>
 
-<div>
-
 <a href = "inscription.php#inscription" style = "color:white;">pas encore en membre? </a>
 
-</div>
 </form>
 
 </div>
-

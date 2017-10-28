@@ -23,7 +23,7 @@ $colorcontact = null;
 
 if($base == "protonet" or $base == "index.php"){
 
-$coloraccueil =  "background-color:silver";
+$coloraccueil =  "background-color:gray";
 
 }
 
@@ -204,19 +204,24 @@ echo "background-color:gray;";
 
 </div>
 
+<?php 
+include_once("./formlogin.php");
+?>
+
 <div>
 
 </div>
 
-<div>
-
+</div>
 
 <div style ="
 display: flex;
 flex-direction: column;
-font-size:2em;
-margin-left:70%;
+font-size:1em;
+margin-left:40%;
 ">
+
+</div>
 
 </div>
 
@@ -229,7 +234,6 @@ margin-left:70%;
 <div
 style = "
 padding-top:2%;
-font-size:2em;
 margin-top:1%;
 color:white;
 ";
@@ -241,10 +245,12 @@ justify-content: space-around;
 ">
 
 <div style = "
+font-size:2em;
 margin-left:5%;
 margin-right:5%;
 padding-left:2%;
 ">
+
 <?php
 
 $wrap = 90;
@@ -286,18 +292,11 @@ echo $newtext;
 ?>
 
 
-
-
 </div>
 
 <div>
 
-<?php 
 
-if(!isset($_SESSION['pseudo'])){
-include("./formlogin.php");
-}
-?>
 
 </div>
 
