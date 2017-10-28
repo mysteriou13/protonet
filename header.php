@@ -205,7 +205,9 @@ echo "background-color:gray;";
 </div>
 
 <?php 
+if(!isset($_SESSION['pseudo'])){
 include_once("./formlogin.php");
+}
 ?>
 
 <div>
