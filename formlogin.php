@@ -3,6 +3,7 @@
 
 <div style = "
 margin-left:2%;
+font-size:1em;
 ">
 <form method = "POST" action = "<?php $_SERVER['PHP_SELF']?>" >
 
