@@ -256,18 +256,20 @@ $wrap = 300;
 }
 
 $text = "Je mets toutes mes comptences et mon savoir faire pour  concevoir et entretenir votre image
-           travers des  produit unique et personnalisé. Nos produits sont tous garantie:
+           travers des  produit web unique et personnalisé.  pour tous nos site nous vous garantissons:
 <ul>
 <li>
-          navigation aussi agr&eacute;able , intuitif et rapide  sur pc tablette et telephone.
+          une navigation aussi agr&eacute;able , intuitif et  fluide sur pc tablette et telephone.
  </li>
 </br> 
 <li>
-   s&eacute;curis&eacute;: la s&eacute;curit&eacute; n'est pas luxe, elle primordiale.</br></br>
+   s&eacute;curis&eacute; &agrave; 100%;
 </li>
 
+</br>
+
 <li>
-une assitance technique: vous ne serais jamais seul.
+une assitance technique;
 </li>
 
 </br>
