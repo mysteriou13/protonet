@@ -144,7 +144,6 @@ color:white;
 <div style = "
 display:flex;
 flex-wrap: wrap;
-
 <?php 
 if(isset($_SESSION['pseudo'])){
 
@@ -257,7 +256,7 @@ $wrap = 300;
 }
 
 $text = "Je mets toutes mes comptences et mon savoir faire pour  concevoir et entretenir votre image
-         dans un monde toujours plus connecté nos produits sont tous garantie:
+           travers des  produit unique et personnalisé. Nos produits sont tous garantie:
 <ul>
 <li>
           navigation aussi agr&eacute;able , intuitif et rapide  sur pc tablette et telephone.
@@ -274,7 +273,7 @@ une assitance technique: vous ne serais jamais seul.
 </br>
 
 <li>
-nous occupon de toute les formalité des hergement.
+nous occupons de toutes les formalités d'hergement.
 </li>
 
 </ul>      
