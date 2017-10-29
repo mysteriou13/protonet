@@ -3,7 +3,7 @@
 
 $monUrl = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 
-$connect =  mysqli_connect("localhost","root","elio13790","corsicanet");
+$connect =  mysqli_connect("localhost","root","","corsicanet");
 
 $_SERVER['HTTP_HOST'];
 
