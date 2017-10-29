@@ -67,7 +67,7 @@ background-color:white;
 padding-top:1%;
 ">
 
-<form method = "POST" action = "<?php echo $_SERVER['PHP_SELF'];?>">
+<form method = "POST" action = "<?php echo $_SERVER['PHP_SELF']."#inscription"?>">
 
 <p
 style = "
@@ -310,9 +310,7 @@ echo "<center>valide</center>";
 
 <center>
 
-
 <?php 
-
 
 if($total == 5){
 if(isset($_POST['boot']) && empty($_POST['boot'])){
@@ -323,8 +321,7 @@ $pass = sha1($_POST['pass']);
 
 $email = $_POST['email'];
 
-
-mysqli_query($c,"INSERT INTO membre VALUES (NULL,'$pseudo','$pass','$email',0)");
+mysqli_query($c,"INSERT INTO membre VALUES ('','$pseudo','$pass','$email')");
 
 echo "
 <style>
@@ -349,9 +346,6 @@ document.getElementById('v').style.paddingBottom= '20%';
 
 }
 }
-
-
-
 
 ?>
 
