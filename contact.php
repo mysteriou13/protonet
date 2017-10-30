@@ -187,6 +187,14 @@ $resul = $resul+$fichier;
 
   if($resul == 2){
 
+  if(empty($link)){
+
+ $link = null;
+
+   }
+
+
+
  $pseudo = $mysqli->real_escape_string(htmlspecialchars($_POST['name'])); 
 
  $message = $mysqli->real_escape_string(htmlspecialchars($_POST['textarea'])); 
