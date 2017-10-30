@@ -6,6 +6,7 @@ margin-left:2%;
 font-size:1em;
 ">
 <form method = "POST" action = "<?php $_SERVER['PHP_SELF']?>" >
+<div style = "font-size:2em;">
 
 connection
 
@@ -69,7 +70,7 @@ echo '</p>';
 
 ?>
 
-
+</div>
 </form>
 
 </div>
