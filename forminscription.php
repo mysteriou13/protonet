@@ -1,7 +1,7 @@
 <div id = "inscription"
 style = "
 color:white;
-font-size:5em;
+font-size:1em;
 background-color:silver;
 ";
 >
