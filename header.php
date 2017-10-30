@@ -47,6 +47,8 @@ $colorinscription = "background-color:silver";
 
 }
 
+echo $base;
+
 $block = "none";
 
 if(isset($_SESSION['pseudo'])){
@@ -300,9 +302,12 @@ nous occupons de toutes les formalités d'hergement.
 
 </ul>      
 ";
+ 
 $newtext = wordwrap($text, $wrap, "\n");
 
-if($base == "index.php"){
+
+
+if($base == "index.php" or $base == "protonet"){
 
 echo $newtext;
 
