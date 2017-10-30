@@ -10,7 +10,7 @@ include_once("./header.php");
 ?>
 </br>
 
-<div style = "color:white; font-size:2em;" onclick = "document.location='./commande.php'">
+<div style = "color:white; font-size:1em;" onclick = "document.location='./commande.php'">
 
 <div id = "contact">
 
