@@ -193,7 +193,11 @@ $resul = $resul+$fichier;
 
    }
 
+if(empty($rename)){
 
+$rename = null;
+
+}
 
  $pseudo = $mysqli->real_escape_string(htmlspecialchars($_POST['name'])); 
 
