@@ -2,7 +2,6 @@
 style = "
 color:white;
 font-size:1em;
-background-color:silver;
 ";
 >
 <center>
