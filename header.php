@@ -175,7 +175,7 @@ echo $coloraccueil;
 
    <div>                                                                                           
                                                                                                 
-&nbsp; &nbsp;<a href = "inscription.php#inscription" style = "color:white; <?php ?> font-size:2em;<?php ?>">inscription</a> 
+&nbsp; &nbsp;<a href = "inscription.php#inscription" style = "color:white; font-size:2em;<?php echo $colorinscription; ?>">inscription</a> 
 </div> 
 
 
