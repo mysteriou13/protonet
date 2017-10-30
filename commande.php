@@ -11,12 +11,6 @@ include_once("./header.php");
 </br>
 
 <div style = "color:white; font-size:2em;" onclick = "document.location='./commande.php'">
-<center>
-<strong>
-haute de page
-</strong>
-</center>
-</div>
 
 <div id = "contact">
 
