@@ -344,6 +344,7 @@ justify-content:center;
 ">
 
 <div id = "design" style = "
+font-size:2em;
 display:flex;
 flex-wrap:wrap;
 justify-content:space-around;
@@ -351,7 +352,8 @@ justify-content:space-around;
 
 <div onclick = "
 document.location = 'index.php#site1';
-">
+"
+>
 design1 
 </div>
 
