@@ -282,7 +282,7 @@ $pass = sha1($_POST['pass']);
 
 $email = $_POST['email'];
 
-mysqli_query($c,"INSERT INTO membre VALUES ('','$pseudo','$pass','$email')");
+mysqli_query($c,"INSERT INTO membre VALUES ('','$pseudo','$pass','$email',0)");
 
 echo "
 <style>
