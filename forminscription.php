@@ -167,7 +167,7 @@ error pseudo vide
 <p style = "
 margin-left:20%;
 ">
-pass<input type = "password" name = "pass" style = " width:70%;">
+pass<input type = "password" name = "pass" style = " width:100%;">
 </p>
 
 
