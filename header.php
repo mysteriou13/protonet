@@ -40,6 +40,13 @@ if($base == "contact.php"){
 $colorcontact = "background-color:silver;";
 
 }
+
+if($base == "inscription.php"){
+
+$colorinscription = "background-color:silver";
+
+}
+
 $block = "none";
 
 if(isset($_SESSION['pseudo'])){
