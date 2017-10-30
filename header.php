@@ -290,7 +290,11 @@ nous occupons de toutes les formalités d'hergement.
 ";
 $newtext = wordwrap($text, $wrap, "\n");
 
+if($base == "index.php"){
+
 echo $newtext;
+
+}
 ?>
 
 
