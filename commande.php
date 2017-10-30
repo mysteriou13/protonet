@@ -20,6 +20,9 @@ haute de page
 
 <div id = "contact">
 
+<div id = "commande">
+
+</div>
 
 
 </div>
