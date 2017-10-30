@@ -195,7 +195,7 @@ echo $_POST['email'];
 
  ?>
 ";
-style = "width:70%;" >
+style = "width:100%;" >
 </p>
 
 
