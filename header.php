@@ -299,7 +299,6 @@ echo $newtext;
 <div>
 
 
-
 </div>
 
 </div>
