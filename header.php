@@ -21,6 +21,8 @@ $support = null;
 
 $colorcontact = null;
 
+$colorinscription = null;
+
 if($base == "protonet" or $base == "index.php"){
 
 $coloraccueil =  "background-color:gray";
