@@ -69,8 +69,6 @@ echo '</p>';
 
 ?>
 
-</br>
-<a href = "inscription.php#inscription" style = "color:white;">pas encore en membre? </a>
 
 </form>
 
