@@ -47,7 +47,6 @@ $colorinscription = "background-color:silver";
 
 }
 
-echo $base;
 
 $block = "none";
 
