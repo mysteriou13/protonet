@@ -10,7 +10,7 @@ include_once("./header.php");
 ?>
 </br>
 
-<div id = 'commande' style = "color:white; font-size:2em;" onclick = "document.location='./commande.php'">
+<div style = "color:white; font-size:2em;" onclick = "document.location='./commande.php'">
 <center>
 <strong>
 haute de page
