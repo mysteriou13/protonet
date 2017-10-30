@@ -22,6 +22,8 @@ haute de page
 
 <div id = "commande">
 
+mes produit
+
 </div>
 
 
