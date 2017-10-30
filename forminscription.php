@@ -63,7 +63,7 @@ margin-bottom:1%;
 >
 
 
-pseudo<input type = "text" name = "pseudo"
+pseudo<input type = "text"   name = "pseudo"
 
 value = "
 <?php 
@@ -77,7 +77,7 @@ echo $_POST['pseudo'];
 ?>
 ";
 
- style = "width:70%;">
+ style = "width:100%;">
 </p>
 
 <style>
