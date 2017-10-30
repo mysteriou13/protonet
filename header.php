@@ -295,6 +295,13 @@ if($base == "index.php"){
 echo $newtext;
 
 }
+
+if($base == "inscription.php"){
+
+include_once("./forminscription.php");
+
+}
+
 ?>
 
 
