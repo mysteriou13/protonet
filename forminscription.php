@@ -1,3 +1,29 @@
+<?php
+
+$valide1 = 0;
+
+$valide2 = 0;
+
+$valide3 = 0;
+
+$vide1 = 0;
+
+$vide2 = 0;
+
+$valide1 = 0;
+
+$valide2 = 0;
+
+$valide3 = 0;
+
+$vide1 = 0;
+
+$vide2 = 0;
+
+
+?>
+
+
 <div id = "inscription"
 style = "
 color:white;
