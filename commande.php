@@ -28,6 +28,10 @@ $selectproduit2 =$selectproduit1->fetch_assoc();
 
 mes produit
 
+</br>
+
+<p>commander un site</p>
+
 </div>
 
 
