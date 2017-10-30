@@ -164,12 +164,15 @@ echo $coloraccueil;
 ?>">accueil</a> 
 </div>
 
+   <div>                                                                                           
+                                                                                                
+&nbsp; &nbsp;<a href = "inscription.php#inscription" style = "color:white; <?php ?> font-size:2em;<?php ?>">inscription</a> 
+</div> 
+
 
 <div>
 
-&nbsp; &nbsp;<a href = "./contact.php#contact1" style = "color:white; font-size:2em;<?php
-
-echo  $colorcontact;
+&nbsp; &nbsp;<a href = "/inscription.php#inscription" style = "color:white; font-size:2em;<?php
 
 ?>">contact</a>
 </div>
