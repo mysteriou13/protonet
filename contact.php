@@ -14,8 +14,8 @@ $des1 = "cliquer pour agrandir";
 
   $monUrl = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 
-  $c =  mysqli_connect("localhost","root","elio13790","corsicanet"); 
-  $mysqli = new mysqli("localhost", "root", "elio13790", "corsicanet");
+  $c =  mysqli_connect("localhost","root","","corsicanet"); 
+  $mysqli = new mysqli("localhost", "root", "", "corsicanet");
 
 $name = null;
 $email = null;
@@ -185,7 +185,7 @@ echo $_POST['textarea'];
 $resul = $name+$email+$fichier;
 $resul = $resul+$fichier;
 
-  if($resul == 3){
+  if($resul == 2){
 
  $pseudo = $mysqli->real_escape_string(htmlspecialchars($_POST['name'])); 
 
@@ -199,7 +199,7 @@ $resul = $resul+$fichier;
  
  $rename2 = $mysqli->real_escape_string(htmlspecialchars($rename));
 
-  $mysqli->query("INSERT into commentaire VALUES(NULL,'$pseudo','$mail','$message','$lien','$name1','$rename2')");
+  $mysqli->query("INSERT into commentaire VALUES (NULL,'$pseudo','$mail','$message','$lien','$name1','$rename2')");
   
    }
 
