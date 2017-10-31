@@ -83,12 +83,16 @@ $image = "../220px-The_GNU_logo.png";
 
 $block1 = 'none';
 
+$block2 = 'block';
 
 if(isset($_SESSION['pseudo'])){
 
 $block1 = 'block';
 
+$block2 = 'none';
+
 }
+
 
 $space = null;
 
@@ -174,7 +178,7 @@ echo $coloraccueil;
 ?>">accueil</a> 
 </div>
 
-   <div>                                                                                           
+   <div style = "display:<?php echo $block2;?>">                                                                                          
                                                                                                 
 &nbsp; &nbsp;<a href = "inscription.php#inscription" style = "color:white; font-size:2em;<?php echo $colorinscription; ?>">inscription</a> 
 </div> 
