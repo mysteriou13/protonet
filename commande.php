@@ -26,15 +26,6 @@ $selectproduit2 =$selectproduit1->fetch_assoc();
 
 <div id = "commander1">
 
-<div id = "commande">
-
-mes commandes
-
-</br>
-
-<p onclick = "document.location= 'commandersite.php' "> pour commander un site clicker ici </p>
-
-</div>
 </div>
 
 </div>
