@@ -7,6 +7,8 @@ include("./hautepage.php");
 
 <div id = "contact">
 
+demander un devis
+
 <form method = "POST" action = "<?php echo $S_SERVER['PHP_SELF']?>">
 
 
