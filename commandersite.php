@@ -13,3 +13,6 @@ include("./hautepage.php");
 </form>
 
 </div>
+<?php 
+include_once("footer.php");
+?>
