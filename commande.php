@@ -26,7 +26,7 @@ $selectproduit2 =$selectproduit1->fetch_assoc();
 
 <div id = "commande">
 
-mes produit
+mes commandes
 
 </br>
 
