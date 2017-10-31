@@ -30,7 +30,7 @@ $selectproduit2 =$selectproduit1->fetch_assoc();
  mes produit
 </div>
 
-<div style = "font-size:2emfont-size:2em;;">
+<div style = "font-size:2em;">
 commander un site
 </div>
 
