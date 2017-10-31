@@ -26,11 +26,11 @@ $selectproduit2 =$selectproduit1->fetch_assoc();
 
 <div id = "commander1">
 
-<div>
+<div style = "font-size:2em;">
  mes produit
 </div>
 
-<div>
+<div style = "font-size:2emfont-size:2em;;">
 commander un site
 </div>
 
