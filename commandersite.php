@@ -51,3 +51,8 @@ site vitrine
 </div>
 </div>
 
+<?php
+
+include("./footer.php");
+
+ ?>
