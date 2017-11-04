@@ -17,10 +17,12 @@ demander un devis
 
 <div>
 
+boutique en ligne
+
 </div>
 
 <div>
-
+site vitrine
 </div>
 
 </div>
