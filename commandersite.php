@@ -32,9 +32,9 @@ width:40%;
 background-color:gray;
 
 ">
-
+<center>
 boutique en ligne
-
+</center>
 </div>
 
 <div
