@@ -45,7 +45,7 @@ background-color:gray;
 "
 
 >
-site vitrine
+<center>site vitrine</center>
 </div>
 
 </div>
