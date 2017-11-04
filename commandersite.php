@@ -13,15 +13,15 @@ demander un devis
 </center>
 </div>
 
-<center>
 
 <div style = "
+color:white;
 height:100%;
 display: flex;
+flex-direction: column;
 justify-content: space-around;
 
 ">
-
 <div style = "
 height:40%;
 width:40%;
@@ -45,7 +45,6 @@ site vitrine
 </div>
 
 </div>
-</center>
 
 </div>
 
