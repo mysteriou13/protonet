@@ -13,8 +13,9 @@ demander un devis
 </center>
 </div>
 
-<form method = "POST" action = "<?php echo $S_SERVER['PHP_SELF']?>">
-</form>
+<div style = "display:flex">
+
+</div>
 
 </div>
 <?php 
