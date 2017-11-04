@@ -327,11 +327,6 @@ include_once("./forminscription.php");
 
 </div>
 
-<div>
-
-
-</div>
-
 </div>
 
 <div onclick = "
