@@ -15,6 +15,14 @@ demander un devis
 
 <div style = "display:flex">
 
+<div>
+
+</div>
+
+<div>
+
+</div>
+
 </div>
 
 </div>
