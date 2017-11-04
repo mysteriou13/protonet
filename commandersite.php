@@ -4,7 +4,6 @@
 include("./hautepage.php");
 
 ?>
-
 <div id = "contact">
 
 <div style = "color:white; font-size:2em;">
@@ -16,8 +15,13 @@ demander un devis
 
 <div style = "
 color:white;
-height:100%;
+height:90%;
 display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
 flex-direction: column;
 justify-content: space-around;
 
@@ -45,9 +49,5 @@ site vitrine
 </div>
 
 </div>
-
 </div>
 
-<?php 
-include_once("footer.php");
-?>
