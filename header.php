@@ -125,7 +125,8 @@ padding-left:20%;
 
 >
 
-protonet
+
+vecchionet
 
 </div>
 
@@ -136,7 +137,7 @@ color:silver; font-size:2em;"
  >
 
 <center>
-cr&eacute;ateur de  site web 
+cr&eacute;ateur de  site web anti gafam;
 </center>
 
 </div>
@@ -180,7 +181,7 @@ echo $coloraccueil;
 
    <div style = "display:<?php echo $block2;?>">                                                                                          
                                                                                                 
-&nbsp; &nbsp;<a href = "inscription.php#inscription" style = "color:white; font-size:2em;<?php echo $colorinscription; ?>">inscription</a> 
+&nbsp; &nbsp;<a href = "" style = "color:white; font-size:2em;<?php echo $colorinscription; ?>">inscription</a> 
 </div> 
 
 
@@ -222,9 +223,7 @@ echo "background-color:gray;";
 </div>
 
 <?php 
-if(!isset($_SESSION['pseudo'])){
-include_once("./formlogin.php");
-}
+
 ?>
 
 <div>
