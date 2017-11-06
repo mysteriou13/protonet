@@ -27,6 +27,7 @@ $nb = mb_substr_count($monUrl, "#");
 
 
 </br>
+
 <div id = "site1"  style = "background-color:gray;">
 &nbsp;
 <a href = "./index.php" style = "color:white; font-size:2em;"> haut de la page </a>
@@ -41,19 +42,15 @@ design1
 
 </br>
 
-<div id = "site1" style = "border:1px solid black; background-color:white; ">
-<div id = "element"  alt="Description"  >
 
+<div style = "height:auto; margin-bottom:10%; background-color:white;">
 <?php 
 
 include("./site1/index.php");
 
 ?>
-
-</div>
 </div>
 
-</br>
 
 <div id = "site2" style = "background-color:gray">
 <a href ="./index.php" style = "color:white; font-size:2em;">haut de la page</a>
@@ -67,7 +64,7 @@ desgin2
 </br>
 
 <div  style = "border:1px solid black; background-color:white; margin:2%;">
-<div id = "element"  >
+<div id = ""  >
 
 <?php 
 

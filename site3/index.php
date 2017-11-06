@@ -1,5 +1,5 @@
 
-<link rel  = "stylesheet" href = "http://localhost/corsicanet/site3/style/style.css">
+<link rel  = "stylesheet" href = "./site3/style/style.css">
 
 <?php
 
