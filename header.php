@@ -104,10 +104,9 @@ $space = 'space-between;';
 
 
 ?>
-<div  style = " display: flex;">
+<div  style = "display: flex;">
 
 <div style = "
-
 background-image: url(<?php echo  $image;?>); background-repeat:no-repeat;background-size: 15%; 100%;
 margin-right: auto;
 margin-bottom:20px;
@@ -133,14 +132,14 @@ vecchionet
 <div>
 <div
 style = "
-color:silver; font-size:2em;"
+width:auto;
+color:silver; 
+font-size:1.5em;"
  >
 
-<center>
 cr&eacute;ateur de  site web anti gafam
-(En contruction)
+(En Construction)
 
-</center>
 
 </div>
 
@@ -189,7 +188,7 @@ echo $coloraccueil;
 
 <div>
 
-&nbsp; &nbsp;<a href = "./contact.php" style = "color:white; font-size:2em;<?php
+&nbsp; &nbsp;<a href = "" style = "color:white; font-size:2em;<?php
 
 ?>">contact</a>
 </div>
@@ -310,8 +309,7 @@ nous occupons de toutes les formalités d'hergement.
 $newtext = wordwrap($text, $wrap, "\n");
 
 
-
-if($base == "index.php" or $base == "protonet"){
+if($base == "index.php" or $base == "www.vecchionet.com"){
 
 echo $newtext;
 
