@@ -1,4 +1,7 @@
-<link rel  = "stylesheet" href = "http://localhost/protonet/site2/style/style.css">
+<link rel  = "stylesheet" href = "http://www.vecchionet.com/site2/style/style.css">
+
+
+
 
 <?php
 

@@ -43,16 +43,17 @@ design1
 </br>
 
 
-<div style = "height:auto; margin-bottom:10%; background-color:white;">
-<?php 
+<div style = "background-color:white;">
+<?php
 
 include("./site1/index.php");
 
 ?>
 </div>
+</div>
 
 
-<div id = "site2" style = "background-color:gray">
+<div id = "site2" style = "margin-top:5%; background-color:gray">
 <a href ="./index.php" style = "color:white; font-size:2em;">haut de la page</a>
 </div>
 <div style = "color:white; font-size:2em; background-color:gray">
@@ -60,8 +61,6 @@ include("./site1/index.php");
 desgin2
 </strong>
 </div>
-
-</br>
 
 <div  style = "border:1px solid black; background-color:white; margin:2%;">
 <div id = ""  >
@@ -162,7 +161,6 @@ include("./site6/index.php");
 
 <?php 
 
-include("footer.php");
 
 ?>
 

@@ -1,7 +1,7 @@
 
 
 
-
+               <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
                <style>
 .c{
@@ -23,14 +23,24 @@
 
 </style>
 
+<?php 
+      if (stristr($_SERVER['HTTP_USER_AGENT'], "Android")
+   || strpos($_SERVER['HTTP_USER_AGENT'], "iPod")
+   || strpos($_SERVER['HTTP_USER_AGENT'], "iPhone") )
+   {
+   
+    $c = "80";
+}else{
 
-     
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ $c = "60";
 
-    
+}
+
+?>
+
+<div style = "background-color:white;">    
 
 <div style = "
-background-image(http://www.vecchionet.com/coiffure.jpeg);
 background-repeat: no-repeat;
  background-size: 100%; 100%;
 ">
@@ -39,13 +49,11 @@ background-repeat: no-repeat;
 
 opacity:0.8;
 background-color:silver;
-    height: auto;
-
+    height: 10%;
+margin-bottom:2%;
    border: 2px solid;
 border-radius: 10px;
-margin-bottom:2%;
 
-padding-bottom:10%;
 
 
 ">
@@ -58,12 +66,9 @@ header
 
 opacity:0.8;
 
-height:80%;
-
+height: <?php echo $c?>%;
 
 background-color:silver;
-
-margin-bottom:2%;
 
 border: 2px solid;
 
@@ -77,21 +82,13 @@ article
 
 </div>
 
-<div style = "
-
-   word-wrap: break-word;
-    overflow:auto;
-        max-width: 100%;
-    height: auto;
-
-
+<div style = " 
 width:100%;
+height:20%;
 margin-top:2%;
 background-color:silver;
   border: 2px solid;
 border-radius: 10px;
-    font-size:2em;
-
 
 ">
 footer
