@@ -24,12 +24,23 @@
 </style>
 
 <?php 
+
       if (stristr($_SERVER['HTTP_USER_AGENT'], "Android")
    || strpos($_SERVER['HTTP_USER_AGENT'], "iPod")
    || strpos($_SERVER['HTTP_USER_AGENT'], "iPhone") )
    {
-   
-    $c = "20";
+  
+ 
+    $c = "80";
+
+ if($_SERVER['PHP_SELF'] == "/index.php"){
+
+ echo "dd";
+
+   $c = "20";
+
+  }  
+
 }else{
 
  $c = "60";
