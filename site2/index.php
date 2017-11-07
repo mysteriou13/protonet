@@ -1,6 +1,7 @@
 <link rel  = "stylesheet" href = "http://www.vecchionet.com/site2/style/style.css">
 
 
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
 
 <?php
