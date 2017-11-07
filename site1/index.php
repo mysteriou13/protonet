@@ -29,7 +29,7 @@
    || strpos($_SERVER['HTTP_USER_AGENT'], "iPhone") )
    {
    
-    $c = "80";
+    $c = "20";
 }else{
 
  $c = "60";
@@ -49,7 +49,7 @@ background-repeat: no-repeat;
 
 opacity:0.8;
 background-color:silver;
-    height: 10%;
+    height: 5%;
 margin-bottom:2%;
    border: 2px solid;
 border-radius: 10px;
@@ -84,7 +84,7 @@ article
 
 <div style = " 
 width:100%;
-height:20%;
+height:5%;
 margin-top:2%;
 background-color:silver;
   border: 2px solid;
