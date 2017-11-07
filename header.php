@@ -280,9 +280,19 @@ $wrap = 300;
 
 }
 
-$text = "Je mets toutes mes comptences et mon savoir faire pour  concevoir et entretenir votre image
+$text = "
+Je mets toutes mes comptences et mon savoir faire pour  concevoir et entretenir votre image
            travers des  produits web unique et personnalisé.</br> Pour tous nos sites nous vous garantissons:
 <ul>
+
+<li>
+
+respect de vos donn&eacute; priver: je ne  donne a perssonne vos information personnel saut obligation l&eacute;gale
+
+</li>
+
+</br>
+
 <li>
           une navigation aussi agr&eacute;able , intuitif et  fluide sur pc tablette et telephone.
  </li>
