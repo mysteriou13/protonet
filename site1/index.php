@@ -25,6 +25,10 @@
 
 <?php 
 
+$url = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; 
+
+echo $url;
+
       if (stristr($_SERVER['HTTP_USER_AGENT'], "Android")
    || strpos($_SERVER['HTTP_USER_AGENT'], "iPod")
    || strpos($_SERVER['HTTP_USER_AGENT'], "iPhone") )
@@ -33,9 +37,7 @@
  
     $c = "80";
 
- if($_SERVER['PHP_SELF'] == "/index.php"){
-
- echo "dd";
+ if($url == "http://www.vecchionet.com/index.php" or $url == "http://vecchionet.com/index.php"){
 
    $c = "20";
 
@@ -43,7 +45,7 @@
 
 }else{
 
- $c = "60";
+ $c = "70";
 
 }
 

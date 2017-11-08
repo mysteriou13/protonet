@@ -22,7 +22,6 @@ $nb = mb_substr_count($monUrl, "#");
 
 <div>
 
-<center>
 
 
 
@@ -157,7 +156,6 @@ include("./site6/index.php");
 </div>
 </div>
 
-</center>
 
 <?php 
 
