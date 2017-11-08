@@ -88,7 +88,6 @@ include_once($propos);
 
 include_once($accueil);
 
-include_once($aside);
 
 }
 ?>
