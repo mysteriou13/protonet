@@ -22,9 +22,6 @@ $nb = mb_substr_count($monUrl, "#");
 
 <div>
 
-
-
-
 </br>
 
 <div id = "site1"  style = "background-color:gray;">
@@ -161,6 +158,7 @@ include("./site6/index.php");
 
 
 ?>
+</div>
 
 </body>
 </html>
