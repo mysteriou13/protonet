@@ -1,8 +1,4 @@
 
-<div style = "
-margin:1%;
-border:1px solid black;
-width:100%;
-">
+<div id = "site3a6">
 contact
 </div>
