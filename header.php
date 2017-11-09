@@ -104,32 +104,17 @@ $space = 'space-between;';
 
 
 ?>
-<div  style = "display: flex;">
+<div  style = "display: flex;  color:silver; font-size:3em">
 
-<div style = "
-background-image: url(<?php echo  $image;?>); background-repeat:no-repeat;background-size: 15%; 100%;
-margin-right: auto;
-margin-bottom:20px;
-width: 600px;
-">
-
-
-<div
-
-style = "
-color:silver;
-font-size:5em;
-padding-left:20%;
-"
-
->
 
 
 vecchionet
 
 </div>
 
+
 <div>
+
 <div
 style = "
 width:auto;
@@ -145,7 +130,6 @@ cr&eacute;ateur de  site web anti gafam
 
 </div>
 
-</div>
 
 </div>
 
@@ -260,14 +244,11 @@ color:white;
 
 <div style = 
 "display:flex;
-justify-content: space-around;
+
 ">
 
 <div style = "
-font-size:2em;
-margin-left:5%;
-margin-right:5%;
-padding-left:2%;
+margin-left:2%;
 ">
 
 <?php
@@ -281,39 +262,22 @@ $wrap = 300;
 }
 
 $text = "
+<div style = 'font-size:1.5em;'>
 Je mets toutes mes comptences et mon savoir faire pour  concevoir et entretenir votre image
            travers des  produits web unique et personnalisé.</br> Pour tous nos sites nous vous garantissons:
-<ul>
+<p>
+une securit&eacute; &agrave; 100%;
+</p>
 
-<li>
-
-respect de vos donn&eacute; priver: je ne  donne a perssonne vos information personnel saut obligation l&eacute;gale
-
-</li>
-
-</br>
-
-<li>
-          une navigation aussi agr&eacute;able , intuitif et  fluide sur pc tablette et telephone.
- </li>
-</br> 
-<li>
-   s&eacute;curis&eacute; &agrave; 100%;
-</li>
-
-</br>
-
-<li>
+<p>
 une assitance technique;
-</li>
+</p>
 
-</br>
-
-<li>
+<p>
 nous occupons de toutes les formalités d'hergement.
-</li>
+</p>
+</div>
 
-</ul>      
 ";
  
 $newtext = wordwrap($text, $wrap, "\n");
