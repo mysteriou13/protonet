@@ -1,7 +1,3 @@
-<div style = "
-width:100%;
-margin:1%;
-border:1px solid black;
-">
+<div id = "site3a6">
 propos
 </div>
