@@ -3,7 +3,7 @@
 <center>
 <p id = "blanc" > 
 
-Votre text
+accueil.php
 
 </p>
 </center>
