@@ -84,7 +84,6 @@ include("./site2/index.php");
 </br>
 
 <div id = "" style = "border:1px solid black; background-color:white; margin:2%;">
-<div id = "" alt="Description"  >
 
 <?php 
 
@@ -92,7 +91,6 @@ include("./site3/index.php");
 
 ?>
 
-</div>
 </div>
 
 <div id = "site4" style = "background-color:gray;">

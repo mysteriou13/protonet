@@ -10,12 +10,11 @@ border:1px solid black;
 #site3a2{
 background-color:gray;
 
+height:50%;
+
 display: flex;
 
 flex-wrap: nowrap;
-
-height:80%;
-
 width:100%;
 
 
