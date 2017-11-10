@@ -55,8 +55,7 @@ $aside = $page."/site3/section/aside.php";
 <a href = "<?php echo $url?>"><?php echo  $des1; ?></a>
 </center>
 
-<div   alt="Description" >
-<div style = "background-color:gray; color:white; ">
+<div style = "background-color:gray;"  alt="Description" >
 <?php 
 
 include_once($header);
@@ -101,6 +100,5 @@ include_once($footer);
 
 
 
-</div>
 </div>
 

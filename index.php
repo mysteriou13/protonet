@@ -73,6 +73,7 @@ include("./site2/index.php");
 </div>
 
 </br>
+
 <div id = "site3" style = "background-color:gray;">
 <a href = "./index.php" style = "color:white; font-size:2em;">haut de la page</a>
 </div>
@@ -81,8 +82,9 @@ include("./site2/index.php");
 <strong>design3 </strong>
 </div>
 </br>
+
 <div id = "" style = "border:1px solid black; background-color:white; margin:2%;">
-<div id = "element" alt="Description"  >
+<div id = "" alt="Description"  >
 
 <?php 
 
