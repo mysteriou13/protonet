@@ -101,7 +101,7 @@ include("./site3/index.php");
 <strong>design4</strong>
 </div>
 
-<div id = "" style = "border:1px solid black; background-color:white; margin:2%;">
+<div style = "height:70%;">
 <div id = "element"  alt="Description" >
 
 <?php 

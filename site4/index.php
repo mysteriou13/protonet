@@ -47,14 +47,16 @@ $footer = $page."/site4/section/footer.php";
 
 ?>
 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
 <center>
 <a href = "<?php echo $url; ?>" ><?php echo  $des1;  ?></a>
 </center>
 
-<link rel = "stylesheet" href = "http://localhost/protonet/site4/style/style.css">
+<link rel = "stylesheet" href = "http://www.vecchionet.com/site4/style/style.css">
 
-<div id = "site4a7" style= "background-color:rgb(164,249,112);"  alt="Description"  >
-
+<div style= "background-color:rgb(164,249,112); "  alt="Description"  >
 <?php 
 
 include_once($header);
@@ -80,7 +82,6 @@ include($propos);
 }else{
 
 include($accueil);
-include($nav);
 }
 ?>
 </div>
@@ -88,4 +89,5 @@ include($nav);
 include($footer);
 
 ?>
+
 </div>
