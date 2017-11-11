@@ -5,11 +5,10 @@ votre titre
 </center>
 
 </div>
-
+</center>
 <div id = "site5menu">
-
+<center>
 <div style = "
-margin:1%;
 display: flex;
 justify-content: space-around;
 ">
@@ -67,6 +66,8 @@ echo "'";
 >
 a propos
 </div>
+
+</center>
 
 </div>
 

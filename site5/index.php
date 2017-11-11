@@ -47,6 +47,10 @@ $element = $page."/site5/section/element.php";
 
 <link rel = "stylesheet" href = "http://www.vecchionet.com/site5/style/style.css">
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">     
+
+
+
 <div id = "site5a1"  alt = "Description"  >
 
 <?php 
@@ -56,7 +60,6 @@ include($header);
 <div id = "site5a2">
 <?php
 include_once($element);
-include_once($nav);
 ?>
 </div>
 <?php 
