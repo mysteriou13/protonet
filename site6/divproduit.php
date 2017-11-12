@@ -14,23 +14,27 @@ $pageproduit = "./site6/pageproduit.php";
 
 }
 
+
+$c = $_GET['categorie'];
+
+if(empty($c)){
+
+$c = 1;
+
+} 
+
+ $lienproduit='http://www.vecchionet.com/site6/pageproduit.php?produit='.$s4.'&page='.$pagea.'&categorie='.$c;
 ?>
 
-
-
-<div  id = "site6a7" onclick = "
-reply(<?php echo $s4;?>,'produit','<?php echo $pageproduit;?>','<?php echo $categorie1; ?>',
-<?php echo $pagea;?>,)" >
-
+<div id = "site6a7">
+<a  href = "<?php echo $lienproduit?>">
 <?php
 
-if( $nb1 == 1){
 
 echo "clicker pour agrandir";
 
-}
 
 ?>
 
+</a>
 </div>
-
