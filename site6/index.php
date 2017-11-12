@@ -1,3 +1,6 @@
+
+     <link rel = "stylesheet" href = "http://www.vecchionet.com/site6/style/style.css">  
+
 <div id = "site6a1">
 
 <?php
@@ -24,9 +27,6 @@ $id = "pageproduit.php?product=".$d;
 ?>
 
 <script src="./javascript/reply_click.js" type="text/javascript"></script> 
-
-<link rel = "stylesheet" href = "http://localhost/corsicanet/site6/style/style.css" >
-
 
 <?php 
 
