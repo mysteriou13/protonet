@@ -1,6 +1,8 @@
-
+ 
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ 
      <link rel = "stylesheet" href = "http://www.vecchionet.com/site6/style/style.css">  
-
+   
 <div id = "site6a1">
 
 <?php
@@ -26,7 +28,7 @@ $id = "pageproduit.php?product=".$d;
 
 ?>
 
-<script src="./javascript/reply_click.js" type="text/javascript"></script> 
+<script src="http://www.vecchionet.com/index.php/protonet/site6/javascript/reply_click.js" type="text/javascript"></script> 
 
 <?php 
 
