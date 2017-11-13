@@ -3,6 +3,10 @@
  
      <link rel = "stylesheet" href = "http://www.vecchionet.com/site6/style/style.css">  
 
+<div style = "
+background-color:white;
+">
+
 <?php 
 $monUrl = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 
@@ -122,8 +126,7 @@ $categorie = $categorie."/site6/categorie.php";
 
 ?>
 
-<div >
-
+<div>
 <?php 
 
 include($categorie);
