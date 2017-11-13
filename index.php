@@ -141,23 +141,15 @@ design6
 </strong>
 </div>
 
-<div id = "site6"  style = "border:1px solid black; background-color:white; margin:2%;">
-<div id = "element"  alt="Description">
-
+<div style = "height:auto">
 <?php
 
 include("./site6/index.php");
 
  ?>
 
+
 </div>
-</div>
-
-
-<?php 
-
-
-?>
 </div>
 
 </body>

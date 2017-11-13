@@ -2,8 +2,67 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
  
      <link rel = "stylesheet" href = "http://www.vecchionet.com/site6/style/style.css">  
+
+<?php 
+$monUrl = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+
+ $url1 =  substr_count($monUrl, '/site6');
+
+?>
+
+
+<style>
+
+#site6a1{
+<?php 
+
+       if (stristr($_SERVER['HTTP_USER_AGENT'], "Android")
+   || strpos($_SERVER['HTTP_USER_AGENT'], "iPod")
+   || strpos($_SERVER['HTTP_USER_AGENT'], "iPhone") )
+   {
+   if($url1 == 1 ){
+   echo "height:100%";   
+    }
    
-<div id = "site6a1">
+}
+?>
+}
+
+
+
+#site6a6{
+  <?php                                                                                            
+    if (stristr($_SERVER['HTTP_USER_AGENT'], "Android")                                        
+   || strpos($_SERVER['HTTP_USER_AGENT'], "iPod")                                               
+   || strpos($_SERVER['HTTP_USER_AGENT'], "iPhone") )                                           
+   {
+    echo "height:auto";                                                                         
+  }    
+
+?>                                                                                         
+}  
+
+  #site6a7{                                                                                       
+
+<?php
+ 
+  if (stristr($_SERVER['HTTP_USER_AGENT'], "Android")                                           
+   || strpos($_SERVER['HTTP_USER_AGENT'], "iPod")                                               
+   || strpos($_SERVER['HTTP_USER_AGENT'], "iPhone") )                                           
+   {
+                                                                                                
+  echo "height:7%;";                                                                         
+                                                                                                
+}                                                                                               
+?>                                                                                                
+}
+
+
+<style>
+
+</style>
+
+   
 
 <?php
 
@@ -13,11 +72,9 @@ $site= "site6";
 
 if(file_exists('./site6/produit.php')){
 
-include_once("./site6/produit.php");
 
 }else{
 
-include_once("./produit.php");
 
 }
 
@@ -65,8 +122,7 @@ $categorie = $categorie."/site6/categorie.php";
 
 ?>
 
-<div id = "site6a3">
-<div id = "site6a6">
+<div >
 
 <?php 
 
@@ -74,7 +130,6 @@ include($categorie);
 
 ?>
 
-</div>
 
 </div>
 
@@ -132,4 +187,3 @@ include_once("./footer.php");
 
 
 ?>
-</div>

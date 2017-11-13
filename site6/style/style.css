@@ -42,15 +42,13 @@ height:40%;
 }
 
 #site6a6{
-
+height:100%;
  display: grid;
 
   grid-template-columns: repeat(4, 1fr);
   grid-gap: auto;
   grid-auto-rows: minmax(1%, auto);
-
-height:96%;
-
+height:100%;
 }
 
 #site6a7{

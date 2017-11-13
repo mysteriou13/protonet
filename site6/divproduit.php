@@ -1,4 +1,6 @@
 
+
+<div  style = "background-color:siler; height:30%; border:1px solid black; margin:1%; ">
 <?php 
 
 $nb1 = mb_substr_count($monUrl, "site6");
@@ -26,7 +28,6 @@ $c = 1;
  $lienproduit='http://www.vecchionet.com/site6/pageproduit.php?produit='.$s4.'&page='.$pagea.'&categorie='.$c;
 ?>
 
-<div id = "site6a7">
 <a  href = "<?php echo $lienproduit?>">
 <?php
 
