@@ -25,7 +25,39 @@
 
 <?php 
 
-$url = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; 
+$file = "./des.php";
+
+$site= "site1";
+
+if(file_exists($file)){
+include_once("./des.php");
+
+}
+
+if(file_exists("../des.php")){
+
+include_once("../des.php");
+
+}
+
+$lien3 = getcwd();
+
+$lien3 = str_replace("site1","",$lien3);
+
+$lien3 = $lien3."/fonction/url.php";
+
+include_once($lien3);
+
+
+$lien2 = new lien();
+
+$url =  $lien2->url("1");
+
+
+
+
+
+$url1 = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; 
 
       if (stristr($_SERVER['HTTP_USER_AGENT'], "Android")
    || strpos($_SERVER['HTTP_USER_AGENT'], "iPod")
@@ -35,7 +67,7 @@ $url = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
  
     $c = "80";
 
- if($url == "http://www.vecchionet.com/index.php" or $url == "http://vecchionet.com/index.php"){
+ if($url1 == "http://www.vecchionet.com/index.php" or $url1 == "http://vecchionet.com/index.php"){
 
    $c = "20";
 
@@ -48,6 +80,13 @@ $url = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 }
 
 ?>
+
+
+<center>
+<a href = "<?php echo $url;?>"><?php echo $des1?></a>
+</center>
+
+
 
 <div style = "background-color:white;">    
 

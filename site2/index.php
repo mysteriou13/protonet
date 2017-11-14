@@ -49,6 +49,7 @@ $propos = $page."/site2/section/propos.php";
 $footer = $page."/site2/section/footer.php";
 
 ?>
+
 <center>
 <a href = "<?php echo $url;?>"><?php echo $des1?></a>
 </center>
