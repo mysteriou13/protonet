@@ -10,12 +10,11 @@ border:1px solid black;
 #site3a2{
 background-color:gray;
 
-height:80%;
+height:90%;
 
 display: flex;
 
 flex-wrap: nowrap;
-width:100%;
 
 
 }
@@ -24,7 +23,7 @@ width:100%;
 
 width:20%;
 
-height:80%;
+height:100%;
 
 border:1px solid black;
 
