@@ -184,7 +184,7 @@ error pass vide
 </br>
 
 <p
-style = "margin-left:20%;"
+style = "color:white; margin-left:20%;"
 >
 email <input type = "text" name = "email" 
 value = "
