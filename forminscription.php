@@ -57,6 +57,7 @@ padding-top:1%;
 
 <p
 style = "
+color:white;
 margin-left:20%;
 margin-bottom:1%;
  ";
