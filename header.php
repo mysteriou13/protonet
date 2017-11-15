@@ -173,7 +173,7 @@ echo $coloraccueil;
 
 <div>
 
-&nbsp; &nbsp;<a href = "" style = "color:white; font-size:2em;<?php
+&nbsp; &nbsp;<a href = "./contact.php" style = "color:white; font-size:2em;<?php
 
 ?>">contact</a>
 </div>
