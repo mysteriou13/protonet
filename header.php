@@ -3,6 +3,7 @@
 
 $monUrl = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 
+
 $connect =   new mysqli("localhost","root","","corsicanet");
 
 $_SERVER['HTTP_HOST'];
@@ -166,7 +167,7 @@ echo $coloraccueil;
 
    <div style = "display:<?php echo $block2;?>">                                                                                          
                                                                                                 
-&nbsp; &nbsp;<a href = "" style = "color:white; font-size:2em;<?php echo $colorinscription; ?>">inscription</a> 
+&nbsp; &nbsp;<a href = "./inscription.php" style = "color:white; font-size:2em;<?php echo $colorinscription; ?>">inscription</a> 
 </div> 
 
 
@@ -283,11 +284,12 @@ nous occupons de toutes les formalités d'hergement.
 $newtext = wordwrap($text, $wrap, "\n");
 
 
-if($base == "index.php" or $base == "vecchionet.com" or $base == "www.vecchionet.com"){
+if($base == "index.php" or $base == "protonet" or $base == "www.vecchionet.com"){
 
 echo $newtext;
 
 }
+
 
 if($base == "inscription.php"){
 
@@ -313,6 +315,16 @@ justify-content:center;
 </div>
 
 <div style = "
+<?php
+
+if($base == "index.php" or $base =="protonet" or $base == "http://www.vecchionet.com"){
+echo "display:block;";
+}else{
+
+echo "display:none";
+
+}
+?>
 ">
 
 <div id = "design" style = "
