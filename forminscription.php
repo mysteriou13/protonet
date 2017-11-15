@@ -167,6 +167,7 @@ error pseudo vide
 </br>
 
 <p style = "
+text-align:center;
 color:white;
 margin-left:20%;
 ">
@@ -185,7 +186,7 @@ error pass vide
 </br>
 
 <p
-style = "color:white; margin-left:20%;"
+style = " text-align:center; color:white; margin-left:20%;"
 >
 email <input type = "text" name = "email" 
 value = "
