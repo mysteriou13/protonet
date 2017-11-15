@@ -34,7 +34,17 @@ echo "erro connect";
 
 }
 
+?>
 
+<div id = "contact">
+<?php 
+
+include("./forminscription.php");
+
+?>
+</div>
+
+<?php
 include_once("./footer.php");
 
 ?>
