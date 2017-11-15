@@ -166,9 +166,11 @@ error pseudo vide
 </br>
 
 <p style = "
+color:white;
 margin-left:20%;
 ">
-pass<input type = "password" name = "pass" style = " width:100%;">
+pass
+<input type = "password" name = "pass" style = " width:100%;">
 </p>
 
 
