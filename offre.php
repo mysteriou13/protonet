@@ -11,7 +11,9 @@ include("./hautepage.php");
 <div id = "contact">
 
 <h1>
-offre web
+
+<center> offre web</center>
+
 </h1>
 
 </div>
