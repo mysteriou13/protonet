@@ -86,11 +86,15 @@ $block1 = 'none';
 
 $block2 = 'block';
 
+$block3 = 'block';
+
 if(isset($_SESSION['pseudo'])){
 
 $block1 = 'block';
 
 $block2 = 'none';
+
+$block3 = 'none'; 
 
 }
 
@@ -170,6 +174,13 @@ echo $coloraccueil;
 &nbsp; &nbsp;<a href = "./inscription.php" style = "color:white; font-size:2em;<?php echo $colorinscription; ?>">inscription</a> 
 </div> 
 
+&nbsp;&nbsp;
+
+<div style = "display;<?php echo $block3;?>">
+
+<a href = "" style = "color:white; font-size:2em;">connection</a>
+
+</div>
 
 <div>
 
