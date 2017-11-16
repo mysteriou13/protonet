@@ -14,6 +14,10 @@ include("./hautepage.php");
 
 <center> offre web</center>
 
+<p>
+
+</p>
+
 </h1>
 
 </div>
