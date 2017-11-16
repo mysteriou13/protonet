@@ -10,7 +10,7 @@ include("./hautepage.php");
 
 <div id = "contact">
 
-<h1>
+<h1 style = "color:white;">
 
 <center> offre web</center>
 
