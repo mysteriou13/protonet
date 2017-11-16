@@ -14,11 +14,12 @@ include("./hautepage.php");
 
 <center> offre web</center>
 
-<p style = "background-color:gray; height:80%;">
+</h1>
 
+<p style = "background-color:gray; height:80%;">
+ddd
 </p>
 
-</h1>
 
 </div>
 <?php
