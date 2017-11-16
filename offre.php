@@ -16,7 +16,7 @@ include("./hautepage.php");
 
 </h1>
 
-<p style = "background-color:gray; height:80%;">
+<p style = " text-align:center; height:80%;">
 ddd
 </p>
 
