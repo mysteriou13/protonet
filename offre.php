@@ -14,7 +14,7 @@ include("./hautepage.php");
 
 <center> offre web</center>
 
-<p>
+<p style = "background-color:gray; height:80%;">
 
 </p>
 
