@@ -327,7 +327,7 @@ justify-content:center;
 <div style = "
 <?php
 
-if($base == "index.php" or $base =="protonet" or $base == "http://www.vecchionet.com"){
+if($base == "index.php" or $base =="protonet" or $base == "www.vecchionet.com"){
 echo "display:block;";
 }else{
 
