@@ -16,10 +16,13 @@ include("./hautepage.php");
 
 </h1>
 
-<p style = " text-align:center; color:white; height:80%;">
-ddd
-</p>
+<p style = " margin-left:20%; margin-right:30%; text-align:center; color:white; height:80%;">
 
+<strong>
+dd
+</strong>
+
+</p>
 
 </div>
 <?php
