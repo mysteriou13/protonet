@@ -1,6 +1,6 @@
 
 
-<div  style = "background-color:siler; height:30%; border:1px solid black; margin:1%; ">
+<div  style = "background-color:siler; height:15%; border:1px solid black; margin:1%; ">
 <?php 
 
 $nb1 = mb_substr_count($monUrl, "site6");
