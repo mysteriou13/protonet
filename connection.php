@@ -7,6 +7,8 @@ include_once("./hautepage.php");
 
 ?>
 
+<div id = "contact">
+</div>
 
 <?php 
 
