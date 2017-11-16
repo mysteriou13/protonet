@@ -178,7 +178,7 @@ echo $coloraccueil;
 
 <div style = "display;<?php echo $block3;?>">
 
-<a href = "" style = "color:white; font-size:2em;">connection</a>
+<a href = "./connection.php" style = "color:white; font-size:2em;">connection</a>
 
 </div>
 
