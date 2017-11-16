@@ -8,8 +8,7 @@ include("./hautepage.php");
 
 ?>
 
-<div id = "contenueur">
-
+<div id = "contact">
 
 </div>
 <?php
