@@ -174,6 +174,16 @@ echo $coloraccueil;
 &nbsp; &nbsp;<a href = "./inscription.php" style = "color:white; font-size:2em;<?php echo $colorinscription; ?>">inscription</a> 
 </div> 
 
+&nbsp; &nbsp;
+
+<div>
+
+<a style = "font-size:2em; color:white;" href = "offre.php">
+offre
+</a>
+
+</div>
+
 &nbsp;&nbsp;
 
 <div style = "display;<?php echo $block3;?>">
