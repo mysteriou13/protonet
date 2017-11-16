@@ -2,6 +2,12 @@
 <html>
 <body>
 
+<?php 
+
+include("./hautepage.php");
+
+?>
+
 <div id = "contenueur">
 
 
