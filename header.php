@@ -127,9 +127,7 @@ color:silver;
 font-size:1.5em;"
  >
 
-cr&eacute;ateur de  site web anti gafam
-(En Construction)
-
+cr&eacute;ateur de siteweb pour pc tablette et telephone(En construction)
 
 </div>
 
@@ -179,7 +177,7 @@ echo $coloraccueil;
 <div>
 
 <a style = "font-size:2em; color:white;" href = "offre.php">
-offre
+offre web
 </a>
 
 </div>
