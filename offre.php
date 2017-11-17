@@ -8,7 +8,10 @@ include("./hautepage.php");
 
 ?>
 
-<div id = "contact" style = "height:100%">
+<div id = "contact" style = "height:100%; padding-top:1%;">
+
+<div style = "margin-left:20%;  margin-right:30%; color:white; height:auto;">
+
 
 <h1 style = "color:white;">
 
@@ -16,13 +19,35 @@ include("./hautepage.php");
 
 </h1>
 
-<p style = " margin-left:20%; margin-right:30%; text-align:center; color:white; height:80%;">
+<h2>
+<center>
+30 euros/mois
+</center>
+</h2>
 
-<strong>
-dd
-</strong>
+<h3>
+<ul>
+<span style = "text-align:left;">
+<li>
+creation  de site adapter pour  pc tablette et telephone.
+</li>
+</br>
+<li>
+suivi tout long de la creation du site.
+</li>
+</br>
+<li>
+assitance techinique.
+</li>
+</br>
+<li>
+r&eacute;f&eacute;rencement de votre site dans les moteurs de recherche
+</li>
 
-</p>
+</span>
+</ul>
+</h3>
+</div>
 
 </div>
 <?php
