@@ -27,7 +27,7 @@ include("./hautepage.php");
 
 <h3>
 <ul>
-<span style = "text-align:left;">
+<p style = "text-align:left;">
 <li>
 creation  de site adapter pour  pc tablette et telephone.
 </li>
@@ -43,8 +43,8 @@ assitance techinique.
 <li>
 r&eacute;f&eacute;rencement de votre site dans les moteurs de recherche
 </li>
+</p>
 
-</span>
 </ul>
 </h3>
 </div>
