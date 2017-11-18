@@ -61,7 +61,7 @@ echo "inscription.php";
 
 <div id = "connection">
 
-
+</div>
 
 </p>
 
