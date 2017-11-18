@@ -6,7 +6,7 @@ margin-left:2%;
 font-size:1em;
 ">
 <form method = "POST" action = "./index.php" >
-<div style = "font-size:2em; color:white;">
+<div style = "font-size:1em; color:white;">
 
 connection
 </br>
