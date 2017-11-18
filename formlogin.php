@@ -7,6 +7,7 @@ font-size:1em;
 ">
 <form method = "POST" action = "./index.php" >
 <div style = "font-size:1em; color:white;">
+<center>
 
 connection
 </br>
@@ -70,6 +71,8 @@ echo '</p>';
 }
 
 ?>
+
+</center>
 
 </div>
 </form>
