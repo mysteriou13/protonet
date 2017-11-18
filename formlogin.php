@@ -6,7 +6,7 @@ margin-left:2%;
 font-size:1em;
 ">
 <form method = "POST" action = "./index.php" >
-<div style = "font-size:1em; color:white;">
+<div style = "font-size:2em; color:white; height:100%;">
 <center>
 
 connection
@@ -14,12 +14,12 @@ connection
 <label>
 pseudo
 </br>
-<input style = "width:20%" type = "text" name = "pseudo"/>
+<input style = "width:100%" type = "text" name = "pseudo"/>
 </label>
 </br>
 pass
 </br>
-<input style = "width:20%" type = "password" name = "pass"/>
+<input style = "width:100%" type = "password" name = "pass"/>
 </br>
 <input type = "submit" style = "color:black;"/>
 
