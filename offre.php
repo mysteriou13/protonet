@@ -48,7 +48,7 @@ r&eacute;f&eacute;rencement de votre site dans les moteurs de recherche
 
 <a href = "
 <?php 
-if(isset($_SESSION['pseudo'])){
+if(!isset($_SESSION['pseudo'])){
 
 echo "inscription.php";
 
