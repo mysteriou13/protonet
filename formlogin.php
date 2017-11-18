@@ -9,16 +9,17 @@ font-size:1em;
 <div style = "font-size:2em;">
 
 connection
-
+</br>
 <label>
 pseudo
-
+</br>
 <input style = "width:20%" type = "text" name = "pseudo"/>
 </label>
+</br>
 pass
-
+</br>
 <input style = "width:20%" type = "password" name = "pass"/>
-
+</br>
 <input type = "submit" style = "color:black;"/>
 
 
