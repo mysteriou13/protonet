@@ -59,7 +59,10 @@ echo "inscription.php";
 
 </center>
 
-<div id = "connection">
+<div id = "connection" style = "display:none">
+<?php 
+include_once("./formlogin.php");
+?>
 
 </div>
 
