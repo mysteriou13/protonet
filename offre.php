@@ -46,16 +46,19 @@ r&eacute;f&eacute;rencement de votre site dans les moteurs de recherche
 
 <center>
 
-<a href = "
-<?php 
-if(!isset($_SESSION['pseudo'])){
+<div onclick = "
+<?php
 
-echo "inscription.php";
+if(!isset($_PSEUDO['pseudo'])){
+
+echo "document.getElementById('connection').style.display = 'block';";
 
 }
 
 ?>
-" style = "color:white;">commander</a>
+">
+commander ici
+</div>
 
 </center>
 
