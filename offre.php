@@ -43,6 +43,22 @@ assitance techinique.
 <li>
 r&eacute;f&eacute;rencement de votre site dans les moteurs de recherche
 </li>
+
+<center>
+
+<a href = "
+<?php 
+if(isset($_SESSION['pseudo'])){
+
+echo "inscription.php";
+
+}
+
+?>
+" style = "color:white;">commander</a>
+
+</center>
+
 </p>
 
 </ul>
