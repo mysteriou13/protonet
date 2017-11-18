@@ -59,6 +59,10 @@ echo "inscription.php";
 
 </center>
 
+<div id = "connection">
+
+
+
 </p>
 
 </ul>
