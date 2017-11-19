@@ -29,7 +29,7 @@ include("./hautepage.php");
 <ul>
 <p style = "text-align:left;">
 <li>
-creation  de site adapter pour  pc tablette et telephone.
+un site adapter pour  pc tablette et telephone.
 </li>
 </br>
 <li>
