@@ -52,7 +52,7 @@ aucun engagement
 <div onclick = "
 <?php
 
-if(!isset($_PSEUDO['pseudo'])){
+if(!isset($_SESSION['pseudo'])){
 
 echo "document.getElementById('connection').style.display = 'block';";
 
