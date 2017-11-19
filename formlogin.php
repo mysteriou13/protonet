@@ -22,7 +22,7 @@ pass
 <input style = "width:100%" type = "password" name = "pass"/>
 </br>
 <input type = "submit" style = "color:black;"/>
-
+</br>
 
 <?php
 
