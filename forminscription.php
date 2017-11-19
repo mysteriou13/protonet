@@ -59,7 +59,6 @@ padding-top:1%;
 style = "
 text-align:center;
 color:white;
-margin-left:20%;
 margin-bottom:1%;
  ";
 >
@@ -169,7 +168,6 @@ error pseudo vide
 <p style = "
 text-align:center;
 color:white;
-margin-left:20%;
 ">
 pass
 <input type = "password" name = "pass" style = " width:100%;">
@@ -186,7 +184,7 @@ error pass vide
 </br>
 
 <p
-style = " text-align:center; color:white; margin-left:20%;"
+style = " text-align:center; color:white; "
 >
 email <input type = "text" name = "email" 
 value = "
