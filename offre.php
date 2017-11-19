@@ -63,6 +63,11 @@ commander ici
 </center>
 
 <div id = "connection" style = "display:none">
+
+<center>
+connecter vous pour commander un site
+</center>
+
 <?php 
 include_once("./formlogin.php");
 ?>
