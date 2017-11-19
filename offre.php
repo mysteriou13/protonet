@@ -77,6 +77,11 @@ include_once("./formlogin.php");
 
 </div>
 
+<div id  = "commande">
+
+
+</div>
+
 </p>
 
 </ul>
