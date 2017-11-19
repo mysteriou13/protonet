@@ -184,7 +184,7 @@ offre web
 
 &nbsp;&nbsp;
 
-<div style = "display;<?php echo $block3;?>">
+<div style = "display;<?php echo $block2;?>">
 
 <a href = "./connection.php" style = "color:white; font-size:2em;">connection</a>
 
