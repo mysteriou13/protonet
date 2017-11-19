@@ -23,7 +23,7 @@ pass
 </br>
 <input type = "submit" style = "color:black;"/>
 </br>
-
+<a style = "color:white; font-size:1em;" href = "inscription.php"> pas encore membre ?</a>
 <?php
 
 if(isset($_POST['pseudo']) && empty($_POST['pseudo'])){
