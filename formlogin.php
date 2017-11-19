@@ -5,7 +5,7 @@
 margin-left:2%;
 font-size:1em;
 ">
-<form method = "POST" action = "./index.php" >
+<form method = "POST" action = "<?php echo $_SERVER['PHP_SELF']?>" >
 <div style = "font-size:1em; color:white; height:100%;">
 <center>
 
@@ -36,7 +36,6 @@ echo '</p>';
 
 if(isset($_POST['pseudo']) && !empty($_POST['pseudo']) && isset($_POST['pass']) && !empty($_POST['pass']) ){
 
-
 $v = $_POST['pseudo'];
 
 $p = sha1($_POST['pass']);
@@ -49,7 +48,7 @@ if($sql2[0]){
 
 $_SESSION['pseudo'] = $_POST['pseudo'];
 
-header('Location:index.php');
+header("location:./index.php");
 
 }else{
 
