@@ -56,6 +56,10 @@ if(!isset($_SESSION['pseudo'])){
 
 echo "document.getElementById('connection').style.display = 'block';";
 
+}else{
+
+echo "document.getElementById('commande').style.display = 'block'";
+
 }
 
 ?>
@@ -78,8 +82,9 @@ include_once("./formlogin.php");
 </div>
 
 <div id  = "commande" style = "display:none">
-
 <form>
+
+
 
 </form>
 
