@@ -79,6 +79,10 @@ include_once("./formlogin.php");
 
 <div id  = "commande" style = "display:none">
 
+<form>
+
+</form>
+
 </div>
 
 </p>
