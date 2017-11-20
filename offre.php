@@ -85,6 +85,7 @@ include_once("./formlogin.php");
 <p>
 
 commande de site 
+<input type = "checkbox" name = "vitirine">
 
 </p>
 
