@@ -84,7 +84,7 @@ justify-content: space-around;
 
 echo " document.location = ' ";
 
-echo $lien."?categorie=1&page".$page."#site6";
+echo $lien."?categorie=1&page=".$_GET['page'];
 
 echo "'";
 
@@ -101,7 +101,8 @@ cat&eacute;gorie 1
 
 echo " document.location = ' ";
 
-echo $lien."?categorie=2&page".$page."#site6";
+echo $lien."?categorie=2&page=".$_GET['page'];
+
 
 echo "'";
 
@@ -111,12 +112,14 @@ echo "'";
 cat&eacute;gorie 2
 </div>
 
+
 <div id = "categorie3" onclick = "
 <?php
 
 echo " document.location = ' ";
 
-echo $lien."?categorie=3&page".$page."#site6";
+echo $lien."?categorie=3&page=".$_GET['page'];
+
 
 echo "'";
 
@@ -128,19 +131,6 @@ cat&eacute;gorie 3
 
 </div>
 
-<div id = "categorie4" onclick = "
-<?php
-
-echo " document.location = ' ";
-
-echo $lien."?categorie=4&page".$page."#site6";
-
-echo "'";
-
-?>
-">
-cat&eacute;gorie 4
-</div>
 
 </div>
 
