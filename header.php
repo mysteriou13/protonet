@@ -303,7 +303,7 @@ nous occupons de toutes les formalités d'hergement.
 $newtext = wordwrap($text, $wrap, "\n");
 
 
-if($base == "index.php" or $base == "protonet" or $base == "www.vecchionet.com"){
+if($base == "index.php" or $base == "protonet" or $base == "www.vecchionet.com" or $base == "vecchionet.com"){
 
 echo $newtext;
 
