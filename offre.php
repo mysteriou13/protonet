@@ -56,6 +56,9 @@ if(!isset($_SESSION['pseudo'])){
 
 echo "document.getElementById('connection').style.display = 'block';";
 
+}else{
+
+
 }
 
 ?>
@@ -83,7 +86,7 @@ include_once("./formlogin.php");
 
 <input type = "checkbox" id = "vitrine">
 </br>
-<input type = "checkoutbox" id = "boutique">
+<input type = "checkbox" id = "boutique">
 </form>
 
 </div>
