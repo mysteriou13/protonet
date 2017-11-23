@@ -82,6 +82,7 @@ include_once("./formlogin.php");
 <form>
 
 <input type = "checkbox" id = "vitrine">
+</br>
 
 </form>
 
