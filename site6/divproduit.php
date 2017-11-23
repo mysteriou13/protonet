@@ -1,9 +1,10 @@
 
 
-<div  style = "background-color:siler; height:10%; border:1px solid black; margin:1%; ">
+<div  style = "background-color:white; padding-bottom:30%;  border:1px solid black; margin:1%;  ">
 <?php 
 
 $nb1 = mb_substr_count($monUrl, "site6");
+
 
 if($nb1 == 1){
 
@@ -17,25 +18,40 @@ $pageproduit = "./site6/pageproduit.php";
 }
 
 
+if(isset($_GET['categorie'])){
+
 $c = $_GET['categorie'];
 
-if(empty($c)){
+}else{
 
 $c = 1;
 
-} 
+}
 
- $lienproduit='http://www.vecchionet.com/site6/pageproduit.php?produit='.$s4.'&page='.$pagea.'&categorie='.$c;
+
+
+ $lienproduit=$url;
+
+ if(!isset($_GET['categorie'])){
+  $lienproduit = $lienproduit."/pageproduit.php?categorie=1&page=1&produit=".$s4;
+  }else{
+   $lienproduit = $lienproduit."&produit=".$s4;
+   $lienproduit =  str_replace("index.php","site6/pageproduit.php",$lienproduit);
+}
+  
+$lienproduit = str_replace("#site6","",$lienproduit);
+
+$lienproduit = str_replace("/site6/site6","/site6",$lienproduit);
+
 ?>
 
 <a  href = "<?php echo $lienproduit?>">
 <?php
 
 
-echo "clicker pour agrandir";
-
+echo  "cliquer pour agrandir";
 
 ?>
-
 </a>
+
 </div>

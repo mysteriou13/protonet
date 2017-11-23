@@ -23,7 +23,7 @@ include_once("./header.php");
 nom du produit
 </p>
 
-<div style = " font-size:2em;  border:3px  dashed;  height:70%;  width:40%;   background-repeat:no-repeat;  background-size: 100% 100%">
+<div style = " font-size:2em;  border:3px  dashed;  height:50%;  width:98%;   background-repeat:no-repeat;  background-size: 100% 100%">
 
 <p>
 

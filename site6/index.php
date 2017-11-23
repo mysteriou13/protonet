@@ -123,6 +123,15 @@ $categorie = str_replace("site6","",$categorie);
 
 $categorie = $categorie."/site6/categorie.php";
 
+if(isset($_GET['categorie']) && !empty($_GET['categorie'])){
+
+$categorie1 = $_GET['categorie'];
+
+}else{
+
+$categorie1 = 1;
+
+}
 
 ?>
 

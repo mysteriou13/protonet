@@ -30,13 +30,12 @@ $nbpage = mb_substr_count($monUrl, "?page");
 $pageproduit = "pageproduit.php";
 
 
-if($produit == 1){
 
-echo "</br>produit</br>";
+if($produit == 1){
 
 $u = explode("pageproduit.php",$monUrl);
 
-echo  $url = $u[0]."#site6";
+$url = $u[0]."#site6";
 
 }
 
@@ -55,8 +54,65 @@ $url =  $lien2->url("6");
 
 $lien = "http://".$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];
 
-
  $site6ab1 = mb_substr_count($url, "/site6");
+
+if($nb == 0){
+
+$ancre6 = "#site6";
+
+$lien = str_replace("site6","index.php", $lien);
+
+}else{
+
+$ancre6 = null;
+
+}
+
+if(isset($_GET['page'])){
+
+ $pageb = $_GET['page'];
+
+}else{
+
+$pageb = 1;
+
+}
+
+if(isset($_GET['categorie']) && !empty($_GET['categorie']) ){
+$url1 = explode("?",$url);
+
+if($nb == 0){
+
+$url1 = $url1[0]."/site6/index.php"."?"."categorie=".$_GET['categorie']."&page=".$_GET['page'];
+
+$url = $url1;
+
+}
+
+if($nb == 1){
+
+   $url1 = $url1[0];
+
+   $url = str_replace("#site6","",$url);
+  
+   $url1 = $url."?categorie=".$_GET['categorie']."&page=".$_GET['page']."#site6";
+   
+    $url = $url1;
+
+}
+}
+
+if($produit == 1){
+
+$url = str_replace("index.php","site6/index.php",$url);
+
+$url = str_replace("#site6","",$url);
+
+$lien = str_replace("pageproduit","index",$lien);
+
+$lien = $lien."?categorie=".$_GET['categorie']."&page=".$_GET['page'];
+
+}
 
 ?>
 
@@ -84,7 +140,7 @@ justify-content: space-around;
 
 echo " document.location = ' ";
 
-echo $lien."?categorie=1&page=".$_GET['page'];
+echo $lien."?categorie=1&page=".$pageb.$ancre6;
 
 echo "'";
 
@@ -94,6 +150,12 @@ echo "'";
 ">
 
 cat&eacute;gorie 1
+
+</br>
+<?php 
+
+
+?>
 </div>
 
 <div id = "categorie2" onclick ="
@@ -101,7 +163,7 @@ cat&eacute;gorie 1
 
 echo " document.location = ' ";
 
-echo $lien."?categorie=2&page=".$_GET['page'];
+echo $lien."?categorie=2&page=".$pageb.$ancre6;
 
 
 echo "'";
@@ -118,7 +180,7 @@ cat&eacute;gorie 2
 
 echo " document.location = ' ";
 
-echo $lien."?categorie=3&page=".$_GET['page'];
+echo $lien."?categorie=3&page=".$pageb.$ancre6;
 
 
 echo "'";
