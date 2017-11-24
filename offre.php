@@ -82,7 +82,7 @@ include_once("./formlogin.php");
 
 <div id  = "commande" style = "display:none; font-size:1em; ">
 
-<form  method = "POST"  action = "" id = "formcommande">
+<form  method = "POST"  action = "" id = "formcommande" style = "border:1px solid black">
 
 site vitrine <input type = "checkbox" id = "vitrine">
 </br>
