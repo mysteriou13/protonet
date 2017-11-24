@@ -80,7 +80,7 @@ include_once("./formlogin.php");
 
 </div>
 
-<div id  = "commande" style = "display:none">
+<div id  = "commande" style = "display:none; font-size:1em; ">
 
 <form>
 
