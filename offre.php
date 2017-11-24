@@ -82,11 +82,12 @@ include_once("./formlogin.php");
 
 <div id  = "commande" style = "display:none; font-size:1em; ">
 
-<form>
+<form id = "formcommande">
 
 site vitrine <input type = "checkbox" id = "vitrine">
 </br>
 boutique<input type = "checkbox" id = "boutique">
+
 </form>
 
 </div>
