@@ -88,7 +88,7 @@ site vitrine <input type = "checkbox" id = "vitrine">
 </br>
 boutique<input type = "checkbox" id = "boutique">
 </br>
-
+<input type = "submit"  value = "envoyer">
 </form>
 
 </div>
