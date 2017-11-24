@@ -1,4 +1,3 @@
-
 <html>
 <body>
 
@@ -81,16 +80,13 @@ include_once("./formlogin.php");
 
 </div>
 
-<div id  = "commande" style = "display:none; ">
-<p>
+<div id  = "commande" style = "display:none; font-size:1em; ">
 
-commande de site 
-<input type = "checkbox" name = "vitirine">
+<form  method = "POST"  action = "" id = "formcommande">
 
-</p>
-
-<form>
-
+site vitrine <input type = "checkbox" id = "vitrine">
+</br>
+boutique<input type = "checkbox" id = "boutique">
 
 </form>
 
