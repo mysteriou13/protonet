@@ -57,7 +57,7 @@ echo "document.getElementById('connection').style.display = 'block';";
 
 }else{
 
-echo "document.getElementById('commande').style.display = 'block'";
+echo "document.getElementById('commande').style.display = 'block';  document.location = '#formcommande'";
 
 }
 
@@ -82,11 +82,16 @@ include_once("./formlogin.php");
 
 <div id  = "commande" style = "display:none; font-size:1em; ">
 
-<form  method = "POST"  action = "" id = "formcommande">
-
+<form  method = "POST"  action = "" id = "formcommande" style = "border:1px solid black; background-color:gray;">
+<center>
+fornulaire de precommande
+</br>
 site vitrine <input type = "checkbox" id = "vitrine">
 </br>
 boutique<input type = "checkbox" id = "boutique">
+</br>
+<input type = "submit"  value = "envoyer">
+</center>
 
 </form>
 
