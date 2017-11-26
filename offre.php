@@ -84,6 +84,8 @@ include_once("./formlogin.php");
 
 <form  method = "POST"  action = "" id = "formcommande" style = "border:1px solid black; background-color:gray;">
 <center>
+fornulaire de precommande
+</br>
 site vitrine <input type = "checkbox" id = "vitrine">
 </br>
 boutique<input type = "checkbox" id = "boutique">
