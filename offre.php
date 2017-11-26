@@ -57,7 +57,7 @@ echo "document.getElementById('connection').style.display = 'block';";
 
 }else{
 
-echo "document.getElementById('commande').style.display = 'block'";
+echo "document.getElementById('commande').style.display = 'block';  document.location = '#formcommande'";
 
 }
 
