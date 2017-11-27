@@ -82,13 +82,23 @@ include_once("./formlogin.php");
 
 <div id  = "commande" style = "display:none; font-size:1em; ">
 
-<form  method = "POST"  action = "" id = "formcommande" style = "border:1px solid black; background-color:gray;">
+<form  method = "POST"  action = "<?php 
+if(isset($_POST['site']) && !empty($_POST['site'])){
+
+echo "commandevalide.php";
+
+}
+
+  ?>
+" id = "formcommande" style = "border:1px solid black; background-color:gray;">
 <center>
 fornulaire de precommande
 </br>
-site vitrine <input type = "checkbox" id = "vitrine">
+type de site
 </br>
-boutique<input type = "checkbox" id = "boutique">
+<input type= "radio" name="site" value="jour"> site vitrine
+</br>
+<input type= "radio" name="site" value="nuit"> boutique en ligne
 </br>
 <input type = "submit"  value = "envoyer">
 </center>
