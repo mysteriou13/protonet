@@ -87,6 +87,10 @@ if(isset($_POST['site']) && !empty($_POST['site'])){
 
 echo "commandevalide.php";
 
+}else{
+
+echo $_SERVER['PHP_SELF']."#formcommande";
+
 }
 
   ?>
