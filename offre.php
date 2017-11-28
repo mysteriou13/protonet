@@ -80,7 +80,22 @@ include_once("./formlogin.php");
 
 </div>
 
-<div id  = "commande" style = "display:none; font-size:1em; ">
+<?php 
+
+$display = "none";
+
+if(isset($_SESSION['pseudo']) && ! empty($_SESSION['pseudo'])){
+
+$display = "block";
+
+
+
+}
+
+
+?>
+
+<div id  = "commande" style = "display:<?php echo $display; ?>; font-size:1em; ">
 
 <form  method = "POST"  action = "<?php 
 if(isset($_POST['site']) && !empty($_POST['site'])){
