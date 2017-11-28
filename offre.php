@@ -14,7 +14,7 @@ include("./hautepage.php");
 
 <h1 style = "color:white;">
 
-<center> offre web</center>
+<center id = "connection1"> offre web</center>
 
 </h1>
 
@@ -53,7 +53,7 @@ aucun engagement
 
 if(!isset($_SESSION['pseudo'])){
 
-echo "document.getElementById('connection').style.display = 'block';";
+echo "document.getElementById('connection').style.display = 'block'; document.location = '#connection1'";
 
 }else{
 
@@ -80,15 +80,44 @@ include_once("./formlogin.php");
 
 </div>
 
-<div id  = "commande" style = "display:none; font-size:1em; ">
+<?php 
 
-<form  method = "POST"  action = "" id = "formcommande" style = "border:1px solid black; background-color:gray;">
+$display = "none";
+
+if(isset($_SESSION['pseudo']) && ! empty($_SESSION['pseudo'])){
+
+$display = "block";
+
+
+
+}
+
+
+?>
+
+<div id  = "commande" style = "display:<?php echo $display; ?>; font-size:1em; ">
+
+<form  method = "POST"  action = "<?php 
+if(isset($_POST['site']) && !empty($_POST['site'])){
+
+echo "commandevalide.php";
+
+}else{
+
+echo $_SERVER['PHP_SELF']."#formcommande";
+
+}
+
+  ?>
+" id = "formcommande" style = "border:1px solid black; background-color:gray;">
 <center>
 fornulaire de precommande
 </br>
-site vitrine <input type = "checkbox" id = "vitrine">
+type de site
 </br>
-boutique<input type = "checkbox" id = "boutique">
+<input type= "radio" name="site" value="jour"> site vitrine
+</br>
+<input type= "radio" name="site" value="nuit"> boutique en ligne
 </br>
 <input type = "submit"  value = "envoyer">
 </center>
