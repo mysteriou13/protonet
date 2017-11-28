@@ -14,7 +14,7 @@ include("./hautepage.php");
 
 <h1 style = "color:white;">
 
-<center> offre web</center>
+<center id = "connection1"> offre web</center>
 
 </h1>
 
@@ -53,7 +53,7 @@ aucun engagement
 
 if(!isset($_SESSION['pseudo'])){
 
-echo "document.getElementById('connection').style.display = 'block';";
+echo "document.getElementById('connection').style.display = 'block'; document.location = '#connection1'";
 
 }else{
 
