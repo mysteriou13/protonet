@@ -8,6 +8,9 @@ include("hautepage.php");
 
 <div id = "contact" style = "height:100%;" >
 
+<center>
+
+</center>
 
 </div>
 
