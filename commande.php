@@ -30,9 +30,6 @@ $selectproduit2 =$selectproduit1->fetch_assoc();
  mes produit
 </div>
 
-<div onclick = "document.location = './commande.php'" id = "commandersite" style = "font-size:2em;">
-<a style = "color:white" href = "./commandersite.php">commander un site</a>
-</div>
 
 </div>
 
