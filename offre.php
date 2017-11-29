@@ -128,6 +128,8 @@ $pseudo = $connect->real_escape_string(htmlspecialchars($_SESSION['pseudo']));
 
 $site = $connect->real_escape_string(htmlspecialchars($_POST['site']));
 
+$site = str_replace("jour","vitrine",$site);
+
 $suivi1 = "precommande";
 
 $suivi1 = htmlspecialchars($suivi1);
