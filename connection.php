@@ -10,6 +10,12 @@ include_once("./hautepage.php");
 <div id = "contact">
 <?php 
 
+if(isset($_SESSION['pseudo']) && !empty($_SESSION['pseudo'])){
+
+header("location:index.php");
+
+}
+
 include_once("./formlogin.php");
 
 ?>
