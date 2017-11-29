@@ -120,6 +120,28 @@ type de site
 <input type= "radio" name="site" value="nuit"> boutique en ligne
 </br>
 <input type = "submit"  value = "envoyer">
+
+<?php 
+if(isset($_POST['site']) && !empty($_POST['site'])){
+
+$pseudo = $connect->real_escape_string(htmlspecialchars($_SESSION['pseudo']));
+
+$site = $connect->real_escape_string(htmlspecialchars($_POST['site']));
+
+$suivi1 = "precommande";
+
+$suivi1 = htmlspecialchars($suivi1);
+
+$suivi = $connect->real_escape_string($suivi1);
+
+$site = "INSERT INTO commande VALUES('','$pseudo','$site','$suivi')";
+
+$connect->query($site);
+
+}
+
+?>
+
 </center>
 
 </form>
