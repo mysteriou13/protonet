@@ -51,6 +51,12 @@ aucun engagement
 <div onclick = "
 <?php
 
+if(isset($_POST['site']) && !empty($_POST['site'])){
+
+header('Location:commandevalide.php');
+
+}
+
 if(!isset($_SESSION['pseudo'])){
 
 echo "document.getElementById('connection').style.display = 'block'; document.location = '#connection1'";
