@@ -136,6 +136,8 @@ $site = $connect->real_escape_string(htmlspecialchars($_POST['site']));
 
 $site = str_replace("jour","vitrine",$site);
 
+$site = str_replace("nuit", "boutique", $site);
+
 $suivi1 = "precommande";
 
 $suivi1 = htmlspecialchars($suivi1);
