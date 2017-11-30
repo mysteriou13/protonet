@@ -7,8 +7,9 @@ include("hautepage.php");
 ?>
 
 <div id = "contact" style = "height:100%;" >
-commander engregistr&eacute;
+
 <center>
+commander engregistr&eacute;
 
 </center>
 
