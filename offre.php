@@ -51,6 +51,12 @@ aucun engagement
 <div onclick = "
 <?php
 
+if(isset($_POST['site']) && !empty($_POST['site'])){
+
+header('Location:commandevalide.php');
+
+}
+
 if(!isset($_SESSION['pseudo'])){
 
 echo "document.getElementById('connection').style.display = 'block'; document.location = '#connection1'";
@@ -127,6 +133,10 @@ if(isset($_POST['site']) && !empty($_POST['site'])){
 $pseudo = $connect->real_escape_string(htmlspecialchars($_SESSION['pseudo']));
 
 $site = $connect->real_escape_string(htmlspecialchars($_POST['site']));
+
+$site = str_replace("jour","vitrine",$site);
+
+$site = str_replace("nuit", "boutique", $site);
 
 $suivi1 = "precommande";
 
