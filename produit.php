@@ -4,6 +4,9 @@
 include_once("hautepage.php");
 ?>
 
+<div id = "conteneur2">
+
+</div>
 
 
 <?php 
