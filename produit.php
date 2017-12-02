@@ -8,6 +8,10 @@ include_once("hautepage.php");
 
 <div style = "color:white; font-size:2em;">
 
+<center>
+mes commandes
+</center>
+
 <?php
 
 $pseudo = $_SESSION['pseudo'];
