@@ -28,7 +28,7 @@ $selectproduit2 =$selectproduit1->fetch_assoc();
 
 <div style = "font-size:2em;">
 
-<a href = "produit" style = "color:white;"> mes produit </a>
+<a href = "produit.php" style = "color:white;"> mes produit </a>
 
 </div>
 
