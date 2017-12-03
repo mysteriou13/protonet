@@ -23,8 +23,6 @@ $produit = "SELECT * FROM commande WHERE pseudo = '$pseudo1'";
 
 $produit1 = $connect->query($produit);
 
-$produit3 = $connect->query($produit);
-
 
 $d = 0;
 
