@@ -28,7 +28,6 @@ $produit3 = $connect->query($produit);
 
 $d = 0;
 
-$d1 = 0;
 
  ?>
 
