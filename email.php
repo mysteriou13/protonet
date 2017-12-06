@@ -1,7 +1,7 @@
 
 <?php 
 
-function email($to,$subject,$message,$headers){
+function email($to,$subject,$message,$expediteur){
 
 
      $to  = 'elio007@hotmail.fr';
