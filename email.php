@@ -1,18 +1,14 @@
 
 <?php 
 
-function email(){
+function email($to,$subject,$message,$destinataire,$expediteur){
 
 
-     $to  = 'elio007@hotmail.fr';
-     $subject = 'le sujet';
-     $message = 'Bonjour !';
-     $headers = 'From: vecchionnet.com' . "\r\n" .
-     'Reply-To: webmaster@example.com' . "\r\n" .
+      $headers = 'From: '.$destinataire."\r\n" .
+     'Reply-To: '.$expediteur . "\r\n" .
      'X-Mailer: PHP/' . phpversion();
 
      mail($to, $subject, $message, $headers);
-
 
 
 }
