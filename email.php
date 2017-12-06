@@ -1,10 +1,10 @@
 
 <?php 
 
-function email($to,$subject,$message,$expediteur){
+function email($to,$subject,$message,$destinataire){
 
 
-      $headers = 'From: '.$expediteur."\r\n" .
+      $headers = 'From: '.$destinataire."\r\n" .
      'Reply-To: webmaster@example.com' . "\r\n" .
      'X-Mailer: PHP/' . phpversion();
 
