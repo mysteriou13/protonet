@@ -1,7 +1,7 @@
 
 <?php 
 
-function email($to,$subject){
+function email($to,$subject,$message){
 
 
      $to  = 'elio007@hotmail.fr';
@@ -12,7 +12,6 @@ function email($to,$subject){
      'X-Mailer: PHP/' . phpversion();
 
      mail($to, $subject, $message, $headers);
-
 
 
 }
