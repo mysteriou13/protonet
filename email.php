@@ -4,10 +4,7 @@
 function email($to,$subject,$message,$expediteur){
 
 
-     $to  = 'elio007@hotmail.fr';
-     $subject = 'le sujet';
-     $message = 'Bonjour !';
-     $headers = 'From: '.$expediteur."\r\n" .
+      $headers = 'From: '.$expediteur."\r\n" .
      'Reply-To: webmaster@example.com' . "\r\n" .
      'X-Mailer: PHP/' . phpversion();
 
