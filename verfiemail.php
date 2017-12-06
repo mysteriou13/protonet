@@ -11,7 +11,7 @@ include_once("./header.php");
 
 ?>
 
-<div id = "contact">
+<div id = "contact" style = "height:100%">
 
 un email de vefication vous a etais envoy&eacute; 
 
