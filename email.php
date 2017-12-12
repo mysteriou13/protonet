@@ -1,15 +1,15 @@
 
 <?php 
 
-function email($to,$subject,$message,$destinataire,$expediteur){
+function Email($destinataire, $subject, $message){
 
-
-      $headers = 'From: '.$destinataire."\r\n" .
-     'Reply-To: '.$expediteur . "\r\n" .
+      $headers = 'From: vercchionet'."\r\n" .
+     'Reply-To: vecchionet' . "\r\n" .
      'X-Mailer: PHP/' . phpversion();
 
-     mail($to, $subject, $message, $headers);
 
+     mail('elio007@hotmail.fr', 'Mon Sujet', $message,$headers);
+    
 
 }
 

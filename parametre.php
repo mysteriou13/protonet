@@ -38,7 +38,7 @@ echo "<a href ='verfiemail.php' style = 'color:white'> non verifi&eacute; </a>";
 
 }else{
 
-echo "verifi&eacut;";
+echo "verifi&eacute;";
 
 }
 

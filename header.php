@@ -3,8 +3,13 @@
 
 $monUrl = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 
+include_once("./connect/connect.php");
 
-$connect =   new mysqli("localhost","root","","corsicanet");
+if(!file_exists("./connect/connect.php")){
+
+echo "connect no existe";
+
+}
 
 $_SERVER['HTTP_HOST'];
 
