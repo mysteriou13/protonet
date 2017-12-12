@@ -12,8 +12,6 @@ $des1 = "cliquer pour agrandir";
 
   $monUrl = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 
-  $c =  mysqli_connect("localhost","root","","corsicanet"); 
-  $mysqli = new mysqli("localhost", "root", "", "corsicanet");
 
 $name = null;
 $email = null;
@@ -126,7 +124,7 @@ $tmp_name = $_FILES["picture"]["tmp_name"];
 
 $id = "SELECT id FROM commentaire ORDER BY ID DESC LIMIT 0,1";
 
-$id1 = $mysqli->query($id);
+$id1 = $connect->query($id);
 
 $row = $id1->fetch_assoc();
 
@@ -197,17 +195,17 @@ $rename = null;
 
 }
 
- $pseudo = $mysqli->real_escape_string(htmlspecialchars($_POST['name'])); 
+ $pseudo = $connect->real_escape_string(htmlspecialchars($_POST['name'])); 
 
- $message = $mysqli->real_escape_string(htmlspecialchars($_POST['textarea'])); 
+ $message = $connect->real_escape_string(htmlspecialchars($_POST['textarea'])); 
 
- $mail = $mysqli->real_escape_string(htmlspecialchars($_POST['email']));
+ $mail = $connect->real_escape_string(htmlspecialchars($_POST['email']));
 
- $lien = $mysqli->real_escape_string(htmlspecialchars($link));
+ $lien = $connect->real_escape_string(htmlspecialchars($link));
 
- $name1 = $mysqli->real_escape_string(htmlspecialchars($name));
+ $name1 = $connect->real_escape_string(htmlspecialchars($name));
  
- $rename2 = $mysqli->real_escape_string(htmlspecialchars($rename));
+ $rename2 = $connect->real_escape_string(htmlspecialchars($rename));
 
   $mysqli->query("INSERT into commentaire VALUES (NULL,'$pseudo','$mail','$message','$lien','$name1','$rename2')");
   
