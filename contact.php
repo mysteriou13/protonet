@@ -178,8 +178,8 @@ echo $_POST['textarea'];
 </br>
 <?php 
 
-$resul = $name+$email+$fichier;
-$resul = $resul+$fichier;
+$resul = $name.$email.$fichier;
+$resul = $resul.$fichier;
 
   if($resul == 2){
 
