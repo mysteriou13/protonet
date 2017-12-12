@@ -6,9 +6,7 @@ session_start();
 
 $d = "corsicanet";
 
-include_once("./head.php");
-
-include_once("./header.php");
+include_once("./hautepage.php");
 
 $des1 = "cliquer pour agrandir";
 
