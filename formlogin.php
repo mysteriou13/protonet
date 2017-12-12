@@ -1,6 +1,4 @@
 
-
-
 <div style = "
 margin-left:2%;
 font-size:1em;
@@ -58,8 +56,6 @@ echo ' <META HTTP-EQUIV="refresh" CONTENT="0;URL= "'.$self.">";
 echo "pseudo ou mot de pass incorrect";
 
 }
-
-
 
 
 }

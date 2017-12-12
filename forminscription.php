@@ -35,9 +35,7 @@ Inscription
 </center>
 </div>
 
-<div id = "v"
-style = "background-color:white";
->
+<div id = "v"style = "background-color:rgb(63,51,51); color:white;" onclick = "document.location= 'index.php'">
 
 </div>
 
@@ -209,7 +207,7 @@ if(isset($_POST['email']) && !empty($_POST['email'])){
 
 $v = $_POST['email'];
 
-$sql1 = mysqli_query($c,"SELECT count(*)email FROM membre  WHERE email = '$v' ");
+$sql1 = $connect->query("SELECT count(*)email FROM membre  WHERE email = '$v'");
 
 $sql2 = mysqli_fetch_row($sql1);
 
@@ -310,8 +308,29 @@ $pass = sha1($_POST['pass']);
 
 $email = $_POST['email'];
 
-mysqli_query($c,"INSERT INTO membre VALUES ('','$pseudo','$pass','$email',0)");
+$email = htmlspecialchars($email);
 
+$connect->query("INSERT INTO membre VALUES ('','$pseudo','$pass','$email',0)");
+
+$selemail = "SELECT email FROM membre WHERE email  = '$email'";
+
+$queryemail = $connect->query($selemail);
+
+$row = $queryemail->fetch_assoc();
+
+$destinataire = $row['email'];
+
+$subject =  "validatation";
+
+print_r($lienemail);
+
+
+ 
+$emailvalide1 = '<a href = "http://www.vecchionet.com/emailvalide.php?email=$destinataire">confimer votre email</a>';
+
+
+
+Email($destinataire,$subject,$emailvalide1);
 echo "
 <style>
 ".
@@ -324,11 +343,12 @@ display:none;
 "
 ."</style>";
 
-$c = " inscription reussi retourner vers accueil ";
+$c = "inscription reussi  cliquer pour retourner vers accueil ";
+
 
 echo "<script>".
-"document.getElementById('v').innerHTML= '<center> "."<a href = index.php> ".$c."</a>"."</center>"."'"."
-document.getElementById('v').style.paddingBottom= '20%';
+"document.getElementById('v').innerHTML= '<center> ".$c."</center>"."'".";
+
 "."</script>";
 
 

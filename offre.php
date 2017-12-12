@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <html>
 <body>
 
@@ -74,7 +77,21 @@ commander ici
 
 </center>
 
-<div id = "connection" style = "display:none">
+<?php 
+
+if(isset($_SESSION['pseudo']) && !empty($_SESSION['pseudo'])){
+
+$ins = "none";
+
+}else{
+
+$ins = "block";
+
+}
+
+?>
+
+<div id = "connection" style = "display:<?php echo $ins?>">
 
 <center>
 connecter vous pour commander un site
@@ -98,6 +115,28 @@ $display = "block";
 
 }
 
+if(isset($_SESSION['pseudo']) && !empty($_SESSION['pseudo'])){
+$pseudo = $_SESSION['pseudo'];
+                                                                                                
+$pseudo =  $connect->real_escape_string($pseudo);                                               
+                                                                                                
+$verif = "SELECT verifemail  FROM membre WHERE pseudo = '$pseudo'";
+                                                                                                
+$verif1 = $connect->query($verif);                                                              
+                                                                                                
+$verif2 = $verif1->fetch_assoc();
+
+
+if($verif2['verifemail'] == 0){
+$displayemail = "none";
+$displayemail2 = "block";
+}else{
+$displayemail2 = "none";
+$displayemail = "block";
+
+}
+
+}
 
 ?>
 
@@ -118,6 +157,7 @@ echo $_SERVER['PHP_SELF']."#formcommande";
 " id = "formcommande" style = "border:1px solid black; background-color:gray;">
 <center>
 fornulaire de precommande
+<span style = "display:<?php echo $displayemail;?>">
 </br>
 type de site
 </br>
@@ -126,8 +166,14 @@ type de site
 <input type= "radio" name="site" value="nuit"> boutique en ligne
 </br>
 <input type = "submit"  value = "envoyer">
+</span>
 
-<?php 
+<span style = "display:<?php echo $displayemail2?>">
+<a href = "./verfiemail.php"style = "color:white;"> pour  commander vous dever valider votre email </a>
+</span>
+
+<?php
+ 
 if(isset($_POST['site']) && !empty($_POST['site'])){
 
 $pseudo = $connect->real_escape_string(htmlspecialchars($_SESSION['pseudo']));

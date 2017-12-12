@@ -1,12 +1,13 @@
+<?php
+session_start();
+ ?>
 <html>
 <body>
 <?php 
-session_start();
 
 $d = "mes produits -protonet";
 
-include_once("./head.php");
-include_once("./header.php");
+include_once("./hautepage.php");
 
 $login = $connect->real_escape_string($_SESSION['pseudo']);
 
