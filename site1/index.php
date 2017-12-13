@@ -29,6 +29,7 @@ $file = "./des.php";
 
 $site= "site1";
 
+
 if(file_exists($file)){
 include_once("./des.php");
 
@@ -55,8 +56,6 @@ $url =  $lien2->url("1");
 
 
 
-
-
 $url1 = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; 
 
       if (stristr($_SERVER['HTTP_USER_AGENT'], "Android")
@@ -78,6 +77,8 @@ $url1 = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
  $c = "70";
 
 }
+
+$url = htmlspecialchars($url);
 
 ?>
 
