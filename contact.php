@@ -193,7 +193,7 @@ if(isset($_POST) && !empty($_POST)) {
  
  $rename2 = $connect->real_escape_string(htmlspecialchars($rename));
  
-connect->query("INSERT into commentaire VALUES (NULL,'$pseudo','$mail','$message','$lien','$name1','$rename2')");
+$connect->query("INSERT into commentaire VALUES (NULL,'$pseudo','$mail','$message','$lien','$name1','$rename2')");
 
  header("Location: ./index.php");
 }
