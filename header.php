@@ -225,6 +225,10 @@ $contact = htmlspecialchars("./contact.php");
 ?>">contact</a>
 </div>
 
+<?php 
+$parametre = htmlspecialchars("./parametre.php#parametre2");
+?>
+
 <div style = "display:<?php echo $block1;?>;" >
 
 <a href = './parametre.php#parametre2' style = 'color:white;
