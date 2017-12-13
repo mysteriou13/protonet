@@ -24,9 +24,15 @@ $nb = mb_substr_count($monUrl, "#");
 
 </br>
 
+<?php 
+
+$index = htmlspecialchars("./index.php");
+
+?>
+
 <div id = "site1"  style = "background-color:gray;">
 &nbsp;
-<a href = "./index.php" style = "color:white; font-size:2em;"> haut de la page </a>
+<a href = "<?php echo $index;?>" style = "color:white; font-size:2em;"> haut de la page </a>
 </div>
 
 <div style = "color:white; font-size:2em; background-color:gray;">
@@ -50,7 +56,7 @@ include("./site1/index.php");
 
 
 <div id = "site2" style = "margin-top:5%; background-color:gray">
-<a href ="./index.php" style = "color:white; font-size:2em;">haut de la page</a>
+<a href ="<?php echo $index;?>" style = "color:white; font-size:2em;">haut de la page</a>
 </div>
 <div style = "color:white; font-size:2em; background-color:gray">
 <strong>
@@ -75,7 +81,7 @@ include("./site2/index.php");
 </br>
 
 <div id = "site3" style = "background-color:gray;">
-<a href = "./index.php" style = "color:white; font-size:2em;">haut de la page</a>
+<a href = "<?php echo $index;?>" style = "color:white; font-size:2em;">haut de la page</a>
 </div>
 
 <div style = "background-color:gray; color:white; font-size:2em;">
@@ -94,7 +100,7 @@ include("./site3/index.php");
 </div>
 
 <div id = "site4" style = "background-color:gray;">
-<a href = "./index.php" style = "color:white; font-size:2em;">haut de la page </a>
+<a href = "<?php echo $index;?>" style = "color:white; font-size:2em;">haut de la page </a>
 </div>
 
 <div style = "background-color:gray; color:white; font-size:2em;">
@@ -113,7 +119,7 @@ include("./site4/index.php");
 </div>
 
 <div id  = "site5" style = "margin-top:5%; background-color:gray;">
-<a href = "./index.php" style = "color:white; font-size:2em;">haut de la page </a>
+<a href = "<?php echo $index;?>" style = "color:white; font-size:2em;">haut de la page </a>
 </div>
 
 <div style = "background-color:gray; color:white; font-size:2em;">
@@ -132,7 +138,7 @@ include("./site5/index.php");
 </div>
 
 <div id = "site6" style = "background-color:gray;">
-<a href = "./index.php" style = "color:white; font-size:2em"> haut de page</a>
+<a href = "<?php echo $index;?>" style = "color:white; font-size:2em"> haut de page</a>
 </div>
 
 <div style = "background-color:gray; color:white; font-size:2em;">
