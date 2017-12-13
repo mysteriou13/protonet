@@ -38,6 +38,8 @@ $url =  htmlspecialchars($url);
 
 $lien = "http://".$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];
 
+$lien = htmlspecialchars($lien);
+
 $page = str_replace("/site2","",getcwd());
 
 $header = $page."/site2/section/header.php";
