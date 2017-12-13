@@ -178,9 +178,15 @@ echo $coloraccueil;
 ?>">accueil</a> 
 </div>
 
+<?php 
+
+$inscription = htmlspecialchars("inscription.php");
+
+?>
+
    <div style = "display:<?php echo $block2;?>">                                                                                          
                                                                                                 
-&nbsp; &nbsp;<a href = "./inscription.php" style = "color:white; font-size:2em;<?php echo $colorinscription; ?>">inscription</a> 
+&nbsp; &nbsp;<a href = "<?php echo $inscription; ?>" style = "color:white; font-size:2em;<?php echo $colorinscription; ?>">inscription</a> 
 </div> 
 
 &nbsp; &nbsp;
