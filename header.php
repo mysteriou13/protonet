@@ -247,15 +247,25 @@ echo "background-color:gray;";
 
 </div>
 
+<?php
+
+$commande  = htmlspecialchars("./commande.php#commande");
+
+ ?>
+
 <div style = "display :<?php echo $block1;?>" >
 
-<a href = './commande.php#commande' style = 'color:white; font-size:2em;<?php echo $colorproduit ?>'> mes produits </a>
+<a href = '<?php echo $commande;?>' style = 'color:white; font-size:2em;<?php echo $colorproduit ?>'> mes produits </a>
 
 </div>
+<?php 
 
+$deconnection  = htmlspecialchars("./deconnection.php");
+
+?>
 <div style = "display :<?php echo $block1;?>">
 
-<a href = "deconnection.php" style = "color:white; font-size:2em;"> deconnection </a>
+<a href = "<?php echo $deconnection; ?>" style = "color:white; font-size:2em;"> deconnection </a>
 
 </div>
 
