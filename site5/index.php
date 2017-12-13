@@ -3,7 +3,7 @@
 
 $file = "./des.php";
 
-$site= "site5";
+$site = "site5";
 
 if(file_exists($file)){
 include_once("./des.php");
@@ -29,15 +29,21 @@ $lien2 = new lien();
 
 $url =  $lien2->url("5");
 
+$url = htmlspecialchars($url);
+
 $lien = "http://".$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];
 
-
+$lien = htmlspecialchars($lien);
 
 $page = str_replace("/site5","",getcwd());
 $header = $page."/site5/section/header.php";
+$header  = htmlspecialchars($header);
 $footer = $page."/site5/section/footer.php";
+$footer = htmlspecialchars($footer);
 $nav = $page."/site5/section/nav.php";
+$nav =  htmlspecialchars($nav);
 $element = $page."/site5/section/element.php";
+$element = htmlspecialchars($element);
 
 ?>
 
