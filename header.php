@@ -200,10 +200,15 @@ offre web
 </div>
 
 &nbsp;&nbsp;
+<?php 
+
+$connection =  htmlspecialchars("connection.php");
+
+?>
 
 <div style = "display:<?php echo $block3; ?>;">
 
-<a href = "./connection.php" style = "color:white; font-size:2em;">connection</a>
+<a href = "<?php echo $connection;?>" style = "color:white; font-size:2em;">connection</a>
 
 </div>
 
