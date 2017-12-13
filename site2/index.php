@@ -44,13 +44,23 @@ $page = str_replace("/site2","",getcwd());
 
 $header = $page."/site2/section/header.php";
 
+$header = htmlspecialchars($header);
+
 $accueil = $page."/site2/section/accueil.php";
+
+$accueil = htmlspecialchars($accueil);
 
 $contact = $page."/site2/section/contact.php";
 
+$contact = htmlspecialchars($contact);
+
 $propos = $page."/site2/section/propos.php";
 
+$propos = htmlspecialchars($propos);
+
 $footer = $page."/site2/section/footer.php";
+
+$footer = htmlspecialchars($footer);
 
 ?>
 
