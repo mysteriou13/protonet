@@ -165,7 +165,13 @@ echo "justify-content: space-around;";
 
 <div>
 
-&nbsp; &nbsp;<a href = "./index.php" style = "color:white; <?php ?> font-size:2em;<?php 
+<?php 
+
+$index = htmlspecialchars("index.php");
+
+?>
+
+&nbsp; &nbsp;<a href = "<?php echo $index;?>" style = "color:white; <?php ?> font-size:2em;<?php 
 
 echo $coloraccueil;
 
