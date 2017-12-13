@@ -34,6 +34,8 @@ $lien2 = new lien();
 
 $url =  $lien2->url("2");
 
+$url =  htmlspecialchars($url);
+
 $lien = "http://".$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];
 
 $page = str_replace("/site2","",getcwd());
