@@ -12,7 +12,6 @@ $des1 = "cliquer pour agrandir";
 
   $monUrl = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 
-
 $name = null;
 $email = null;
 $fichier = null;
@@ -119,7 +118,7 @@ piece jointe<input  name = "picture" type = "file">
 <?php 
 if (isset($_FILES['picture']) AND $_FILES['picture']['error'] == 0){
 
-$uploads_dir = '/opt/lampp/htdocs/protonet/';
+$uploads_dir = $_SERVER['DOCUMENT_ROOT'];
 $tmp_name = $_FILES["picture"]["tmp_name"];
 
 $id = "SELECT id FROM commentaire ORDER BY ID DESC LIMIT 0,1";
@@ -136,7 +135,7 @@ $filea =$rename1[0].$row['id'].".".$rename1[1];
 
 $rename = $filea;
 
-$link = getcwd()."/".$rename;
+$link = getcwd()."/".$rename."1";
 
 $infosfichier = pathinfo($_FILES['picture']['name']);
 $extensions_autorisees = array('jpg', 'jpeg', 'gif', 'png','odt');
@@ -145,6 +144,8 @@ $extension_upload = $infosfichier['extension'];
                 if (in_array($extension_upload, $extensions_autorisees)){
 
 move_uploaded_file($tmp_name, "$uploads_dir/$rename");
+
+
 
  $fichier = 1;
 
@@ -178,23 +179,8 @@ echo $_POST['textarea'];
 </br>
 <?php 
 
-$resul = $name.$email.$fichier;
-$resul = $resul.$fichier;
 
-  if($resul == 2){
-
-  if(empty($link)){
-
- $link = null;
-
-   }
-
-if(empty($rename)){
-
-$rename = null;
-
-}
-
+if(isset($_POST) && !empty($_POST)) {
  $pseudo = $connect->real_escape_string(htmlspecialchars($_POST['name'])); 
 
  $message = $connect->real_escape_string(htmlspecialchars($_POST['textarea'])); 
@@ -206,10 +192,11 @@ $rename = null;
  $name1 = $connect->real_escape_string(htmlspecialchars($name));
  
  $rename2 = $connect->real_escape_string(htmlspecialchars($rename));
+ 
+connect->query("INSERT into commentaire VALUES (NULL,'$pseudo','$mail','$message','$lien','$name1','$rename2')");
 
-  $mysqli->query("INSERT into commentaire VALUES (NULL,'$pseudo','$mail','$message','$lien','$name1','$rename2')");
-  
-   }
+ header("Location: ./index.php");
+}
 
 ?>
 <input type = "submit">
