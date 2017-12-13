@@ -123,6 +123,8 @@ $categorie = str_replace("site6","",$categorie);
 
 $categorie = $categorie."/site6/categorie.php";
 
+$categorie = htmlspecialchars($categorie);
+
 if(isset($_GET['categorie']) && !empty($_GET['categorie'])){
 
 $categorie1 = $_GET['categorie'];
@@ -150,6 +152,7 @@ include($categorie);
 <?php 
 $index = "./index.php";
 
+$index = htmlspecialchars($index);
 
 while($s0 <= $page){
 
@@ -159,9 +162,13 @@ if($NB == 0){
 
 $index = "?page=".$s0."&categorie=".$categorie1."#site6";
 
+$index = htmlspecialchars($index);
+
 }else{
  $index = "./index.php?page=".$s0."&categorie=".$categorie1;
+ $index = htmlspecialchars($index);
 }
+$index = htmlspecialchars($index);
 echo "<a href = '$index' >"; echo $s0; echo "</a>"; echo "&nbsp &nbsp &nbsp"  ;
 
 }
@@ -172,10 +179,9 @@ if($s3 != $nbpage1){
 
 $index = "?page=".$s0."&categorie=".$categorie1."#site6";
 
+$index = htmlspecialchars($index);
 
 }
-
-
 
 ?>
 
