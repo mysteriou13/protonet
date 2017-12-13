@@ -29,21 +29,38 @@ $lien2 = new lien();
 
 $url =  $lien2->url("4");
 
+$url = htmlspecialchars($url);
+
 $lien = "http://".$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];
+
+$lien = htmlspecialchars($lien);
 
 $page = str_replace("/site4","",getcwd());
 
 $header = $page."/site4/section/header.php";
 
+$header = htmlspecialchars($header);
+
 $accueil = $page."/site4/section/accueil.php";
+
+$accueil = htmlspecialchars($accueil);
 
 $nav = $page."/site4/section/nav.php";
 
+$nav = htmlspecialchars($nav);
+
 $contact= $page."/site4/section/contact.php";
+
+$contact = htmlspecialchars($contact);
 
 $propos = $page."/site4/section/propos.php";
 
+$propos = htmlspecialchars($propos);
+
 $footer = $page."/site4/section/footer.php";
+
+$footer = htmlspecialchars($footer);
+
 
 ?>
 
