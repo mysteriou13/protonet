@@ -212,9 +212,15 @@ $connection =  htmlspecialchars("connection.php");
 
 </div>
 
+<?php 
+
+$contact = htmlspecialchars("./contact.php");
+
+?>
+
 <div>
 
-&nbsp; &nbsp;<a href = "./contact.php" style = "color:white; font-size:2em;<?php
+&nbsp; &nbsp;<a href = "<?php echo $contact;?>" style = "color:white; font-size:2em;<?php
 
 ?>">contact</a>
 </div>
