@@ -6,16 +6,11 @@ session_start();
 
 $d = "corsicanet";
 
-include_once("./head.php");
-
-include_once("./header.php");
+include_once("./hautepage.php");
 
 $des1 = "cliquer pour agrandir";
 
   $monUrl = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
-
-  $c =  mysqli_connect("localhost","root","","corsicanet"); 
-  $mysqli = new mysqli("localhost", "root", "", "corsicanet");
 
 $name = null;
 $email = null;
@@ -123,12 +118,12 @@ piece jointe<input  name = "picture" type = "file">
 <?php 
 if (isset($_FILES['picture']) AND $_FILES['picture']['error'] == 0){
 
-$uploads_dir = '/opt/lampp/htdocs/protonet/';
+$uploads_dir = $_SERVER['DOCUMENT_ROOT']."/protonet";
 $tmp_name = $_FILES["picture"]["tmp_name"];
 
 $id = "SELECT id FROM commentaire ORDER BY ID DESC LIMIT 0,1";
 
-$id1 = $mysqli->query($id);
+$id1 = $connect->query($id);
 
 $row = $id1->fetch_assoc();
 
@@ -140,7 +135,7 @@ $filea =$rename1[0].$row['id'].".".$rename1[1];
 
 $rename = $filea;
 
-$link = getcwd()."/".$rename;
+$link = getcwd()."/".$rename."1";
 
 $infosfichier = pathinfo($_FILES['picture']['name']);
 $extensions_autorisees = array('jpg', 'jpeg', 'gif', 'png','odt');
@@ -149,6 +144,8 @@ $extension_upload = $infosfichier['extension'];
                 if (in_array($extension_upload, $extensions_autorisees)){
 
 move_uploaded_file($tmp_name, "$uploads_dir/$rename");
+
+
 
  $fichier = 1;
 
@@ -182,38 +179,25 @@ echo $_POST['textarea'];
 </br>
 <?php 
 
-$resul = $name+$email+$fichier;
-$resul = $resul+$fichier;
 
-  if($resul == 2){
 
-  if(empty($link)){
+if(isset($_POST) && !empty($_POST)) {
+ $pseudo = $connect->real_escape_string(htmlspecialchars($_POST['name'])); 
 
- $link = null;
+ $message = $connect->real_escape_string(htmlspecialchars($_POST['textarea'])); 
 
-   }
+ $mail = $connect->real_escape_string(htmlspecialchars($_POST['email']));
 
-if(empty($rename)){
+ $lien = $connect->real_escape_string(htmlspecialchars($link));
 
-$rename = null;
-
-}
-
- $pseudo = $mysqli->real_escape_string(htmlspecialchars($_POST['name'])); 
-
- $message = $mysqli->real_escape_string(htmlspecialchars($_POST['textarea'])); 
-
- $mail = $mysqli->real_escape_string(htmlspecialchars($_POST['email']));
-
- $lien = $mysqli->real_escape_string(htmlspecialchars($link));
-
- $name1 = $mysqli->real_escape_string(htmlspecialchars($name));
+ $name1 = $connect->real_escape_string(htmlspecialchars($name));
  
- $rename2 = $mysqli->real_escape_string(htmlspecialchars($rename));
+ $rename2 = $connect->real_escape_string(htmlspecialchars($rename));
 
-  $mysqli->query("INSERT into commentaire VALUES (NULL,'$pseudo','$mail','$message','$lien','$name1','$rename2')");
-  
-   }
+  $connect->query("INSERT into commentaire VALUES (NULL,'$pseudo','$mail','$message','$lien','$name1','$rename2')");
+
+ header("Location: ./index.php");
+}
 
 ?>
 <input type = "submit">
