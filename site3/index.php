@@ -34,20 +34,39 @@ $lien2 = new lien();
 
 $url =  $lien2->url("3");
 
+$url = htmlspecialchars($url);
+
 $lien = "http://".$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];
+
+$lien = htmlspecialchars($lien);
 
 $page = str_replace("/site3","",getcwd());
 
+$page = htmlspecialchars($page);
+
 $header = $page."/site3/section/header.php";
+
+$header = htmlspecialchars($header);
 
 $accueil = $page."/site3/section/accueil.php";
 
+$accueil = htmlspecialchars($accueil);
+
 $contact = $page."/site3/section/contact.php";
+
+$contact = htmlspecialchars($contact);
 
 $propos = $page."/site3/section/propos.php";
 
+$propos = htmlspecialchars($propos);
+
 $footer = $page."/site3/section/footer.php";
+
+$footer = htmlspecialchars($footer);
+
 $aside = $page."/site3/section/aside.php";
+
+$aside = htmlspecialchars($aside);
 
 ?>
 
