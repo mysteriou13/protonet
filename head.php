@@ -17,7 +17,7 @@
 <title>
 
 <?php 
-echo $title = $d;
+echo $title = "vecchionet";
 ?>
 
 </title>
