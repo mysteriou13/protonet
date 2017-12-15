@@ -195,7 +195,8 @@ if(isset($_POST) && !empty($_POST)) {
  
 $connect->query("INSERT into commentaire VALUES (NULL,'$pseudo','$mail','$message','$lien','$name1','$rename2')");
 
- header("Location: ./index.php");
+ header("Location: index.php");
+
 }
 
 ?>
