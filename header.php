@@ -114,7 +114,7 @@ $space = 'space-between;';
 
 
 ?>
-<div  style = "display: flex;  color:silver; font-size:3em">
+<div  style = "display: flex;  color:silver; ">
 
 <h1>
 vecchionet
@@ -128,8 +128,7 @@ vecchionet
 <div
 style = "
 width:auto;
-color:silver; 
-font-size:1.5em;"
+color:silver; "
  >
 <h2>
 
