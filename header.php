@@ -116,9 +116,9 @@ $space = 'space-between;';
 ?>
 <div  style = "display: flex;  color:silver; font-size:3em">
 
-
-
+<h1>
 vecchionet
+</h1>
 
 </div>
 
@@ -131,8 +131,11 @@ width:auto;
 color:silver; 
 font-size:1.5em;"
  >
+<h2>
 
 cr&eacute;ateur de siteweb pour pc tablette et telephone(En construction)
+
+</h2>
 
 </div>
 
