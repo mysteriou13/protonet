@@ -7,11 +7,17 @@
 
 <meta charset = "UTF-8">
 
+<?php
+
+$des = "
+cr&eacute;ateru de site web a porto-vecchio;
+";
+
+ ?>
 
 <meta name = "description" content = "<?php $des ?>" >
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">     
-
 
 
 <title>
