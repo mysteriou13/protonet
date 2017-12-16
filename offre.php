@@ -10,9 +10,9 @@ include("./hautepage.php");
 
 ?>
 
-<div id = "contact" style = "height:100%; padding-top:1%;">
+<div id = "contact" style = " padding-top:1%;">
 
-<div style = "margin-left:20%;  margin-right:30%; color:white; height:auto;">
+<div style = " color:white; ">
 
 
 <h1 style = "color:white;">
