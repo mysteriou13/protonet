@@ -7,7 +7,8 @@ session_start();
 
 $d= "corsicanet";
 
-include_once("./head.php");
+include_once("./hautepage.php");
+
 include_once("email.php");
 ?>
 
