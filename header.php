@@ -251,7 +251,7 @@ echo "background-color:gray;";
 
 <?php
 
-$commande  = htmlspecialchars("./commande.php#commande");
+$commande  = htmlspecialchars("./produit.php");
 
  ?>
 
