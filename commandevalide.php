@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <html>
 <body>
 <?php 
@@ -9,8 +12,9 @@ include("hautepage.php");
 <div id = "contact" style = "height:100%;" >
 
 <center>
+<p>
 commander engregistr&eacute;
-
+<p>
 </center>
 
 </div>
