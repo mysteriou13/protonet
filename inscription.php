@@ -27,11 +27,7 @@ $vide1 = 0;
 $vide2 = 0;
 
 
-if ($c->connect_errno){
 
-echo "erro connect";
-
-}
 
 ?>
 
