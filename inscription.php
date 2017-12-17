@@ -26,7 +26,6 @@ $vide1 = 0;
 
 $vide2 = 0;
 
-$c =  mysqli_connect("localhost","root","","corsicanet");
 
 if ($c->connect_errno){
 
