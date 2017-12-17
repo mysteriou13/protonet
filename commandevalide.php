@@ -13,7 +13,7 @@ include("hautepage.php");
 
 <center>
 <p style = "color:white; font-size:2em;">
-commander engregistr&eacute;
+commande engregistr&eacute;
 <p>
 </center>
 
