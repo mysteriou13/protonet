@@ -12,7 +12,7 @@ include("hautepage.php");
 <div id = "contact" style = "height:100%;" >
 
 <center>
-<p>
+<p style = "color:white; font-size:2em;">
 commander engregistr&eacute;
 <p>
 </center>
