@@ -10,8 +10,9 @@
 <?php
 
 $des = "
-cr&eacute;ateru de site web a porto-vecchio;
+creation et entretien de siteweb &agrave; porto-vecchio;
 ";
+
 
  ?>
 
