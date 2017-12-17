@@ -127,11 +127,13 @@ display:block;
 if(isset($_POST['pseudo']) && !empty($_POST['pseudo'])){
 
 
-$v = $_POST['pseudo'];
+$v = htmlspecialchars(($_POST['pseudo']));
 
-$sql1 = mysqli_query($c,"SELECT count(*)pseudo FROM membre  WHERE pseudo = '$v' ");
+$v = $connect->real_escape_string($v);
 
-$sql2 = mysqli_fetch_row($sql1);
+$sql1 = $connect->query("SELECT count(*)pseudo FROM membre  WHERE pseudo = '$v' ");
+
+$sql2 = $sql1->fetch_row();
 
 if($sql2[0] == 1){
 
@@ -204,12 +206,13 @@ style = "width:100%;" >
 
 if(isset($_POST['email']) && !empty($_POST['email'])){
 
+$v = htmlspecialchars($_POST['email']);
 
-$v = $_POST['email'];
+$v =$connect->real_escape_string($_POST['email']);
 
 $sql1 = $connect->query("SELECT count(*)email FROM membre  WHERE email = '$v'");
 
-$sql2 = mysqli_fetch_row($sql1);
+$sql2 = $sql1->fetch_row();
 
 
 if($sql2[0] == 1){
@@ -302,15 +305,23 @@ echo "<center>valide</center>";
 if($total == 5){
 if(isset($_POST['boot']) && empty($_POST['boot'])){
 
-$pseudo = $_POST['pseudo'];
+$pseudo = htmlspecialchars($_POST['pseudo']);
 
-$pass = sha1($_POST['pass']);
+$pseudo = $connect->real_escape_string($pseudo);
 
-$email = $_POST['email'];
+$pass = htmlspecialchars(sha1($_POST['pass']));
 
-$email = htmlspecialchars($email);
+$pass = $connect->real_escape_string($pass);
 
-$connect->query("INSERT INTO membre VALUES ('','$pseudo','$pass','$email',0)");
+$email = htmlspecialchars($_POST['email']);
+
+$email = $connect->real_escape_string($email);
+
+$zero = 0;
+
+$verfifemail =$connect->real_escape_string($zero);
+
+$connect->query("INSERT INTO membre VALUES ('','$pseudo','$pass','$email',$zero,$zero)");
 
 $selemail = "SELECT email FROM membre WHERE email  = '$email'";
 
