@@ -15,11 +15,11 @@ include_once("hautepage.php");
 <form method = "post" style = "color:white;">
 
 <label> un mois</label><input  type = "radio" name = "abo">
-
+<br>
 <label> trois mois</label> <input type = "radio" name = "abo">
-
+</br>
 <label>six mois</label><input type = "radio" name = "abo">
-
+</br>
 <label>un ans </label><input type = "radio" name = "abo">
 
 
