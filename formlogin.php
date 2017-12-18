@@ -22,6 +22,8 @@ pass
 <input type = "submit" style = "color:black;"/>
 </br>
 <a style = "color:white; font-size:1em;" href = "inscription.php"> pas encore membre ?</a>
+</br>
+<a style  = "color:white; font-size:1em" href = "oublipass.php"> mot de pass perdu? </a>
 <?php
 
 if(isset($_POST['pseudo']) && empty($_POST['pseudo'])){
