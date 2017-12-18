@@ -14,7 +14,7 @@ include_once("hautepage.php");
 
 <form method = "post" style = "color:white;">
 
-<input  type = "radio" name = "abo">
+<label> un mois</label><input  type = "radio" name = "abo">
 
 <input type = "radio" name = "abo">
 
