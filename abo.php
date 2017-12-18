@@ -12,6 +12,10 @@ include_once("hautepage.php");
 
 <center>
 
+<form>
+
+</form>
+
 </center>
 </div>
 
