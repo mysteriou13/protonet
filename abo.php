@@ -12,7 +12,7 @@ include_once("hautepage.php");
 
 <center>
 
-<form method = "post">
+<form method = "post" style = "color:white;">
 
 <input  type = "radio" name = "abo">
 
@@ -21,6 +21,7 @@ include_once("hautepage.php");
 <input type = "radio" name = "abo">
 
 <input type = "radio" name = "abo">
+
 
 </center>
 
