@@ -18,7 +18,7 @@ include_once("hautepage.php");
 
 <label> trois mois</label> <input type = "radio" name = "abo">
 
-<input type = "radio" name = "abo">
+<label>six mois</label><input type = "radio" name = "abo">
 
 <input type = "radio" name = "abo">
 
