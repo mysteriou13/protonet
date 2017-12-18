@@ -14,9 +14,20 @@ include_once("hautepage.php");
 
 <form method = "post">
 
-</form>
+<input  type = "radio" name = "abo">
+
+<input type = "radio" name = "abo">
+
+<input type = "radio" name = "abo">
+
+<input type = "radio" name = "abo">
 
 </center>
+
+</input>
+
+</form>
+
 </div>
 
 <?php
