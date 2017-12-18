@@ -146,7 +146,7 @@ $displayemail = "none";
 $displayabo = "block";
 
 }else{
-
+$displayabo = "none";
 $displayemail = "block";
 
 }
@@ -177,7 +177,7 @@ fornulaire de precommande
 
 <span id = "abo" style = "display:<?php echo $displayabo?>">
 
-  vous dever etre abonn&eacute;
+  <a href = "abo.php" style  = "color:white;"> vous dever etre abonn&eacute; pour commander</a>
 
 </span>
 
