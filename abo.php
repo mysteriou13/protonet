@@ -12,7 +12,7 @@ include_once("hautepage.php");
 
 <center>
 
-<form>
+<form method = "post">
 
 </form>
 
