@@ -8,7 +8,7 @@ function Email($destinataire, $subject, $message){
      'X-Mailer: PHP/' . phpversion();
 
 
-     mail('elio007@hotmail.fr', 'Mon Sujet', $message,$headers);
+     mail($destinataire, $suject, $message,$headers);
     
 
 }
