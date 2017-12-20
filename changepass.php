@@ -10,6 +10,10 @@ include_once("./hautepage.php");
 
 <div id = "conteneur2">
 
+<form>
+
+</form>
+
 </div>
 
 <?php 
