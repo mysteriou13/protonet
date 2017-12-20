@@ -9,7 +9,7 @@ include_once("./email.php");
 
 <center>
 
-<form>
+<form  method = "post">
 
 </form>
 
