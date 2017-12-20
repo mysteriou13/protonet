@@ -13,8 +13,10 @@ include_once("./email.php");
 Demande de nouveau mot pass
 </p>
 
-<form  method = "post" action = "<?php echo $_SERVER['PHP_SELF']?>">
+<form  method = "post" action = "<?php echo $_SERVER['PHP_SELF']?>" style = "color:white;">
+
 enter votre email
+
 </br>
 <input type = "text" name  = "email">
 
