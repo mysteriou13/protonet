@@ -43,6 +43,10 @@ http://www.vecchionet.com/changepass.php?email=$destinataire'";
 
 Email($destinataire,$suject,$lienemail);
 
+}else{
+
+echo "erreur  email no  reconnu ";
+
 }
 
 }
