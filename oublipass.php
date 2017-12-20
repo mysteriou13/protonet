@@ -19,6 +19,15 @@ include_once("./email.php");
 
 if(isset($_POST['email']) && !empty($_POST['email'])){
 
+$email = htmlspecialchars($_POST['email']);
+
+$email = $connect->real_escape_string($_POST['email']);
+
+$e = "SELECT count(*)email FROM membre WHERE email = '$email'";
+
+$e1 = $connect->query($e);
+
+$e2 = $e1->fetch_assoc();
 
 }
  ?>
