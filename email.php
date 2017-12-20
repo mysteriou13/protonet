@@ -7,8 +7,7 @@ function Email($destinataire, $subject, $message){
      'Reply-To: vecchionet' . "\r\n" .
      'X-Mailer: PHP/' . phpversion();
 
-
-     mail($destinataire, $suject, $message,$headers);
+     mail($destinataire, $subject, $message,$headers);
     
 
 }
