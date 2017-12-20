@@ -15,6 +15,14 @@ include_once("./email.php");
 
 <input type = "submit">
 
+<?php
+
+if(isset($_POST['email']) && !empty($_POST['email'])){
+
+
+}
+ ?>
+
 </form>
 
 
