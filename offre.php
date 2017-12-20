@@ -8,6 +8,8 @@ session_start();
 
 include("./hautepage.php");
 
+include_once("./email.php");
+
 ?>
 
 <div id = "contact" style = " padding-top:1%;">
@@ -125,12 +127,6 @@ $verif1 = $connect->query($verif);
                                                                                                 
 $verif2 = $verif1->fetch_assoc();
 
-$abo = "SELECT abonnement FROM membre WHERE pseudo = '$pseudo'"; 
-
-$abo2 = $connect->query($abo);
-
-$abo3 = $abo2->fetch_assoc();
-
 if($verif2['verifemail'] == 0){
 
 $displayemail = "none";
@@ -139,13 +135,9 @@ $displayemail2 = "block";
 }else{
 $displayemail2 = "none";
 
-if($abo3['abonnement'] == 0){
 
 $displayemail = "none";
 
-$displayabo = "block";
-
-}else{
 $displayabo = "none";
 $displayemail = "block";
 
@@ -153,7 +145,6 @@ $displayemail = "block";
 
 }
 
-}
 
 ?>
 
@@ -174,12 +165,6 @@ echo $_SERVER['PHP_SELF']."#formcommande";
 " id = "formcommande" style = "border:1px solid black; background-color:gray;">
 <center>
 fornulaire de precommande
-
-<span id = "abo" style = "display:<?php echo $displayabo?>">
-
-  <a href = "abo.php" style  = "color:white;"> vous dever etre abonn&eacute; pour commander</a>
-
-</span>
 
 <span style = "display:<?php echo $displayemail;?>">
 </br>
