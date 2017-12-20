@@ -13,6 +13,8 @@ include_once("./email.php");
 
 <input type = "text" name  = "email">
 
+<input type = "submit">
+
 </form>
 
 
