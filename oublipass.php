@@ -5,7 +5,7 @@ include_once("hautepage.php");
 include_once("./email.php");
 ?>
 
-<div id = "conteneur2">
+<div id = "conteneur2" >
 
 <center>
 
@@ -14,7 +14,8 @@ Demande de nouveau mot pass
 </p>
 
 <form  method = "post" action = "<?php echo $_SERVER['PHP_SELF']?>">
-
+enter votre email
+</br>
 <input type = "text" name  = "email">
 
 <input type = "submit">
