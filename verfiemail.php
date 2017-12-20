@@ -37,7 +37,7 @@ $row = $queryemail->fetch_assoc();
 
 $destinataire = $row['email'];
 
-$subject =  "validatation";
+$subject =  "validatation email ";
 
 $lienemail = "<a href = 'emailvalide.php?email=$destinataire'>confimer votre email</a>";
  
