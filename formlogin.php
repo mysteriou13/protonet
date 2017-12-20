@@ -50,8 +50,7 @@ $_SESSION['pseudo'] = $_POST['pseudo'];
 
 $self = 'http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]';
 
-echo ' <META HTTP-EQUIV="refresh" CONTENT="0;URL= "'.$self.">";
-
+header("Location:./index.php");
 
 }else{
 
