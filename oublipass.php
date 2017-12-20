@@ -9,7 +9,7 @@ include_once("./email.php");
 
 <center>
 
-<form  method = "post">
+<form  method = "post" action = "<?php echo $_SERVER['PHP_SELF']?>">
 
 </form>
 
