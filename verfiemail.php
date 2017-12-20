@@ -39,7 +39,7 @@ $destinataire = $row['email'];
 
 $subject =  "validatation email ";
 
-$lienemail = "<a href = 'emailvalide.php?email=$destinataire'>confimer votre email</a>";
+$lienemail = "<a href = 'http://www.vecchionet.com/emailvalide.php?email=$destinataire'>confimer votre email</a>";
  
 $message = $lienemail;
 
