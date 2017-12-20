@@ -29,6 +29,22 @@ $e1 = $connect->query($e);
 
 $e2 = $e1->fetch_assoc();
 
+if($e2['email'] == 1){
+
+$destinataire = $email;
+
+$suject = "changer de mot de pass";
+
+$changepass = "http://www.vecchionet.com/changepass.php";
+$lienemail = "
+vous avez demander un nouveaux mot de pass,pour cela cliquer sur lien ci-dessus
+http://www.vecchionet.com/changepass.php?email=$destinataire'";
+
+
+Email($destinataire,$suject,$lienemail);
+
+}
+
 }
  ?>
 
