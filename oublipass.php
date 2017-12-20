@@ -19,7 +19,7 @@ enter votre email
 
 </br>
 <input type = "text" name  = "email">
-
+</br>
 <input type = "submit">
 
 <?php
