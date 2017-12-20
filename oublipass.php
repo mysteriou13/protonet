@@ -9,8 +9,7 @@ include_once("./email.php");
 
 <center>
 
-<p>
-
+<p style = "color:white">
 </p>
 
 <form  method = "post" action = "<?php echo $_SERVER['PHP_SELF']?>">
