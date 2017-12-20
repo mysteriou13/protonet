@@ -10,6 +10,7 @@ include_once("./email.php");
 <center>
 
 <p style = "color:white">
+Demande de nouveau mot pass
 </p>
 
 <form  method = "post" action = "<?php echo $_SERVER['PHP_SELF']?>">
