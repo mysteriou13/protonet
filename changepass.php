@@ -10,7 +10,7 @@ include_once("./hautepage.php");
 
 <div id = "conteneur2">
 
-<form  method = "post">
+<form  method = "post" action = "<?php echo $_SERVER['PHP_SELF']?>">
 
 </form>
 
