@@ -16,6 +16,7 @@ include_once("./hautepage.php");
 </br>
 <input type = "text" name = "confirpass">
 </br>
+<input type = "submit" >
 </form>
 
 </div>
