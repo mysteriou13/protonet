@@ -16,7 +16,7 @@ include_once("./hautepage.php");
 </br>
 <label>nouveau mot pass </label> <input type = "text" name = "pass">
 </br>
-<input type = "text" name = "confirpass">
+<label> confirmer mot de pass</label><input type = "text" name = "confirpass">
 </br>
 <input type = "submit" >
 </center>
