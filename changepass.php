@@ -12,7 +12,13 @@ include_once("./hautepage.php");
 
 <form  method = "post" action = "<?php echo $_SERVER['PHP_SELF']?>">
 
+:w<center>
 <input type = "text" name = "pass">
+</br>
+<input type = "text" name = "confirpass">
+</br>
+<input type = "submit" >
+</center>
 
 </form>
 
