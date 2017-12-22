@@ -12,6 +12,8 @@ include_once("./hautepage.php");
 
 <form  method = "post" action = "<?php echo $_SERVER['PHP_SELF']?>">
 <center>
+<label> change de mot pass</label>
+</br>
 <input type = "text" name = "pass">
 </br>
 <input type = "text" name = "confirpass">
