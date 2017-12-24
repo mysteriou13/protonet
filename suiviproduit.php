@@ -23,13 +23,11 @@ $produit3 = $produit2->fetch_assoc();
 
 <div  style = "display:flex; border:1px solid white; justify-content: space-around; ">
 
-<div style = " display:flex; justify-content:space-between; border:1px solid; margin:1%; ">
-
+<div style = " display:flex; justify-content:space-between;  margin:1%; ">
 
 </div>
 
 <div>
-
 
 </div>
 
