@@ -46,7 +46,7 @@ $p = sha1($_POST['pass']);
 
 $p = htmlspecialchars($p);
 
-$p = $connect->real_escape_string($);
+$p = $connect->real_escape_string($p);
 
 $sql1 = mysqli_query($connect,"SELECT count(*)pseudo FROM membre  WHERE pseudo = '$v' && pass = '$p' ");
 
@@ -58,7 +58,7 @@ $_SESSION['pseudo'] = $_POST['pseudo'];
 
 $self = 'http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]';
 
-header("Location:./index.php");
+echo '<meta http-equiv="refresh" content="0;URL=index.php" />';
 
 }else{
 
