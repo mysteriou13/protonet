@@ -38,6 +38,10 @@ if(isset($_POST['pseudo']) && !empty($_POST['pseudo']) && isset($_POST['pass']) 
 
 $v = $_POST['pseudo'];
 
+$v = htmlspecialchars($v);
+
+$v = $connect->real_escape_string($v);
+
 $p = sha1($_POST['pass']);
 
 $sql1 = mysqli_query($connect,"SELECT count(*)pseudo FROM membre  WHERE pseudo = '$v' && pass = '$p' ");
