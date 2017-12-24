@@ -8,6 +8,13 @@ include("./hautepage.php");
 
 <div id = "conteneur2">
 
+<?php
+
+
+$produit = htmlspecialchars($_GET['produit']);
+
+ ?>
+
 </div>
 
 <?php
