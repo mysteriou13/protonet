@@ -1,7 +1,7 @@
 
 <?php
 
-$lien = "suiviproduit.php?produit?produit=".$produit2['id'];
+$lien = "suiviproduit.php?produit=".$produit2['id'];
 
 
  ?>
