@@ -30,51 +30,17 @@ $produit1 = $connect->query($produit);
 $d = 0;
 
 
- ?>
-
-
-
-
-
-
-<?php 
 
 while($produit2 = $produit1->fetch_assoc()){
 
 $d++;
 
-echo "<div style = 'margin-bottom:1%; display:flex; justify-content:space-around; border:1px solid; margin:1%; '>";
-
-echo "<div>";
-
-echo "commande nº".$d;
-
-echo "</div>";
-
-echo "<div>";
-
-echo "type de site&nbsp;&nbsp; : &nbsp;&nbsp;".$produit2['typesite'];
-
-echo "</div>";
-
-echo "<div>";
-
-echo "etat &nbsp;&nbsp; : &nbsp; &nbsp;".$produit2['suivi'];
-
-echo "</div>";
-
-echo "</div>";
-
+include("./divproduit.php");
 
 }
 
+
 ?>
-
-
-
-
-
-
 
 
 </div>
