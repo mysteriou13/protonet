@@ -44,6 +44,10 @@ $v = $connect->real_escape_string($v);
 
 $p = sha1($_POST['pass']);
 
+$p = htmlspecialchars($p);
+
+$p = $connect->real_escape_string($);
+
 $sql1 = mysqli_query($connect,"SELECT count(*)pseudo FROM membre  WHERE pseudo = '$v' && pass = '$p' ");
 
 $sql2 = mysqli_fetch_row($sql1);
