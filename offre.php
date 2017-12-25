@@ -178,7 +178,13 @@ type de site
 </br>
 <input type = "file">
 </br>
+<textarea style = "height:50%; width:50%;">
+
+</textarea>
+</br>
 <input type = "submit"  value = "envoyer">
+</br>
+
 </span>
 
 <span style = "display:<?php echo $displayemail2?>">
