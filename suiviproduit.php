@@ -21,21 +21,28 @@ $produit3 = $produit2->fetch_assoc();
 
  ?>
 
-<div  style = "display:flex; border:1px solid white; justify-content: space-around; ">
-
-<div style = " display:flex; justify-content:space-between;  margin:1%; ">
-
+<div  style = "color:white; font-size:1.5em;  display:flex; justify-content: space-around; ">
+<center>
+ficher  de suivi de la commande nº <?php echo $_GET['nbproduit'] ?>
+<div>
+type de produit :
+<?php
+echo $produit3['typesite'];
+ ?>
 </div>
 
 <div>
+suivi:
+<?php
 
+echo $produit3['suivi'];
+
+ ?>
 </div>
 
 </div>
-
-
+</center>
 </div>
-
 <?php
 include("./footer.php");
  ?>
