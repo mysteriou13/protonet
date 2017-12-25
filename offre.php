@@ -176,6 +176,8 @@ type de site
 </br>
 <input type = "radio" name = "site" value = "autre"> autre 
 </br>
+<input type = "file">
+</br>
 <input type = "submit"  value = "envoyer">
 </span>
 
