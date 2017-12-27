@@ -162,7 +162,7 @@ echo $_SERVER['PHP_SELF']."#formcommande";
 }
 
   ?>
-" id = "formcommande" style = "border:1px solid black; background-color:gray;">
+" id = "formcommande"  enctype="multipart/form-data"  style = "border:1px solid black; background-color:gray;">
 <center>
 fornulaire de precommande
 
