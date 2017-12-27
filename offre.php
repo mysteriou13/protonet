@@ -175,6 +175,7 @@ type de site
 <input type= "radio" name="site" value="nuit"> boutique en ligne
 </br>
 <input type = "radio" name = "site" value = "autre"> autre 
+<input type="hidden" name="MAX_FILE_SIZE" value="1048576" />
 </br>
 <input type = "file">
 </br>
