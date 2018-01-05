@@ -138,7 +138,7 @@ $rename = $filea;
 $link = getcwd()."/".$rename."1";
 
 $infosfichier = pathinfo($_FILES['picture']['name']);
-$extensions_autorisees = array('jpg', 'jpeg', 'gif', 'png','odt');
+$extensions_autorisees = array('jpg', 'jpeg', 'gif', 'png','odt','zip');
 $extension_upload = $infosfichier['extension'];
 
                 if (in_array($extension_upload, $extensions_autorisees)){

@@ -1,6 +1,4 @@
-<?php 
-session_start();
-?>
+
 <html>
 <body>
 
@@ -25,16 +23,16 @@ $produit3 = $produit2->fetch_assoc();
 
 <div  style = "color:white; font-size:1.5em;  display:flex; justify-content: space-around; ">
 <center>
-ficher  de suivi de la commande nº <?php echo $_GET['nbproduit'] ?>
+ commande nº <?php echo $_GET['nbproduit'] ?>
 <div>
-type de produit :
+type:
 <?php
 echo $produit3['typesite'];
  ?>
 </div>
 
 <div>
-suivi:
+etat
 <?php
 
 echo $produit3['suivi'];
