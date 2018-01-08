@@ -225,9 +225,15 @@ $lien = $connect->real_escape_string(htmlspecialchars($link));
 
 }
 
+$pseudo = $_SESSION['pseudo'];
+
+$pseudo = htmlspecialchars($pseudo);
+
+$pseudo = $connect->real_escape_string($pseudo);
+
 $idcommande = htmlspecialchars($idcommande);
 
-$idcommande = $connect-real_escape_string($idcommande);
+$idcommande = $connect->real_escape_string($idcommande);
 
 }
 
