@@ -207,6 +207,8 @@ $commander = "SELECT * FROM  commande WHERE pseudo ='$pseudo' ORDER BY id DESC";
 $commander1 = $connect->query($commander);
 
 $commander2 = $commander1->fetch_assoc();
+ 
+$idcommande = $commander2['id'];
 
 
 }
