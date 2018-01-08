@@ -151,7 +151,6 @@ $displayemail = "block";
 <div id  = "commande" style = "display:<?php echo $display; ?>; font-size:1em; ">
 
 <form  method = "POST"  >
-sss
 
 <center>
 fornulaire de precommande
@@ -167,7 +166,7 @@ type de site
 <input type = "radio" name = "site" value = "autre"> autre 
 <input type="hidden" name="MAX_FILE_SIZE" value="1048576" />
 </br>
-<input type = "file">
+<input type = "file" name = "file">
 </br>
 <textarea style = "height:50%; width:50%;">
 
