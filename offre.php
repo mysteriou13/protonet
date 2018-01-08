@@ -200,7 +200,7 @@ $suivi1 = htmlspecialchars($suivi1);
 
 $suivi = $connect->real_escape_string($suivi1);
 
-$site = "INSERT INTO fichier VALUES('','$pseudo','$site','$suivi')";
+$site = "INSERT INTO commande VALUES('','$pseudo','$site','$suivi')";
 
 $commander = "SELECT * FROM  commande WHERE pseudo ='$pseudo' ORDER BY id DESC";
 
