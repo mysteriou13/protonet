@@ -225,6 +225,10 @@ $lien = $connect->real_escape_string(htmlspecialchars($link));
 
 }
 
+$idcommande = htmlspecialchars($idcommande);
+
+$idcommande = $connect-real_escape_string($idcommande);
+
 }
 
 ?>
