@@ -235,6 +235,8 @@ $idcommande = $connect->real_escape_string($idcommande);
 
 $insertfichier = "INSERT INTO fichier VALUES('','$idcommande','$pseudo','$lien')";
 
+$connect->query($insertfichier);
+
 }
 
 }
