@@ -223,8 +223,6 @@ $link = getcwd()."/".$rename."1";
 
 $lien = $connect->real_escape_string(htmlspecialchars($link)); 
 
-}
-
 $pseudo = $_SESSION['pseudo'];
 
 $pseudo = htmlspecialchars($pseudo);
@@ -234,6 +232,8 @@ $pseudo = $connect->real_escape_string($pseudo);
 $idcommande = htmlspecialchars($idcommande);
 
 $idcommande = $connect->real_escape_string($idcommande);
+
+$insertfichier = "INSERT INTO fichier VALUES('','$idcommande','$pseudo','$lien')";
 
 }
 
