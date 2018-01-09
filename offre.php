@@ -237,6 +237,8 @@ $insertfichier = "INSERT INTO fichier VALUES('','$idcommande','$pseudo','$lien')
 
 }
 
+}
+
 ?>
 
 </center>
