@@ -211,14 +211,6 @@ $idcommande = $commander2['id'];
 
 if (isset($_FILES['picture']) AND $_FILES['picture']['error'] == 0){ 
 
-$name = $_FILES["picture"]["name"];
-
-$rename1 = explode(".",$name);
-
-$filea =$rename1[0].$commander2['id'].".".$rename1[1];
-
-$rename = $filea;
-
 $link = getcwd()."/".$rename."1";
 
 $lien = $connect->real_escape_string(htmlspecialchars($link)); 
@@ -236,6 +228,35 @@ $idcommande = $connect->real_escape_string($idcommande);
 $insertfichier = "INSERT INTO fichier VALUES('','$idcommande','$pseudo','$lien')";
 
 $connect->query($insertfichier);
+
+
+$name = $_FILES["picture"]["name"];
+
+$rename1 = explode(".",$name);
+
+$filea = $rename1[0].$commander2['id'].".".$rename1[1];
+
+$rename = $filea;
+
+$uploads_dir = $_SERVER['DOCUMENT_ROOT'];
+$tmp_name = $_FILES["picture"]["tmp_name"];
+
+$infosfichier = pathinfo($_FILES['picture']['name']);
+$extensions_autorisees = array('jpg', 'jpeg', 'gif', 'png','odt','zip');
+$extension_upload = $infosfichier['extension'];
+
+              if(in_array($extension_upload, $extensions_autorisees)){
+
+move_uploaded_file($tmp_name, "$uploads_dir/$rename");
+
+ $fichier = 1;
+
+}else{
+
+echo "error upload fichier";
+
+}
+   
 
 }
 
