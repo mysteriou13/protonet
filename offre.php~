@@ -165,7 +165,7 @@ type de site
 <input type = "radio" name = "site" value = "autre"> autre 
 <input type="hidden" name="MAX_FILE_SIZE" value="1048576" />
 </br>
-<input type = "file" name = "picture">
+<input type = "file" name = "picture">(format accept&eacute;)
 </br>
 <textarea style = "height:50%; width:50%;">
 
@@ -263,7 +263,7 @@ if (is_uploaded_file($_FILES["picture"]["tmp_name"])) {
 echo "</br>";
 echo $file = $_FILES["picture"]["name"];
 
-$insertfichier = "INSERT INTO fichier VALUES('','$idcommande','$pseudo','$lien',$file,$nomDestination)";
+$insertfichier = "INSERT INTO fichier VALUES('','$idcommande','$pseudo','$lien','$file','$nomDestination')";
 
 $connect->query($insertfichier);   
 

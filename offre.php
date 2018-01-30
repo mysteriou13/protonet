@@ -165,7 +165,7 @@ type de site
 <input type = "radio" name = "site" value = "autre"> autre 
 <input type="hidden" name="MAX_FILE_SIZE" value="1048576" />
 </br>
-<input type = "file" name = "picture">
+<input type = "file" name = "picture">(format accept&eacute; 'jpg', 'jpeg', 'gif', 'png','odt','zip')
 </br>
 <textarea style = "height:50%; width:50%;">
 
