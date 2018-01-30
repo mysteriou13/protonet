@@ -44,10 +44,6 @@ suivi tout long de la creation du site.
 assitance techinique.
 </li>
 </br>
-<li>
-r&eacute;f&eacute;rencement de votre site dans les moteurs de recherche
-</li>
-</br>
 <center>
 
 <div onclick = "
@@ -152,7 +148,7 @@ $displayemail = "block";
 
  <form enctype="multipart/form-data"  method="post">
 <center>
-fornulaire de precommande
+formulaire de precommande
 
 <span style = "display:<?php echo $displayemail;?>">
 </br>
