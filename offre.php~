@@ -150,9 +150,7 @@ $displayemail = "block";
 
 <div id  = "commande" style = "display:<?php echo $display; ?>; font-size:1em; ">
 
-<form  method = "POST"  >
-sss
-
+ <form enctype="multipart/form-data"  method="post">
 <center>
 fornulaire de precommande
 
@@ -167,7 +165,7 @@ type de site
 <input type = "radio" name = "site" value = "autre"> autre 
 <input type="hidden" name="MAX_FILE_SIZE" value="1048576" />
 </br>
-<input type = "file">
+<input type = "file" name = "picture">
 </br>
 <textarea style = "height:50%; width:50%;">
 
@@ -202,10 +200,76 @@ $suivi = $connect->real_escape_string($suivi1);
 
 $site = "INSERT INTO commande VALUES('','$pseudo','$site','$suivi')";
 
+$commander = "SELECT * FROM  commande WHERE pseudo ='$pseudo' ORDER BY id DESC";
 
-echo $commande = "SELECT * FROM  commande WHERE pseudo ='.$pseudo.' ORDER BY 'id' DESC";
+$commander1 = $connect->query($commander);
+
+$commander2 = $commander1->fetch_assoc();
+ 
+$idcommande = $commander2['id'];
+
+
+
+$pseudo = $_SESSION['pseudo'];
+
+$pseudo = htmlspecialchars($pseudo);
+
+$pseudo = $connect->real_escape_string($pseudo);
+
+$idcommande = htmlspecialchars($idcommande);
+
+$idcommande = $connect->real_escape_string($idcommande);
+
+
+
+
+
+print_r($_FILES["picture"]['name']);
+
+$name = $_FILES["picture"]["name"];
+
+$rename1 = explode(".",$name);
+
+$filea = $rename1[0].$commander2['id'].".".$rename1[1];
+
+$rename = $filea;
+
+$link = getcwd()."/".$rename."1";
+
+$lien = $connect->real_escape_string(htmlspecialchars($link)); 
+
+
+$uploads_dir = $_SERVER['DOCUMENT_ROOT'];
+$tmp_name = $_FILES["picture"]["tmp_name"];
+
+$infosfichier = pathinfo($_FILES['picture']['name']);
+$extensions_autorisees = array('jpg', 'jpeg', 'gif', 'png','odt','zip');
+$extension_upload = $infosfichier['extension'];
+
+$repertoireDestination = dirname(__FILE__)."/";
+$nomDestination        = "fichier_du_".date("YmdHis").'.'.$extension_upload;
+
+if (is_uploaded_file($_FILES["picture"]["tmp_name"])) {
+    if (rename($_FILES["picture"]["tmp_name"],
+                   $repertoireDestination.$nomDestination)) {
+        echo "Le fichier temporaire ".$_FILES["picture"]["tmp_name"].
+                " a été déplacé vers ".$repertoireDestination.$nomDestination;
+    } else {
+        echo "Le déplacement du fichier temporaire a échoué".
+                " vérifiez l'existence du répertoire ".$repertoireDestination;
+    }          
+} 
+
+echo "</br>";
+echo $file = $_FILES["picture"]["name"];
+
+$insertfichier = "INSERT INTO fichier VALUES('','$idcommande','$pseudo','$lien',$file,$nomDestination)";
+
+$connect->query($insertfichier);   
 
 }
+
+
 
 ?>
 

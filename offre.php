@@ -150,8 +150,7 @@ $displayemail = "block";
 
 <div id  = "commande" style = "display:<?php echo $display; ?>; font-size:1em; ">
 
-<form  method = "POST"  >
-
+ <form enctype="multipart/form-data"  method="post">
 <center>
 fornulaire de precommande
 
@@ -209,11 +208,7 @@ $commander2 = $commander1->fetch_assoc();
  
 $idcommande = $commander2['id'];
 
-if (isset($_FILES['picture']) AND $_FILES['picture']['error'] == 0){ 
 
-$link = getcwd()."/".$rename."1";
-
-$lien = $connect->real_escape_string(htmlspecialchars($link)); 
 
 $pseudo = $_SESSION['pseudo'];
 
@@ -225,10 +220,11 @@ $idcommande = htmlspecialchars($idcommande);
 
 $idcommande = $connect->real_escape_string($idcommande);
 
-$insertfichier = "INSERT INTO fichier VALUES('','$idcommande','$pseudo','$lien')";
 
-$connect->query($insertfichier);
 
+
+
+print_r($_FILES["picture"]['name']);
 
 $name = $_FILES["picture"]["name"];
 
@@ -238,6 +234,11 @@ $filea = $rename1[0].$commander2['id'].".".$rename1[1];
 
 $rename = $filea;
 
+$link = getcwd()."/".$rename."1";
+
+$lien = $connect->real_escape_string(htmlspecialchars($link)); 
+
+
 $uploads_dir = $_SERVER['DOCUMENT_ROOT'];
 $tmp_name = $_FILES["picture"]["tmp_name"];
 
@@ -245,22 +246,30 @@ $infosfichier = pathinfo($_FILES['picture']['name']);
 $extensions_autorisees = array('jpg', 'jpeg', 'gif', 'png','odt','zip');
 $extension_upload = $infosfichier['extension'];
 
-              if(in_array($extension_upload, $extensions_autorisees)){
+$repertoireDestination = dirname(__FILE__)."/";
+$nomDestination        = "fichier_du_".date("YmdHis").'.'.$extension_upload;
 
-move_uploaded_file($tmp_name, "$uploads_dir/$rename");
+if (is_uploaded_file($_FILES["picture"]["tmp_name"])) {
+    if (rename($_FILES["picture"]["tmp_name"],
+                   $repertoireDestination.$nomDestination)) {
+        echo "Le fichier temporaire ".$_FILES["picture"]["tmp_name"].
+                " a été déplacé vers ".$repertoireDestination.$nomDestination;
+    } else {
+        echo "Le déplacement du fichier temporaire a échoué".
+                " vérifiez l'existence du répertoire ".$repertoireDestination;
+    }          
+} 
 
- $fichier = 1;
+echo "</br>";
+echo $file = $_FILES["picture"]["name"];
 
-}else{
+$insertfichier = "INSERT INTO fichier VALUES('','$idcommande','$pseudo','$lien','$file','$nomDestination')";
 
-echo "error upload fichier";
+$connect->query($insertfichier);   
 
 }
-   
 
-}
 
-}
 
 ?>
 
