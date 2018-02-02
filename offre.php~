@@ -1,5 +1,9 @@
 <?php 
 session_start();
+
+$res = 0;
+
+
 ?>
 <html>
 <body>
@@ -12,7 +16,7 @@ include_once("./email.php");
 
 ?>
 
-<div id = "contact" style = " padding-top:1%;">
+<div id = "contact" style = "">
 
 <div style = " color:white; ">
 
@@ -67,7 +71,7 @@ echo "document.getElementById('commande').style.display = 'block';  document.loc
 
 ?>
 ">
-commander ici
+
 </div>
 
 </center>
@@ -144,40 +148,83 @@ $displayemail = "block";
 
 ?>
 
-<div id  = "commande" style = "display:<?php echo $display; ?>; font-size:1em; ">
 
- <form enctype="multipart/form-data"  method="post">
-<center>
-fornulaire de precommande
 
-<span style = "display:<?php echo $displayemail;?>">
-</br>
-type de site
-</br>
+ <form enctype="multipart/form-data"  method="post" style = "display:<?php echo $display;?>" >
+
+<div style = "
+width:100%;
+height:100%;
+background-color:grey;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+
+">
+
+formulaire de precommande
+<div>
+
+<div>
+type de produit(Obligatoire)
+</div>
+
+<div>
 <input type= "radio" name="site" value="jour"> site vitrine
-</br>
+</div>
+
+
+<div>
 <input type= "radio" name="site" value="nuit"> boutique en ligne
-</br>
-<input type = "radio" name = "site" value = "autre"> autre 
+</div>
+
+<div>
 <input type="hidden" name="MAX_FILE_SIZE" value="1048576" />
+</div>
+
+<div>
+<input type= "radio" name="site" value="nuit"> autre
+</div>
+
+<div>
 </br>
-<input type = "file" name = "picture">(format accept&eacute; 'jpg', 'jpeg', 'gif', 'png','odt','zip')
+(photo,logo,tarif,etc...)<input type = "file" name = "picture">(format accept&eacute; 'jpg', 'jpeg', 'gif', 'png','odt','zip')
+</div>
 </br>
-<textarea style = "height:50%; width:50%;">
+</br>
+<div>
+description(Optionnel)
+<textarea style = "height:100%; width:100%;">
 
 </textarea>
-</br>
-<input type = "submit"  value = "envoyer">
-</br>
+</div>
 
-</span>
+<div>
+
+<input type = "submit"  value = "envoyer">
+
+</div>
+
+<div>
+
+</div>
+
+
+
+</div>
+
+ </form>
+
 
 <span style = "display:<?php echo $displayemail2?>">
 <a href = "./verfiemail.php"style = "color:white;"> pour  commander vous dever valider votre email </a>
 </span>
 
 <?php
- 
+
+$validecommande = 0; 
+
 if(isset($_POST['site']) && !empty($_POST['site'])){
 
 $pseudo = $connect->real_escape_string(htmlspecialchars($_SESSION['pseudo']));
@@ -195,6 +242,10 @@ $suivi1 = htmlspecialchars($suivi1);
 $suivi = $connect->real_escape_string($suivi1);
 
 $site = "INSERT INTO commande VALUES('','$pseudo','$site','$suivi')";
+
+$connect->query($site);
+
+$validecommande = $connect->query($site);
 
 $commander = "SELECT * FROM  commande WHERE pseudo ='$pseudo' ORDER BY id DESC";
 
@@ -219,8 +270,7 @@ $idcommande = $connect->real_escape_string($idcommande);
 
 
 
-
-print_r($_FILES["picture"]['name']);
+if(isset($_FILES['picture']['name']) && !empty($_FILES['picture']['name'])){
 
 $name = $_FILES["picture"]["name"];
 
@@ -234,7 +284,6 @@ $link = getcwd()."/".$rename."1";
 
 $lien = $connect->real_escape_string(htmlspecialchars($link)); 
 
-
 $uploads_dir = $_SERVER['DOCUMENT_ROOT'];
 $tmp_name = $_FILES["picture"]["tmp_name"];
 
@@ -245,35 +294,52 @@ $extension_upload = $infosfichier['extension'];
 $repertoireDestination = dirname(__FILE__)."/";
 $nomDestination        = "fichier_du_".date("YmdHis").'.'.$extension_upload;
 
+$valide = 0;
 if (is_uploaded_file($_FILES["picture"]["tmp_name"])) {
     if (rename($_FILES["picture"]["tmp_name"],
                    $repertoireDestination.$nomDestination)) {
-        echo "Le fichier temporaire ".$_FILES["picture"]["tmp_name"].
-                " a été déplacé vers ".$repertoireDestination.$nomDestination;
+        $valide = 1;
     } else {
         echo "Le déplacement du fichier temporaire a échoué".
                 " vérifiez l'existence du répertoire ".$repertoireDestination;
     }          
 } 
 
-echo "</br>";
-echo $file = $_FILES["picture"]["name"];
 
-$insertfichier = "INSERT INTO fichier VALUES('','$idcommande','$pseudo','$lien','$file','$nomDestination')";
+
+
+$file = $_FILES["picture"]["name"];
+
+$file = $connect->real_escape_string($file);
+
+$link = getcwd()."/".$nomDestination;
+
+$lien = $connect->real_escape_string(htmlspecialchars($link));
+ 
+$insertfichier = "INSERT INTO fichier VALUES('','$idcommande','$pseudo','$lien','$file')";
 
 $connect->query($insertfichier);   
 
+$res = 0;
+
+
 }
 
+}
 
+if(isset($_POST['site']) && !empty($_POST['site'])){
 
+echo '<META http-equiv="refresh" content="0; URL=produit.php">';
+
+}
+
+echo "<pre>";
+
+print_r($_POST);
+
+echo "</pre>";
 ?>
 
-</center>
-
-</form>
-
-</div>
 
 </p>
 
