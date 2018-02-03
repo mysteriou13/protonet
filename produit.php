@@ -7,7 +7,7 @@ session_start();
 include_once("hautepage.php");
 ?>
 
-<div id = "conteneur2">
+<div id = "conteneur2" style = "height:auto">
 
 <div style = "color:white; font-size:2em;">
 

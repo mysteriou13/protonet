@@ -22,7 +22,7 @@ $pseudo = $_SESSION['pseudo'];
 $pseudo1 =  $connect->real_escape_string("$pseudo");
 
 
-$produit = "SELECT * FROM commande WHERE pseudo = '$pseudo1' ORDER BY id DESC";
+$produit = "SELECT * FROM commande WHERE pseudo = '$pseudo1'";
 
 $produit1 = $connect->query($produit);
 
