@@ -132,7 +132,7 @@ color:silver; "
  >
 <h2>
 
-cr&eacute;ateur de siteweb pour pc tablette et telephone(En construction)
+
 
 </h2>
 
@@ -327,19 +327,8 @@ $wrap = 300;
 
 $text = "
 <div style = 'font-size:1.5em;'>
-Je mets toutes mes comptences et mon savoir faire pour  concevoir et entretenir votre image
-           travers des  produits web unique et personnalisé.</br> Pour tous nos sites nous vous garantissons:
-<p>
-une securit&eacute; &agrave; 100%;
-</p>
+Hergeur de service libre  et etique corse
 
-<p>
-une assitance technique;
-</p>
-
-<p>
-nous occupons de toutes les formalités d'hergement.
-</p>
 </div>
 
 ";
@@ -389,54 +378,7 @@ echo "display:none";
 ?>
 ">
 
-<div id = "design" style = "
-font-size:2em;
-display:flex;
-flex-wrap:wrap;
-justify-content:space-around;
-">
 
-<div onclick = "
-document.location = 'index.php#site1';
-"
->
-design1 
-</div>
-
-<div onclick = "
-document.location = 'index.php#site2';
-">
-design2
-</div>
-
-<div onclick = "
-document.location = 'index.php#site3';
-">
-
-design3
-
-</div>
-
-<div onclick = "
-document.location = 'index.php#site4';
-">
-
-design4
-
-</div>
-
-<div onclick = "
-document.location = 'index.php#site5';
-">
-design5
-</div>
-
-
-<div onclick = "
-document.location = 'index.php#site6';
-">
-design6
-</div>
 
 
 </div>

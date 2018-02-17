@@ -327,19 +327,8 @@ $wrap = 300;
 
 $text = "
 <div style = 'font-size:1.5em;'>
-Je mets toutes mes comptences et mon savoir faire pour  concevoir et entretenir votre image
-           travers des  produits web unique et personnalisé.</br> Pour tous nos sites nous vous garantissons:
-<p>
-une securit&eacute; &agrave; 100%;
-</p>
+Hergeur de service libre  et etique corse
 
-<p>
-une assitance technique;
-</p>
-
-<p>
-nous occupons de toutes les formalités d'hergement.
-</p>
 </div>
 
 ";
