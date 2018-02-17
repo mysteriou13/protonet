@@ -132,7 +132,7 @@ color:silver; "
  >
 <h2>
 
-cr&eacute;ateur de siteweb pour pc tablette et telephone(En construction)
+
 
 </h2>
 
@@ -389,54 +389,7 @@ echo "display:none";
 ?>
 ">
 
-<div id = "design" style = "
-font-size:2em;
-display:flex;
-flex-wrap:wrap;
-justify-content:space-around;
-">
 
-<div onclick = "
-document.location = 'index.php#site1';
-"
->
-design1 
-</div>
-
-<div onclick = "
-document.location = 'index.php#site2';
-">
-design2
-</div>
-
-<div onclick = "
-document.location = 'index.php#site3';
-">
-
-design3
-
-</div>
-
-<div onclick = "
-document.location = 'index.php#site4';
-">
-
-design4
-
-</div>
-
-<div onclick = "
-document.location = 'index.php#site5';
-">
-design5
-</div>
-
-
-<div onclick = "
-document.location = 'index.php#site6';
-">
-design6
-</div>
 
 
 </div>
