@@ -20,16 +20,48 @@ $nb = mb_substr_count($monUrl, "#");
 
 ?>
 
-<div>
+<div style = "color:white">
 
-</br>
+<div id = "conteneur2">
 
-<?php 
+<div style = "font-size:3em">
+framadate
 
-$index = htmlspecialchars("./index.php");
+</div>
 
-?>
+</div>
 
+<div id = "conteneur2" >
+
+<div style = "font-size:3em">
+framacalc
+
+</div>
+
+</div>
+
+
+<div id = "conteneur2" >
+
+<div style = "font-size:3em">
+framaboard
+
+</div>
+
+</div>
+
+
+<div id = "conteneur2">
+
+<div style = "font-size:3em">
+framapad
+
+</div>
+
+</div>
+
+</div>
+</div>
 
 </body>
 </html>
