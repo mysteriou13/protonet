@@ -33,39 +33,58 @@ liste des services
 
 <div id = "conteneur2">
 
-<div style = "font-size:3em">
+<div>
+<p style = "font-size:3em">
 framadate
-
+</p>
+<p style = "font-size:2em">
+Organiser des rendez-vous simplement et librement.
+</p>
 </div>
 
 </div>
 
 <div id = "conteneur2" >
 
-<div style = "font-size:3em">
+<p style = "font-size:3em">
 framacalc
+</p>
 
-</div>
+<p style = "font-size:2em">
+tableur colaboratif
+</p>
+
+
 
 </div>
 
 
 <div id = "conteneur2" >
 
-<div style = "font-size:3em">
+<p style = "font-size:3em">
 framaboard
 
-</div>
+</p>
+
+<p style = "font-size:2em">
+
+gestionaire de projet 
+
+</p>
 
 </div>
 
 
 <div id = "conteneur2">
 
-<div style = "font-size:3em">
+<p style = "font-size:3em">
 framapad
 
-</div>
+</p>
+
+<p style = "font-size:2em">
+editeur de text colaboratif
+</p>
 
 </div>
 
