@@ -195,10 +195,6 @@ $inscription = htmlspecialchars("inscription.php");
 
 <div>
 
-<a style = "font-size:2em; color:white;" href = "offre.php">
-offre web
-</a>
-
 </div>
 
 &nbsp;&nbsp;

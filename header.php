@@ -118,6 +118,9 @@ $space = 'space-between;';
 
 <h1>
 vecchionet
+</br>
+hebergeur de service libre  et etique corse
+
 </h1>
 
 </div>
@@ -323,7 +326,7 @@ $wrap = 300;
 
 $text = "
 <div style = 'font-size:1.5em;'>
-Hergeur de service libre  et etique corse
+
 
 </div>
 

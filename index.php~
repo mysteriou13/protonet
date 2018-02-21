@@ -1,6 +1,7 @@
 <html>
 <body>
 
+
 <?php 
 session_start();
 
@@ -38,7 +39,7 @@ liste des services
 framadate
 </p>
 <p style = "font-size:2em">
-Organiser des rendez-vous simplement, librement.
+Organiser des rendez-vous simplement et librement.
 </p>
 </div>
 
