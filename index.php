@@ -1,5 +1,6 @@
 <html>
 <body>
+
 <?php 
 session_start();
 
@@ -16,6 +17,7 @@ $des1 = "cliquer pour agrandir";
 
 $nb = mb_substr_count($monUrl, "#");
 
+  ini_set('display_errors', 1);
 
 ?>
 
@@ -32,60 +34,62 @@ liste des services
 
 <div id = "conteneur2">
 
+
+
+
 <div>
 <p style = "font-size:3em">
-framadate
+<a href = "http://vecchionet.com:4242/" target="_blank"  style = "color:white;"> framemo</a>
 </p>
 <p style = "font-size:2em">
-Organiser des rendez-vous simplement et librement.
+tableau de post-it collaboratif
 </p>
 </div>
-
-</div>
-
-<div id = "conteneur2" >
-
-<p style = "font-size:3em">
-framacalc
-</p>
-
-<p style = "font-size:2em">
-tableur colaboratif
-</p>
-
-
-
-</div>
-
-
-<div id = "conteneur2" >
-
-<p style = "font-size:3em">
-framaboard
-
-</p>
-
-<p style = "font-size:2em">
-
-gestionaire de projet 
-
-</p>
 
 </div>
 
 
 <div id = "conteneur2">
 
+<div>
 <p style = "font-size:3em">
-framapad
-
+<a href = "./framaestro/" target="_blank" style = "color:white;"> framestro</a>
 </p>
-
 <p style = "font-size:2em">
-editeur de text colaboratif
+
+espace de travail  colaboratif
+
 </p>
+</div>
 
 </div>
+
+<div id = "conteneur2">
+<p  style = "font-size:3em"><a href = "./kanboard-1.2.1" target="_blank" style = "color:white"> kanboard </a> </p>
+
+<p style = "font-size:2em">
+gestionaire de projet libre
+</p>
+</div>
+
+ <div id = "conteneur2">
+<p style = "font-size:3em">
+<a href = "http://vecchionet.com/framavectoriel/svg-editor.html" target="_blank"  style = "color:white;">SVG-edit</a>
+</p>
+<p style = "font-size:2em">
+logiciel d'&eacute;dition d'mages et de retouche de photo libre
+</p>
+</div>
+
+     <div id = "conteneur2">
+<p style = "font-size:3em">
+<a href = "http://vecchionet.com:/framadate" target="_blank"  style = "color:white;">framadate</a>
+</p>
+<p style = "font-size:2em">
+organiser vos render-vous librement
+</p>
+</div>
+
 
 </div>
 </div>

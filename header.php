@@ -3,12 +3,8 @@
 
 $monUrl = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 
-include_once("./connect/connect.php");
-
-if(!file_exists("./connect/connect.php")){
-
-echo "connect no existe";
-
+ $mysqli = new mysqli("localhost", "root", "elio13790", "framadate");
+if ($mysqli->connect_errno) {
 }
 
 $_SERVER['HTTP_HOST'];
@@ -184,46 +180,25 @@ echo $coloraccueil;
 </div>
 
 <?php 
+$conf =  htmlspecialchars("./html");
+?>
+
+<?php 
 
 $inscription = htmlspecialchars("inscription.php");
 
 ?>
 
-   <div style = "display:<?php echo $block2;?>">                                                                                          
-                                                                                                
-&nbsp; &nbsp;<a href = "<?php echo $inscription; ?>" style = "color:white; font-size:2em;<?php echo $colorinscription; ?>">inscription</a> 
-</div> 
-
-&nbsp; &nbsp;
-
-<div>
-
-</div>
-
-&nbsp;&nbsp;
-<?php 
-
-$connection =  htmlspecialchars("connection.php");
-
-?>
-
-<div style = "display:<?php echo $block3; ?>;">
-
-<a href = "<?php echo $connection;?>" style = "color:white; font-size:2em;">connection</a>
-
-</div>
-
-<?php 
-
-$contact = htmlspecialchars("./contact.php");
-
-?>
-
-<div>
 
 &nbsp; &nbsp;<a href = "<?php echo $contact;?>" style = "color:white; font-size:2em;<?php
 
-?>">contact</a>
+?>"></a>
+
+<div>
+<a href = "<?php echo $conf;?>" target = "_blank"  style = "color:white; font-size:2em;">CGU</a>
+
+</div>
+
 </div>
 
 <?php 
@@ -259,22 +234,17 @@ $commande  = htmlspecialchars("./produit.php");
 <a href = '<?php echo $commande;?>' style = 'color:white; font-size:2em;<?php echo $colorproduit ?>'> mes produits </a>
 
 </div>
-<?php 
+<div>
 
-$deconnection  = htmlspecialchars("./deconnection.php");
 
-?>
-<div style = "display :<?php echo $block1;?>">
+<div style = "display :<?php echo $block1;?>" >
 
-<a href = "<?php echo $deconnection; ?>" style = "color:white; font-size:2em;"> deconnection </a>
+sss
 
 </div>
 
-<?php 
-
-?>
-
 <div>
+
 
 </div>
 
