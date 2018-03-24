@@ -122,6 +122,16 @@ hebergeur de service libre  et etique corse
 </div>
 
 
+<div  style = "display: flex;  color:silver; ">
+
+mise a disposition de services  qui sont des logiciels libre
+
+</br>
+
+</div>
+
+
+
 <div>
 
 <div
