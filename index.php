@@ -73,7 +73,7 @@ gestionaire de projet libre
 
  <div id = "conteneur2">
 <p style = "font-size:3em">
-<a href = "http://vecchionet.com/framavectoriel/svg-editor.html" target="_blank"  style = "color:white;">SVG-edit</a>
+<a href = "http://vecchionet.com/svgedit/svg-editor.html" target="_blank"  style = "color:white;">SVG-edit</a>
 </p>
 <p style = "font-size:2em">
 logiciel d'&eacute;dition d'mages et de retouche de photo libre
