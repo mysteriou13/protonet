@@ -122,246 +122,28 @@ hebergeur de service libre  et etique corse
 </div>
 
 
-<div  style = "display: flex;  color:silver; ">
-
-mise a disposition de services  qui sont des logiciels libre
-
-</br>
-
-</div>
-
-
-
-<div>
-
-<div
-style = "
-width:auto;
-color:silver; "
- >
-<h2>
-
-
-
-</h2>
-
-</div>
-
-</div>
-
-
-</div>
-
-
-<div
-style = "
-color:white;
-";
->
-
-
 <div style = "
+color:silver;
+font-size:2em;
 display:flex;
-flex-wrap: wrap;
-<?php 
-if(isset($_SESSION['pseudo'])){
+justify-content:space-around;">
 
-echo "justify-content: space-around;";
+<div style = "">
 
-}
-
-?>
-
-">
-
-<div>
-
-<?php 
-
-$index = htmlspecialchars("index.php");
-
-?>
-
-&nbsp; &nbsp;<a href = "<?php echo $index;?>" style = "color:white; <?php ?> font-size:2em;<?php 
-
-echo $coloraccueil;
-
-?>">accueil</a> 
-</div>
-
-<?php 
-$conf =  htmlspecialchars("./html");
-?>
-
-<?php 
-
-$inscription = htmlspecialchars("inscription.php");
-
-?>
-
-
-&nbsp; &nbsp;<a href = "<?php echo $contact;?>" style = "color:white; font-size:2em;<?php
-
-?>"></a>
-
-<div>
-<a href = "<?php echo $conf;?>" target = "_blank"  style = "color:white; font-size:2em;">CGU</a>
-
-</div>
-
-</div>
-
-<?php 
-$parametre = htmlspecialchars("./parametre.php#parametre2");
-?>
-
-<div style = "display:<?php echo $block1;?>;" >
-
-<a href = './parametre.php#parametre2' style = 'color:white;
-
-<?php
-
-if(isset($parametre)){
-
-echo "background-color:gray;";
-}
-
- ?>
-
-
- font-size:2em;'> parametre </a>
-
-</div>
-
-<?php
-
-$commande  = htmlspecialchars("./produit.php");
-
- ?>
-
-<div style = "display :<?php echo $block1;?>" >
-
-<a href = '<?php echo $commande;?>' style = 'color:white; font-size:2em;<?php echo $colorproduit ?>'> mes produits </a>
-
-</div>
-<div>
-
-
-<div style = "display :<?php echo $block1;?>" >
-
-sss
+<a href = "index.php" style = "color:silver;"> accueil </a>
 
 </div>
 
 <div>
 
+<a href = "CGU.php" style = "color:silver;"> CGU</a>
 
 </div>
 
+<div>
+<a href = "legal.php" style = "color:silver"> mention légal </a>
 </div>
 
-<div style ="
-display: flex;
-flex-direction: column;
-font-size:1em;
-margin-left:40%;
-">
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div
-style = "
-padding-top:2%;
-margin-top:1%;
-color:white;
-";
->
-
-<div style = 
-"display:flex;
-
-">
-
-<div style = "
-margin-left:2%;
-">
-
-<?php
-
-$wrap = 90;
-
-if(isset($_SESSION['pseudo'])){
-
-$wrap = 300;
-
-}
-
-$text = "
-<div style = 'font-size:1.5em;'>
-
-
-</div>
-
-";
- 
-$newtext = wordwrap($text, $wrap, "\n");
-
-
-if($base == "index.php" or $base == "protonet" or $base == "www.vecchionet.com" or $base == "vecchionet.com"){
-
-echo $newtext;
-
-}
-
-
-
-
-
-
-
-?>
-
-
-</div>
-
-</div>
-
-<div onclick = "
-document.location = '#tarif';
-"
-style = "
-display:flex;
-justify-content:center;
-";
->
-</div>
-
-<div style = "
-<?php
-
-if($base == "index.php" or $base =="protonet" or $base == "www.vecchionet.com"){
-echo "display:block;";
-}else{
-
-echo "display:none";
-
-}
-?>
-">
-
-
-
-
-</div>
-</div>
 </div>
 
 </header>
