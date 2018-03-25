@@ -1,12 +1,11 @@
 <html>
 <body>
 
+
 <?php 
 session_start();
 
 $d = "corsicanet";
-
-
 
 $des1 = "cliquer pour agrandir";
 
