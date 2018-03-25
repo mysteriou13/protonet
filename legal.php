@@ -2,41 +2,37 @@
 <html>
 <body>
 
-    <?php 
+<?php 
 session_start();
 
 $d = "corsicanet";
 
-include_once("./head.php");
-
-include_once("./header.php");
-
-$des1 = "cliquer pour agrandir";
-
- $monUrl = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
-
-
-$nb = mb_substr_count($monUrl, "#");
-
-
+include_once("head.php");
+include_once("header.php");
 ?>
 
-<div style = "font-size:3em">
 
-</div>
-
-</div>
-
+<div style = "color:white">
 
 <div id = "conteneur2">
-<p style = "color:white; font-size:2em">
+<div style  = "font-size:3em">
+reponsable du site
+<div>
+</div>
+</br>
 nom :massa
 </br>
-pr&eacute;nom : anthony
 </br>
-email:masssaanthony@vecchionet.com
+pr&eacute;nom: anthony
 </br>
-</p>
+</br>
+email:massaanthony@vecchionet.com
+</br>
+</br>
+adress:casa d'arutoli rte de muratello bat i apt 43 20137 porto-vecchio
+</div>
+
+</div>
 
 </html>
 </body>
