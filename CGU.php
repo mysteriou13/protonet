@@ -1,28 +1,8 @@
 <html>
-<body>
+<?php
+include_once("header.php");
+include_once("head.php");
 
-<?php 
-session_start();
-
-$d = "corsicanet";
-
-
-
-$des1 = "cliquer pour agrandir";
-
- $monUrl = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
-
+ include("CGU.html");
 ?>
-
-<?php 
-
-include("./head.php");
-
-include("./header.php");
-
-?>
-
-
-</body>
-</html>
 
