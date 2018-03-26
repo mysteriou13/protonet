@@ -110,7 +110,7 @@ $space = 'space-between;';
 
 
 ?>
-<div  style = "display: flex;  color:silver; ">
+<div  style = "display: flex;  color:white;">
 
 <h1>
 vecchionet
@@ -130,18 +130,18 @@ justify-content:space-around;">
 
 <div style = "">
 
-<a href = "index.php" style = "color:silver;"> accueil </a>
+<a href = "index.php" style = "color:white;"> accueil </a>
 
 </div>
 
 <div>
 
-<a href = "CGU.php" style = "color:silver;"> CGU</a>
+<a href = "CGU.php" style = "color:white;"> CGU</a>
 
 </div>
 
 <div>
-<a href = "legal.php" style = "color:silver"> mention légal </a>
+<a href = "legal.php" style = "color:white"> mention légal </a>
 </div>
 
 </div>
