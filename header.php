@@ -128,11 +128,18 @@ font-size:2em;
 display:flex;
 justify-content:space-around;">
 
-<div style = "">
+<div>
 
 <a href = "index.php" style = "color:white;"> accueil </a>
 
 </div>
+
+<div>
+
+<a href = "listservice.php" style = "color:white">liste des services </a>
+
+</div>
+
 
 <div>
 
