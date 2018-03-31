@@ -42,13 +42,33 @@ color:white;
 
 }
 
+#list:hover{
+
+color:grey;
+
+}
+
+
+#CGU:hover{
+
+color:grey;
+
+}
+
+
+#legal:hover{
+
+color:grey;
+
+}
+
 #id1{
 
 color:white;
 
 }
 
-a:focus{
+a:hover{
 
 color:grey;
 
