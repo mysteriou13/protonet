@@ -7,11 +7,11 @@ vecchionet  c'est:
 
 <ul>
 <li>
-un Hébergeur : j' administre  sur un serveur d&eacute;dier  des programmes pour naviagateur web.
+un Hébergeur : j' administre  sur un serveur d&eacute;di&eacute;  des programmes pour naviagateur web.
 </li>
 
 <li>
-des logiciels libre : tout l'infrastruture et  les logiciels que je proposons sont logiciel libre(comme la libert&eacute; d'expression)
+des logiciels libre : tout l'infrastruture et  les logiciels que je propose  sont des logiciel libre(comme la libert&eacute; d'expression)
 </li>
 
 
