@@ -110,13 +110,16 @@ $space = 'space-between;';
 
 
 ?>
-<div  style = "display: flex;  color:white;">
+
+
+<div  style = "color:white;">
 
 <h1>
+<center>
 vecchionet
 </br>
 hebergeur de service libre  et etique corse
-
+</center>
 </h1>
 
 </div>
@@ -126,29 +129,33 @@ hebergeur de service libre  et etique corse
 color:silver;
 font-size:2em;
 display:flex;
-justify-content:space-around;">
+justify-content:space-between;
+flex-wrap: wrap;
+">
 
 <div>
 
-<a href = "index.php" style = "color:white;"> accueil </a>
+<a id  ="lien" href = "index.php" > accueil </a>
 
 </div>
 
 <div>
 
-<a href = "listservice.php" style = "color:white">liste des services </a>
+<a id = "list"  href = "listservice.php" > liste des services </a>
+
+</p>
 
 </div>
 
 
 <div>
 
-<a href = "CGU.php" style = "color:white;"> CGU</a>
+<a id = "CGU" href = "CGU.php" > CGU</a>
 
 </div>
 
 <div>
-<a href = "legal.php" style = "color:white"> mention légal </a>
+<a id = "legal" href = "legal.php" > mention légal </a>
 </div>
 
 </div>

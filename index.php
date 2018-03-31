@@ -20,7 +20,10 @@ include("./head.php");
 include("./header.php");
 
 ?>
-
-
 </body>
 </html>
+<script>
+
+document.getElementById("lien").style.color= "grey";
+</script>
+

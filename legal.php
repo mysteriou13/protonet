@@ -34,5 +34,12 @@ adress:casa d'arutoli rte de muratello bat i apt 43 20137 porto-vecchio
 
 </div>
 
-</html>
 </body>
+</html>
+
+<script>
+
+document.getElementById("legal").style.color= "grey";
+</script>
+
+
