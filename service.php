@@ -60,5 +60,15 @@ organiser vos render-vous
 
 </div>
 
+<div id = "conteneur2">
+   <p style = "font-size:3em">
+<a href = "http://vecchionet.com/pad.php" target="_blank" >vecchiopad</a>
+</p>
+<p style = "font-size:2em">
+editeur de text colaboratif
+</p>
+
+  
+</div>
 
 </center>
