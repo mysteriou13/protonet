@@ -155,6 +155,12 @@ flex-wrap: wrap;
 </div>
 
 <div>
+
+<a href = "soutenir.php">  soutenir</a>
+
+</div>
+
+<div>
 <a id = "legal" href = "legal.php" > mention légal </a>
 </div>
 
