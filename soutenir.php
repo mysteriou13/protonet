@@ -7,3 +7,7 @@ include_once("header.php");
 
 ?>
 
+<div id = "conteneur2">
+
+</div>
+
