@@ -3,12 +3,10 @@
 include_once("header.php");
 include_once("head.php");
 
- include("CGU.html");
 ?>
 
-<script>
+  <iframe src = "CGU.html" style = "height:100%; width:100%;">
 
-document.getElementById("CGU").style.color= "grey";
-</script>
+  </iframe>
 
 
