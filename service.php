@@ -20,7 +20,7 @@ tableau de post-it collaboratif
 
 <div>
 <div id = "conteneur2">
-<p  style = "font-size:3em"><a href = "./kanboard-1.2.1" target="_blank" > kanboard </a> </p>
+<p  style = "font-size:3em"><a href = "https://www.vecchionet.com/kanboard-1.2.1" target="_blank" > kanboard </a> </p>
 
 <p style = "font-size:2em">
 gestionaire de projet
