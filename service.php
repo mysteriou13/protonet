@@ -6,7 +6,7 @@
 
 <div>
 <p style = "font-size:3em">
-<a href = "http://vecchionet.com:4242/" target="_blank" > framemo</a>
+<a href = "https://vecchioemo.vecchionet.com" target="_blank" > framemo</a>
 </p>
 <p style = "font-size:2em">
 tableau de post-it collaboratif
