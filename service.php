@@ -29,7 +29,7 @@ gestionaire de projet
 
  <div id = "conteneur2">
 <p style = "font-size:3em">
-<a href = "http://vecchionet.com/framavectoriel/svg-editor.html" target="_blank" >SVG-edit</a>
+<a href = "https://www.vecchionet.com/framavectoriel/svg-editor.html" target="_blank" >SVG-edit</a>
 </p>
 <p style = "font-size:2em">
 logiciel d'&eacute;dition d'mages et de retouche de photo
