@@ -39,7 +39,7 @@ logiciel d'&eacute;dition d'mages et de retouche de photo
 <div id = "conteneur2">
 
 <p style = "font-size:3em">
-<a href = "http://vecchionet.com:/framadate" target="_blank" >framadate</a>
+<a href = "https://www.vecchionet.com/framadate" target="_blank" >framadate</a>
 </p>
 <p style = "font-size:2em">
 organiser vos render-vous 
