@@ -15,20 +15,7 @@ tableau de post-it collaboratif
 
 </div>
 
-<div id = "conteneur2">
 
-<div>
-<p style = "font-size:3em">
-<a href = "./framaestro/" target="_blank" > framestro</a>
-</p>
-<p style = "font-size:2em">
-
-espace de travail  colaboratif
-
-</p>
-</div>
-
-</div>
 
 
 <div>
