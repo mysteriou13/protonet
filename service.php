@@ -64,4 +64,18 @@ editeur de text colaboratif
  </div>
 </div>
 
+    <div id = "conteneur2">
+
+<div style = "background-color:blue; color:white;" >
+ <p style = "font-size:3em">
+<a href = "https://ethercalc.vecchionet.com" style = "color:white;" target="_blank" >vecchiocalc</a>
+</p>
+<p style = "font-size:2em">
+tableur colaboratif
+</p>
+
+ </div>
+</div>
+
+
 </center>
