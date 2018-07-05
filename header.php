@@ -3,9 +3,6 @@
 
 $monUrl = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 
- $mysqli = new mysqli("localhost", "root", "elio13790", "framadate");
-if ($mysqli->connect_errno) {
-}
 
 $_SERVER['HTTP_HOST'];
 
@@ -135,13 +132,17 @@ flex-wrap: wrap;
 
 <div>
 
-<a id  ="lien" href = "index.php" > accueil </a>
-
+<button id = "b" onClick="parent.location='index.php'">
+accueil
+</button>
 </div>
 
 <div>
+  <button id = "b" onClick="parent.location='listservice.php'">                                                                   
+liste des service
+</button> 
 
-<a id = "list"  href = "listservice.php" > liste des services </a>
+
 
 </p>
 
@@ -150,19 +151,25 @@ flex-wrap: wrap;
 
 <div>
 
-<a id = "CGU" href = "CGU.php" > CGU</a>
+      <button id = "b" onClick="parent.location='CGU.php'">
+CGU
+</button>
 
 </div>
 
 <div>
 
-<a id = "soutenir" href = "soutenir.php">  soutenir</a>
+ <button id = "b" onClick="parent.location='soutenir.php'">
+soutenir
+</button>
+
 
 </div>
 
 <div>
-<a id = "legal" href = "legal.php" > mention légal </a>
-</div>
+         <button id = "b"  onClick="parent.location='legal.php'">
+mention legal
+</button>
 
 </div>
 

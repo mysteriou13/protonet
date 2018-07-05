@@ -1,81 +1,50 @@
 
 <center>
-
-
-<div id = "conteneur2">
-
-<div style = "background-color:blue; color:white;">
-<p style = "font-size:3em">
-<a href = "https://vecchioemo.vecchionet.com" style = "color:white;" target="_blank" > framemo</a>
-</p>
-<p style = "font-size:2em">
-tableau de post-it collaboratif
-</p>
-</div>
-
-</div>
-
-
-
-
-<div id = "conteneur2">
-<div  style = "background-color:blue; color:white;">
-<p  style = "font-size:3em"><a href = "https://www.vecchionet.com/kanboard-1.2.1" style  = "color:white;" target="_blank" > kanboard </a> </p>
-
-<p style = "font-size:2em">
+<div style = "margin-top:2em;">
+ <button  id = "b" style = "font-size:2em; margin-right:2em;" onClick="parent.location='https://www.vecchionet.com/kanboard-1.2.1'">
+<strong>
+Kanboard
+</strong>
+</br>
 gestionaire de projet
-</p>
-</div>
-</div>
+</button>
 
- <div id = "conteneur2">
-<div style = "background-color:blue; color:white;">
-<p style = "font-size:3em;">
-<a href = "https://www.vecchionet.com/framavectoriel/svg-editor.html" style = "color:white" target="_blank" >SVG-edit</a>
-</p>
-<p style = "font-size:2em">
-logiciel d'&eacute;dition d'images et de retouche de photo
-</p>
-</div>
-</div>
 
-<div id = "conteneur2">
+<button id = "b"  style = "font-size:2em" onClick = "parent.location = 'https://www.vecchionet.com/framavectoriel/svg-editor.html'">
+<strong>
+Svg-Edit
+</strong>
+</br>
+logiciel d'&eacute;dition d'images </br> et de retouche de photo 
+</button>
 
-<div style = "background-color:blue; color:white;">
-<p style = "font-size:3em">
-<a href = "https://www.vecchionet.com/framadate" style = "color:white"; target="_blank" >framadate</a>
-</p>
-<p style = "font-size:2em">
+
+<button id = "b" style = "font-size:2em"  onClick = "parent.location = 'https://www.vecchionet.com/framadate'">
+<strong>
+Framadate
+</strong>
+</br>
 organiser vos render-vous 
-</p>
+
+</button>
+
+</br>
+</br>
+</br>
+<button id = "b" style = "font-size:2em;" onClick = "parent.location = 'https://www.vecchionet.com/pad.php'">
+<strong>
+Vecchiopad
+</br>
+diteur de text colaboratif  en temp réel
+</button>
+
+<button id = "b" style = "font-size:2em;" onClick = "parent.location = 'https://ethercalc.vecchionet.com'">
+<strong>
+Vecchiocalc
+</br>
+tableur colaboratif  en temp réel
+</button>
+
 </div>
-</div>
-
-<div id = "conteneur2">
-  
-<div style = "background-color:blue; color:white;" >
- <p style = "font-size:3em">
-<a href = "https://www.vecchionet.com/pad.php" style = "color:white;" target="_blank" >vecchiopad</a>
-</p>
-<p style = "font-size:2em">
-editeur de text colaboratif
-</p>
-
- </div>
-</div>
-
-    <div id = "conteneur2">
-
-<div style = "background-color:blue; color:white;" >
- <p style = "font-size:3em">
-<a href = "https://ethercalc.vecchionet.com" style = "color:white;" target="_blank" >vecchiocalc</a>
-</p>
-<p style = "font-size:2em">
-tableur colaboratif
-</p>
-
- </div>
-</div>
-
 
 </center>
