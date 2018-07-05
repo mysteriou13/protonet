@@ -35,7 +35,7 @@ organiser vos render-vous
 <strong>
 Vecchiopad
 </br>
-diteur de text colaboratif  en temp réel
+editeur de text colaboratif  en temp réel
 </button>
 
 <button id = "b" style = "font-size:2em;" onClick = "parent.location = 'https://ethercalc.vecchionet.com'">
