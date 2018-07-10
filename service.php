@@ -38,7 +38,7 @@ Vecchiopad
 editeur de text colaboratif  en temp réel
 </button>
 
-<button id = "b" style = "font-size:2em;" onClick = "parent.location = 'https://ethercalc.vecchionet.com'">
+<button id = "b" style = "font-size:2em;" onClick = "parent.location = 'calc.php'">
 <strong>
 Vecchiocalc
 </br>
