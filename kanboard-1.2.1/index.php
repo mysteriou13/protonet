@@ -1,5 +1,9 @@
+
+  <link rel = 'stylesheet' href = '../style/style.css'>
 <?php
 
+ include("../header.php");
+ 
 use Kanboard\Core\Controller\Runner;
 
 try {

@@ -1,7 +1,7 @@
 
 <center>
 <div style = "margin-top:2em;">
- <button  id = "b" style = "font-size:2em; margin-right:2em;" onClick="parent.location='https://www.vecchionet.com/kanboard-1.2.1'">
+ <button  id = "b" style = "font-size:2em; margin-right:2em;" onClick="parent.location='board.php'">
 <strong>
 Kanboard
 </strong>
@@ -10,7 +10,7 @@ gestionaire de projet
 </button>
 
 
-<button id = "b"  style = "font-size:2em" onClick = "parent.location = 'https://www.vecchionet.com/framavectoriel/svg-editor.html'">
+<button id = "b"  style = "font-size:2em" onClick = "parent.location = 'https://www.vecchionet.com/edit.php'">
 <strong>
 Svg-Edit
 </strong>

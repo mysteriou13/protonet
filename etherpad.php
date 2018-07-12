@@ -10,7 +10,7 @@ $time = time();
 
  $date = date('dmy');
 
-$idcalc = htmlspecialchars($_GET['calc']);
+$idcalc = htmlspecialchars($_GET['pad']);
 
 $fin = date("dmy", strtotime($idcalc));
 
@@ -65,7 +65,7 @@ $mysqli->query($calc6);
 
 $link = htmlspecialchars(time());
 
-header("Location:affichecalc.php?calc=$link");
+header("Location:affichepad.php?pad=$link");
 
 ?>
 
