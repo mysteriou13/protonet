@@ -1,7 +1,7 @@
 
 <center>
 <div style = "margin-top:2em;">
- <button  id = "b" style = "font-size:2em; margin-right:2em;" onClick="parent.location='board.php'">
+ <button  id = "b" style = "font-size:2em; margin-right:2em;" onClick="parent.location='https://www.vecchionet.com/kanboard-1.2.1'">
 <strong>
 Kanboard
 </strong>

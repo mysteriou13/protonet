@@ -4,8 +4,6 @@ include_once("head.php");
 include_once("header.php");
 include("admin/connect.php");
 
-  ini_set('display_errors', 1);
-
 $time = time();
 
  $date = date('dmy');
