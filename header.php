@@ -14,7 +14,7 @@ hebergeur de service libre  et etique corse
 
 
 <div style = "
-margin-left:10%;
+
 color:silver;
 font-size:2em;
 display:flex;
@@ -69,7 +69,25 @@ mention legal
 
 </div>
 
+<div style  = "  margin-top:20px; display:flex;  justify-content: center; width:100%;">
 
+<div id = "b">
+<center>
+<form>
+connection
+</br>
+pseudo <input type = "text">
+password <input type = "password">
+<input type = "submit">
 
+ <a id = "b" href = "inscription.php">inscription</a>
+
+</form>
+</center>
+</div>
+
+</div>
+
+</div>
 </header>
 
