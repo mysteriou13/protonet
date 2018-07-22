@@ -78,7 +78,7 @@ connection
 </br>
 pseudo <input type = "text">
 password <input type = "password">
-<input type = "submit">
+<input type = "submit" value = "connection">
 
  <a id = "b" href = "inscription.php">inscription</a>
 
