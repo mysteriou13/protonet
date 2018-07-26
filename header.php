@@ -1,21 +1,25 @@
+<?php
+session_start();
+
+include_once("./install/connect.php");
+
+?>
+
 
 <header style = "background-color:DarkBlue;">
-
 <div  style = "">
 
 <h1 style = "color:white; font-size:2em;">
 <center>
 vecchionet
 </br>
-hebergeur de service libre  et etique corse
+hebergeur de service libre  et etique corse 
 </center>
 </h1>
 
 
-
 <div style = "
 
-color:silver;
 font-size:2em;
 display:flex;
 justify-content:space-between;
@@ -60,6 +64,7 @@ soutenir
 
 </div>
 
+
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 <div>
@@ -69,24 +74,34 @@ mention legal
 
 </div>
 
-<div style  = "  margin-top:20px; display:flex;  justify-content: center; width:100%;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-<div id = "b">
-<center>
-<form>
-connection
-</br>
-pseudo <input type = "text">
-password <input type = "password">
-<input type = "submit" value = "connection">
+<div>
+<?php 
 
- <a id = "b" href = "inscription.php">inscription</a>
+if(isset($_SESSION['pseudo'])){
 
-</form>
-</center>
+include_once("divdeconnect.php");
+
+}
+
+?>
 </div>
 
-</div>
+
+
+<div id = "inscription" style  = "  margin-top:20px; display:flex;  justify-content: center; width:100%;">
+
+<?php
+
+if(!isset($_SESSION['pseudo'])){
+
+include_once("forminscription.php");
+
+}
+
+
+ ?>
 
 </div>
 </header>
