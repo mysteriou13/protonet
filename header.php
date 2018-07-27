@@ -88,6 +88,15 @@ include_once("divdeconnect.php");
 </div>
 
 
+<?php
+
+if(isset($_SESSION['pseudo'])){
+
+include_once("divfichier.php");
+
+}
+
+?>
 
 <div id = "inscription" style  = "  margin-top:20px; display:flex;  justify-content: center; width:100%;">
 
@@ -103,5 +112,7 @@ include_once("forminscription.php");
  ?>
 
 </div>
+
+
 </header>
 
