@@ -5,6 +5,8 @@
 <?php 
 session_start();
 
+  ini_set('display_errors', 1);
+
 $d = "corsicanet";
 
 $des1 = "cliquer pour agrandir";
