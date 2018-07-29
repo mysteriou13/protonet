@@ -2,6 +2,29 @@
 
 include_once("./install/connect.php");
 
+$domaine = $_SERVER['SERVER_NAME'];
+
+$protocole = null;
+
+$page = null;
+
+if($domaine == "localhost"){
+
+$protole = "http://";
+
+$domaine = $domaine."/vecchionet.com/";
+
+}else{
+
+$protole = "https://";
+
+}
+
+$link = $protole.$domaine;
+
+$link1  = $link;
+
+
 ?>
 
 
@@ -26,8 +49,14 @@ flex-wrap: wrap;
 ">
 
 <div>
+<?php 
 
-<a id = "b"  href = 'https://www.vecchionet.com/index.php'>
+$page = "index.php";
+
+$link1 = $link.$page;
+
+?>
+<a id = "b"  href = "<?php echo  $link1; ?>">
 accueil
 </a>
 </div>
@@ -35,7 +64,13 @@ accueil
  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
 
 <div>
-  <a id = "b"  href = 'https://www.vecchionet.com/listservice.php'>
+<?php
+ 
+$page = "listservice.php";
+
+$link1 = $link.$page;
+?>
+  <a id = "b"  href = '<?php echo $link1; ?>'>
 liste des service
 </a>
 
@@ -45,7 +80,14 @@ liste des service
 
 <div>
 
-      <a id = "b"  href = 'https://www.vecchionet.com/CGU.php'>
+<?php 
+$page = "CGU.php";
+
+$link1 = $link.$page;
+
+?>
+
+      <a id = "b"  href = '<?php echo $link1;?>'>
 CGU
 </a>
 
@@ -56,7 +98,15 @@ CGU
 
 <div>
 
- <a id = "b" href = 'https://www.vecchionet.com/soutenir.php'>
+<?php 
+
+ $page = "soutenir.php";
+
+$link1 = $link.$page;
+
+
+?>
+ <a id = "b" href = '<?php echo $link1; ?>'>
 soutenir
 </a>
 
@@ -67,7 +117,17 @@ soutenir
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 <div>
-         <a id = "b"   href ='https://www.vecchionet.com/legal.php'>
+
+<?php 
+
+ $page = "legal.php";
+
+$link1 = $link.$page;
+
+
+?>
+
+         <a id = "b"   href ='<?php echo $link1;?>'>
 mention legal
 </a>
 
