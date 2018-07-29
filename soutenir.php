@@ -9,26 +9,21 @@ include_once("header.php");
 
 ?>
 
-<div id = "b">
+<div id = "b" style = "margin-top:1em; font-size:2em;">
 
 <center>
 
-<h1>
-<p>
+<strong>
 Comment soutenir vecchionet?
-</p>
-</h1>
-<ul>
-
-<li>
+</strong>
+<div>
 parler de vecchionet autour de vous
-</li>
+</div>
 
-<li>
+<div>
 raporter des bugs
-</li>
-</ul>
-</center>
+</div>
 
 </div>
 
+</center>
