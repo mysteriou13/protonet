@@ -1,5 +1,6 @@
 
 <?php
+session_start();
 include_once("head.php");
 include_once("header.php");
 include("service.php");
