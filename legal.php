@@ -1,4 +1,3 @@
-
 <html>
 <body>
 
@@ -12,10 +11,10 @@ include_once("header.php");
 ?>
 
 
-<div style = "color:white">
+<div id = "b" style = "margin-top:2em; gbackground-color:blue">
 
-<div id = "conteneur2">
 <div style  = "font-size:3em">
+<center>
 reponsable du site
 <div>
 </div>
@@ -31,6 +30,8 @@ email:massaanthony@vecchionet.com
 </br>
 adress:casa d'arutoli rte de muratello bat i apt 43 20137 porto-vecchio
 </div>
+
+</center>
 
 </div>
 
