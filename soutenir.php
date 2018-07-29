@@ -9,7 +9,9 @@ include_once("header.php");
 
 ?>
 
-<div id = "conteneur2">
+<div id = "b">
+
+<center>
 
 <h1>
 <p>
@@ -25,9 +27,8 @@ parler de vecchionet autour de vous
 <li>
 raporter des bugs
 </li>
-
-
 </ul>
+</center>
 
 </div>
 
