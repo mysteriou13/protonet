@@ -10,8 +10,23 @@ include("header.php");
 ?>
 
 <div id = "b">
+<center style  = "font-size:2em; margin:1em">
 
+<div>
+<strong>
 
+ liste des documents
+
+</strong>
+</br>
+
+</center>
+
+</div>
+
+<div id = "b" style = "margin-top:3em">
+
+ 
 <?php 
 
 
@@ -22,11 +37,12 @@ $list = "SELECT * FROM url WHERE pseudo = '$pseudo'";
 
 $list2 = $mysqli->query($list);
 
+echo "<div>";
 
 
 while($liste3 = $list2->fetch_assoc() ){
 
- echo '<div style = "display:flex; justify-content:space-around; font-size:2em;">';
+ echo '<div id = "b" style = "display:flex; justify-content:space-around; font-size:2em; background-color:blue;">';
 
    echo "<div> type </div>";
   echo "<div>";
@@ -47,6 +63,7 @@ echo '</div>';
 
 
 }
+
 
 ?>
 
