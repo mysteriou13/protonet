@@ -84,7 +84,7 @@ $page = "listservice.php";
 
 if($localhost == 0){
 
-$page = "/listeservice.php";
+$page = "/listservice.php";
 
 }
 
