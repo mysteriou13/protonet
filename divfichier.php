@@ -1,6 +1,6 @@
 
 <div id = "b">
 
-<a id = "b" href = "listfichier.php" > document </a>
+<a id = "b" href = "listfichier.php" > liste des  documents </a>
 
 </div>
