@@ -2,13 +2,19 @@
 
 include_once("./install/connect.php");
 
+session_start();
+
 $domaine = $_SERVER['SERVER_NAME'];
 
 $protocole = null;
 
 $page = null;
 
+$localhost = null;
+
 if($domaine == "localhost"){
+
+$localhost = 1;
 
 $protole = "http://";
 
@@ -17,6 +23,8 @@ $domaine = $domaine."/vecchionet.com/";
 }else{
 
 $protole = "https://";
+
+$localhost = 0;
 
 }
 
@@ -53,6 +61,12 @@ flex-wrap: wrap;
 
 $page = "index.php";
 
+if($localhost == 0){
+
+$page = "/index.php";
+
+}
+
 $link1 = $link.$page;
 
 ?>
@@ -68,6 +82,13 @@ accueil
  
 $page = "listservice.php";
 
+if($localhost == 0){
+
+$page = "/listeservice.php";
+
+}
+
+
 $link1 = $link.$page;
 ?>
   <a id = "b"  href = '<?php echo $link1; ?>'>
@@ -82,6 +103,13 @@ liste des service
 
 <?php 
 $page = "CGU.php";
+
+  if($localhost == 0){
+
+$page = "/CGU.php";
+
+}
+
 
 $link1 = $link.$page;
 
@@ -102,6 +130,13 @@ CGU
 
  $page = "soutenir.php";
 
+ if($localhost == 0){
+
+$page = "/CGU.php";
+
+}
+
+
 $link1 = $link.$page;
 
 
@@ -121,6 +156,13 @@ soutenir
 <?php 
 
  $page = "legal.php";
+
+if($localhost == 0){
+
+$page = "/legal.php";
+
+}
+
 
 $link1 = $link.$page;
 
