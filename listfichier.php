@@ -37,10 +37,36 @@ $list = "SELECT * FROM url WHERE pseudo = '$pseudo'";
 
 $list2 = $mysqli->query($list);
 
+$type = null;
+
+$link = null;
+
+$lien = null;
+
+$name = null;
+
 echo "<div>";
 
-
 while($liste3 = $list2->fetch_assoc() ){
+
+$type = $liste3['type'];
+
+$lien = $liste3['url'];
+
+$name = $liste3["name"];
+
+if($type == "pad"){
+
+$link = "affichepad.php?pad=".$name;
+
+}
+
+if($type == "calc"){
+
+$link = "affichecalc.php?calc=".$name;
+
+
+}
 
  echo '<div id = "b" style = "display:flex; justify-content:space-around; font-size:2em; background-color:blue;">';
 
@@ -53,9 +79,8 @@ echo "<div> name </div>";
 
 echo "<div>";
 
-$lien = $liste3['url'];
 
-echo "<a href = '$lien' id = 'b'>"; echo $liste3['name']; echo "</a>";
+echo "<a href = '$link' id = 'b'>"; echo $liste3['name']; echo "</a>";
 echo "</div>";
 
 
