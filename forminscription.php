@@ -1,12 +1,15 @@
 
-<div id = "b">
+<div id = "b"  style = "width:100%;">
 <div id = "login">
 <center>
 <form action = "<?php echo $_SERVER['PHP_SELF']; ?>" method = "POST">
-connection
-</br>
 
-<div style = "display:flex; justify-content:space-around">
+<div>
+
+<div>
+connection
+</div>
+</br>
 
 <div>
 pseudo <input name = "pseudo" type = "text">
@@ -20,12 +23,17 @@ password <input name = "pass" type = "password">
 <input type = "submit" value = "connection">
 </div>
 
+<div>
+ <a id = "b" href = "inscription.php">inscription</a>
 </div>
 
- <a id = "b" href = "inscription.php">inscription</a>
 </br>
 
+<div>
 <a id= "b" href = "oublipass.php"> mot de pass oubli&eacute; </a>
+</div>
+
+</div>
 
 </form>
 </center>
