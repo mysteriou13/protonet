@@ -5,9 +5,23 @@
 <form action = "<?php echo $_SERVER['PHP_SELF']; ?>" method = "POST">
 connection
 </br>
+
+<div style = "display:flex; justify-content:space-around">
+
+<div>
 pseudo <input name = "pseudo" type = "text">
+</div>
+
+<div>
 password <input name = "pass" type = "password">
+</div>
+
+<div>
 <input type = "submit" value = "connection">
+</div>
+
+</div>
+
  <a id = "b" href = "inscription.php">inscription</a>
 </br>
 
