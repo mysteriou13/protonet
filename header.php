@@ -90,12 +90,14 @@ include("divinscription.php");
 
 <div>
 <?php
- 
-$page = "listservice.php";
+
+$service = "listservice.php#service";
+
+$page = $service;
 
 if($localhost == 0){
 
-$page = "/listservice.php";
+$page = $service;
 
 }
 

@@ -1,7 +1,13 @@
 
 <div id = "b" style = "font-size:2em; margin-top:1em;">
 <center>
+
+<p id = "service">
+
 liste des service
+
+</p>
+
 </center>
 
 </div>
