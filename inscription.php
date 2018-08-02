@@ -21,7 +21,9 @@ $date = $mysqli->real_escape_string($date);
 
 <div id ="b" style = "margin-top:1em; font-size:2em;">
 
+<p id = "inscription"> 
 inscription
+</p>
 
 </div>
 

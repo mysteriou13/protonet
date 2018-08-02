@@ -1,3 +1,3 @@
 <div id = "b">
- <a href = "inscription.php" id = "b">inscription</a>
+ <a href = "inscription.php#inscription" id = "b">inscription</a>
 </div>
