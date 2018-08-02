@@ -1,7 +1,6 @@
 
-<div id = "b"  style = "width:100%;">
+<div id = "b" >
 
-<div id = "login">
 <center>
 <form action = "<?php echo $_SERVER['PHP_SELF']; ?>" method = "POST">
 
@@ -84,5 +83,4 @@ echo "<center> erreur pseudo ou mot de pass incorrect </center>";
 }
 
 ?>
-</div>
 </div>
