@@ -1,42 +1,18 @@
 
-<div id = "b" >
+<div id = "b" style = "margin-top:1em; margin-left:2em;">
 
-<center>
 <form action = "<?php echo $_SERVER['PHP_SELF']; ?>" method = "POST">
 
-<div style = "display:flex; flex-direction:column;  justify-content:space-around ">
 
-<div>
-connection
-</div>
-</br>
-
-<div>
 pseudo <input name = "pseudo" type = "text">
-</div>
 
-<div>
 password <input name = "pass" type = "password">
-</div>
 
-<div>
 <input type = "submit" value = "connection">
-</div>
 
-<div>
- <a id = "b" href = "inscription.php">inscription</a>
-</div>
-
-</br>
-
-<div>
 <a id= "b" href = "oublipass.php"> mot de pass oubli&eacute; </a>
-</div>
-
-</div>
 
 </form>
-</center>
 
 <?php
 
@@ -83,4 +59,5 @@ echo "<center> erreur pseudo ou mot de pass incorrect </center>";
 }
 
 ?>
+</div
 </div>

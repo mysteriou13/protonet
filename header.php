@@ -180,11 +180,8 @@ mention legal
 <div>
 <?php 
 
-if(isset($_SESSION['pseudo'])){
 
-include_once("divdeconnect.php");
 
-}
 
 ?>
 </div>
@@ -199,6 +196,22 @@ include_once("divfichier.php");
 include_once("divparametre.php");
 
 }
+
+  if(isset($_SESSION['pseudo'])){
+
+include_once("divdeconnect.php");
+
+}
+
+
+   if(!isset($_SESSION['pseudo'])){
+
+include_once("forminscription.php");
+
+}
+
+
+
 
 ?>
 
