@@ -19,7 +19,7 @@ include("./head.php");
 
 include("./header.php");
 
-include("./presentation.php");
+
 
 ?>
 </body>

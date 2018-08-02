@@ -202,6 +202,7 @@ include_once("divparametre.php");
 
 ?>
 
+
 <div id = "inscription" style  = "  margin-top:20px; display:flex;  justify-content: center; width:100%;">
 
 <?php
