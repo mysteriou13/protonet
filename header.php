@@ -114,11 +114,11 @@ liste des service
 <div>
 
 <?php 
-$page = "CGU.php";
+$page = "CGU.php#CGU";
 
   if($localhost == 0){
 
-$page = "/CGU.php";
+$page = "/".$page;
 
 }
 

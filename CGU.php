@@ -9,7 +9,7 @@ include_once("head.php");
 </br>
 </br>
 
-  <iframe src = "CGU.html" id = "b"  style = "height:100%; width:100%; background-color:blue">
+  <iframe id = "CGU" src = "CGU.html" id = "b"  style = "height:100%; width:100%; background-color:blue">
   </iframe>
 
 
