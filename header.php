@@ -75,7 +75,18 @@ accueil
 </a>
 </div>
 
- &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+
+
+<?php 
+
+if(!isset($_SESSION['pseudo'])){
+
+include("divinscription.php");
+
+}
+
+?>
+
 
 <div>
 <?php
@@ -97,7 +108,6 @@ liste des service
 
 </div>
 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 <div>
 
@@ -122,7 +132,6 @@ CGU
 
 </div>
 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 <div>
 
@@ -149,7 +158,6 @@ soutenir
 </div>
 
 
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 <div>
 
@@ -175,15 +183,10 @@ mention legal
 
 </div>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 <div>
-<?php 
 
 
-
-
-?>
 </div>
 
 
@@ -245,6 +248,7 @@ include_once("forminscription.php");
 }
 
  ?>
+
 
 </div>
 
