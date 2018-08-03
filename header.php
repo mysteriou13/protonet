@@ -97,9 +97,8 @@ $page = $service;
 
 if($localhost == 0){
 
-$page = "/".$page;
+$page = "/".$service;
 
-$page = $service;
 
 }
 
