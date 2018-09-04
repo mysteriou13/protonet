@@ -9,11 +9,11 @@ include("header.php");
 
 ?>
 
-<div id = "b">
+<div >
 <center style  = "font-size:2em; margin:1em">
 
 <div>
-<strong>
+<strong id = "b">
 
  liste des documents
 
@@ -24,8 +24,7 @@ include("header.php");
 
 </div>
 
-<div id = "b" style = "margin-top:3em">
-
+<div  style  = " background-color:blue; border-radius:20px;  font-size:2em;  display:flex; justify-content:space-around;">
  
 <?php 
 
@@ -45,52 +44,81 @@ $lien = null;
 
 $name = null;
 
-echo "<div>";
+
+?>
+
+<div>
+<?php    while($liste3 = $list2->fetch_assoc() ){
+
+
+echo "<div id = 'b'>";
+
+echo "type";
+
+echo "</div>";
+
+echo "</br>";
+
+}
+
+?>
+
+
+
+</div>
+
+<div>
+
+<?php
+
+
+   $list = "SELECT * FROM url WHERE pseudo = '$pseudo'";
+
+$list2 = $mysqli->query($list);
 
 while($liste3 = $list2->fetch_assoc() ){
 
-$type = $liste3['type'];
 
-$lien = $liste3['url'];
+echo "<div id = 'b'>";
 
-$name = $liste3["name"];
+echo $liste3['type'];
 
-if($type == "pad"){
-
-$link = "affichepad.php?pad=".$name;
-
-}
-
-if($type == "calc"){
-
-$link = "affichecalc.php?calc=".$name;
-
-
-}
-
- echo '<div id = "b" style = "display:flex; justify-content:space-around; font-size:2em; background-color:blue;">';
-
-   echo "<div> type </div>";
-  echo "<div>";
- echo $liste3['type'];
 echo "</div>";
 
-echo "<div> name </div>";
-
-echo "<div>";
-
-
-echo "<a href = '$link' id = 'b'>"; echo $liste3['name']; echo "</a>";
-echo "</div>";
-
-
-echo '</div>';
-
+echo "</br>";
 
 }
-
 
 ?>
+
+
+</div>
+
+
+<div>
+     <?php
+
+  $list = "SELECT * FROM url WHERE pseudo = '$pseudo'";
+
+$list2 = $mysqli->query($list);
+
+while($liste3a = $list2->fetch_assoc() ){
+
+$url = $liste3a['url'];
+
+echo "<div id = 'b'>";
+
+echo"<a href = '$url';  id = 'b'>"; echo $liste3a['name']; echo "</a>";
+
+echo "</div>";
+
+echo "</br>";
+
+}
+
+?>
+
+</div>
 
 </div>
 

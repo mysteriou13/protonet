@@ -30,6 +30,13 @@ $localhost = 0;
 
 $link = $protole.$domaine;
 
+$terra =  str_replace("vecchionet.com","",$link);
+
+$terra = str_replace("localhost//","localhost/",$terra);
+
+$terraliberta = $terra."/terraliberta";
+
+
 $link1  = $link;
 
 
@@ -49,14 +56,16 @@ hebergeur de service libre  et etique corse
 
 
 <div style = "
-
 font-size:2em;
 display:flex;
 justify-content:space-between;
 flex-wrap: wrap;
 ">
 
-<div>
+
+<div style = " display:flex; justify-content:space-around;  width:100%; ">
+
+<div >
 <?php 
 
 $page = "index.php";
@@ -76,7 +85,6 @@ accueil
 </div>
 
 
-
 <?php 
 
 if(!isset($_SESSION['pseudo'])){
@@ -85,13 +93,13 @@ include("divinscription.php");
 
 }
 
-?>
 
+?>
 
 <div>
 <?php
 
-$service = "listservice.php#service";
+$service = "listservice.php";
 
 $page = $service;
 
@@ -102,7 +110,6 @@ $page = "/".$service;
 
 }
 
-
 $link1 = $link.$page;
 ?>
   <a id = "b"  href = '<?php echo $link1; ?>'>
@@ -111,11 +118,16 @@ liste des service
 
 </div>
 
+<div>
+
+<a id = "b" href = 'terraliberta.php'>terraliberta </a>
+
+</div>
 
 <div>
 
 <?php 
-$page = "CGU.php#CGU";
+$page = "CGU.php";
 
   if($localhost == 0){
 
@@ -192,7 +204,7 @@ mention legal
 
 </div>
 
-
+</div>
 <?php
 
 if(isset($_SESSION['pseudo'])){
@@ -201,7 +213,10 @@ include_once("divfichier.php");
 
 include_once("divparametre.php");
 
+include("divpremium.php");
+
 }
+
 
   if(isset($_SESSION['pseudo'])){
 
@@ -209,40 +224,13 @@ include_once("divdeconnect.php");
 
 }
 
-
-   if(!isset($_SESSION['pseudo'])){
-
-include_once("forminscription.php");
-
-}
-
-
-
-
 ?>
 
 
 <div id = "inscription" style  = "margin-top:1em;  margin-bottom:1em;width:100%; ">
 
+<?php 
 
-
-<div  id = "b" style = "margin-bottom:1em" >
-
-<div>
-herbergeur de service libre  colaboratif  et qui respecte la vie privé et les libert&eacute; des utilisateurs:
-</div>
-
-<div>
--aucune revente donn&eacute;.
-</div>
-
-<div>
--nous diffusons aucune publicit&eacute;.
-</div>
-</div>
-
-<div>
-<?php
 
 if(!isset($_SESSION['pseudo'])){
 
@@ -250,10 +238,23 @@ include_once("forminscription.php");
 
 }
 
- ?>
+?>
+
+<div  id = "b" style = "margin-bottom:1em" >
+<?php
+$page =  $_SERVER['PHP_SELF'];
+
+$index = substr_count($page, 'index.php');
 
 
-</div>
+if($index  == 1){
+
+include("divindex.php");
+
+}
+
+?>
+
 
 
 </div>
