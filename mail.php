@@ -1,7 +1,7 @@
 
 <?php
 
-class email($smtp,$from,$des,$nomdes,$fromname,$message,$object){
+class email($smtp,$emailfrom,$des,$nomdes,$fromname,$message,$object){
 
 function envoimail(){
 
@@ -14,7 +14,7 @@ $mail->SMTPAuth   = false;
 $mail->Port = 25; // Par défaut
  
 // Expéditeur
-$mail->SetFrom($from, $fromname);
+$mail->SetFrom($emailfrom, $fromname);
 // Destinataire
 $mail->AddAddress($des,  $nomdes);
 // Objet
