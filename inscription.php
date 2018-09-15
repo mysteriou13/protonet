@@ -188,10 +188,9 @@ $return = "https://www.vecchionet.com";
 
 $link ="http://vecchionet.com/terraliberta/membre/verifemail.php/?email=$token";
 
+$message = "pour confirm&eacute; votre inscription  copier  dans votre navigateur wweb".$link;
 
-
-header($location);
-
+$e->envoiemail($email,"confirmation inscription",$message,"massanthony@vecchionet.com");
 
 }
 
