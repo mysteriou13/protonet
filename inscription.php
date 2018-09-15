@@ -188,9 +188,7 @@ $return = "https://www.vecchionet.com";
 
 $link ="http://vecchionet.com/terraliberta/membre/verifemail.php/?email=$token";
 
-$location = "Location:http://s708280615.onlinehome.fr?lien=".$link."&email=$email"."&return=$return";
 
-$lien = '"http://s708280615.onlinehome.fr?lien=".$link."&email=".$email;"';
 
 header($location);
 
