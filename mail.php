@@ -1,35 +1,19 @@
 
 <?php
 
-class email($smtp,$emailfrom,$desfrom,$nomdes,$fromname,$message,$object){
 
-function envoimail(){
+class email{
 
-    use PHPMailer\PHPMailer\PHPMailer;
-require './vendor/autoload.php';
- 
-$mail = new PHPMailer()
-$mail->Host = $smtp;
-$mail->SMTPAuth   = false;
-$mail->Port = 25; // Par défaut
- 
-// Expéditeur
-$mail->SetFrom($emailfrom, $fromname);
-// Destinataire
-$mail->AddAddress($desfrom,  $nomdes);
-// Objet
-$mail->Subject = $object;
- 
-// Votre message
-$mail->MsgHTML($message);
- 
-// Envoi du mail avec gestion des erreurs
-if(!$mail->Send()) {
-  echo 'Erreur : ' . $mail->ErrorInfo;
-} else {
-  echo 'Message envoyé !';
-} 
+function envoiemail($emailto,$sujet,$message,$emailfrom){
+
+   $to      = $emailto;
+     $message =  $message;
+     $headers = 'From:  '.$emailfrom. "\r\n" .
+     'Reply-To: webmaster@example.com' . "\r\n" .
+     'X-Mailer: PHP/' . phpversion();
+
+     mail($to, $sujet, $message, $headers);
+
 }
-
 }
 ?>
