@@ -3,7 +3,6 @@
 
 <?php 
 
-
 $d = "corsicanet";
 
 $des1 = "cliquer pour agrandir";

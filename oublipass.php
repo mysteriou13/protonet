@@ -1,4 +1,8 @@
+<html>
+<body>
+
 <?php
+
 include_once("./install/connect.php");
 
 include_once("head.php");
@@ -7,8 +11,6 @@ include_once("header.php");
 
 ?>
 
-<html>
-<body>
 
 <center>
 
@@ -45,9 +47,14 @@ $email3 = $email2->fetch_assoc();
 
  $token2 = $token1->fetch_assoc();
 
+ $tokenemail = $token2['email'];
+
  $link = "?token=".$token2['tokenemail']."&return=".$domain."&email=".$email;
 
-echo $location = "Location:http://s708280615.onlinehome.fr/oublic.php".$link;
+ $message = " pour changer votre votre mot pass sur vecchionet.com  copier ce lien dans un naviagateur web  :https://vecchionet.com/changepass.php".$link;
+
+$e->envoiemail($email,"changement de mot de pass",$message,"massanthony@vecchionet.com");
+
 
 if($email3['email'] == 1){
 
