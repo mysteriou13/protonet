@@ -2,6 +2,8 @@
 
 include_once("./install/connect.php");
 
+include_once("mail.php");
+
 session_start();
 
 $domaine = $_SERVER['SERVER_NAME'];
