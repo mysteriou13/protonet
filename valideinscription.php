@@ -7,7 +7,7 @@
   include("header.php");
 ?>
 
- <div id = "b" style = "margin-top:2%;">
+ <div id = "b" style = "margin-top:2%; font-size:2em;">
 
  <center>
  inscription reussie  
