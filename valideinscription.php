@@ -7,10 +7,11 @@
   include("header.php");
 ?>
 
- <div id = "b">
+ <div id = "b" style = "margin-top:2%;">
 
  <center>
-  
+ inscription reussie  
+
  </center>
 
  </div>
