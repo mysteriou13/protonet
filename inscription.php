@@ -196,9 +196,7 @@ $e->envoiemail($email,"confirmation inscription",$message,"massanthony@vecchione
 
 ?>
 
-<script>
-document.getElementById("login").style.display = "none";
-</script>
+
 
 </body>
 </html>
