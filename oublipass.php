@@ -70,9 +70,5 @@ header($location);
 </div>
 </center>
 
-<script>
-document.getElementById("login").style.display = "none";
-</script>
-
 </body>
 </html>
