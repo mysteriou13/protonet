@@ -32,7 +32,7 @@ logiciel d'&eacute;dition d'images </br> et de retouche de photo
 </button>
 
 
-<button id = "b" style = "font-size:2em"  onClick = "parent.location = 'https://framadate.vecchionet.com/'">
+<button id = "b" style = "font-size:2em"  onClick = "parent.location = 'framadate.php'">
 <strong>
 Framadate
 </strong>
