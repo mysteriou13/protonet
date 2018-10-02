@@ -17,7 +17,7 @@ $dis = "block";
 
 ?>
 
-<div id = "b" style = "display:<?php echo $dis?>;font-size:2em; margin-top:2em; ">
+<div id = "b" style = "display:<?php echo $dis?>;font-size:2em; margin-top:1%; ">
 <center>
 service r&eacute;serv&eacute; au utlisateur premium
 </center>

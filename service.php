@@ -14,7 +14,7 @@ liste des service
 
 <center>
 <div style = "margin-top:2em;">
- <button  id = "b" style = "font-size:2em; margin-right:2em;" onClick="parent.location='https://www.vecchionet.com/kanboard-1.2.1'">
+ <button  id = "b" style = "font-size:2em; margin-right:2em;" onClick="parent.location='https://kanboard.vecchionet.com'">
 <strong>
 Kanboard
 </strong>
@@ -32,7 +32,7 @@ logiciel d'&eacute;dition d'images </br> et de retouche de photo
 </button>
 
 
-<button id = "b" style = "font-size:2em"  onClick = "parent.location = 'https://www.vecchionet.com/framadate'">
+<button id = "b" style = "font-size:2em"  onClick = "parent.location = 'framadate.php'">
 <strong>
 Framadate
 </strong>
