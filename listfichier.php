@@ -24,7 +24,6 @@ include("header.php");
 
 </div>
 
-<div  style  = " background-color:blue; border-radius:20px;  font-size:2em;  display:flex; justify-content:space-around;">
  
 <?php 
 
@@ -44,83 +43,44 @@ $lien = null;
 
 $name = null;
 
-
-?>
-
-<div>
-<?php    while($liste3 = $list2->fetch_assoc() ){
+ 
 
 
-echo "<div id = 'b'>";
+ while($liste3 = $list2->fetch_assoc() ){
 
+echo "<div style = 'margin-left:2%; margin-right:2%; font-size:1.5em; background-color:blue; color:white;  display:flex;  width:1OO%; justify-content:space-around;  margin-bottom:1%;'>";
+
+echo "<div style = ' padding-left:5%;width:100%;' >";
 echo "type";
+echo "</div>";
+
+echo "<div style = 'width:100%;'>";
+echo $liste3["type"]; 
+echo "</div>";
+
+echo "<div style = 'width:100%;'>";
+$url = $liste3["url"];
+
+echo "<a href = '$url' id = 'b'>"; echo $liste3["name"];echo "</a>";
+echo "</div>";
 
 echo "</div>";
 
-echo "</br>";
-
+ 
 }
+
+
+
+
+
+
+
+
+
+
 
 ?>
 
-
-
-</div>
-
-<div>
-
-<?php
-
-
-   $list = "SELECT * FROM url WHERE pseudo = '$pseudo'";
-
-$list2 = $mysqli->query($list);
-
-while($liste3 = $list2->fetch_assoc() ){
-
-
-echo "<div id = 'b'>";
-
-echo $liste3['type'];
-
-echo "</div>";
-
-echo "</br>";
-
-}
-
-?>
-
-
-</div>
-
-
-<div>
-     <?php
-
-  $list = "SELECT * FROM url WHERE pseudo = '$pseudo'";
-
-$list2 = $mysqli->query($list);
-
-while($liste3a = $list2->fetch_assoc() ){
-
-$url = $liste3a['url'];
-
-echo "<div id = 'b'>";
-
-echo"<a href = '$url';  id = 'b'>"; echo $liste3a['name']; echo "</a>";
-
-echo "</div>";
-
-echo "</br>";
-
-}
-
-?>
-
-</div>
-
-</div>
 
 </body>
 </html
