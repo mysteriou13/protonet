@@ -9,7 +9,8 @@ include("header.php");
 
 ?>
 
-<div  >
+
+<div>
 <center style  = "font-size:2em; margin:1em">
 
 <div style= "display:<?php echo $display;?>">
@@ -24,13 +25,13 @@ liste des documents
 
 </div>
 
+
 <div id = "ongletliste" style = "  margin-left:2%; display:flex;">
 
-<div id= "ongletpad" style = "display:<?php echo $display?>; color:white; padding:1%; font-size:1.5em;  margin-right:0.5%; solid white; background-color:darkblue ;">
+<div onclick = "changebackgroundcolor('ongletpad','darkblue','blue')" id= "ongletpad" style = "display:<?php echo $display?>; color:white; padding:0%; font-size:1.5em;  margin-right:0.5%; solid white; background-color:darkblue ;">
 
 
 pad
-
 
 </div>
 
@@ -80,16 +81,6 @@ echo "</div>";
 
  
 }
-
-
-
-
-
-
-
-
-
-
 
 ?>
 

@@ -5,6 +5,7 @@
  
 <link rel = "icon" href = "<?php $icon ?>" >
 
+<script  src = "./javascript/onglet.js"> </script>
 <meta charset = "UTF-8">
 
 <?php
