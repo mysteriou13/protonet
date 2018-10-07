@@ -30,7 +30,6 @@ liste des documents
 
 <div onclick = "changebackgroundcolor('ongletpad','darkblue','blue')" id= "ongletpad" style = "display:<?php echo $display?>; color:white; padding:0%; font-size:1.5em;  margin-right:0.5%; solid white; background-color:darkblue ;">
 
-
 pad
 
 </div>
