@@ -9,13 +9,13 @@ include("header.php");
 
 ?>
 
-<div >
+<div  >
 <center style  = "font-size:2em; margin:1em">
 
-<div>
+<div style= "display:<?php echo $display;?>">
 <strong id = "b">
 
- liste des documents
+liste des documents
 
 </strong>
 </br>
@@ -24,6 +24,21 @@ include("header.php");
 
 </div>
 
+<div id = "ongletliste" style = "  margin-left:2%; display:flex;">
+
+<div id= "ongletpad" style = "display:<?php echo $display?>; color:white; padding:1%; font-size:1.5em;  margin-right:0.5%; solid white; background-color:darkblue ;">
+
+
+pad
+
+
+</div>
+
+<div id= "ongletcalc" style = "display:<?php echo $display;?>; color:white; padding:1%; font-size:1.5em;  background-color:blue">
+calc
+</div>
+
+</div>
  
 <?php 
 
@@ -42,9 +57,6 @@ $link = null;
 $lien = null;
 
 $name = null;
-
- 
-
 
  while($liste3 = $list2->fetch_assoc() ){
 
