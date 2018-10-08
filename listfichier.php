@@ -30,7 +30,7 @@ liste des documents
 
 <div id = "ongletliste" style = "  margin-left:2%; display:flex;">
 
-<div onclick = "changebackgroundcolor('ongletpad','darkblue','blue')" id= "ongletpad" style = "display:<?php echo $display?>; color:white; padding:0%; font-size:1.5em;  margin-right:0.5%; solid white; background-color:blue ;">
+<div id= "ongletpad" style = "display:<?php echo $display?>; color:white; padding:0%; font-size:1.5em;  margin-right:0.5%; solid white; background-color:blue ;">
 
 pad
 
