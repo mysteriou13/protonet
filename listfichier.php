@@ -11,7 +11,6 @@ include("divlistement.php");
 
 ?>
 
-
 <div>
 <center style  = "font-size:2em; margin:1em">
 
@@ -27,23 +26,25 @@ liste des documents
 
 </div>
 
-
 <div id = "ongletliste" style = "  margin-left:2%; display:flex;">
 
-<div id= "ongletpad" style = "display:<?php echo $display?>; color:white; padding:0%; font-size:1.5em;  margin-right:0.5%; solid white; background-color:blue ;">
+<div onclick = "affichediv(this.id)" id= "ongletpad" style = "display:<?php echo $display?>;   border-radius:20px 20px;  color:white; padding:0%; font-size:1.5em;  margin-right:0.5%; solid white; background-color:blue ;">
 
-pad
-
-</div>
-
-<div id= "ongletcalc" style = "display:<?php echo $display;?>; color:white; padding:1%; font-size:1.5em;  background-color:darkblue">
-calc
-</div>
+liste pad
 
 </div>
 
+<div onclick = "affichediv(this.id)" id= "ongletcalc" style = "display:<?php echo $display;?>; border-radius:20px 20px; color:white; padding:1%; font-size:1.5em;  background-color:darkblue">
+liste calc
+</div>
 
-<div  id = "listcalc"style ="display:none;">
+</div>
+<div>
+
+</div>
+</br>
+
+<div  id = "listongletcalc"style ="display:none;">
 
 <?php
 
@@ -53,13 +54,14 @@ calc
 
 </div>
 
-<div id  = "listpad" style = "display:block;">
+<div id  = "listongletpad" style = "display:block;">
 <?php 
 
  listdiv($mysqli,"pad");
 
 ?>
 
+</div>
 </div>
 
 </body>

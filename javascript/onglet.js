@@ -50,3 +50,57 @@ link = protocole+file+page;
 
 }
 
+function affichediv(id){
+
+var i = id;
+
+var div = document.getElementById('ongletliste').getElementsByTagName('div');
+
+var list  =  document.getElementById('ongletliste').getElementsByTagName('div').length;
+
+var nbdiv = list;
+
+var debut  = -1;
+
+var liste = "list";
+
+
+id = list.id;
+
+while(debut < nbdiv-1){
+
+ debut++;
+
+ var div = document.getElementById('ongletliste').getElementsByTagName('div')[debut];
+
+var ida   = div.id;
+
+var div1 = div.style.backgroundColor;
+
+var thisid = document.getElementById(i);
+ 
+thisid.style.backgroundColor = "blue";
+
+div.style.backgroundColor = "darkblue";
+
+var l = liste+ida;
+
+var a =  document.getElementById(l);
+
+a.style.display = "none";
+
+}
+
+var listediv ="list"+i; 
+
+ divliste = document.getElementById(listediv);
+
+ divliste.style.display = "block"; 
+
+ thisid = document.getElementById(i);
+
+thisid.style.backgroundColor = "blue";
+
+
+}
+
