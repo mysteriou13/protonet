@@ -1,0 +1,48 @@
+<?php 
+
+function listdiv($mysqli,$type){
+
+$type = $mysqli->real_escape_string($type);
+
+$pseudo = $mysqli->real_escape_string($_SESSION['pseudo']);
+
+$list = "SELECT * FROM url WHERE pseudo = '$pseudo' && type = '$type'";
+
+$list2 = $mysqli->query($list);
+
+$type = null;
+
+$link = null;
+
+$lien = null;
+
+$name = null;
+
+
+ while($liste3 = $list2->fetch_assoc() ){
+
+echo "<div style = 'margin-left:2%; margin-right:2%; font-size:1.5em; background-color:blue; color:white;  display:flex;  width:1OO%; justify-content:space-around;  margin-bottom:1%;'>";
+
+echo "<div style = ' padding-left:5%;width:100%;' >";
+echo "type";
+echo "</div>";
+
+echo "<div style = 'width:100%;'>";
+echo $liste3["type"]; 
+echo "</div>";
+
+echo "<div style = 'width:100%;'>";
+$url = $liste3["url"];
+
+echo "<a href = '$url' id = 'b'>"; echo $liste3["name"];echo "</a>";
+echo "</div>";
+
+echo "</div>";
+
+ 
+}
+
+}
+
+?>
+

@@ -16,6 +16,18 @@ $page = null;
 
 $localhost = null;
 
+$display = null;
+
+if(isset($_SESSION['pseudo']) && !empty($_SESSION['pseudo'])){
+
+$display = "block";
+
+}else{
+
+$display = "none";
+
+}
+
 if($domaine == "localhost"){
 
 $localhost = 1;

@@ -7,15 +7,17 @@ include("head.php");
 
 include("header.php");
 
+include("divlistement.php");
+
 ?>
 
-<div >
+<div>
 <center style  = "font-size:2em; margin:1em">
 
-<div>
+<div style= "display:<?php echo $display;?>">
 <strong id = "b">
 
- liste des documents
+liste des documents
 
 </strong>
 </br>
@@ -24,102 +26,42 @@ include("header.php");
 
 </div>
 
-<div  style  = " background-color:blue; border-radius:20px;  font-size:2em;  display:flex; justify-content:space-around;">
- 
-<?php 
+<div id = "ongletliste" style = "  margin-left:2%; display:flex;">
 
+<div onclick = "affichediv(this.id)" id= "ongletpad" style = "display:<?php echo $display?>;   border-radius:20px 20px;  color:white; padding:0%; font-size:1.5em;  margin-right:0.5%; solid white; background-color:blue ;">
 
-$pseudo = $mysqli->real_escape_string($_SESSION['pseudo']);
-
-
-$list = "SELECT * FROM url WHERE pseudo = '$pseudo'";
-
-$list2 = $mysqli->query($list);
-
-$type = null;
-
-$link = null;
-
-$lien = null;
-
-$name = null;
-
-
-?>
-
-<div>
-<?php    while($liste3 = $list2->fetch_assoc() ){
-
-
-echo "<div id = 'b'>";
-
-echo "type";
-
-echo "</div>";
-
-echo "</br>";
-
-}
-
-?>
-
-
+liste pad
 
 </div>
 
+<div onclick = "affichediv(this.id)" id= "ongletcalc" style = "display:<?php echo $display;?>; border-radius:20px 20px; color:white; padding:1%; font-size:1.5em;  background-color:darkblue">
+liste calc
+</div>
+
+</div>
 <div>
+
+</div>
+</br>
+
+<div  id = "listongletcalc"style ="display:none;">
 
 <?php
 
-
-   $list = "SELECT * FROM url WHERE pseudo = '$pseudo'";
-
-$list2 = $mysqli->query($list);
-
-while($liste3 = $list2->fetch_assoc() ){
-
-
-echo "<div id = 'b'>";
-
-echo $liste3['type'];
-
-echo "</div>";
-
-echo "</br>";
-
-}
-
-?>
-
-
-</div>
-
-
-<div>
-     <?php
-
-  $list = "SELECT * FROM url WHERE pseudo = '$pseudo'";
-
-$list2 = $mysqli->query($list);
-
-while($liste3a = $list2->fetch_assoc() ){
-
-$url = $liste3a['url'];
-
-echo "<div id = 'b'>";
-
-echo"<a href = '$url';  id = 'b'>"; echo $liste3a['name']; echo "</a>";
-
-echo "</div>";
-
-echo "</br>";
-
-}
+ listdiv($mysqli,"calc");
 
 ?>
 
 </div>
 
+<div id  = "listongletpad" style = "display:block;">
+<?php 
+
+ listdiv($mysqli,"pad");
+
+?>
+
+</div>
 </div>
 
 </body>
