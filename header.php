@@ -1,3 +1,4 @@
+
 <?php
 
 include_once("./install/connect.php");
@@ -17,6 +18,17 @@ $page = null;
 $localhost = null;
 
 $display = null;
+
+if($domaine == "localhost"){
+
+$admin = "http://localhost/admin/connect.php";
+
+include($admin);
+
+}else{
+
+
+}
 
 if(isset($_SESSION['pseudo']) && !empty($_SESSION['pseudo'])){
 
@@ -219,7 +231,6 @@ mention legal
 
 
 </div>
-
 </div>
 <?php
 
@@ -241,8 +252,6 @@ include_once("divdeconnect.php");
 }
 
 ?>
-
-
 <div id = "inscription" style  = "margin-top:1em;  margin-bottom:1em;width:100%; ">
 
 <?php 
@@ -254,9 +263,11 @@ include_once("forminscription.php");
 
 }
 
+
 ?>
 
 <div  id = "b" style = "margin-bottom:1em" >
+
 <?php
 $page =  $_SERVER['PHP_SELF'];
 
