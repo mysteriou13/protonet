@@ -130,12 +130,6 @@ $erroremail  = 0;
 </div>
 <?php 
 
-
-$fichier = '../connect.php';
-
-include_once($fichier);
-
-
 $errorpseudo = null;
 $erropass = null;
 $errorformatemail  = null;

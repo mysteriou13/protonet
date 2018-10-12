@@ -27,6 +27,7 @@ include($admin);
 
 }else{
 
+$admin = "https://admin.vecchionet.com/connect.php";
 
 }
 
