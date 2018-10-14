@@ -31,7 +31,7 @@ tout nous service  et ansi que notre infrasture sont des logiciel libre
 
 <div>
 
-<div style = "border-bottom:20px solid blue; border-left:15px solid blue; border-bottom:20px solid blue;  background-color:darkblue;">
+<div style = "border-bottom:20px solid blue; border-left:15px solid blue; border-bottom:20px solid blue; border-right:20px solid blue;  background-color:darkblue;">
 <div>
  engagement:
 </div>
