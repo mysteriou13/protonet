@@ -1,7 +1,6 @@
 
 <?php
 
-include_once("./install/connect.php");
 
 include_once("mail.php");
 
