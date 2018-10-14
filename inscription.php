@@ -190,6 +190,14 @@ $e->envoiemail($email,"confirmation inscription",$message,"massanthony@vecchione
 
 ?>
 
+<script>
+
+var a = document.getElementById("connection");
+
+a.style.display = "none";
+
+</script>
+
 
 
 </body>
