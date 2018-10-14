@@ -92,7 +92,6 @@ flex-wrap: wrap;
 ">
 
 
-<div style = " display:flex; justify-content:space-around;  width:100%; ">
 
 <div >
 <?php 
@@ -231,7 +230,6 @@ mention legal
 <div>
 
 
-</div>
 </div>
 <?php
 
