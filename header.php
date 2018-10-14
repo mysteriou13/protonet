@@ -23,13 +23,14 @@ if($domaine == "localhost"){
 
 $admin = "http://localhost/admin/connect.php";
 
-include($admin);
 
 }else{
 
-$admin = "https://admin.vecchionet.com/connect.php";
+$admin = "../admin/connect.php";
 
 }
+
+include($admin);
 
 if(isset($_SESSION['pseudo']) && !empty($_SESSION['pseudo'])){
 
