@@ -22,16 +22,12 @@ if($_SERVER['SERVER_NAME'] == "localhost"){
 
 $terra = "http://localhost/terraliberta/";
 
-}else{
-
-$terra =  "https://terraliberta.vecchionet.com/";
-
 }
 
 ?>
 
 <div id = "b" style = "display:<?php echo $dis?>;font-size:2em; margin-top:1%; ">
-<center id = "premium">
+<center>
 service r&eacute;serv&eacute; au utlisateur premium
 </center>
 </div>
