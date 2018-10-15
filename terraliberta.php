@@ -31,7 +31,7 @@ $terra =  "https://terraliberta.vecchionet.com/";
 ?>
 
 <div id = "b" style = "display:<?php echo $dis?>;font-size:2em; margin-top:1%; ">
-<center>
+<center id = "premium">
 service r&eacute;serv&eacute; au utlisateur premium
 </center>
 </div>
