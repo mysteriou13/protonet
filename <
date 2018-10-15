@@ -22,10 +22,6 @@ if($_SERVER['SERVER_NAME'] == "localhost"){
 
 $terra = "http://localhost/terraliberta/";
 
-}else{
-
-$terra =  "https://terraliberta.vecchionet.com/";
-
 }
 
 ?>
