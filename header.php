@@ -127,7 +127,7 @@ include("divinscription.php");
 <div>
 <?php
 
-$service = "listservice.php";
+$service = "listservice.php#service";
 
 $page = $service;
 
