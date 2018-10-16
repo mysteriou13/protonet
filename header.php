@@ -18,16 +18,8 @@ $localhost = null;
 
 $display = null;
 
-if($domaine == "localhost"){
-
-$admin = "http://localhost/admin/connect.php";
-
-
-}else{
-
 $admin = "../admin/connect.php";
 
-}
 
 include($admin);
 
