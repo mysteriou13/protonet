@@ -2,9 +2,7 @@
 <?php 
 include_once("head.php");
 include_once("header.php");
-include("admin/connect.php");
 
-  ini_set('display_errors', 1);
 
 $time = time();
 
@@ -13,8 +11,6 @@ $time = time();
 $idcalc = htmlspecialchars($_GET['calc']);
 
 $fin = date("dmy", strtotime($idcalc));
-
-$mysqli = new mysqli(server,login,password,database);
 
 
 $fin = $mysqli->real_escape_string($fin);
@@ -63,7 +59,10 @@ $mysqli->query($calc6);
 
 }
 
+
+
 $link = htmlspecialchars(time());
+
 
 header("Location:affichecalc.php?calc=$link");
 
