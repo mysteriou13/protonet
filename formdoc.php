@@ -76,13 +76,7 @@ $name1 = $mysqli->query($name);
 
 $name2 = $name1->fetch_assoc();
 
-if($name2['name'] == 0){
 
-$mysqli->query($insert);
-
-
-
-}
 }
 
 if($calc2['name'] == 0  && !isset($_SESSION['pseudo']) or isset($_POST[$type]) && !empty($_POST[$type]) && isset($_SESSION['pseudo']) && !empty($_SESSION['pseudo'])){
@@ -91,6 +85,9 @@ if($name2['name'] == 0){
 $calc6 = 'INSERT INTO calc VALUES(NULL,"'.$fin.'","'.$link.'")';
 
 $mysqli->query($calc6);
+
+$mysqli->query($insert);
+
 
 header("Location:affichecalc.php?calc=$link");
  
