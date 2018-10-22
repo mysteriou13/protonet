@@ -43,7 +43,7 @@ if($calc2['name'] == 1 && isset($_SESSION['pseudo'])){
 
 $link = $link+1;
 
-$link = $mysqli->real_escape_string($time);
+$link = $mysqli->real_escape_string($link);
 
 }
 
