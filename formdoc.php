@@ -2,6 +2,8 @@
 
 $date = date('dmy');
 
+$time = time();
+
 $fin = date("dmy", strtotime($idcalc));
 
 
