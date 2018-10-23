@@ -7,6 +7,8 @@ $idcalc = htmlspecialchars($_GET['pad']);
 
 $type = "pad";
 
+$url = "https://etherpad.vecchionet.com/p/";
+
 $time = time();
 
 $date = date('dmy');
