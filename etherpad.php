@@ -2,7 +2,6 @@
 <?php 
 include_once("head.php");
 include_once("header.php");
-include("admin/connect.php");
 
 $idcalc = htmlspecialchars($_GET['pad']);
 
