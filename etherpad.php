@@ -4,11 +4,13 @@ include_once("head.php");
 include_once("header.php");
 include("admin/connect.php");
 
+$idcalc = htmlspecialchars($_GET['pad']);
+
+$type = "pad";
+
 $time = time();
 
- $date = date('dmy');
-
-$idcalc = htmlspecialchars($_GET['pad']);
+$date = date('dmy');
 
 $fin = date("dmy", strtotime($idcalc));
 
