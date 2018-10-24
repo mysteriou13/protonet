@@ -219,7 +219,6 @@ mention legal
 
 
 
-
 <?php
 
 if(isset($_SESSION['pseudo'])){

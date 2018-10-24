@@ -1,5 +1,5 @@
 
-<div  id = "b" style = "margin-bottom:1em" >
+<div  id = "b" style = "margin-bottom:1em; font-size:2em;" >
 
 <div style = "margin-left:1%; padding:1%;">
 Vecchionet c'est quoi ?
@@ -31,7 +31,7 @@ tout nous service  et ansi que notre infrasture sont des logiciel libre
 
 <div>
 
-<div style = "border-bottom:20px solid blue; border-left:15px solid blue; border-bottom:20px solid blue; border-right:20px solid blue;  background-color:darkblue;">
+<div style = " font-size:2em;border-bottom:20px solid blue; border-left:15px solid blue; border-bottom:20px solid blue; border-right:20px solid blue;  background-color:darkblue;">
 <div>
  engagement:
 </div>
