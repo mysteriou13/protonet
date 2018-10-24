@@ -77,15 +77,14 @@ hebergeur de service libre  et etique corse
 
 
 <div style = "
-font-size:2em;
 display:flex;
-justify-content:space-between;
+justify-content:space-around;
 flex-wrap: wrap;
 ">
 
 
 
-<div >
+<div style = "font-size:2em;">
 <?php 
 
 $page = "index.php";
@@ -116,7 +115,7 @@ include("divinscription.php");
 
 ?>
 
-<div>
+<div style = "font-size:2em;">
 <?php
 
 $service = "listservice.php#service";
@@ -138,13 +137,13 @@ liste des service
 
 </div>
 
-<div>
+<div style ="font-size:2em;">
 
 <a id = "b" href = 'terraliberta.php'>terraliberta </a>
 
 </div>
 
-<div>
+<div style ="font-size:2em;">
 
 <?php 
 $page = "CGU.php";
@@ -168,7 +167,7 @@ CGU
 </div>
 
 
-<div>
+<div style = "font-size:2em;">
 
 <?php 
 
@@ -194,7 +193,7 @@ soutenir
 
 
 
-<div>
+<div style = "font-size:2em;">
 
 <?php 
 
@@ -219,10 +218,8 @@ mention legal
 </div>
 
 
-<div>
 
 
-</div>
 <?php
 
 if(isset($_SESSION['pseudo'])){
