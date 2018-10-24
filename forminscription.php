@@ -1,5 +1,5 @@
 
-<div id = "b" style = "margin-top:1em; margin-left:2em;">
+<div id = "b" style = " font-size:1.5em; margin-top:1em; margin-left:2em;">
 
 <form id = "connection" style = "display:block" action = "<?php echo $_SERVER['PHP_SELF']; ?>" method = "POST">
 
