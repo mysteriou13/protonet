@@ -44,7 +44,7 @@ organiser vos render-vous
 </br>
 </br>
 </br>
-<button id = "b" style = "font-size:2em;" onClick = "parent.location = 'https://www.vecchionet.com/pad.php'">
+<button id = "b" style = "font-size:2em;" onClick = "parent.location = 'pad.php'">
 <strong>
 Vecchiopad
 </br>
