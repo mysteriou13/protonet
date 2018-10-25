@@ -84,7 +84,7 @@ flex-wrap: wrap;
 
 
 
-<div style = "font-size:2em;">
+<div style = "font-size:1.5em; margin:1%;">
 <?php 
 
 $page = "index.php";
@@ -115,7 +115,7 @@ include("divinscription.php");
 
 ?>
 
-<div style = "font-size:2em;">
+<div style = "font-size:1.5em; margin:1%;">
 <?php
 
 $service = "listservice.php#service";
@@ -137,13 +137,13 @@ liste des service
 
 </div>
 
-<div style ="font-size:2em;">
+<div style ="font-size:1.5em; maring:1%;">
 
 <a id = "b" href = 'terraliberta.php'>terraliberta </a>
 
 </div>
 
-<div style ="font-size:2em;">
+<div style ="font-size:1.5em; margin:1%;">
 
 <?php 
 $page = "CGU.php";
@@ -167,7 +167,7 @@ CGU
 </div>
 
 
-<div style = "font-size:2em;">
+<div style = "font-size:1.5em; maring:1%;">
 
 <?php 
 
@@ -193,7 +193,7 @@ soutenir
 
 
 
-<div style = "font-size:2em;">
+<div style = "font-size:1.5em; margin:1%;">
 
 <?php 
 
