@@ -1,4 +1,4 @@
-<div style = "font-size:2em;" >
+<div style = "font-size:1.5em;" >
 
 <?php
 
