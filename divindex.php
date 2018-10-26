@@ -1,26 +1,29 @@
 
-<div  id = "b" style = "margin-bottom:1em; font-size:2em;" >
+<div  style = "padding:1%; margin-bottom:1em; font-size:2em;" >
 
-<div style = "margin-left:1%; padding:1%;">
+<div style = "color:white; background-color:blue;  border: 2px solid white;   border-radius: 25px; ">
+
+<center>
 Vecchionet c'est quoi ?
+</center>
+
 </div>
 
+</br>
 
-<div style = "margin-top:5px; padding-bottom:2%;margin-left:1%;background-color:darkblue;">
+<div >
 
-<div>
-
+<div   style = "color:white; border:2px solid white; border-radius:25px;   background-color:white; border:2px solid white; background-color:blue;">
 un herbergeur de service libre  colaboratif  et qui respecte la vie privé et les libert&eacute; des utilisateurs:
 </div>
 
+</br>
 
-
-<div  style = " border-top:10px solid blue;">
+<div id = "b"  style = " border:2px solid white; border-radius:25px;  background-color:blue">
 Service libre:
-<div>
 
+<div>
 tout nous service  et ansi que notre infrasture sont des logiciel libre 
-
 </div>
 
 </div>
@@ -31,7 +34,7 @@ tout nous service  et ansi que notre infrasture sont des logiciel libre
 
 <div>
 
-<div style = " font-size:2em;border-bottom:20px solid blue; border-left:15px solid blue; border-bottom:20px solid blue; border-right:20px solid blue;  background-color:darkblue;">
+<div style = "margin:1%; font-size:2em;border-bottom:20px solid blue; border:2px solid white; border-radius:25px; color:white; background-color:blue;">
 <div>
  engagement:
 </div>

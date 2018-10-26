@@ -1,4 +1,3 @@
-
 <?php
 
 
@@ -77,11 +76,11 @@ hebergeur de service libre  et etique corse
 
 
 <div style = "
+
 display:flex;
-justify-content:space-around;
+justify-content:space-between;
 flex-wrap: wrap;
 ">
-
 
 
 <div style = "font-size:1.5em; margin:1%;">
@@ -239,6 +238,9 @@ include_once("divdeconnect.php");
 }
 
 ?>
+
+</div>
+
 <div id = "inscription" style  = "margin-top:1em;  margin-bottom:1em;width:100%; ">
 
 <?php 
@@ -253,7 +255,7 @@ include_once("forminscription.php");
 
 ?>
 
-<div  id = "b" style = "margin-bottom:1em" >
+<div style = " margin-bottom:1em" >
 
 <?php
 $page =  $_SERVER['PHP_SELF'];
@@ -269,8 +271,7 @@ include("divindex.php");
 
 ?>
 
-</div
->
+</div>
 
 <center>
 <div>
