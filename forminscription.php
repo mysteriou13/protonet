@@ -15,7 +15,7 @@ mot de pass <input name = "pass" type = "password">
 </div>
 
 <div>
-<input type = "submit" value = "connection">
+<input  type = "submit"  style = "background-Color:blue; border: 2px solid white; border-radius: 25px; font-size:1em;  color:white"value = "connection">
 </div>
 
 <div>
