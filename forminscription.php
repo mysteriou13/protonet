@@ -1,18 +1,32 @@
 
-<div id = "b" style = " font-size:1.5em; margin-top:1em; margin-left:2em;">
+<div id = "b" style = "border:1px solid white; font-size:1.5em; ">
+
 
 <form id = "connection" style = "display:block" action = "<?php echo $_SERVER['PHP_SELF']; ?>" method = "POST">
 
+<div style = " display:flex; justify-content:center;  flex-wrap:wrap">
 
+<div>
 pseudo <input name = "pseudo" type = "text">
+</div>
 
-password <input name = "pass" type = "password">
+<div>
+mot de pass <input name = "pass" type = "password">
+</div>
 
+<div>
 <input type = "submit" value = "connection">
+</div>
 
+<div>
 <a id= "b" href = "oublipass.php"> mot de pass oubli&eacute; </a>
+</div>
+
+</div>
+
 
 </form>
+
 
 <?php
 
@@ -59,7 +73,8 @@ echo "<center> erreur pseudo ou mot de pass incorrect </center>";
 }
 
 ?>
-</div
+
+
 </div>
 
 
