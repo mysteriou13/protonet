@@ -248,7 +248,7 @@ include_once("divdeconnect.php");
 
 if(!isset($_SESSION['pseudo'])){
 
-include_once("forminscription.php");
+include_once("formconnection.php");
 
 }
 
