@@ -136,7 +136,7 @@ liste des service
 
 </div>
 
-<div style ="font-size:1.5em; maring:1%;">
+<div style ="border:2px solid white; border-radius:25px; padding:1%;  font-size:1.5em; maring:1%;">
 
 <a id = "b" href = 'terraliberta.php'>terraliberta </a>
 
