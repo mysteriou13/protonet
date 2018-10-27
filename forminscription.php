@@ -2,28 +2,27 @@
 <div id = "b" style = "border:1px solid white; font-size:1.5em; ">
 
 
-<form id = "connection" style = "display:block" action = "<?php echo $_SERVER['PHP_SELF']; ?>" method = "POST">
+<form id = "connection" style = "display:block; margin:1%;" action = "<?php echo $_SERVER['PHP_SELF']; ?>" method = "POST">
 
-<div style = " display:flex; justify-content:center;  flex-wrap:wrap">
+<div style = " display:flex; justify-content:space-around;  flex-wrap:wrap">
 
-<div>
-pseudo <input name = "pseudo" type = "text">
+<div  style = "background-Color:darkblue; border: 2px solid white; border-radius: 25px; font-size:1em;  color:white; padding:3%;" >
+<label> pseudo </label> <input name = "pseudo" type = "text">
+</div>
+
+<div  style = "background-Color:darkblue; border: 2px solid white; border-radius: 25px; font-size:1em;  color:white; padding:3%;">
+<label> mot de pass </label><input name = "pass" type = "password">
 </div>
 
 <div>
-mot de pass <input name = "pass" type = "password">
+<input  type = "submit"  style = "background-Color:darkblue; border: 2px solid white; border-radius: 25px; font-size:1em;  color:white"value = "connection">
 </div>
 
 <div>
-<input type = "submit" value = "connection">
-</div>
-
-<div>
-<a id= "b" href = "oublipass.php"> mot de pass oubli&eacute; </a>
+<a id= "b" style= " background-Color:darkblue; border: 2px solid white; border-radius: 25px; " href = "oublipass.php"> mot de pass oubli&eacute; </a>
 </div>
 
 </div>
-
 
 </form>
 
