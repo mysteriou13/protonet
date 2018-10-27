@@ -2,7 +2,7 @@
 <div id = "b" style = "font-size:2em; margin-top:1em;">
 <center>
 
-<p id = "service">
+<p id = "service" style= "border:2px solid white; border-radius:25px ; " >
 
 liste des service
 
@@ -12,9 +12,9 @@ liste des service
 
 </div>
 
-<center>
+<center  style = "background-color:darkblue; border:2px solid white; border-radius:25px ; ">
 <div style = "margin-top:2em;">
- <button  id = "b" style = "font-size:2em; margin-right:2em;" onClick="parent.location='https://kanboard.vecchionet.com'">
+ <button  id = "b";  style = "background-color:blue; color:white; font-size:2em; margin-right:2em;" onClick="parent.location='https://kanboard.vecchionet.com'">
 <strong>
 Kanboard
 </strong>
@@ -23,7 +23,7 @@ gestionaire de projet
 </button>
 
 
-<button id = "b"  style = "font-size:2em" onClick = "parent.location = 'https://www.vecchionet.com/edit.php'">
+<button id = "b"  style = "background-color:blue; font-size:2em" onClick = "parent.location = 'https://www.vecchionet.com/edit.php'">
 <strong>
 Svg-Edit
 </strong>
@@ -32,7 +32,7 @@ logiciel d'&eacute;dition d'images </br> et de retouche de photo
 </button>
 
 
-<button id = "b" style = "font-size:2em"  onClick = "parent.location = 'framadate.php'">
+<button id = "b" style = " background-color:blue; font-size:2em"  onClick = "parent.location = 'framadate.php'">
 <strong>
 Framadate
 </strong>
@@ -44,14 +44,14 @@ organiser vos render-vous
 </br>
 </br>
 </br>
-<button id = "b" style = "font-size:2em;" onClick = "parent.location = 'pad.php'">
+<button id = "b" style = " background-color:blue; font-size:2em;" onClick = "parent.location = 'pad.php'">
 <strong>
 Vecchiopad
 </br>
 editeur de text colaboratif  en temp réel
 </button>
 
-<button id = "b" style = "font-size:2em;" onClick = "parent.location = 'calc.php'">
+<button id = "b" style = " background-color:blue; font-size:2em;" onClick = "parent.location = 'calc.php'">
 <strong>
 Vecchiocalc
 </br>
