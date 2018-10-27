@@ -138,7 +138,7 @@ liste des service
 
 <div style ="background-color:blue; border:2px solid white; border-radius:25px; padding:1%;  font-size:1.5em; maring:1%;">
 
-<a id = "b" href = 'terraliberta.php'>terraliberta </a>
+<a id = "b" href = 'terraliberta.php#premium'>terraliberta </a>
 
 </div>
 
