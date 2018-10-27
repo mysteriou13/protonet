@@ -4,7 +4,7 @@
 
 <form id = "connection" style = "display:block; margin:1%;" action = "<?php echo $_SERVER['PHP_SELF']; ?>" method = "POST">
 
-<div style = " display:flex; justify-content:center;  flex-wrap:wrap">
+<div style = " display:flex; justify-content:space-around;  flex-wrap:wrap">
 
 <div  style = "background-Color:darkblue; border: 2px solid white; border-radius: 25px; font-size:1em;  color:white; padding:3%;" >
 <label> pseudo </label> <input name = "pseudo" type = "text">
