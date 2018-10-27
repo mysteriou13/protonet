@@ -83,7 +83,7 @@ flex-wrap: wrap;
 ">
 
 
-<div style = "font-size:1.5em; margin:1%;">
+<div style = "border:2px solid white; border-radius:25px; padding:1%;  font-size:1.5em; margin:1%;">
 <?php 
 
 $page = "index.php";
