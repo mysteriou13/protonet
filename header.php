@@ -142,7 +142,7 @@ liste des service
 
 </div>
 
-<div style ="font-size:1.5em; margin:1%;">
+<div style =" border:2px solid white; border-radius:25px; padding:1%;  font-size:1.5em; margin:1%;">
 
 <?php 
 $page = "CGU.php";
@@ -166,7 +166,7 @@ CGU
 </div>
 
 
-<div style = "font-size:1.5em; maring:1%;">
+<div style = "border:2px solid white; border-radius:25px; padding:1%;  font-size:1.5em; maring:1%;">
 
 <?php 
 
@@ -192,7 +192,7 @@ soutenir
 
 
 
-<div style = "font-size:1.5em; margin:1%;">
+<div style = "border:2px solid white; border-radius:25px; padding:1%;  font-size:1.5em; margin:1%;">
 
 <?php 
 
