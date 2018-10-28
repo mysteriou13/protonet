@@ -1,13 +1,4 @@
-<center>
 <form action = "<?php $_SERVER['PHP_SELF']?>" method  ="POST">
-
-<div id ="b" style = "margin-top:1em; font-size:2em;">
-
-<p id = "inscription"> 
-inscription
-</p>
-
-</div>
 
 <div id = "b" style = "font-size:2em; margin-top:1em;">
 
@@ -108,7 +99,6 @@ $erroremail  = 0;
 <input type = "submit" value = "valider">
 
 </form>
-</center>
 </div>
 <?php 
 

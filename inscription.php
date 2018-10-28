@@ -13,10 +13,49 @@ $display = "none";
 $date = date("dmY");
 
 $date = $mysqli->real_escape_string($date);
-
-include("forminscription.php");
+ 
 
 ?>
+
+
+<h1 id  = "inscription">
+
+   <p>
+
+  <center id = "b">
+  inscription
+  </center>
+   </p>
+
+</h1>
+
+
+<div id = "b" style = "display:flex; justify-content:space-around;">
+
+<div>
+ basic
+  <div style = "display:flex; justify-content:column">
+
+  </div>
+
+</div>
+
+
+<div>
+premium
+  <div style = "display:flex; justify-content:column">
+
+  </div>
+
+
+  <div>
+
+  </div>
+</div>
+
+
+</div>
+
 <script>
 
 var a = document.getElementById("connection");
