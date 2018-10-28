@@ -32,17 +32,19 @@ $date = $mysqli->real_escape_string($date);
 
 <div id = "b" style = "display:flex; justify-content:space-around;">
 
-<div>
- basic
+  <div id = "b" style = "font-size:2em;">
+ basic 0 euro par mois
   <div style = "display:flex; justify-content:column">
+ 
 
   </div>
 
 </div>
 
 
-<div>
-premium
+<div id = "b" style = "font-size:2em;">
+
+premium 5 euro par mois
   <div style = "display:flex; justify-content:column">
 
   </div>
