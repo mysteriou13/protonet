@@ -22,41 +22,65 @@ $date = $mysqli->real_escape_string($date);
 
    <p>
 
-  <center id = "b">
-  inscription
-  </center>
+    <center id = "b">
+     inscription
+    </center>
    </p>
 
 </h1>
 
 
-<div id = "b" style = "display:flex; justify-content:space-around;">
+ <div  style = "color:white;  display:flex; justify-content:space-around;">
 
-  <div id = "b" style = "font-size:2em;">
- basic 0 euro par mois
-  <div style = "display:flex; justify-content:column">
+   <div  style = "background-color:blue; border:2px solid white; border-radius:25px; margin-right:1%; font-size:2em;">
  
+    <center>
+      <strong>
+     basic 0 euro par mois
+     </strong>
+    </center>
 
-  </div>
+     <div style = " display:flex; flex-wrap:wrap; justify-content:column">
 
-</div>
+        <div style = " border:2px solid white; border-radius:25px">
+        1 mois de premium
+        </div>
+       
+        <div style = "width:100%;  border:2px solid white; border-radius:25px; ">
+        classement des  document dans le classeur
+        </div>
+ 
+     </div>
+
+    </div>
+
+  <div style = "background-color:blue; padding:1%; border:2px solid white; border-radius:25px;  font-size:2em;">
+  <center>
+  <strong>
+   premium 5 euro par mois
+  </strong>
+   </center>  
+   <div style = "display:flex; flex-wrap:wrap; justify-content:column">
+    
+     <div style = " border:2px solid white; border-radius:25px">
+     tout les avantage du basic
+    </div>
+  
+   <div style = " border:2px solid white; border-radius:25px">
+   accés a la terraliberta(espace de travail numérique et colaboratif);
+   </div>   
+
+   </div>
 
 
-<div id = "b" style = "font-size:2em;">
+      <div>
 
-premium 5 euro par mois
-  <div style = "display:flex; justify-content:column">
-
-  </div>
-
-
-  <div>
-
-  </div>
-</div>
+      </div>
+  
+   </div>
 
 
-</div>
+   </div>
 
 <script>
 
