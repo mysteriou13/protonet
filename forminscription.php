@@ -160,7 +160,6 @@ $message = "pour confirmé votre inscription  copier  dans votre navigateur web 
 $e->envoiemail($email,"confirmation inscription",$message,"massanthony@vecchionet.com");
 
 header("Location:$modelink");
-
 }
 ?>
 

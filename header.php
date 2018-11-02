@@ -1,6 +1,5 @@
 <?php
 
-
 include_once("mail.php");
 
 $e = new email();
@@ -18,6 +17,8 @@ $localhost = null;
 $display = null;
 
 $admin = "../admin/connect.php";
+
+$mode = htmlspecialchars($_GET['mode']);
 
 
 include($admin);
