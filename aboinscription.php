@@ -17,6 +17,8 @@ include("./head.php");
 
 include("./header.php");
 
+$mode = htmlspecialchars($_GET['mode']);
+
 
 
 ?>
