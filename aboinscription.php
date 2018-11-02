@@ -19,9 +19,20 @@ include("./header.php");
 
 $mode = htmlspecialchars($_GET['mode']);
 
+?>
 
+
+
+<div id = "forminscription">
+<center>
+<?php 
+
+include_once('forminscription.php');
 
 ?>
+</center>
+</div>
+
 </body>
 </html>
 
