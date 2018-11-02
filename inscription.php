@@ -13,7 +13,6 @@ $display = "none";
 $date = date("dmY");
 
 $date = $mysqli->real_escape_string($date);
- 
 
 ?>
 
@@ -56,7 +55,7 @@ $date = $mysqli->real_escape_string($date);
 
    <div style = "background-color:blue; margin:3%;  padding-right:5%;  border:2px solid white; border-radius:25px;">
 <center>
-   <a href = "" style  = "color:white;"> devenir basic </a>
+   <a href = "aboinscription.php?mode=basic" style  = "color:white;"> devenir basic </a>
 </center> 
  </div>
 
@@ -94,7 +93,7 @@ premium 5 euro/mois
 
      <div style = "background-color:blue; margin:3%; border:2px solid white; border-radius:25px;">
 <center>
-   <a href = "" style  = "color:white;"> devenir premium </a>
+   <a href = "aboinscription.php?mode=premium" style  = "color:white;"> devenir premium </a>
 </center>
  </div>
   
