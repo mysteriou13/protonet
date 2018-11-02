@@ -7,7 +7,7 @@ $d = "corsicanet";
 
 $des1 = "cliquer pour agrandir";
 
- $monUrl = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+$monUrl = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 
 ?>
 
@@ -18,6 +18,8 @@ include("./head.php");
 include("./header.php");
 
 $mode = htmlspecialchars($_GET['mode']);
+
+$modelink = $link."?mode=".$mode;
 
 ?>
 
