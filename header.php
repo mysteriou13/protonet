@@ -20,6 +20,13 @@ $admin = "../admin/connect.php";
 
 $mode = htmlspecialchars($_GET['mode']);
 
+if(isset($_SESSION['pseudo']) && !empty($_SESSION['pseudo'])){
+if($mode == "premium"){
+
+header("Location:modepremium.php");
+
+}
+}
 
 include($admin);
 
