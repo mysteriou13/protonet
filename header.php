@@ -1,6 +1,5 @@
 <?php
 
-
 include_once("mail.php");
 
 $e = new email();
@@ -19,6 +18,15 @@ $display = null;
 
 $admin = "../admin/connect.php";
 
+$mode = htmlspecialchars($_GET['mode']);
+
+if(isset($_SESSION['pseudo']) && !empty($_SESSION['pseudo'])){
+if($mode == "premium"){
+
+header("Location:modepremium.php");
+
+}
+}
 
 include($admin);
 
@@ -248,7 +256,7 @@ include_once("divdeconnect.php");
 
 if(!isset($_SESSION['pseudo'])){
 
-include_once("forminscription.php");
+include_once("formconnection.php");
 
 }
 

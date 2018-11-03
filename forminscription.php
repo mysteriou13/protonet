@@ -1,80 +1,166 @@
 
-<div style = "margin:1%;" >
+<form action = "<?php $_SERVER['PHP_SELF']?>" method  ="POST">
 
+<div id = "b" style = "font-size:2em; margin-top:1em;">
 
-<form id = "connection" style = "display:block; margin:1%;" action = "<?php echo $_SERVER['PHP_SELF']; ?>" method = "POST">
-
-<div style = "font-size:2em; display:flex; justify-content:space-around;  flex-wrap:wrap">
-
-<div  style = "background-Color:blue; border: 2px solid white; border-radius: 25px; font-size:1em;  color:white; padding:3%;" >
-<label> pseudo </label> <input name = "pseudo" type = "text">
-</div>
-
-<div  style = "background-Color:blue; border: 2px solid white; border-radius: 25px; font-size:1em;  color:white; padding:3%;">
-<label> mot de pass </label><input name = "pass" type = "password">
-</div>
-
-<div>
-<input  type = "submit"  style = "background-Color:blue; border: 2px solid white; border-radius: 25px; font-size:1em;  color:white"value = "connection">
-</div>
-
-<div style= "padding:1%;  background-Color:blue; border: 2px solid white; border-radius: 25px; "  >
-
-<a style = "color:white;"  href = "oublipass.php"> mot de pass oubli&eacute; </a>
-</div>
-
-</div>
-
-</form>
-
-
+</br> pseudo <input type  ="text"  name = "pseudo">
 <?php
 
-if(isset($_POST['pseudo']) && !empty($_POST['pseudo']) && 
-    isset($_POST['pass']) && !empty($_POST['pass']) ){
+if(isset($_POST['pseudo']) && !empty($_POST['pseudo'])){
 
 $pseudo = $mysqli->real_escape_string($_POST['pseudo']);
 
-$pass = $mysqli->real_escape_string($_POST['pass']);
+$pseudo1 = "SELECT COUNT(*)pseudo FROM membre WHERE pseudo = '$pseudo'";
 
-$i = "SELECT COUNT(*)pseudo FROM membre WHERE pseudo = '$pseudo'";
+$pseudo2 = $mysqli->query($pseudo1);
 
-$i2  = $mysqli->query($i);
+$pseudo4 = $pseudo2->fetch_assoc();
 
-$i3 = $i2->fetch_assoc();
+ if($pseudo4['pseudo'] == 0){
+ $validepseudo = 1;
+ $errorpseudo = 0;
+}else{
 
-$login = "SELECT pass FROM membre WHERE pseudo = '$pseudo'";
+$errorpseudo = 1;
 
-$login1 = $mysqli->query($login);
-
-$login2 = $login1->fetch_assoc();
-
-$valide = 0;
-
-if($i3['pseudo'] == 1){
-if (password_verify($pass, $login2['pass'])) {
-
-session_start();
-
-$_SESSION['pseudo'] = $pseudo;
-
-$valide = 1;
-
-header("Location:index.php");
+echo "pseudo pris";
 
 }
-}
- 
-if($valide == 0){
 
-echo "<center> erreur pseudo ou mot de pass incorrect </center>";
+
 
 }
+   ?>
+</br>
+
+</br> mot de pass <input type = "password" name  = "pass">
+<?php
+if(isset($_POST['pass']) && !empty($_POST['pass'])){
+
+$pass1 = strlen($_POST['pass']);
+
+if($pass1 >= 8){
+
+$pass =  $_POST['pass'];
+
+$validepass = 1;
+
+}else{
+
+$validepass = 0;
+
+ echo "mot de pass tros court";
+
+}
+
 }
 
 ?>
+</br>
+
+</br> email <input type  = "text" name  = "email">
+<br>
+<?php
+
+if(isset($_POST['email']) && !empty($_POST['email'])){
+
+$email = $mysqli->real_escape_string($_POST['email']);
+
+$email1 = "SELECT COUNT(*)email FROM membre WHERE email ='$email'";
+
+$email2 = $mysqli->query($email1);
+
+$email3 = $email2->fetch_assoc();
 
 
+if(filter_var($email, FILTER_VALIDATE_EMAIL)){
+
+$errorformatemail = 1;
+
+}else{
+
+  $errorformatemail = 0;
+
+}
+
+if($email3['email'] == 0){
+
+$valideemail  = 1;
+
+$erroremail  = 0;
+
+}else{
+   $erroremail = 1;
+
+}
+
+}
+ ?>
+
+<input type = "submit" value = "valider">
+
+</form>
 </div>
+<?php 
+
+$errorpseudo = null;
+$erropass = null;
+$errorformatemail  = null;
+$erroremail = null;
+
+$total = null;
+
+
+$total = $validepseudo+$validepass+$valideemail;
+
+
+if($total == 3){
+
+$pass = password_hash($pass,PASSWORD_DEFAULT);
+
+$pass = $mysqli->real_escape_string($pass);
+
+$display = "block";
+
+$date = date("d").date("m").date("y");
+
+$date = $mysqli->real_escape_string($date);
+
+$length =  rand(10, 50);
+
+$token = bin2hex(random_bytes($length));
+
+$tokenmail = $mysqli->real_escape_string($token);
+
+$verifemail = 0;
+
+$verifemail = $mysqli->real_escape_string($verifemail);
+
+
+$i = 'INSERT INTO membre VALUES(NULL,"'.$pseudo.'","'.$pass.'","'.$email.'","'.$date.'", "'.$verifemail.'","'.$tokenmail.'")';
+
+ $moth = date("m")+1; 
+
+ $date = date("d").$moth.date("y");
+
+ $date = $mysqli->real_escape_string($date);
+
+$ebo = 'INSERT INTO  ebo VALUES(NULL,"'.$pseudo.'","'.$date.'")';
+
+$mysqli->query($i);
+
+$mysqli->query($ebo);
+
+$return = "https://www.vecchionet.com";
+
+$link ="http://vecchionet.com/terraliberta/membre/verifemail.php/?email=$token";
+
+$message = "pour confirmé votre inscription  copier  dans votre navigateur web : :".$link;
+
+$e->envoiemail($email,"confirmation inscription",$message,"massanthony@vecchionet.com");
+
+header("Location:$modelink");
+}
+?>
 
 
