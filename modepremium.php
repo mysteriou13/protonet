@@ -3,6 +3,7 @@
 
 <?php 
 
+
 $d = "corsicanet";
 
 $des1 = "cliquer pour agrandir";
@@ -13,9 +14,16 @@ include("./head.php");
 
 include("./header.php");
 
+if(empty($_SESSION['pseudo'])){
+
+ header('Location:./index.php');
+
+}
+
  $nameserver = $_SERVER['SERVER_NAME'];
 
  $paypal = "/terraliberta/paypal";
+
 
 if($_SERVER['SERVER_NAME'] == "localhost" ){
 
