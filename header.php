@@ -20,6 +20,23 @@ $admin = "../admin/connect.php";
 
 $mode = htmlspecialchars($_GET['mode']);
 
+if($domaine == "localhost"){
+
+$localhost = 1;
+
+$protole = "http://";
+
+$domaine = $domaine."/vecchionet.com/";
+
+}else{
+
+$protole = "https://";
+
+$localhost = 0;
+
+}
+
+
 if(isset($_SESSION['pseudo']) && !empty($_SESSION['pseudo'])){
 if($mode == "premium"){
 
@@ -40,23 +57,9 @@ $display = "none";
 
 }
 
-if($domaine == "localhost"){
 
-$localhost = 1;
 
-$protole = "http://";
-
-$domaine = $domaine."/vecchionet.com/";
-
-}else{
-
-$protole = "https://";
-
-$localhost = 0;
-
-}
-
-$link = $protole.$domaine;
+ $link = $protole.$domaine;
 
 $terra =  str_replace("vecchionet.com","",$link);
 
@@ -67,10 +70,12 @@ $terraliberta = $terra."/terraliberta";
 
 $link1  = $link;
 
+include("/var/www/html/vecchionet.com/head.php");
 
 ?>
 
 
+ 
 <header style = "background-color:DarkBlue;">
 <div  style = "">
 
