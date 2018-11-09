@@ -268,6 +268,8 @@ include_once("formconnection.php");
 
 ?>
 
+</header>
+
 <div style = " margin-bottom:1em" >
 
 <?php
@@ -293,5 +295,4 @@ include("divindex.php");
 </div>
 </center>
 
-</header>
 
