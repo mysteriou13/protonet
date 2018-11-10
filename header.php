@@ -268,6 +268,8 @@ include_once("formconnection.php");
 
 ?>
 
+</header>
+
 <div style = " margin-bottom:1em" >
 
 <?php
@@ -278,7 +280,6 @@ $index = substr_count($page, 'index.php');
 
 if($index  == 1){
 
-include("divindex.php");
 
 }
 
@@ -293,5 +294,4 @@ include("divindex.php");
 </div>
 </center>
 
-</header>
 
