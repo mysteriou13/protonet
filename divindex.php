@@ -6,15 +6,15 @@ $link = "";
 
 if($localhost == 1){
 
-$link =  $_SERVER['SERVER_NAME']."/document"; 
+$link =  "http://".$_SERVER['SERVER_NAME']."/document"; 
 
 }else{
 
- $link =  "document.vecchionet.com"; 
+ $link =  "https://document.vecchionet.com"; 
 
 }
 
-  $src = $protocole.$link."/presentation.html";
+  $src = $link."/presentation.html";
 
 
 ?>
