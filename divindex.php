@@ -10,7 +10,7 @@ $link =  $_SERVER['SERVER_NAME']."/document";
 
 }else{
 
- $link = $_SERVER['SERVER_NAME']; 
+ $link =  "document.vecchionet.com"; 
 
 }
 
