@@ -1,7 +1,21 @@
 
 <?php 
 
-$src = $_SERVER['SERVER_NAME']."/document/presentation.html";
+$link = "";
+
+
+if($localhost == 1){
+
+$link =  $_SERVER['SERVER_NAME']."/document"; 
+
+}else{
+
+ $link = $_SERVER['SERVER_NAME']; 
+
+}
+
+  $src = $protocole.$link."/presentation.html";
+
 
 ?>
 
