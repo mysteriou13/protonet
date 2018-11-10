@@ -17,9 +17,9 @@ include("./head.php");
 
 include("./header.php");
 
-
-
 ?>
 </body>
 </html>
-
+<?php 
+include("./divindex.php");
+?>

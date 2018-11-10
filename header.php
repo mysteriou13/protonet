@@ -280,7 +280,6 @@ $index = substr_count($page, 'index.php');
 
 if($index  == 1){
 
-include("divindex.php");
 
 }
 
