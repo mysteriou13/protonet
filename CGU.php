@@ -1,8 +1,24 @@
 <html>
+<body >
 <?php
 session_start();
 include_once("header.php");
 include_once("head.php");
+
+$link = "";
+
+
+if($localhost == 1){
+
+$link =  "http://".$_SERVER['SERVER_NAME']."/document"; 
+
+}else{
+
+ $link =  "https://document.vecchionet.com"; 
+
+}
+
+  $src = $link."/CGU.html";
 
 ?>
 
@@ -13,7 +29,8 @@ include_once("head.php");
 
 </p>
 
-  <iframe id = "b" src = "CGU.html" id = "b"  style = "height:100%; width:100%; background-color:blue">
+  <iframe src = "../document/CGU.html" id = "b"  style = " height:100%; width:100%; background-color:blue">
   </iframe>
 
-
+</body>
+</html>
