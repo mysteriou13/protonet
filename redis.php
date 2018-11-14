@@ -1,24 +1,21 @@
 
  <?php
+  require_once'./vendor/predis/predis/src/Autoloader.php';
 
-  include_once("./vendor/predis/predis/autoload.php");
+  Predis\Autoloader::register();
 
- try {
-
-$redis = new redis();
-
-
-$redis->connect("localhost");
-$redis->del('snapshot-test');
-
+   try {
+    $redis = new Predis\Client();
+    echo "connect sucess";
+  
 }
 catch (Exception $e) {
-        die($e->getMessage());
+    echo "Couldn't connected to Redis";
+    echo $e->getMessage();
 }
 
-  $allKeys = $redis->keys('*');
-print_r($allKeys); // nothing here
 
+$redis->del("test");
 
 ?>
 
