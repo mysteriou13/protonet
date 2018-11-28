@@ -77,7 +77,7 @@ if($url2['type'] == "calc"){
 
 if($url2['type'] == "pad"){
 
-$mysqli->query($deletstore);
+$store->query($deletstore);
 
 
 }
