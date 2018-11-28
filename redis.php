@@ -48,6 +48,8 @@ $deleteurl = "DELETE* FROM url WHERE url like '%$name%'";
 
 $deletecalc = "DELETE * FROM calc WHERE name ='$name' ";
 
+$deletestore = "DELETE * FROM store WHERE key like '%$name%'";
+
 $file = $datalink2['name'];
 
 $redis->delete($del1); 
@@ -71,6 +73,13 @@ if($url2['type'] == "calc"){
 
 
 }
+}
+
+if($url2['type'] == "pad"){
+
+$mysqli->query($deletstore);
+
+
 }
 
 $mysqli->query($deletecalc);
