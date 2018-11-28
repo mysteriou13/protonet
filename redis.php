@@ -44,7 +44,7 @@ $id = $datalink2['id'];
 
 $id = $mysqli->real_escape_string($id);
 
-$delete = "DELETE* FROM url WHERE url like '%$name%'"; 
+$deleteurl = "DELETE* FROM url WHERE url like '%$name%'"; 
 
 $deletecalc = "DELETE * FROM calc WHERE name ='$name' ";
 
@@ -69,11 +69,13 @@ if($url2['type'] == "calc"){
  $redis->delete($del2);
  $redis->delete($del3);
 
- $mysqli->query($deletecalc);
- $mysqli->query($delete);
+
+}
+}
+
+$mysqli->query($deletecalc);
+$mysqli->query($deleteurl);
  
-}
-}
 }
 }
 
