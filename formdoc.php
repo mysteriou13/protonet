@@ -1,5 +1,6 @@
 <?php 
 
+
 $date = date('dmy');
 
 $time = time();
@@ -88,8 +89,12 @@ $mysqli->query($calc6);
 
 $mysqli->query($insert);
 
+echo "insert calc";
 
-header("Location:affichecalc.php?calc=$link");
+header("Location:/affichecalc.php?calc=$link");
+
+echo '<meta http-equiv="refresh" content="durée;URL=affichecalc.php?calc='.$link.'"> ';
+
  
  }
 
@@ -117,12 +122,15 @@ nom du <?php echo $type;?> <input name = "<?php echo $type;?>" type = "text">
 
  <p>
  <?php
+
+ if(isset($name2['name2']) && !empty($name2['name2'])){
   if($name2['name'] == 1){
 
  echo "nom déja pris";
 
    }
 
+ }
 ?>
   </p>
  </form>
