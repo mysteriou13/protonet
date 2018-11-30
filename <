@@ -1,14 +1,19 @@
 
  <?php
 
+   ini_set('display_errors', 1); 
  include("../admin/connect.php");
 
  include("./delete.php");
 
- $deletefile = new deletefile();
  
+$deletefile = new deletefile();
 
-$deletefile->deletecal('testa');
+$redis = new Redis(); 
+ 
+$redis->connect('127.0.0.1', 6379);
+
+$deletefile->deletecalc('testa',$redis);
 
 $date = date("dmy");
 
@@ -33,7 +38,7 @@ $url = "SELECT * FROM url WHERE url like '%$name%'";
 
 $url1 = $mysqli->query($url);
 
-$url2 = $url1->fetch_assoc();
+$url2 = $url1>fetch_assoc();
 
 $linkday = substr($datalink2['date'],0,2);
 
@@ -53,14 +58,13 @@ $deletestore = "DELETE * FROM store WHERE key like '%$name%'";
 
 $file = $datalink2['name'];
 
+$redis->delete($del1); 
+
 
 if($day > $linkday){
 if($linkmouth ==  $mouth){
 if($linkyear == $year){
 if($url2['type'] == "calc"){
-
-$deletefile->deletecal($file);
-
 
 
 }
