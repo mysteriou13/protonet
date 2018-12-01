@@ -4,10 +4,6 @@
 
  include("./delete.php");
 
-$deleteurl ="DELETE FROM url WHERE name = '$name' "; 
-
-$mysqli->query($deleteurl);
-
 
 $date = date("dmy");
 
