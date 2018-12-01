@@ -2,7 +2,7 @@
 
 class  deletefile extends Redis {
 
-function deletecal($file){
+function deletecalc($file){
 
  $this->connect('127.0.0.1', 6379);
 
@@ -20,10 +20,30 @@ function deletecal($file){
  $this->delete($del4);
 
 
+}
+
+function deleteurl($file){
+
+$deleteurl ="DELETE FROM url WHERE name = '$file' "; 
+
+$mysqli->query($deleteurl);
+
+
+}
+
+function deletepad($connect,$file){
+
+$delkey = "DELETE FROM `store` WHERE `store`.`key` like '%$file%' ";
+
+$store->query($delkey);
+
+$delvalue = "DELETE FROM `store` WHERE `store`.`value` like '%$file%' ";
+
+$connect->query($delvalue);
+
 
 }
 
 }
-
 ?>
 

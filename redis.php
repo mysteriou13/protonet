@@ -1,14 +1,13 @@
-
  <?php
 
  include("../admin/connect.php");
 
  include("./delete.php");
 
- $deletefile = new deletefile();
- 
+$deleteurl ="DELETE FROM url WHERE name = '$name' "; 
 
-$deletefile->deletecal('testa');
+$mysqli->query($deleteurl);
+
 
 $date = date("dmy");
 
@@ -45,21 +44,14 @@ $id = $datalink2['id'];
 
 $id = $mysqli->real_escape_string($id);
 
-$deleteurl = "DELETE* FROM url WHERE url like '%$name%'"; 
-
-$deletecalc = "DELETE * FROM calc WHERE name ='$name' ";
-
-$deletestore = "DELETE * FROM store WHERE key like '%$name%'";
-
 $file = $datalink2['name'];
-
 
 if($day > $linkday){
 if($linkmouth ==  $mouth){
 if($linkyear == $year){
 if($url2['type'] == "calc"){
 
-$deletefile->deletecal($file);
+$deletefile->deletecalc($file);
 
 
 
@@ -68,13 +60,13 @@ $deletefile->deletecal($file);
 
 if($url2['type'] == "pad"){
 
-$store->query($deletstore);
-
+$deletefile->deletepad($store,$file);
 
 }
 
-$mysqli->query($deletecalc);
-$mysqli->query($deleteurl);
+$deletefile->deletcalc($name);
+
+$deletefile->deleteurl($file);
  
 }
 }
