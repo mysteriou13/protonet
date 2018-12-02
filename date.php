@@ -23,6 +23,7 @@ return $this->mois;
 
 function afficheanner(){
 
+return $this->anner;
 
 }
 
