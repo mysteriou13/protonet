@@ -9,6 +9,11 @@ private $mois = substr($date,2,2);
 
 private $anner = substr($date,4,2);
 
+function setjour(){
+
+
+}
+
 function afficheajour(){
 
 return $this->jour;
