@@ -11,7 +11,7 @@ private $anner = substr($date,4,2);
 
 function afficheajour(){
 
-
+return $this->jour;
 
 }
 
