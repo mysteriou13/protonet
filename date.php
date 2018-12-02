@@ -3,7 +3,10 @@ class affichedate(){
 
 private $date = date("dmy");
 
+private $jour = substr($date,0,2);
 
+private $mois = substr($date,2,2);
+ 
 
 }
 
