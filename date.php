@@ -21,6 +21,11 @@ return $this->mois;
 
 }
 
+function afficheanner(){
+
+
+}
+
 }
 
 ?>
