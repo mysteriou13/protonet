@@ -17,6 +17,7 @@ return $this->jour;
 
 function affichemois(){
 
+return $this->mois;
 
 }
 
