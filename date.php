@@ -5,6 +5,8 @@ private $date = date("dmy");
 
 private $jour = substr($date,0,2);
 
+private $nbjour = null;
+
 private $mois = substr($date,2,2);
 
 private $anner = substr($date,4,2);
