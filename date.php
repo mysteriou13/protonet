@@ -13,6 +13,8 @@ private $nbmois = null;
 
 private $anner = substr($date,4,2);
 
+private $nbanner = null;
+
 function setjour($day){
 
 if($day > $this->jour){
