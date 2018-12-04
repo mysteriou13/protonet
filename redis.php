@@ -3,7 +3,8 @@
  include("../admin/connect.php");
 
  include("./delete.php");
-
+ 
+ include("./date.php");
 
 $date = date("dmy");
 
