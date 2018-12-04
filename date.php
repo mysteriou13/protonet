@@ -11,8 +11,17 @@ private $mois = substr($date,2,2);
 
 private $anner = substr($date,4,2);
 
-function setjour(){
+function setjour($day){
 
+if($day > $this->jour){
+
+$this->nbjour = $day-$this->jour;
+
+return $this->nbjour;
+
+}
+
+return $this->nbjour;
 
 }
 
