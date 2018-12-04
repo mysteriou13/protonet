@@ -43,6 +43,20 @@ return $this->nbmois;
 
 }
 
+function setanner($year){
+
+if($year > $this->anner){
+
+$this->nbanner = $year-$this->anner;
+
+return $this->nbanner;
+
+}
+
+return $this->nbanner;
+
+}
+
 
 function affichejour(){
 
