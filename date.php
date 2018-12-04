@@ -27,7 +27,7 @@ return $this->nbjour;
 
 }
 
-function afficheajour(){
+function affichejour(){
 
 return $this->jour;
 
