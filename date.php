@@ -9,6 +9,8 @@ private $nbjour = null;
 
 private $mois = substr($date,2,2);
 
+private $nbmois = null; 
+
 private $anner = substr($date,4,2);
 
 function setjour($day){
