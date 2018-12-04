@@ -27,6 +27,21 @@ return $this->nbjour;
 
 }
 
+function setmois($mouth){
+
+if($mouth > $this->mois){
+
+$this->nbmois = $mouth-$this->mois;
+
+return $this->nbmois;
+
+}
+
+return $this->nbmois;
+
+}
+
+
 function affichejour(){
 
 return $this->jour;
