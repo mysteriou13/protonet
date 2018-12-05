@@ -83,19 +83,56 @@ $name2 = $name1->fetch_assoc();
 if($calc2['name'] == 0  && !isset($_SESSION['pseudo']) or isset($_POST[$type]) && !empty($_POST[$type]) && isset($_SESSION['pseudo']) && !empty($_SESSION['pseudo'])){
 if($name2['name'] == 0){
 
+$pseudo = $_SESSION['pseudo'];
+
+if(isset($_POST[$type]) && !empty($_POST[$type])){
+
+$calc =  $_POST[$type];
+
+}else{
+
+$calc = $link;
+
+}
+
+$calc = $mysqli->real_escape_string($calc);
+
+$type = $mysqli->real_escape_string($type);
+
+
+$pseudo = $mysqli->real_escape_string($_SESSION['pseudo']);
+
+
+$insert = 'INSERT INTO url VALUES(NULL,"'.$pseudo.'","'.$url.'","'.$calc.'","'.$type.'")'; 
+
+
+$name = "SELECT COUNT(*)name FROM url WHERE pseudo = '$pseudo' && name = '$calc' ";
+
+$name1 = $mysqli->query($name);
+
+$name2 = $name1->fetch_assoc();
+
+
 $calc6 = 'INSERT INTO calc VALUES(NULL,"'.$fin.'","'.$link.'")';
 
 $mysqli->query($calc6);
 
 $mysqli->query($insert);
 
-echo "insert calc";
 
-header("Location:/affichecalc.php?calc=$link");
+
+if($type == "calc"){
 
 echo '<meta http-equiv="refresh" content="durée;URL=affichecalc.php?calc='.$link.'"> ';
 
- 
+}
+
+if($type == "pad"){
+
+echo '<meta http-equiv="refresh" content="durée;URL=affichepad.php?pad='.$link.'"> ';
+
+}
+
  }
 
  }
