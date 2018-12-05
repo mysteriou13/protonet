@@ -7,6 +7,8 @@
  include("./date.php");
 
 $affichedate = new affichedate();
+
+$deletefile = new deletefile();
  
 $date = null;
 
@@ -21,6 +23,10 @@ $year = date("y");
 $datelink = "SELECT * FROM calc";
 
 $datelink1 = $mysqli->query($datelink);
+
+$name = "1544023380";
+
+$deletefile->deletecalc($name,$mysqli);
 
 
 while($datalink2 = $datelink1->fetch_assoc()){
@@ -48,7 +54,7 @@ if($linkmouth ==  $mouth){
 if($linkyear == $year){
 if($url2['type'] == "calc"){
 
-$deletefile->deletecalc($name);
+$deletefile->deletecalc($name,$mysqli);
 
 
 
@@ -57,17 +63,11 @@ $deletefile->deletecalc($name);
 
 if($url2['type'] == "pad"){
 
-$deletefile->deletepad($store,$name);
+$deletefile->deletepad($mysqli,$store,$name);
 
 }
-
-$deletefile->deletcalc($name);
-
-$deletefile->deleteurl($name,$connect);
- 
 }
 }
-
 }
 
 ?>
