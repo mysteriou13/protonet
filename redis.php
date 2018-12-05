@@ -6,13 +6,17 @@
  
  include("./date.php");
 
-$date = date("dmy");
-
-$day = substr($date,0,2);
-
-$mouth = substr($date,2,2);
+$affichedate = new affichedate();
  
-$year = substr($date,4,2);
+$date = null;
+
+$name = null;
+
+$jour = date("d");
+
+$mouth = date("m");
+ 
+$year = date("y");
 
 $datelink = "SELECT * FROM calc";
 
@@ -25,30 +29,26 @@ $name = $datalink2['name'];
 
 $name = $mysqli->real_escape_string($name);
 
+$date = $datalink['date'];
+
 $url = "SELECT * FROM url WHERE url like '%$name%'";
 
 $url1 = $mysqli->query($url);
 
 $url2 = $url1->fetch_assoc();
 
-$linkday = substr($datalink2['date'],0,2);
+$linkday = $affichedate->getjour($date);
 
-$linkmouth = substr($datalink2['date'],2,2);
+$linkmouth = $affichedate->getmois($date);
 
-$linkyear = substr($datalink2['date'],4,2);
-
-$id = $datalink2['id'];
-
-$id = $mysqli->real_escape_string($id);
-
-$file = $datalink2['name'];
+$linkyear = $affichedate->getanner($anner);
 
 if($day > $linkday){
 if($linkmouth ==  $mouth){
 if($linkyear == $year){
 if($url2['type'] == "calc"){
 
-$deletefile->deletecalc($file);
+$deletefile->deletecalc($name);
 
 
 
@@ -57,13 +57,13 @@ $deletefile->deletecalc($file);
 
 if($url2['type'] == "pad"){
 
-$deletefile->deletepad($store,$file);
+$deletefile->deletepad($store,$name);
 
 }
 
 $deletefile->deletcalc($name);
 
-$deletefile->deleteurl($file);
+$deletefile->deleteurl($name,$connect);
  
 }
 }

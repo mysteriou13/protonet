@@ -26,7 +26,7 @@ function deleteurl($file){
 
 $deleteurl ="DELETE FROM url WHERE name = '$file' "; 
 
-$mysqli->query($deleteurl);
+$connect->query($deleteurl);
 
 
 }

@@ -1,44 +1,55 @@
 <?php 
 class affichedate{
 
-private $date = date("dmy");
-
-private $jour = substr($date,0,2);
+private $jour = null;
 
 private $nbjour = null;
 
-private $mois = substr($date,2,2);
+private $mois = null;
 
 private $nbmois = null; 
 
-private $anner = substr($date,4,2);
+private $anner = null;
 
 private $nbanner = null;
 
+function getjour($date){
 
-function gDate(){
+$this->jour = substr($date,0,2);
 
-$this->date = date("dmy");
-
-return date;
+return $this->jour;
 
 }
 
+function getmois($date){
+
+$this->mois = substr($date,2,2);
+
+return $this->mois;
+
+}
+
+function getanner($date){
+
+$this->anner = substr($date,4,2);
+
+return $this->anner;
+
+}
 
 function setjour($day){
 
-if($day > $this->jour){
+if($day > $this->getjour()){
 
-$this->nbjour = $day-$this->jour;
-
-return $this->nbjour;
-
-}
+$this->nbjour = $day-$this->getjour();
 
 return $this->nbjour;
 
 }
 
+return $this->nbjour;
+
+}
 
 
 function setmois($mouth){
@@ -69,24 +80,6 @@ return $this->nbanner;
 
 }
 
-
-function affichejour(){
-
-return $this->jour;
-
-}
-
-function affichemois(){
-
-return $this->mois;
-
-}
-
-function afficheanner(){
-
-return $this->anner;
-
-}
 
 }
 
