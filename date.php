@@ -1,5 +1,5 @@
 <?php 
-class affichedate(){
+class affichedate{
 
 private $date = date("dmy");
 
@@ -15,6 +15,16 @@ private $anner = substr($date,4,2);
 
 private $nbanner = null;
 
+
+function gDate(){
+
+$this->date = date("dmy");
+
+return date;
+
+}
+
+
 function setjour($day){
 
 if($day > $this->jour){
@@ -28,6 +38,8 @@ return $this->nbjour;
 return $this->nbjour;
 
 }
+
+
 
 function setmois($mouth){
 
