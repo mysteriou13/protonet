@@ -27,7 +27,6 @@
 
 </form>
 
-
 <?php
 
 if(isset($_POST['pseudo']) && !empty($_POST['pseudo']) && 
@@ -60,7 +59,7 @@ $_SESSION['pseudo'] = $pseudo;
 
 $valide = 1;
 
-header("Location:index.php");
+echo '<meta http-equiv="refresh" content="0;url=index.php" /> ';
 
 }
 }
