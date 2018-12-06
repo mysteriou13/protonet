@@ -34,13 +34,13 @@ $select2 = $select1->fetch_assoc();
 <div style = "display:flex; justify-content:center; font-size:2em; ">
 
 <div>
-pseudo:<?php echo $select2['pseudo']?>
+pseudo : <?php echo $select2['pseudo']?>
 <div>
 
 </div>
 
 <div >
-email <?php echo $select2['email']?> etat: 
+email : <?php echo $select2['email']?> etat: 
 
 <?php 
 
