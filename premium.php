@@ -6,6 +6,8 @@ include_once("head.php");
 
 include_once("header.php");
 
+include("date.php");
+
 $pseudo = $_SESSION['pseudo'];
 
 if(empty($pseudo)){
