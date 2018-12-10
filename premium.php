@@ -6,7 +6,18 @@ include_once("head.php");
 
 include_once("header.php");
 
+include("date.php");
+
+$date  = new affichedate();
+
 $pseudo = $_SESSION['pseudo'];
+
+if(empty($pseudo)){
+
+echo '<meta http-equiv="refresh" content="0;url=index.php" /> ';
+
+
+}
 
 $pseudo = $mysqli->real_escape_string($pseudo);
 
@@ -66,21 +77,31 @@ premium restant:
 
 if($yearabo >= $year){
 
+if($yearabo-$year >= 1){
 echo $yearabo-$year."ans &nbsp;";
+}
 
 }
 
 if($mothabo >= $moth ){
 
+if($mothabo-$moth >= 1){
+
 echo $mothabo-$moth."mois &nbsp;"; 
+
+}
 
 }
 
 
 
-  if($dayabo >=  $day){
+if($dayabo >=  $day){
+
+if($dayabo-$day >= 1){
 
 echo $dayabo-$day."jours &nbsp;";
+
+}
 
 }
 
