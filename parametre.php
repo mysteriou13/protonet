@@ -7,6 +7,8 @@ include_once("head.php");
 
 include_once("header.php");
 
+$email = $_SERVER['PHP_SELF']."?email=1";
+
 ?>
 
 <h1 id= "b" style = "font-size:2em">
@@ -48,7 +50,26 @@ $verif =  $select2['verifemail'];
 
 if($verif == 0){
 
-echo "non verfi&eacute;";
+echo "non verfi&eacute; &nbsp;"."<a href ="."'".$email."'"." style = 'color:white'>verifier email</a>";
+
+
+
+if(isset($_GET['email']) && !empty($_GET['email'])){
+
+$length =  rand(10, 50);
+
+$token = bin2hex(random_bytes($length));
+
+
+$link ="http://vecchionet.com/terraliberta/membre/verifemail.php/?email=$token";
+
+$message = "pour confirmé votre adress mail copier  dans votre navigateur web : :".$link;
+
+$e->envoiemail($select2['email'],"confirmation email",$message,"massanthony@vecchionet.com");
+
+
+
+}
 
 }
 
@@ -57,8 +78,6 @@ if($verif == 1){
 echo "verfi&eacute;";
 
 }
-
-
 ?>
 </div>
 
