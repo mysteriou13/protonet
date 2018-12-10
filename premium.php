@@ -8,6 +8,13 @@ include_once("header.php");
 
 $pseudo = $_SESSION['pseudo'];
 
+if(empty($pseudo)){
+
+echo '<meta http-equiv="refresh" content="0;url=index.php" /> ';
+
+
+}
+
 $pseudo = $mysqli->real_escape_string($pseudo);
 
 $ebo = "SELECT * FROM ebo  WHERE pseudo = '$pseudo'";
