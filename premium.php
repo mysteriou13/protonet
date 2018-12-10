@@ -8,6 +8,8 @@ include_once("header.php");
 
 include("date.php");
 
+$date  = new affichedate();
+
 $pseudo = $_SESSION['pseudo'];
 
 if(empty($pseudo)){
