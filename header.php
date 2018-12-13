@@ -1,6 +1,6 @@
 <?php
 
-include_once("mail.php");
+include_once("https://vecchionet.com/mail.php");
 
 $e = new email();
 
@@ -70,7 +70,6 @@ $terraliberta = $terra."/terraliberta";
 
 $link1  = $link;
 
-include("/var/www/html/vecchionet.com/head.php");
 
 ?>
 
