@@ -203,7 +203,7 @@ CGU
 
  if($localhost == 0){
 
-$page = "/CGU.php";
+$page = "/soutenir.php";
 
 }
 
