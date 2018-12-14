@@ -6,7 +6,7 @@ $e = new email();
 
 session_start();
 
-$domaine = $_SERVER['SERVER_NAME'];
+$domaine =  $_SERVER['SERVER_NAME'];;
 
 $protocole = null;
 
@@ -29,6 +29,8 @@ $protole = "http://";
 $domaine = $domaine."/vecchionet.com/";
 
 }else{
+
+$domaine = "vecchionet.com";
 
 $protole = "https://";
 
@@ -59,17 +61,13 @@ $display = "none";
 
 
 
- $link = $protole.$domaine;
+$link = $protole.$domaine;
 
 $terra =  str_replace("vecchionet.com","",$link);
 
 $terra = str_replace("localhost//","localhost/",$terra);
 
 $terraliberta = $terra."/terraliberta";
-
-
-$link1  = $link;
-
 
 ?>
 
@@ -106,7 +104,7 @@ $page = "/index.php";
 
 }
 
-$link1 = $link.$page;
+$link1 = $link;
 
 ?>
 <a id = "b"  href = "<?php echo  $link1; ?>">
