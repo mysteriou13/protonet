@@ -148,7 +148,25 @@ liste des service
 
 <div style ="background-color:blue; border:2px solid white; border-radius:25px; padding:1%;  font-size:1.5em; maring:1%;">
 
-<a id = "b" href = 'terraliberta.php#premium'>terraliberta </a>
+<?php 
+
+$service = "terraliberta.php#premium";
+
+$page = $service;
+
+if($localhost == 0){
+
+$page = "/".$service;
+
+
+}
+
+$link1 = $link.$page;
+
+
+?>
+
+<a id = "b" href = '<?php echo $link1;?>'>terraliberta </a>
 
 </div>
 
