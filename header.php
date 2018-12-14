@@ -1,6 +1,6 @@
 <?php
 
-include_once("https://vecchionet.com/mail.php");
+include_once("/var/www/html/vecchionet.com/mail.php");
 
 $e = new email();
 
