@@ -11,9 +11,9 @@ $page = "/".$page;
 }
 
 
- $link = $link."#inscription";
+ $link1 = $link.$page."#inscription";
  ?>
 
- <a href = "<?php echo $link; ?>" id = "b">inscription</a>
+ <a href = "<?php echo $link1; ?>" id = "b">inscription</a>
 
 </div>

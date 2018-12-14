@@ -6,7 +6,7 @@ $e = new email();
 
 session_start();
 
-$domaine =  $_SERVER['SERVER_NAME'];;
+$domaine =  "vecchionet.com";
 
 $protocole = null;
 
@@ -104,7 +104,8 @@ $page = "/index.php";
 
 }
 
-$link1 = $link;
+
+$link1 = $link.$page;
 
 ?>
 <a id = "b"  href = "<?php echo  $link1; ?>">
