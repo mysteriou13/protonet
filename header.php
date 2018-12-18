@@ -6,7 +6,7 @@ $e = new email();
 
 session_start();
 
-$domaine =  "vecchionet.com";
+$domaine =  $_SERVER['SERVER_NAME'];
 
 $protocole = null;
 
