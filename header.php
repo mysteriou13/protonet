@@ -38,7 +38,6 @@ $localhost = 0;
 
 }
 
-
 if(isset($_SESSION['pseudo']) && !empty($_SESSION['pseudo'])){
 if($mode == "premium"){
 
