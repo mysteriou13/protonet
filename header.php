@@ -6,7 +6,7 @@ $e = new email();
 
 session_start();
 
-$domaine =  "vecchionet.com";
+$domaine =  $_SERVER['SERVER_NAME'];
 
 $protocole = null;
 
@@ -37,7 +37,6 @@ $protole = "https://";
 $localhost = 0;
 
 }
-
 
 if(isset($_SESSION['pseudo']) && !empty($_SESSION['pseudo'])){
 if($mode == "premium"){
