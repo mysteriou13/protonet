@@ -156,16 +156,14 @@ liste des service
 
 $service = "terraliberta.php#premium";
 
-$page = $service;
+$link1 = "http://localhost/terraliberta/";
 
 if($localhost == 0){
 
-$page = "/".$service;
-
+$link1 = "https://terraliberta.vecchionet.com";
 
 }
 
-$link1 = $link.$page;
 
 
 ?>
