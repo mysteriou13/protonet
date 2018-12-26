@@ -4,9 +4,9 @@ include_once("/var/www/html/vecchionet.com/mail.php");
 
 $e = new email();
 
-$url = $_SERVER['PHP_SELF'];
+$domaine =  $_SERVER['SERVER_NAME'];
 
-$url = substr_count($url, 'vecchionet');
+$url = substr_count($_SERVER['SERVER_NAME'], 'vecchionet');
 
 session_start();
 
@@ -119,7 +119,7 @@ accueil
 
 <?php 
 
-if(!isset($_SESSION['pseudo']) && $url == 1){
+if(!isset($_SESSION['pseudo']) && $url == 1 or  $localhost == 1 && !isset($_SESSION['pseudo']) ){
 
 include("divinscription.php");
 
@@ -276,7 +276,7 @@ include_once("divdeconnect.php");
 <?php 
 
 
-if(!isset($_SESSION['pseudo']) && $url == 1){
+if(!isset($_SESSION['pseudo']) && $url == 1 or $localhost == 1 && !isset($_SESSION['pseudo'])){
 
 include_once("formconnection.php");
 
