@@ -6,7 +6,7 @@ $e = new email();
 
 $domaine =  $_SERVER['SERVER_NAME'];
 
-$url = substr_count($_SERVER['SERVER_NAME'], 'vecchionet');
+$url = str_replace("vecchionet.com",1,$domaine);
 
 session_start();
 
