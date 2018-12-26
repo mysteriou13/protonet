@@ -79,9 +79,9 @@ var div1 = div.style.backgroundColor;
 
 var thisid = document.getElementById(i);
  
-thisid.style.backgroundColor = "blue";
+thisid.style.backgroundColor = "darkblue";
 
-div.style.backgroundColor = "darkblue";
+div.style.backgroundColor = "blue";
 
 var l = liste+ida;
 
@@ -99,7 +99,7 @@ var listediv ="list"+i;
 
  thisid = document.getElementById(i);
 
-thisid.style.backgroundColor = "blue";
+thisid.style.backgroundColor = "darkblue";
 
 
 }
