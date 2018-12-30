@@ -3,7 +3,7 @@
 
 <div id = "b" style = "font-size:2em; margin-top:1em;">
 
-</br> pseudo <input type  ="text"  name = "pseudo">
+ pseudo <input type  ="text"  name = "pseudo">
 <?php
 
 if(isset($_POST['pseudo']) && !empty($_POST['pseudo'])){
@@ -31,7 +31,6 @@ echo "pseudo pris";
 
 }
    ?>
-</br>
 
 </br> mot de pass <input type = "password" name  = "pass">
 <?php
@@ -57,8 +56,7 @@ $validepass = 0;
 
 ?>
 </br>
-
-</br> email <input type  = "text" name  = "email">
+ email <input type  = "text" name  = "email">
 <br>
 <?php
 
@@ -95,9 +93,25 @@ $erroremail  = 0;
 }
 
 }
+
+
  ?>
 
-<input type = "submit" value = "valider">
+ accepter  les <a id  = "b" href = "<?php echo $link."/CGU.php"?>"> CGU </a> <input  name = "CGU"  type = "checkbox">
+
+<?php 
+
+if(isset($_POST['val'])  && $_POST['CGU'] !== "on" ){
+
+echo "vous devez accepter les CGU";
+
+}
+
+?>
+
+</br>
+
+<input type = "submit" name = "val" value = "valider">
 
 </form>
 </div>
@@ -114,7 +128,7 @@ $total = null;
 $total = $validepseudo+$validepass+$valideemail;
 
 
-if($total == 3){
+if($total == 3 && isset($_POST['CGU']) && $_POST['CGU'] == "on"){
 
 $pass = password_hash($pass,PASSWORD_DEFAULT);
 
