@@ -7,6 +7,12 @@ $time = time();
 
 $fin = date("dmy", strtotime($idcalc));
 
+$jour = $mysqli->real_escape_string(date("d"));
+
+$mois = $mysqli->real_escape_string(date("m"));
+
+$anner = $mysqli->real_escape_string(date("y"));
+
 
 $durer = htmlspecialchars($_GET['durer']);
 
@@ -53,7 +59,6 @@ $link = $mysqli->real_escape_string($link);
 
  $url = $mysqli->real_escape_string($url);
 
-
 if(isset($_POST[$type]) && !empty($_POST[$type])){
 
 $pseudo = $_SESSION['pseudo'];
@@ -67,9 +72,7 @@ $type = $mysqli->real_escape_string($type);
 
 $pseudo = $mysqli->real_escape_string($_SESSION['pseudo']);
 
-
-$insert = 'INSERT INTO url VALUES(NULL,"'.$pseudo.'","'.$url.'","'.$calc.'","'.$type.'")'; 
-
+$insert = 'INSERT INTO url VALUES(NULL,"'.$pseudo.'","'.$url.'","'.$calc.'","'.$type.'", "'.$jour.'", "'.$mois.'", "'.$anner.'")'; 
 
 $name = "SELECT COUNT(*)name FROM url WHERE pseudo = '$pseudo' && name = '$calc' ";
 
@@ -77,6 +80,11 @@ $name1 = $mysqli->query($name);
 
 $name2 = $name1->fetch_assoc();
 
+if($name2['name'] == 0){
+
+$mysqli->query($insert);
+
+}
 
 }
 
@@ -103,22 +111,15 @@ $type = $mysqli->real_escape_string($type);
 $pseudo = $mysqli->real_escape_string($_SESSION['pseudo']);
 
 
-$insert = 'INSERT INTO url VALUES(NULL,"'.$pseudo.'","'.$url.'","'.$calc.'","'.$type.'")'; 
-
-
 $name = "SELECT COUNT(*)name FROM url WHERE pseudo = '$pseudo' && name = '$calc' ";
 
 $name1 = $mysqli->query($name);
 
 $name2 = $name1->fetch_assoc();
 
-
 $calc6 = 'INSERT INTO calc VALUES(NULL,"'.$fin.'","'.$link.'")';
 
 $mysqli->query($calc6);
-
-$mysqli->query($insert);
-
 
 
 if($type == "calc"){
@@ -152,6 +153,21 @@ echo '<meta http-equiv="refresh" content="durée;URL=affichepad.php?pad='.$link.
  <p style = "font-size:1.5em">
 nom du <?php echo $type;?> <input name = "<?php echo $type;?>" type = "text">
  </p>
+
+<p>
+<?php 
+
+if(isset($_POST[$type]) && !empty($_POST[$type])){
+if($name2['name'] == 1){
+
+echo "nom  du document existe déja";
+
+}
+
+}
+
+?>
+</p>
 
  <p>
   <input type = "submit" value = "envoyer">
