@@ -149,6 +149,17 @@ include("divinscription.php");
 <a id = "b" href = "https://framadate.vecchionet.com/">sondage</a>
 </div>
 
+<div style = "display:<?php echo  $display?>; background-color:blue; border:2px solid white; border-radius:25px; padding:1%;  font-size:1.5em; margin:1%;">
+<a id = "b" href = "./edit.php">edition d'image</a>
+</div>
+
+
+<div style = "display:<?php echo  $display?>; background-color:blue; border:2px solid white; border-radius:25px; padding:1%;  font-size:1.5em; margin:1%;">
+<a id = "b" href = "https://kanboard.vecchionet.com">gestion de projet</a>
+</div>
+
+
+
 <div style = "display:<?php echo $none?>; background-color:blue; border:2px solid white; border-radius:25px; padding:1%; font-size:1.5em; margin:1%;">
 <?php
 
