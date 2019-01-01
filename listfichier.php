@@ -3,6 +3,8 @@
 <?php
 session_start();
 
+$order  = "ASC";
+
 include("head.php");
 
 include("header.php");
@@ -26,6 +28,7 @@ liste des documents
 
 </div>
 
+
 <div id = "ongletliste" style = "  margin-left:2%; display:flex;">
 
 <div onclick = "affichediv(this.id)" id= "ongletpad" style = "display:<?php echo $display?>;   border-radius:20px 20px;  color:white; padding:0%; font-size:1.5em;  margin-right:0.5%; solid white; background-color:darkblue ;">
@@ -43,6 +46,33 @@ liste calc
 
 </div>
 </br>
+
+<div style = "display:flex">
+
+<div>
+
+<form  action = "<?PHP $_SERVER['PHP_SELF'];?>" method = "POST">
+
+<input type = "submit" name = "ASC" >
+
+</form>
+
+</div>
+
+
+<div>
+
+<form action  = "<?PHP $_SERVER['PHP_SELF']?>" method = "POST">
+
+<input type  = "submit" name = "DESC">
+
+</form>
+
+</div>
+
+
+</div>
+
 
 <div  id = "listongletcalc"style ="display:none;">
 
