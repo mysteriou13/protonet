@@ -53,7 +53,7 @@ liste calc
 
 <form  action = "<?PHP $_SERVER['PHP_SELF'];?>" method = "POST">
 
-<input type = "submit" name = "ASC" >
+<input class = "button" type = "submit" name = "ASC" >
 
 </form>
 
@@ -64,7 +64,7 @@ liste calc
 
 <form action  = "<?PHP $_SERVER['PHP_SELF']?>" method = "POST">
 
-<input type  = "submit" name = "DESC">
+<input class = "button" type  = "submit" name = "DESC">
 
 </form>
 
