@@ -20,6 +20,8 @@ $localhost = null;
 
 $display = null;
 
+$none = null;
+
 $admin = "../admin/connect.php";
 
 $mode = htmlspecialchars($_GET['mode']);
@@ -56,7 +58,11 @@ if(isset($_SESSION['pseudo']) && !empty($_SESSION['pseudo'])){
 
 $display = "block";
 
+$none = "none";
+
 }else{
+
+$none = "block";
 
 $display = "none";
 
@@ -125,10 +131,21 @@ include("divinscription.php");
 
 }
 
-
 ?>
 
-<div style = " background-color:blue; border:2px solid white; border-radius:25px; padding:1%; font-size:1.5em; margin:1%;">
+ <div  style = "background-color:blue; display:<?php echo $display;?>;border:2px solid white; border-radius:25px; padding:1%;  font-size:1.5em; margin:1%;" >
+
+<a id = "b" href = "pad.php">nouveau pad </a>
+
+ </div>
+
+<div  style = "display:<?php echo  $display?>; background-color:blue; border:2px solid white; border-radius:25px; padding:1%;  font-size:1.5em; margin:1%;">
+
+<a id = "b"  href = "calc.php"> nouveau tableur </a>
+
+</div>
+
+<div style = "display:<?php echo $none?>; background-color:blue; border:2px solid white; border-radius:25px; padding:1%; font-size:1.5em; margin:1%;">
 <?php
 
 $service = "listservice.php#service";
