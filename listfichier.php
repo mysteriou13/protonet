@@ -5,6 +5,16 @@ session_start();
 
 $order  = "ASC";
 
+if(isset($_POST['DESC'])){
+
+$order = "DESC";
+
+}else{
+
+$order = "ASC";
+
+}
+
 include("head.php");
 
 include("header.php");
@@ -53,7 +63,7 @@ liste calc
 
 <form  action = "<?PHP $_SERVER['PHP_SELF'];?>" method = "POST">
 
-<input class = "button" type = "submit" name = "ASC" >
+<input class = "button" type = "submit" value = "Ordre croissant" name = "ASC" >
 
 </form>
 
@@ -64,7 +74,7 @@ liste calc
 
 <form action  = "<?PHP $_SERVER['PHP_SELF']?>" method = "POST">
 
-<input class = "button" type  = "submit" name = "DESC">
+<input class = "button" type  = "submit" value = "Ordre décroissant" name = "DESC">
 
 </form>
 
@@ -78,7 +88,7 @@ liste calc
 
 <?php
 
- listdiv($mysqli,"calc");
+ listdiv($mysqli,"calc",$order);
 
 ?>
 
@@ -87,7 +97,7 @@ liste calc
 <div id  = "listongletpad" style = "display:block;">
 <?php 
 
- listdiv($mysqli,"pad");
+ listdiv($mysqli,"pad",$order);
 
 ?>
 
