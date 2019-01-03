@@ -1,12 +1,13 @@
 <?php 
 
-function listdiv($mysqli,$type){
+function listdiv($mysqli,$type,$order){
+
 
 $type = $mysqli->real_escape_string($type);
 
 $pseudo = $mysqli->real_escape_string($_SESSION['pseudo']);
 
-$list = "SELECT * FROM url WHERE pseudo = '$pseudo' && type = '$type'";
+$list = "SELECT * FROM url WHERE pseudo = '$pseudo' && type = '$type' ORDER BY id $order";
 
 $list2 = $mysqli->query($list);
 
