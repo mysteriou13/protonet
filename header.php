@@ -133,34 +133,34 @@ include("divinscription.php");
 
 ?>
 
- <div  style = "background-color:blue; display:<?php echo $display;?>;border:2px solid white; border-radius:25px; padding:1%;  font-size:1.5em; margin:1%;" >
+ <div  style = "background-color:blue; display:<?php echo $display;?>;border:2px solid white; border-radius:25px; font-size:1.5em;" >
 
 <a id = "b" href = "pad.php">nouveau pad </a>
 
  </div>
 
-<div  style = "display:<?php echo  $display?>; background-color:blue; border:2px solid white; border-radius:25px; padding:1%;  font-size:1.5em; margin:1%;">
+<div  style = "display:<?php echo  $display?>; background-color:blue; border:2px solid white; border-radius:25px; font-size:1.5em;">
 
 <a id = "b"  href = "calc.php"> nouveau tableur </a>
 
 </div>
 
-<div style = "display:<?php echo  $display?>; background-color:blue; border:2px solid white; border-radius:25px; padding:1%;  font-size:1.5em; margin:1%;">
+<div style = "display:<?php echo  $display?>; background-color:blue; border:2px solid white; border-radius:25px; font-size:1.5em;">
 <a id = "b" href = "https://framadate.vecchionet.com/">sondage</a>
 </div>
 
-<div style = "display:<?php echo  $display?>; background-color:blue; border:2px solid white; border-radius:25px; padding:1%;  font-size:1.5em; margin:1%;">
+<div style = "display:<?php echo  $display?>; background-color:blue; border:2px solid white; border-radius:25px; font-size:1.5em;">
 <a id = "b" href = "./edit.php">edition d'image</a>
 </div>
 
 
-<div style = "display:<?php echo  $display?>; background-color:blue; border:2px solid white; border-radius:25px; padding:1%;  font-size:1.5em; margin:1%;">
+<div style = "display:<?php echo  $display?>; background-color:blue; border:2px solid white; border-radius:25px; font-size:1.5em;">
 <a id = "b" href = "https://kanboard.vecchionet.com">gestion de projet</a>
 </div>
 
 
 
-<div style = "display:<?php echo $none?>; background-color:blue; border:2px solid white; border-radius:25px; padding:1%; font-size:1.5em; margin:1%;">
+<div style = "display:<?php echo $none?>; background-color:blue; border:2px solid white; border-radius:25px;  font-size:1.5em;">
 <?php
 
 $service = "listservice.php#service";
@@ -182,7 +182,7 @@ liste des service
 
 </div>
 
-<div style ="background-color:blue; border:2px solid white; border-radius:25px; padding:1%;  font-size:1.5em; maring:1%;">
+<div style ="background-color:blue; border:2px solid white; border-radius:25px; padding:1%;  font-size:1.5em; ">
 
 <?php 
 
@@ -204,7 +204,7 @@ $link1 = "https://terraliberta.vecchionet.com";
 
 </div>
 
-<div style ="background-color:blue; border:2px solid white; border-radius:25px; padding:1%;  font-size:1.5em; margin:1%;">
+<div style ="background-color:blue; border:2px solid white; border-radius:25px; font-size:1.5em;">
 
 <?php 
 $page = "CGU.php";
@@ -228,7 +228,7 @@ CGU
 </div>
 
 
-<div style = "background-color:blue; border:2px solid white; border-radius:25px; padding:1%;  font-size:1.5em; maring:1%;">
+<div style = "background-color:blue; border:2px solid white; border-radius:25px; font-size:1.5em; ">
 
 <?php 
 
@@ -254,7 +254,7 @@ soutenir
 
 
 
-<div style = " background-color:blue; border:2px solid white; border-radius:25px; padding:1%;  font-size:1.5em; margin:1%;">
+<div style = " background-color:blue; border:2px solid white; border-radius:25px;  font-size:1.5em;">
 
 <?php 
 
