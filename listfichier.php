@@ -86,13 +86,13 @@ liste des documents
 </div>
 <div id = "ongletliste" style = "  margin-left:2%; display:flex;">
 
-<div onclick = "affichediv(this.id,'<?php echo $link?>','pad')" id= "ongletpad" style = "display:<?php echo $display?>;   border-radius:20px 20px;  color:white; padding:1%; font-size:1.5em;  margin-right:0.5%; solid white; background-color:<?php echo $colorpad;?>; ">
+<div onclick = "affichediv(this.id,'<?php echo $link?>','pad')" id= "ongletpad" style = "   border-radius:20px 20px;  color:white; padding:1%; font-size:1.5em;  margin-right:0.5%; solid white; background-color:<?php echo $colorpad;?>; ">
 
  pad
 
 </div>
 
-<div onclick = "affichediv(this.id,'<?php echo $link;?>','calc')" id= "ongletcalc" style = "display:<?php echo $display;?>; border-radius:20px 20px; color:white; padding:1%; font-size:1.5em;  background-color:<?php echo $colorcalc;?>">
+<div onclick = "affichediv(this.id,'<?php echo $link;?>','calc')" id= "ongletcalc" style = "border-radius:20px 20px; color:white; padding:1%; font-size:1.5em;  background-color:<?php echo $colorcalc;?>">
 calc
 </div>
 
