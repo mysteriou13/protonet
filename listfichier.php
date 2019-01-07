@@ -1,17 +1,41 @@
 <html>
 <body>
 <?php
-session_start();
 
+session_start();
 $order  = "ASC";
+
+$colorpad = "darkblue";
+$colorcalc = "blue";
+
+$colorcroissant = "darkblue";
+$colordecroissant = "blue";
+
+
+
+
+if(empty($_SESSION['pseudo'])){
+
+echo '<meta http-equiv="refresh" content="0; URL=index.php">';
+
+}
 
 if(isset($_POST['DESC'])){
 
 $order = "DESC";
 
-}else{
+$colordecroissant = "darkblue";
+
+$colorcroissant = "blue";
+
+}
+
+if(isset($_POST['ASC'])){
 
 $order = "ASC";
+
+$colorcroissant = "darkblue";
+$colordecroissant = "blue";
 
 }
 
@@ -21,9 +45,32 @@ include("header.php");
 
 include("divlistement.php");
 
+$displaycalc = "none";
+$displaypad = "pad";
+
+if(isset($_GET['pad']) && !empty($_GET['pad']) ){
+
+$displaypad = "block";
+$displaycalc = "none";
+
+$colorpad = "darkblue";
+$colorcalc = "blue";
+
+
+}
+
+if(isset($_GET['calc']) && !empty($_GET['calc']) ){
+$colorpad = "blue";
+$colorcalc = "darkblue";
+
+
+$displaypad = "none";
+$displaycalc = "block";
+}
+
 ?>
 
-<div>
+
 <center style  = "font-size:2em; margin:1em">
 
 <div style= "display:<?php echo $display;?>">
@@ -37,18 +84,16 @@ liste des documents
 </center>
 
 </div>
-
-
 <div id = "ongletliste" style = "  margin-left:2%; display:flex;">
 
-<div onclick = "affichediv(this.id)" id= "ongletpad" style = "display:<?php echo $display?>;   border-radius:20px 20px;  color:white; padding:0%; font-size:1.5em;  margin-right:0.5%; solid white; background-color:darkblue ;">
+<div onclick = "affichediv(this.id,'<?php echo $link?>','pad')" id= "ongletpad" style = "display:<?php echo $display?>;   border-radius:20px 20px;  color:white; padding:1%; font-size:1.5em;  margin-right:0.5%; solid white; background-color:<?php echo $colorpad;?>; ">
 
-liste pad
+ pad
 
 </div>
 
-<div onclick = "affichediv(this.id)" id= "ongletcalc" style = "display:<?php echo $display;?>; border-radius:20px 20px; color:white; padding:1%; font-size:1.5em;  background-color:blue">
-liste calc
+<div onclick = "affichediv(this.id,'<?php echo $link;?>','calc')" id= "ongletcalc" style = "display:<?php echo $display;?>; border-radius:20px 20px; color:white; padding:1%; font-size:1.5em;  background-color:<?php echo $colorcalc;?>">
+calc
 </div>
 
 </div>
@@ -63,7 +108,7 @@ liste calc
 
 <form  action = "<?PHP $_SERVER['PHP_SELF'];?>" method = "POST">
 
-<input class = "button" type = "submit" value = "Ordre croissant" name = "ASC" >
+<input class = "button" style = "background-color:<?php echo $colorcroissant;?>"type = "submit" value = "Ordre croissant" name = "ASC" >
 
 </form>
 
@@ -74,7 +119,7 @@ liste calc
 
 <form action  = "<?PHP $_SERVER['PHP_SELF']?>" method = "POST">
 
-<input class = "button" type  = "submit" value = "Ordre décroissant" name = "DESC">
+<input class = "button" style = "background-color:<?php echo $colordecroissant;?>" type  = "submit" value = "Ordre décroissant" name = "DESC">
 
 </form>
 
@@ -84,7 +129,7 @@ liste calc
 </div>
 
 
-<div  id = "listongletcalc"style ="display:none;">
+<div  id = "listongletcalc"style ="display:<?php echo $displaycalc?>;">
 
 <?php
 
@@ -94,7 +139,7 @@ liste calc
 
 </div>
 
-<div id  = "listongletpad" style = "display:block;">
+<div id  = "listongletpad" style = "display:<?php echo $displaypad?>;">
 <?php 
 
  listdiv($mysqli,"pad",$order);

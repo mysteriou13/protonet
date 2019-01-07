@@ -50,7 +50,7 @@ link = protocole+file+page;
 
 }
 
-function affichediv(id){
+function affichediv(id,url,type){
 
 var i = id;
 
@@ -79,7 +79,6 @@ var div1 = div.style.backgroundColor;
 
 var thisid = document.getElementById(i);
  
-thisid.style.backgroundColor = "darkblue";
 
 div.style.backgroundColor = "blue";
 
@@ -101,6 +100,7 @@ var listediv ="list"+i;
 
 thisid.style.backgroundColor = "darkblue";
 
+document.location.href = url+"listfichier.php"+"?"+type+"=true";
 
 }
 
