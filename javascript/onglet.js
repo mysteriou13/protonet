@@ -1,7 +1,12 @@
 
+
 function changebackgroundcolor(iddiv,backcolor,descolor){
 
+
 var  div = document.getElementById(iddiv);
+
+
+
 
 if(div.style.backgroundColor == backcolor){
 

@@ -1,5 +1,8 @@
 <html>
 <body>
+
+
+
 <?php
 
 session_start();
@@ -10,8 +13,6 @@ $colorcalc = "blue";
 
 $colorcroissant = "darkblue";
 $colordecroissant = "blue";
-
-
 
 
 if(empty($_SESSION['pseudo'])){
@@ -48,28 +49,25 @@ include("divlistement.php");
 $displaycalc = "none";
 $displaypad = "pad";
 
+
 if(isset($_GET['pad']) && !empty($_GET['pad']) ){
 
 $displaypad = "block";
 $displaycalc = "none";
 
-$colorpad = "darkblue";
-$colorcalc = "blue";
-
-
 }
 
 if(isset($_GET['calc']) && !empty($_GET['calc']) ){
-$colorpad = "blue";
-$colorcalc = "darkblue";
-
 
 $displaypad = "none";
 $displaycalc = "block";
+
+
 }
 
-?>
 
+
+?>
 
 <center style  = "font-size:2em; margin:1em">
 
@@ -86,13 +84,12 @@ liste des documents
 </div>
 <div id = "ongletliste" style = "  margin-left:2%; display:flex;">
 
-<div onclick = "affichediv(this.id,'<?php echo $link?>','pad')" id= "ongletpad" style = "   border-radius:20px 20px;  color:white; padding:1%; font-size:1.5em;  margin-right:0.5%; solid white; background-color:<?php echo $colorpad;?>; ">
-
+<div onclick = "affichediv(this.id,'<?php echo $link?>','pad')" id= "ongletpad" class = "typedoc">
  pad
 
 </div>
 
-<div onclick = "affichediv(this.id,'<?php echo $link;?>','calc')" id= "ongletcalc" style = "border-radius:20px 20px; color:white; padding:1%; font-size:1.5em;  background-color:<?php echo $colorcalc;?>">
+<div onclick = "affichediv(this.id,'<?php echo $link;?>','calc')" id= "ongletcalc" class = "typedoc">
 calc
 </div>
 
@@ -148,6 +145,28 @@ calc
 
 </div>
 </div>
+<?php 
+
+if(empty($_GET)){
+
+echo "<script> changebackgroundcolor('ongletpad','darkblue','blue');</script>";
+
+}
+
+if(isset($_GET['pad']) && !empty($_GET['pad']) ){
+
+echo "<script> changebackgroundcolor('ongletpad','darkblue','blue');</script>";
+
+}
+
+if(isset($_GET['calc']) && !empty($_GET['calc']) ){
+
+echo "<script> changebackgroundcolor('ongletcalc','darkblue','blue');</script>";
+
+
+
+}
+?>
 
 </body>
 </html
