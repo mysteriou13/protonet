@@ -138,16 +138,17 @@ include("divinscription.php");
 
 </div>
 
-<div style = "display:<?php echo  $display?>; background-color:blue; border:2px solid white; border-radius:25px; font-size:1.5em;">
+<div class = "divdisplay" id = "sondage">
+
 <a id = "b" href = "https://framadate.vecchionet.com/">sondage</a>
 </div>
 
-<div style = "display:<?php echo  $display?>; background-color:blue; border:2px solid white; border-radius:25px; font-size:1.5em;">
+<div class = "divdisplay" id  = "edition">
 <a id = "b" href = "./edit.php">edition d'image</a>
 </div>
 
 
-<div style = "display:<?php echo  $display?>; background-color:blue; border:2px solid white; border-radius:25px; font-size:1.5em;">
+<div class = "divdisplay" id = "projet">
 <a id = "b" href = "https://kanboard.vecchionet.com">gestion de projet</a>
 </div>
 
@@ -323,6 +324,10 @@ echo "
 
 document.getElementById('newpad').style.display = 'block';
 document.getElementById('newcalc').style.display = 'block';
+document.getElementById('edition').style.display = 'block';
+document.getElementById('project').style.display = 'block';
+
+
 
 
 </script>
