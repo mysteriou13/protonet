@@ -203,7 +203,7 @@ $link1 = "https://terraliberta.vecchionet.com";
 
 </div>
 
-<div style ="background-color:blue; border:2px solid white; border-radius:25px; font-size:1.5em;">
+<div class  = "divheader">
 
 <?php 
 $page = "CGU.php";
@@ -219,7 +219,7 @@ $link1 = $link.$page;
 
 ?>
 
-      <a id = "b"  href = '<?php echo $link1;?>'>
+  <a id = "b"  href = '<?php echo $link1;?>'>
 CGU
 </a>
 
