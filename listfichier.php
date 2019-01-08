@@ -1,12 +1,44 @@
 <html>
 <body>
-
-
-
 <?php
 
 session_start();
+
+
+if(empty($_GET)){
+
+$get = 0;
 $order  = "ASC";
+
+}
+
+if(!empty($_GET['pad']) && $_GET['pad'] == 'ASC'){
+
+
+$order = "ASC";
+
+}
+
+if(!empty($_GET['pad']) && $_GET['pad'] == 'DESC'){
+
+
+$order  = "DESC";
+
+}
+
+if(!empty($_GET['calc']) && $_GET['calc'] == 'ASC'){
+
+
+$order = "ASC";
+
+}
+
+if(!empty($_GET['calc']) && $_GET['calc'] == 'DESC'){
+
+
+$order = "DESC";
+
+}
 
 $colorpad = "darkblue";
 $colorcalc = "blue";
@@ -35,9 +67,6 @@ if(isset($_POST['ASC'])){
 
 $order = "ASC";
 
-$colorcroissant = "darkblue";
-$colordecroissant = "blue";
-
 }
 
 include("head.php");
@@ -45,26 +74,6 @@ include("head.php");
 include("header.php");
 
 include("divlistement.php");
-
-$displaycalc = "none";
-$displaypad = "pad";
-
-
-if(isset($_GET['pad']) && !empty($_GET['pad']) ){
-
-$displaypad = "block";
-$displaycalc = "none";
-
-}
-
-if(isset($_GET['calc']) && !empty($_GET['calc']) ){
-
-$displaypad = "none";
-$displaycalc = "block";
-
-
-}
-
 
 
 ?>
@@ -84,12 +93,13 @@ liste des documents
 </div>
 <div id = "ongletliste" style = "  margin-left:2%; display:flex;">
 
-<div onclick = "affichediv(this.id,'<?php echo $link?>','pad')" id= "ongletpad" class = "typedoc">
+<div onclick = "affichediv(this.id,'<?php echo $link?>','pad','<?php echo $order;?>')" id= "ongletpad" class = "typedoc">
+
  pad
 
 </div>
 
-<div onclick = "affichediv(this.id,'<?php echo $link;?>','calc')" id= "ongletcalc" class = "typedoc">
+<div onclick = "affichediv(this.id,'<?php echo $link;?>','calc','<?php echo $order;?>')" id= "ongletcalc" class = "typedoc">
 calc
 </div>
 
@@ -103,9 +113,10 @@ calc
 
 <div>
 
+
 <form  action = "<?PHP $_SERVER['PHP_SELF'];?>" method = "POST">
 
-<input class = "button" style = "background-color:<?php echo $colorcroissant;?>"type = "submit" value = "Ordre croissant" name = "ASC" >
+<input class = "button" type = "submit" value = "Ordre croissant" id = "ASC" name = "ASC" >
 
 </form>
 
@@ -116,17 +127,16 @@ calc
 
 <form action  = "<?PHP $_SERVER['PHP_SELF']?>" method = "POST">
 
-<input class = "button" style = "background-color:<?php echo $colordecroissant;?>" type  = "submit" value = "Ordre décroissant" name = "DESC">
+<input class = "button"  type  = "submit" value = "Ordre décroissant" id = "DESC" name = "DESC">
 
 </form>
 
 </div>
 
-
 </div>
 
 
-<div  id = "listongletcalc"style ="display:<?php echo $displaycalc?>;">
+<div  id = "listongletcalc"style ="display:none;">
 
 <?php
 
@@ -136,7 +146,7 @@ calc
 
 </div>
 
-<div id  = "listongletpad" style = "display:<?php echo $displaypad?>;">
+<div id  = "listongletpad" style = "display:block">
 <?php 
 
  listdiv($mysqli,"pad",$order);
@@ -153,6 +163,26 @@ echo "<script> changebackgroundcolor('ongletpad','darkblue','blue');</script>";
 
 }
 
+
+if($order == "ASC"){
+
+echo "<script> changebackgroundcolor('ASC','darkblue','blue');</script>";
+echo "<script> changebackgroundcolor('DESC','blue','darkblue');</script>";
+
+
+
+}
+
+
+
+
+if($order == "DESC"){
+
+echo "<script> changebackgroundcolor('DESC','darkblue','blue');</script>";
+echo "<script> changebackgroundcolor('ASC','blue','darkblue');</script>";
+
+}
+
 if(isset($_GET['pad']) && !empty($_GET['pad']) ){
 
 echo "<script> changebackgroundcolor('ongletpad','darkblue','blue');</script>";
@@ -164,9 +194,25 @@ if(isset($_GET['calc']) && !empty($_GET['calc']) ){
 echo "<script> changebackgroundcolor('ongletcalc','darkblue','blue');</script>";
 
 
+}
+if(isset($_GET['pad']) && !empty($_GET['pad']) ){
+
+echo '<script>  display("listongletpad","block"); </script>';
+
+echo '<script>  display("listongletcalc","none"); </script>';
+
 
 }
-?>
 
+if(isset($_GET['calc']) && !empty($_GET['calc']) ){
+
+echo '<script>  display("listongletpad","none"); </script>';
+
+echo '<script>  display("listongletcalc","block"); </script>';
+
+
+}
+
+?>
 </body>
 </html

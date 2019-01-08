@@ -1,12 +1,17 @@
 
+function display(id,dis){
+
+var div = document.getElementById(id);
+
+ div.style.display = dis;
+
+}
+
 
 function changebackgroundcolor(iddiv,backcolor,descolor){
 
 
 var  div = document.getElementById(iddiv);
-
-
-
 
 if(div.style.backgroundColor == backcolor){
 
@@ -55,7 +60,7 @@ link = protocole+file+page;
 
 }
 
-function affichediv(id,url,type){
+function affichediv(id,url,type,order){
 
 var i = id;
 
@@ -105,7 +110,8 @@ var listediv ="list"+i;
 
 thisid.style.backgroundColor = "darkblue";
 
-document.location.href = url+"listfichier.php"+"?"+type+"=true";
+
+document.location.href = url+"listfichier.php"+"?"+type+"="+order;
 
 }
 
