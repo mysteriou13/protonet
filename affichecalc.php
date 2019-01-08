@@ -11,7 +11,7 @@ $link = "https://ethercalc.vecchionet.com/".$_GET['calc'];
 
 
 
-<iframe src = '<?php echo  $link ?>'  style = "background-color:white; margin-top:1%;  height:100%; width:100%;" >
+<iframe src = '<?php echo  $link ?>' >
 
 </iframe>
 

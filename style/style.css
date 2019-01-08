@@ -16,6 +16,12 @@ color:white; font-size:2em;
 
 }
 
+iframe{
+
+background-color:white; margin-top:1%;  height:100%; width:100%;
+
+}
+
 .divflex{
 display:flex;
 justify-content:space-between;
