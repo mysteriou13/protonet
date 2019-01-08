@@ -22,6 +22,11 @@ background-color:white; margin-top:1%;  height:100%; width:100%;
 
 }
 
+button{
+color:white; background-color:BLue; font-size:2em; margin-right:1%; border-radius:30px;
+
+}
+
 .divflex{
 display:flex;
 justify-content:space-between;
