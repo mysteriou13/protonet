@@ -5,6 +5,7 @@ var div = document.getElementById(id);
 
  div.style.display = dis;
 
+
 }
 
 

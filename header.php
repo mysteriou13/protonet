@@ -128,14 +128,12 @@ include("divinscription.php");
 
 ?>
 
- <div  style = "background-color:blue; display:<?php echo $display;?>;border:2px solid white; border-radius:25px; font-size:1.5em;" >
-
+ <div  class = "divdisplay" id = "newpad">
 <a id = "b" href = "pad.php">nouveau pad </a>
 
  </div>
 
-<div  style = "display:<?php echo  $display?>; background-color:blue; border:2px solid white; border-radius:25px; font-size:1.5em;">
-
+<div  class = "divdisplay">
 <a id = "b"  href = "calc.php"> nouveau tableur </a>
 
 </div>
@@ -311,18 +309,21 @@ include_once("formconnection.php");
 
 ?>
 
+
 </header>
 
 <div style = " margin-bottom:1em" >
 
 <?php
-$page =  $_SERVER['PHP_SELF'];
 
-$index = substr_count($page, 'index.php');
+if(isset($_SESSION['pseudo']) && !empty($_SESSION['pseudo'])){
 
+echo "
+<script>
+document.getElementById('newpad').style.display = 'block';
+</script>
 
-if($index  == 1){
-
+";
 
 }
 
