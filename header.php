@@ -253,7 +253,7 @@ soutenir
 
 
 
-<div style = " background-color:blue; border:2px solid white; border-radius:25px;  font-size:1.5em;">
+<div class = "divheader">
 
 <?php 
 
