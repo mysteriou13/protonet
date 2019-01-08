@@ -85,7 +85,7 @@ $terraliberta = $terra."/terraliberta";
 <header>
 <div >
 
-<h1 style = "color:white; font-size:2em;">
+<h1>
 <center>
 vecchionet
 </br>
