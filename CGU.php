@@ -29,7 +29,7 @@ $link =  "http://".$_SERVER['SERVER_NAME']."/document";
 
 </p>
 
-  <iframe src = "<?php echo $src;?>" id = "b"  style = " height:100%; width:100%; background-color:blue">
+  <iframe src = "<?php echo $src;?>" id = "b" >
   </iframe>
 
 </body>
