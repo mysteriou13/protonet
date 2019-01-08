@@ -133,7 +133,7 @@ include("divinscription.php");
 
  </div>
 
-<div  class = "divdisplay">
+<div  class = "divdisplay" id = "newcalc">
 <a id = "b"  href = "calc.php"> nouveau tableur </a>
 
 </div>
@@ -320,7 +320,11 @@ if(isset($_SESSION['pseudo']) && !empty($_SESSION['pseudo'])){
 
 echo "
 <script>
+
 document.getElementById('newpad').style.display = 'block';
+document.getElementById('newcalc').style.display = 'block';
+
+
 </script>
 
 ";
