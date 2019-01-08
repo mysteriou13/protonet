@@ -94,12 +94,7 @@ hebergeur de service libre  et etique corse
 </h1>
 
 
-<div style = "
-
-display:flex;
-justify-content:space-between;
-flex-wrap: wrap;
-">
+<div class = "divflex">
 
 
 <div  class = "divheader">

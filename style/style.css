@@ -16,6 +16,13 @@ color:white; font-size:2em;
 
 }
 
+.divflex{
+display:flex;
+justify-content:space-between;
+flex-wrap: wrap;
+
+}
+
 .button{
 
 background-color:blue;
