@@ -27,6 +27,14 @@ color:white; background-color:BLue; font-size:2em; margin-right:1%; border-radiu
 
 }
 
+.strong{
+color:white;
+border-radius:30px;
+background-color:blue;
+font-size:2em; margin-top:1em; 
+
+}
+
 .divflex{
 display:flex;
 justify-content:space-between;
