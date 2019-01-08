@@ -82,8 +82,8 @@ $terraliberta = $terra."/terraliberta";
 
 
  
-<header style = "background-color:DarkBlue;">
-<div  style = "">
+<header>
+<div >
 
 <h1 style = "color:white; font-size:2em;">
 <center>
