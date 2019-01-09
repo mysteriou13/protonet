@@ -120,8 +120,9 @@ echo "vous devez accepter les CGU";
 
 </br>
 
-<input type = "submit" name = "val" value = "valider">
-
+<input class = "button" type = "submit" name = "val" value = "valider">
+</br>
+</br>
 </form>
 </div>
 <?php 
