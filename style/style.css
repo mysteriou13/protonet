@@ -12,6 +12,7 @@ border-radius:60px;
 }
 
 h1{
+
 color:white; font-size:2em;
 
 }
@@ -105,7 +106,10 @@ font-size:2em; margin-top:1em;
 
 }
 
+#service{
+border:2px solid white; border-radius:25px ;
 
+}
 
 .divflex{
 display:flex;

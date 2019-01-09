@@ -2,7 +2,7 @@
 <div id = "b3" >
 <center>
 
-<p id = "service" style= "border:2px solid white; border-radius:25px ; " >
+<p id = "service">
 
 liste des service
 
