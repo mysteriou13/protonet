@@ -312,7 +312,6 @@ include_once("formconnection.php");
 
 </header>
 
-<div style = " margin-bottom:1em" >
 
 <?php
 
@@ -337,7 +336,6 @@ document.getElementById('project').style.display = 'block';
 
 ?>
 
-</div>
 
 <center>
 <div>
