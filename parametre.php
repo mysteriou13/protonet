@@ -11,10 +11,12 @@ $email = $_SERVER['PHP_SELF']."?email=1";
 
 ?>
 
-<h1 id= "b" style = "font-size:2em">
+<h1 id= "b" >
 
 <center>
+<label>
 parametre
+<label>
 </center>
 
 </h1>
