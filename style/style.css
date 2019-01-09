@@ -23,7 +23,13 @@ background-color:white; margin-top:1%;  height:100%; width:100%;
 }
 
 button{
-color:white; background-color:BLue; font-size:2em; margin-right:1%; border-radius:30px;
+color:white; background-color:blue; font-size:2em; margin-right:1%; border-radius:30px;
+
+}
+
+
+.divinscription{
+background-color:blue;font-size:1.5em; border:2px solid white; border-radius:25px; padding:1%;
 
 }
 
