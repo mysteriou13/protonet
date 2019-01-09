@@ -12,8 +12,7 @@ $url = "https://etherpad.vecchionet.com/p/";
 ?>
 
 
- <div id = "b" style = "display:<?php echo $display?>">
-
+ <div id = "b1">
 <center>
 <?php 
 include_once("formdoc.php");
@@ -22,6 +21,21 @@ include_once("formdoc.php");
 
 
 </div>
+
+<?php
+ 
+if(isset($_SESSION['pseudo']) && !empty($_SESSION['pseudo'])){
+
+echo "script>display('b1','block');</script>";
+
+}else{
+
+echo "<script>display('b1','none');</script>";
+
+
+}
+
+?>
 
 
 
