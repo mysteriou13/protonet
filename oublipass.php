@@ -20,7 +20,7 @@ changer de mot de pass
 
 <form action ="<?php $_SERVER['PHP_SELF']?>" method = "POST">
 
-<p id = "b"> email <input name = "email" type = "text"> </p>
+<p id = "b"> <label> email</label> <input name = "email" type = "text"> </p>
 
 <input  type ="submit"   value = "envoyer">
 
