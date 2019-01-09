@@ -35,8 +35,9 @@ $select2 = $select1->fetch_assoc();
 
 ?> 
 
-<div style = "display:flex; justify-content:center; font-size:2em; ">
+<div  class = "divcadre">
 
+<center>
 <div>
 pseudo : <?php echo $select2['pseudo']?>
 <div>
@@ -81,6 +82,8 @@ echo "verfi&eacute;";
 
 }
 ?>
+
+</center>
 </div>
 
 
