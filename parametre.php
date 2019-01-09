@@ -49,6 +49,7 @@ pseudo : <?php echo $select2['pseudo']?>
 </div>
 
 <div >
+<label>
 email : <?php echo $select2['email']?> etat: 
 
 <?php 
@@ -86,7 +87,7 @@ echo "verfi&eacute;";
 
 }
 ?>
-
+<label>
 </center>
 </div>
 
