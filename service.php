@@ -1,5 +1,5 @@
 
-<div id = "b" style = "font-size:2em; margin-top:1em;">
+<div id = "b" >
 <center>
 
 <p id = "service" style= "border:2px solid white; border-radius:25px ; " >
