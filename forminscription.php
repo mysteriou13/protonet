@@ -61,8 +61,10 @@ $validepass = 0;
 
 ?>
 </br>
- email <input type  = "text" name  = "email">
-<br>
+
+<label> email <input type  = "text" name  = "email"></label>
+</br>
+
 <?php
 
 if(isset($_POST['email']) && !empty($_POST['email'])){
