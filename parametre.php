@@ -38,8 +38,12 @@ $select2 = $select1->fetch_assoc();
 <div  class = "divcadre">
 
 <center>
+
 <div>
+<label>
 pseudo : <?php echo $select2['pseudo']?>
+</label>
+
 <div>
 
 </div>
