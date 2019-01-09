@@ -34,8 +34,8 @@ $date = date("dmy");
 
 ?>
 
-<div id = "b" style = "font-size:2em; margin-top:2%;">
-
+</br>
+<div id = "b3"  >
 <?php 
 
 
