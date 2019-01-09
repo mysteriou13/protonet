@@ -3,7 +3,10 @@
 
 <div id = "b">
 
+<label>
  pseudo <input type  ="text"  name = "pseudo">
+</label>
+
 <?php
 
 if(isset($_POST['pseudo']) && !empty($_POST['pseudo'])){
@@ -32,7 +35,9 @@ echo "pseudo pris";
 }
    ?>
 
-</br> mot de pass <input type = "password" name  = "pass">
+</br>
+<label> mot de pass <input type = "password" name  = "pass">
+</label>
 <?php
 if(isset($_POST['pass']) && !empty($_POST['pass'])){
 
