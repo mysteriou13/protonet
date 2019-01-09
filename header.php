@@ -296,8 +296,7 @@ include_once("divdeconnect.php");
 
 </div>
 
-<div id = "inscription" style  = "margin-top:1em;  margin-bottom:1em;width:100%; ">
-
+<div id = "inscription" >
 <?php 
 
 
