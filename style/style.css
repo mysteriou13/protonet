@@ -27,6 +27,10 @@ color:white; background-color:blue; font-size:2em; margin-right:1%; border-radiu
 
 }
 
+.premium{
+background-color:blue; border:2px solid white; border-radius:25px; padding:1%;font-size:1.5em;
+}
+
 .parametre{
 background-color:blue; border:2px solid white; border-radius:25px; padding:1%;font-size:1.5em;
 

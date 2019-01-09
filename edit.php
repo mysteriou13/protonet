@@ -7,7 +7,7 @@ include_once("header.php");
 ?>
 
 
-<iframe src = "https://vecchioedit.vecchionet.com/svg-editor.html" style= "margin-top:1%; height:100%; width:100%;">
+<iframe src = "https://vecchioedit.vecchionet.com/svg-editor.html">
 
 </iframe>
 </body>
