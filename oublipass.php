@@ -22,7 +22,9 @@ changer de mot de pass
 
 <p id = "b"> <label> email</label> <input name = "email" type = "text"> </p>
 
-<input  type ="submit"   value = "envoyer">
+<input  class = "button" type ="submit"   value = "envoyer">
+</br>
+</br>
 
 </form>
 
