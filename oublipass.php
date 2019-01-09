@@ -12,9 +12,11 @@ include_once("header.php");
 
 <center>
 
-<div id = "b" style = "margin-top:0.5em; font-size:2em">
-changer de mot de pass
+<div id = "b" >
 
+<label>
+changer de mot de pass
+</label>
 
 <form action ="<?php $_SERVER['PHP_SELF']?>" method = "POST">
 
