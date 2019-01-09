@@ -104,7 +104,9 @@ $erroremail  = 0;
 
  ?>
 
+<label>
  accepter  les <a id  = "b" href = "<?php echo $link."/CGU.php"?>"> CGU </a> <input  name = "CGU"  type = "checkbox">
+</label>
 
 <?php 
 
