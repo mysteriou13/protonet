@@ -27,6 +27,10 @@ color:white; background-color:blue; font-size:2em; margin-right:1%; border-radiu
 
 }
 
+.parametre{
+background-color:blue; border:2px solid white; border-radius:25px; padding:1%;font-size:1.5em;
+
+}
 
 .divinscription{
 background-color:blue;font-size:1.5em; border:2px solid white; border-radius:25px; padding:1%;
