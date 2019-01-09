@@ -143,14 +143,14 @@ echo '<meta http-equiv="refresh" content="durée;URL=affichepad.php?pad='.$link.
 
   <strong>
  
-<p style = "font-size:2em;">
+<p class = "p1">
   Creér un <?php echo $type; echo "&nbsp;"; echo $durer ?>  
   </p>
 
      </strong>
 
 
- <p style = "font-size:1.5em">
+ <p class = "p1">
 nom du <?php echo $type;?> <input name = "<?php echo $type;?>" type = "text">
  </p>
 
