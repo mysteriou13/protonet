@@ -5,7 +5,7 @@
 
 <div  class = "divflex">
 
-div   class = "divform">
+<div   class = "divform">
 <label> pseudo </label> <input name = "pseudo" type = "text">
 </div>
 
