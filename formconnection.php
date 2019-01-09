@@ -1,26 +1,25 @@
 
-<div style = "margin:1%;" >
+<div id class = "divcardre" >
 
+<form id = "connection"  class = "formconnection" action = "<?php echo $_SERVER['PHP_SELF']; ?>" method = "POST">
 
-<form id = "connection" style = "display:block; margin:1%;" action = "<?php echo $_SERVER['PHP_SELF']; ?>" method = "POST">
+<div  class = "divflex">
 
-<div style = "font-size:2em; display:flex; justify-content:space-around;  flex-wrap:wrap">
-
-<div  style = "background-Color:blue; border: 2px solid white; border-radius: 25px; font-size:1em;  color:white; padding:3%;" >
+<div   class = "divform">
 <label> pseudo </label> <input name = "pseudo" type = "text">
 </div>
 
-<div  style = "background-Color:blue; border: 2px solid white; border-radius: 25px; font-size:1em;  color:white; padding:3%;">
+<div  class = "divform">
 <label> mot de pass </label><input name = "pass" type = "password">
 </div>
 
 <div>
-<input  type = "submit"  style = "background-Color:blue; border: 2px solid white; border-radius: 25px; font-size:1em;  color:white"value = "connection">
+<input  type = "submit"  class = "inputconnect" value = "connection">
 </div>
 
-<div style= "padding:1%;  background-Color:blue; border: 2px solid white; border-radius: 25px; "  >
+<div  class = "divlien">
 
-<a style = "color:white;"  href = "oublipass.php"> mot de pass oubli&eacute; </a>
+<a  href = "oublipass.php"> mot de pass oubli&eacute; </a>
 </div>
 
 </div>
