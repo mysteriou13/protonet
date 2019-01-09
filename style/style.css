@@ -55,7 +55,8 @@ display:block; margin:1%;
 
 .inputconnect{
 
-background-Color:blue; border: 2px solid white; border-radius: 25px; font-size:1em;  color:white
+background-Color:blue; border: 2px solid white; border-radius: 25px; font-size:1em;  color:white;
+font-size:2em;
 }
 
 .divform{
