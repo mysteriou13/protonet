@@ -6,7 +6,7 @@ include_once("./head.php");
 
 <center>
 
-<p style = "margin-top:5em;">
+<p>
 
 <button  onClick = "parent.location = 'etherpad.php?pad=+7days&durer=7jour'"> pad 1  semaine </button>
 
