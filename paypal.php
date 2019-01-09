@@ -23,6 +23,6 @@ $u = $u."://".$nameserver."/terraliberta/paypal/index.php";
 ?>
 
 
-<iframe src = "<?php echo $u;?>" style = " border:1px solid cyan; margin-top:2%; height:100%; width:100%;">
+<iframe src = "<?php echo $u;?>" >
 
 </iframe>
