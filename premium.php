@@ -109,7 +109,7 @@ echo $dayabo-$day."jours &nbsp;";
 
 ?>
 
-<a href = "modepremium.php"  style  = "color:white;">commander</a>
+<a href = "modepremium.php" >commander</a>
 
 </center>
 
