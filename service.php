@@ -44,7 +44,7 @@ créer vos sondages
 </br>
 </br>
 </br>
-<button id = "b"  onClick = "parent.location = 'pad.php'">
+<button id = "b3"  onClick = "parent.location = 'pad.php'">
 <strong>
 Vecchiopad
 </br>
