@@ -193,7 +193,7 @@ $link1 = "https://terraliberta.vecchionet.com";
 
 ?>
 
-<a id = "b" href = '<?php echo $link1;?>'>terraliberta </a>
+<a id = "b" href = 'terraliberta.php'>terraliberta </a>
 
 </div>
 
