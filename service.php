@@ -32,7 +32,7 @@ logiciel d'&eacute;dition d'images </br> et de retouche de photo
 </button>
 
 
-<button id = "b"  onClick = "location = 'https://framadate.vecchionet.com'">
+<button id = "b3"  onClick = "location = 'https://framadate.vecchionet.com'">
 <strong>
 Framadate
 </strong>
