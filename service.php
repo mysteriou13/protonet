@@ -23,7 +23,7 @@ gestionaire de projet
 </button>
 
 
-<button id = "b"  style = "background-color:blue; font-size:2em" onClick = "location = 'edit.php'">
+<button id = "b"  onClick = "location = 'edit.php'">
 <strong>
 Svg-Edit
 </strong>
