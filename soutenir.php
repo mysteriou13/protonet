@@ -9,7 +9,7 @@ include_once("header.php");
 
 ?>
 
-<div id = "b" >
+<div id = "b3" >
 <center>
 
 <strong>
