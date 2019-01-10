@@ -14,7 +14,7 @@ liste des service
 
 <center id = "b">
 <div >
- <button  id = "b" onClick="parent.location='https://kanboard.vecchionet.com'">
+ <button  id = "b3" onClick="parent.location='https://kanboard.vecchionet.com'">
 <strong>
 Kanboard
 </strong>
