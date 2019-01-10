@@ -51,7 +51,7 @@ Vecchiopad
 editeur de text colaboratif  en temp réel
 </button>
 
-<button id = "b" style = " background-color:blue; font-size:2em;" onClick = "parent.location = 'calc.php'">
+<button id = "b"onClick = "parent.location = 'calc.php'">
 <strong>
 Vecchiocalc
 </br>
