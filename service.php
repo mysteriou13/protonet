@@ -12,7 +12,7 @@ liste des service
 
 </div>
 
-<center  style = "background-color:darkblue; border:2px solid white; border-radius:25px ; ">
+<center id = "b">
 <div style = "margin-top:2em;">
  <button  id = "b";  style = "background-color:blue; color:white; font-size:2em; margin-right:2em;" onClick="parent.location='https://kanboard.vecchionet.com'">
 <strong>
