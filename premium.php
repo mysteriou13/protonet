@@ -34,8 +34,8 @@ $date = date("dmy");
 
 ?>
 
-<div id = "b" style = "font-size:2em; margin-top:2%;">
-
+</br>
+<div id = "b3"  >
 <?php 
 
 
@@ -109,7 +109,7 @@ echo $dayabo-$day."jours &nbsp;";
 
 ?>
 
-<a href = "modepremium.php"  style  = "color:white;">commander</a>
+<a href = "modepremium.php" >commander</a>
 
 </center>
 

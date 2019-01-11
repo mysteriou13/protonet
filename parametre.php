@@ -11,10 +11,12 @@ $email = $_SERVER['PHP_SELF']."?email=1";
 
 ?>
 
-<h1 id= "b" style = "font-size:2em">
+<h1 id= "b" >
 
 <center>
+<label>
 parametre
+<label>
 </center>
 
 </h1>
@@ -33,15 +35,21 @@ $select2 = $select1->fetch_assoc();
 
 ?> 
 
-<div style = "display:flex; justify-content:center; font-size:2em; ">
+<div  class = "divcadre">
+
+<center>
 
 <div>
+<label>
 pseudo : <?php echo $select2['pseudo']?>
+</label>
+
 <div>
 
 </div>
 
 <div >
+<label>
 email : <?php echo $select2['email']?> etat: 
 
 <?php 
@@ -79,6 +87,8 @@ echo "verfi&eacute;";
 
 }
 ?>
+<label>
+</center>
 </div>
 
 

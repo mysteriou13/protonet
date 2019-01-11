@@ -8,7 +8,7 @@ include_once("header.php");
 
 ?>
 
-<div id = "b" style = "font-size:2em; margin-top:1em; ">
+<div  class  = "strong">
 
 <center>
 
@@ -32,12 +32,6 @@ confirm mot de pass<input type = "password" name = "confirpass">
 </div>
 
 <?php 
-
-if($a == $b){
-
-echo "egal";
-
-}
 
 if(isset($_POST['newpass']) && !empty($_POST['newpass']) && isset($_POST['confirpass']) && !empty($_POST['confirpass'] )){
 

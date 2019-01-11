@@ -82,10 +82,10 @@ $terraliberta = $terra."/terraliberta";
 
 
  
-<header style = "background-color:DarkBlue;">
-<div  style = "">
+<header>
+<div >
 
-<h1 style = "color:white; font-size:2em;">
+<h1>
 <center>
 vecchionet
 </br>
@@ -94,15 +94,10 @@ hebergeur de service libre  et etique corse
 </h1>
 
 
-<div style = "
-
-display:flex;
-justify-content:space-between;
-flex-wrap: wrap;
-">
+<div class = "divflex">
 
 
-<div style = " background-color:blue; border:2px solid white; border-radius:25px; padding:1%;  font-size:1.5em; margin:1%;">
+<div  class = "divheader">
 <?php 
 
 $page = "index.php";
@@ -133,28 +128,27 @@ include("divinscription.php");
 
 ?>
 
- <div  style = "background-color:blue; display:<?php echo $display;?>;border:2px solid white; border-radius:25px; font-size:1.5em;" >
-
+ <div  class = "divdisplay" id = "newpad">
 <a id = "b" href = "pad.php">nouveau pad </a>
 
  </div>
 
-<div  style = "display:<?php echo  $display?>; background-color:blue; border:2px solid white; border-radius:25px; font-size:1.5em;">
-
+<div  class = "divdisplay" id = "newcalc">
 <a id = "b"  href = "calc.php"> nouveau tableur </a>
 
 </div>
 
-<div style = "display:<?php echo  $display?>; background-color:blue; border:2px solid white; border-radius:25px; font-size:1.5em;">
+<div class = "divdisplay" id = "sondage">
+
 <a id = "b" href = "https://framadate.vecchionet.com/">sondage</a>
 </div>
 
-<div style = "display:<?php echo  $display?>; background-color:blue; border:2px solid white; border-radius:25px; font-size:1.5em;">
+<div class = "divdisplay" id  = "edition">
 <a id = "b" href = "./edit.php">edition d'image</a>
 </div>
 
 
-<div style = "display:<?php echo  $display?>; background-color:blue; border:2px solid white; border-radius:25px; font-size:1.5em;">
+<div class = "divdisplay" id = "projet">
 <a id = "b" href = "https://kanboard.vecchionet.com">gestion de projet</a>
 </div>
 
@@ -182,8 +176,7 @@ liste des service
 
 </div>
 
-<div style ="background-color:blue; border:2px solid white; border-radius:25px; padding:1%;  font-size:1.5em; ">
-
+<div  class = "divheader">
 <?php 
 
 $service = "terraliberta.php#premium";
@@ -200,11 +193,11 @@ $link1 = "https://terraliberta.vecchionet.com";
 
 ?>
 
-<a id = "b" href = '<?php echo $link1;?>'>terraliberta </a>
+<a id = "b" href = 'terraliberta.php'>terraliberta </a>
 
 </div>
 
-<div style ="background-color:blue; border:2px solid white; border-radius:25px; font-size:1.5em;">
+<div class  = "divheader">
 
 <?php 
 $page = "CGU.php";
@@ -220,7 +213,7 @@ $link1 = $link.$page;
 
 ?>
 
-      <a id = "b"  href = '<?php echo $link1;?>'>
+  <a id = "b"  href = '<?php echo $link1;?>'>
 CGU
 </a>
 
@@ -228,7 +221,7 @@ CGU
 </div>
 
 
-<div style = "background-color:blue; border:2px solid white; border-radius:25px; font-size:1.5em; ">
+<div class = "divheader">
 
 <?php 
 
@@ -254,7 +247,7 @@ soutenir
 
 
 
-<div style = " background-color:blue; border:2px solid white; border-radius:25px;  font-size:1.5em;">
+<div class = "divheader">
 
 <?php 
 
@@ -303,8 +296,7 @@ include_once("divdeconnect.php");
 
 </div>
 
-<div id = "inscription" style  = "margin-top:1em;  margin-bottom:1em;width:100%; ">
-
+<div id = "inscription" >
 <?php 
 
 
@@ -317,24 +309,33 @@ include_once("formconnection.php");
 
 ?>
 
+
 </header>
 
-<div style = " margin-bottom:1em" >
 
 <?php
-$page =  $_SERVER['PHP_SELF'];
 
-$index = substr_count($page, 'index.php');
+if(isset($_SESSION['pseudo']) && !empty($_SESSION['pseudo'])){
+
+echo "
+<script>
+
+document.getElementById('newpad').style.display = 'block';
+document.getElementById('newcalc').style.display = 'block';
+document.getElementById('edition').style.display = 'block';
+document.getElementById('project').style.display = 'block';
 
 
-if($index  == 1){
 
+
+</script>
+
+";
 
 }
 
 ?>
 
-</div>
 
 <center>
 <div>

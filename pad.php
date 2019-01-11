@@ -6,21 +6,21 @@ include_once("./head.php");
 
 <center>
 
-<p style = "margin-top:5em;">
+<p>
 
-<button style = " color:white; background-color:BLue; font-size:2em; margin-right:1%; border-radius:30px;" onClick = "parent.location = 'etherpad.php?pad=+7days&durer=7jour'"> pad 1  semaine </button>
+<button  onClick = "parent.location = 'etherpad.php?pad=+7days&durer=7jour'"> pad 1  semaine </button>
 
-<button style = " color:white; background-color:BLue; font-size:2em; margin-right:1%; border-radius:30px;" onClick = "parent.location = 'etherpad.php?pad=+1month&durer=1 mois'" > pad 1  mois </button>  
+<button  onClick = "parent.location = 'etherpad.php?pad=+1month&durer=1 mois'" > pad 1  mois </button>  
 
-  <button style = " color:white; background-color:Blue; font-size:2em; margin-right:1%; border-radius:30px;"onClick = "parent.location = 'etherpad.php?pad=+3month&durer=3 mois'" > pad 3  mois </button>
+  <button onClick = "parent.location = 'etherpad.php?pad=+3month&durer=3 mois'" > pad 3  mois </button>
 
  </br>
 </br>
 </br>
  
-  <button style = " color:white; background-color:Blue; font-size:2em; margin-right:1%; border-radius:30px;" onClick = "parent.location = 'etherpad.php?pad=+6month&durer=6 mois'" > pad 6  mois </button>
+  <button  onClick = "parent.location = 'etherpad.php?pad=+6month&durer=6 mois'" > pad 6  mois </button>
  
-  <button style = " color:white; background-color:Blue; font-size:2em; margin-right:1%; border-radius:30px;" onClick = "parent.location = 'etherpad.php?pad=+1year&durer=1 ans'"> pad 1 ans </button>
+  <button  onClick = "parent.location = 'etherpad.php?pad=+1year&durer=1 ans'"> pad 1 ans </button>
 
  
  </p>

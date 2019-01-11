@@ -11,7 +11,7 @@ include_once("header.php");
 ?>
 
 
-<div id = "b" style = "margin-top:2em; gbackground-color:blue">
+<div id = "b" >
 
 <div style  = "font-size:3em">
 <center>
