@@ -26,6 +26,8 @@ $admin = "../admin/connect.php";
 
 $mode = htmlspecialchars($_GET['mode']);
 
+$base =  basename($_SERVER['PHP_SELF']);
+
 if($domaine == "localhost"){
 
 $localhost = 1;
@@ -126,55 +128,23 @@ include("divinscription.php");
 
 }
 
-?>
+if(isset($_SESSION['pseudo'])){
 
- <div  class = "divdisplay" id = "newpad">
-<a id = "b" href = "pad.php">nouveau pad </a>
-
- </div>
-
-<div  class = "divdisplay" id = "newcalc">
-<a id = "b"  href = "calc.php"> nouveau tableur </a>
-
-</div>
-
-<div class = "divdisplay" id = "sondage">
-
-<a id = "b" href = "https://framadate.vecchionet.com/">sondage</a>
-</div>
-
-<div class = "divdisplay" id  = "edition">
-<a id = "b" href = "./edit.php">edition d'image</a>
-</div>
-
-
-<div class = "divdisplay" id = "projet">
-<a id = "b" href = "https://kanboard.vecchionet.com">gestion de projet</a>
-</div>
-
-
-
-<div style = "display:<?php echo $none?>; background-color:blue; border:2px solid white; border-radius:25px;  font-size:1.5em;">
-<?php
-
-$service = "listservice.php#service";
-
-$page = $service;
-
-if($localhost == 0){
-
-$page = "/".$service;
-
+include("divmembre.php");
 
 }
 
-$link1 = $link.$page;
 ?>
-  <a id = "b"  href = '<?php echo $link1; ?>'>
-liste des service
-</a>
 
-</div>
+
+
+<?php
+
+if(isset($_SESSION['pseudo'])){
+include("divservice.php");
+}
+
+?>
 
 <div  class = "divheader">
 <?php 
@@ -193,7 +163,7 @@ $link1 = "https://terraliberta.vecchionet.com";
 
 ?>
 
-<a id = "b" href = 'terraliberta.php'>terraliberta </a>
+<a id = "b" href = 'terraliberta.php'> premium </a>
 
 </div>
 
@@ -281,12 +251,11 @@ include_once("divfichier.php");
 
 include_once("divparametre.php");
 
-include("divpremium.php");
 
 }
 
 
-  if(isset($_SESSION['pseudo'])){
+if(isset($_SESSION['pseudo'])){
 
 include_once("divdeconnect.php");
 
@@ -300,7 +269,7 @@ include_once("divdeconnect.php");
 <?php 
 
 
-if(!isset($_SESSION['pseudo']) && $url == 1 or $localhost == 1 && !isset($_SESSION['pseudo'])){
+if(!isset($_SESSION['pseudo']) && $base != "terraliberta.php"){
 
 include_once("formconnection.php");
 
@@ -311,30 +280,6 @@ include_once("formconnection.php");
 
 
 </header>
-
-
-<?php
-
-if(isset($_SESSION['pseudo']) && !empty($_SESSION['pseudo'])){
-
-echo "
-<script>
-
-document.getElementById('newpad').style.display = 'block';
-document.getElementById('newcalc').style.display = 'block';
-document.getElementById('edition').style.display = 'block';
-document.getElementById('project').style.display = 'block';
-
-
-
-
-</script>
-
-";
-
-}
-
-?>
 
 
 <center>

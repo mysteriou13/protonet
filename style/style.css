@@ -6,8 +6,7 @@ body{
 header{
 
 background-color:Darkblue;
-
-border-radius:60px;
+border-radius:20px;
 
 }
 
@@ -30,6 +29,12 @@ color:white; background-color:blue; font-size:2em; margin-right:1%; border-radiu
 
 a{
 color:white;
+
+}
+
+.divservice{
+
+ background-color:blue; border:2px solid white; border-radius:25px; font-size:1.5em;
 
 }
 
@@ -120,7 +125,7 @@ flex-wrap: wrap;
 
 .divdisplay{
 
-display:none; background-color:blue; border:2px solid white; border-radius:25px; font-size:1.5em;
+background-color:blue; border:2px solid white; border-radius:25px; font-size:1.5em;
 }
 
 .button{

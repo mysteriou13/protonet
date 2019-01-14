@@ -28,14 +28,13 @@ $terra =  "https://terraliberta.vecchionet.com/";
 
 }
 
+if(!isset($_SESSION['pseudo'])){
+
+include("./servicepremium.php");
+
+}
+
 ?>
-
-<div id = "b4">
-<center id = "premium">
-service r&eacute;serv&eacute; au utlisateur premium
-</center>
-</div>
-
 
 <div>
 
