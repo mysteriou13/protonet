@@ -26,6 +26,8 @@ $admin = "../admin/connect.php";
 
 $mode = htmlspecialchars($_GET['mode']);
 
+$base =  basename($_SERVER['PHP_SELF']);
+
 if($domaine == "localhost"){
 
 $localhost = 1;
@@ -286,7 +288,7 @@ include("divpremium.php");
 }
 
 
-  if(isset($_SESSION['pseudo'])){
+if(isset($_SESSION['pseudo'])){
 
 include_once("divdeconnect.php");
 
@@ -300,7 +302,7 @@ include_once("divdeconnect.php");
 <?php 
 
 
-if(!isset($_SESSION['pseudo']) && $url == 1 or $localhost == 1 && !isset($_SESSION['pseudo'])){
+if(!isset($_SESSION['pseudo']) && $base != "terraliberta.php"){
 
 include_once("formconnection.php");
 
