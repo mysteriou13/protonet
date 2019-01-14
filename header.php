@@ -128,12 +128,14 @@ include("divinscription.php");
 
 }
 
+if(isset($_SESSION['pseudo'])){
+
+include("newpad.php");
+
+}
+
 ?>
 
- <div class = "divdisplay" id = "newpad">
-<a id = "b" href = "pad.php">nouveau pad </a>
-
- </div>
 
 <div  class = "divdisplay" id = "newcalc">
 <a id = "b"  href = "calc.php"> nouveau tableur </a>
