@@ -125,7 +125,7 @@ flex-wrap: wrap;
 
 .divdisplay{
 
-display:none; background-color:blue; border:2px solid white; border-radius:25px; font-size:1.5em;
+background-color:blue; border:2px solid white; border-radius:25px; font-size:1.5em;
 }
 
 .button{
