@@ -156,7 +156,7 @@ include("divinscription.php");
 
 
 
-<div style = "display:<?php echo $none?>; background-color:blue; border:2px solid white; border-radius:25px;  font-size:1.5em;">
+<div  class = "divservice">
 <?php
 
 $service = "listservice.php#service";

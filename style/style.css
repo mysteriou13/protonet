@@ -32,6 +32,12 @@ color:white;
 
 }
 
+.divservice{
+
+ background-color:blue; border:2px solid white; border-radius:25px; font-size:1.5em;
+
+}
+
 label{
 font-size:2em;
 }
