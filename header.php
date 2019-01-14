@@ -140,7 +140,7 @@ include("divmembre.php");
 
 <?php
 
-if(isset($_SESSION['pseudo'])){
+if(!isset($_SESSION['pseudo'])){
 include("divservice.php");
 }
 
