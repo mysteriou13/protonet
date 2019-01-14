@@ -155,28 +155,13 @@ include("divinscription.php");
 </div>
 
 
-
-<div  class = "divservice">
 <?php
 
-$service = "listservice.php#service";
-
-$page = $service;
-
-if($localhost == 0){
-
-$page = "/".$service;
-
-
+if(isset($_SESSION['pseudo'])){
+include("divservice.php");
 }
 
-$link1 = $link.$page;
 ?>
-  <a id = "b"  href = '<?php echo $link1; ?>'>
-liste des service
-</a>
-
-</div>
 
 <div  class = "divheader">
 <?php 
