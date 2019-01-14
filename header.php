@@ -132,15 +132,12 @@ if(isset($_SESSION['pseudo'])){
 
 include("newpad.php");
 
+include("newcalc.php");
+
 }
 
 ?>
 
-
-<div  class = "divdisplay" id = "newcalc">
-<a id = "b"  href = "calc.php"> nouveau tableur </a>
-
-</div>
 
 <div class = "divdisplay" id = "sondage">
 
