@@ -283,7 +283,6 @@ include_once("divfichier.php");
 
 include_once("divparametre.php");
 
-include("divpremium.php");
 
 }
 
