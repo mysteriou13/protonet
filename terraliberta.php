@@ -34,6 +34,8 @@ include("./servicepremium.php");
 
 }
 
+include("./premium.php");
+
 ?>
 
 <div>
