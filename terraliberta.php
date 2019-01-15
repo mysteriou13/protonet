@@ -32,9 +32,11 @@ if(!isset($_SESSION['pseudo'])){
 
 include("./servicepremium.php");
 
-}
+}else{
 
 include("./premium.php");
+
+}
 
 ?>
 
