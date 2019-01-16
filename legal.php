@@ -13,7 +13,7 @@ include_once("header.php");
 
 <div id = "b" >
 
-<div style  = "font-size:3em">
+<div class = "p1">
 <center>
 reponsable du site
 <div>
@@ -37,10 +37,5 @@ adress:casa d'arutoli rte de muratello bat i apt 43 20137 porto-vecchio
 
 </body>
 </html>
-
-<script>
-
-document.getElementById("legal").style.color= "grey";
-</script>
 
 
