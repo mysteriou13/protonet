@@ -91,7 +91,7 @@ liste des documents
 </center>
 
 </div>
-<div id = "ongletliste" style = "  margin-left:2%; display:flex;">
+<div id = "ongletliste" style =" margin-left:2%; display:flex;">
 
 <div onclick = "affichediv(this.id,'<?php echo $link?>','pad','<?php echo $order;?>')" id= "ongletpad" class = "typedoc">
 
@@ -109,10 +109,9 @@ calc
 </div>
 </br>
 
-<div style = "display:flex">
+<div style = "display:flex; flex-wrap:wrap;">
 
 <div>
-
 
 <form  action = "<?PHP $_SERVER['PHP_SELF'];?>" method = "POST">
 
@@ -134,7 +133,6 @@ calc
 </div>
 
 </div>
-
 
 <div  id = "listongletcalc"style ="display:none;">
 
