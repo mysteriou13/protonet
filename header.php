@@ -245,21 +245,7 @@ mention legal
 
 <?php
 
-if(isset($_SESSION['pseudo'])){
 
-include_once("divfichier.php");
-
-include_once("divparametre.php");
-
-
-}
-
-
-if(isset($_SESSION['pseudo'])){
-
-include_once("divdeconnect.php");
-
-}
 
 ?>
 
