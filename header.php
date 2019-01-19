@@ -242,13 +242,6 @@ mention legal
 </div>
 
 
-
-<?php
-
-
-
-?>
-
 </div>
 
 <div id = "inscription" >
