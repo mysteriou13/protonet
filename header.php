@@ -134,12 +134,6 @@ include("divmembre.php");
 
 }
 
-?>
-
-
-
-<?php
-
 if(!isset($_SESSION['pseudo'])){
 include("divservice.php");
 }
@@ -241,27 +235,6 @@ mention legal
 
 </div>
 
-
-
-<?php
-
-if(isset($_SESSION['pseudo'])){
-
-include_once("divfichier.php");
-
-include_once("divparametre.php");
-
-
-}
-
-
-if(isset($_SESSION['pseudo'])){
-
-include_once("divdeconnect.php");
-
-}
-
-?>
 
 </div>
 
