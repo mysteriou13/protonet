@@ -12,6 +12,8 @@ $domaine = $domaine."/vecchionet.com/";
 
 }else{
 
+$domaine = "vecchionet.com";
+
 $protole = "https://";
 
 $localhost = 0;

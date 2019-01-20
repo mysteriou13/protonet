@@ -12,7 +12,7 @@
 
 <div class = "divdisplay" id = "sondage">
 
-<a id = "b" href = "https://framadate.vecchionet.com/">sondage</a>
+<a id = "b" href = "./framadate.php">sondage</a>
 </div>
 
 <div class = "divdisplay" id  = "edition">
