@@ -18,7 +18,7 @@ color:white; font-size:2em;
 
 iframe{
 
-background-color:white; margin-top:1%;  height:100%; width:100%;
+background-color:white; margin-top:1%; border:1px solid cyan;  height:100%; width:100%;
 
 }
 
