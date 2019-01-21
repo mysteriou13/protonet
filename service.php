@@ -32,7 +32,7 @@ logiciel d'&eacute;dition d'images </br> et de retouche de photo
 </button>
 
 
-<button id = "b3"  onClick = "location = './framadate.php'">
+<button id = "b3"  onClick = "location = './opensondage.php'">
 <strong>
 opensondage
 </strong>
