@@ -34,7 +34,7 @@ logiciel d'&eacute;dition d'images </br> et de retouche de photo
 
 <button id = "b3"  onClick = "location = './framadate.php'">
 <strong>
-Framadate
+opensondage
 </strong>
 </br>
 créer vos sondages 
