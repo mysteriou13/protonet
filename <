@@ -9,6 +9,8 @@
 $affichedate = new affichedate();
 
 $deletefile = new deletefile();
+
+$deletefile->deleteurl("tabtest",$mysqli);
  
 $date = null;
 
@@ -20,21 +22,23 @@ $mouth = date("m");
  
 $year = date("y");
 
-$datelink = "SELECT * FROM url";
+$datelink = "SELECT * FROM calc";
 
 $datelink1 = $mysqli->query($datelink);
 
-$deletefile->deleteurl("padx",$mysqli);
+
+$deletefile->deletecalc($name,$mysqli);
+
 
 while($datalink2 = $datelink1->fetch_assoc()){
 
-$name = $datalink2['id'];
+$name = $datalink2['name'];
 
 $name = $mysqli->real_escape_string($name);
 
-$date = $datalink2['fin'];
+$date = $datalink2['date'];
 
-$url = "SELECT * FROM url  WHERE id = '$name'";
+$url = "SELECT * FROM url WHERE url like '%$name%'";
 
 $url1 = $mysqli->query($url);
 

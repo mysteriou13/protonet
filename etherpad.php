@@ -26,7 +26,7 @@ include_once("formdoc.php");
  
 if(isset($_SESSION['pseudo']) && !empty($_SESSION['pseudo'])){
 
-echo "script>display('b1','block');</script>";
+echo "<script>display('b1','block');</script>";
 
 }else{
 
