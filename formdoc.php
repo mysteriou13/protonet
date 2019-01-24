@@ -72,7 +72,7 @@ $type = $mysqli->real_escape_string($type);
 
 $pseudo = $mysqli->real_escape_string($_SESSION['pseudo']);
 
-$insert = 'INSERT INTO url VALUES(NULL,"'.$pseudo.'","'.$url.'","'.$calc.'","'.$type.'", "'.$jour.'", "'.$mois.'", "'.$anner.'")'; 
+$insert = 'INSERT INTO url VALUES(NULL,"'.$pseudo.'","'.$url.'","'.$calc.'","'.$type.'", "'.$jour.'", "'.$mois.'", "'.$anner.'","'.$fin.'")'; 
 
 $name = "SELECT COUNT(*)name FROM url WHERE pseudo = '$pseudo' && name = '$calc' ";
 
@@ -116,10 +116,6 @@ $name = "SELECT COUNT(*)name FROM url WHERE pseudo = '$pseudo' && name = '$calc'
 $name1 = $mysqli->query($name);
 
 $name2 = $name1->fetch_assoc();
-
-$calc6 = 'INSERT INTO calc VALUES(NULL,"'.$fin.'","'.$link.'")';
-
-$mysqli->query($calc6);
 
 
 if($type == "calc"){

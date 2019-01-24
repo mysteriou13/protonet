@@ -18,22 +18,15 @@ function deletecalc($file,$connect){
  $this->delete($del2);
  $this->delete($del3);
  $this->delete($del4);
-
  $this->deleteurl($file,$connect);
 
 }
 
 function deleteurl($file,$connect){
 
-$deleteurl = "DELETE FROM url  WHERE url  like '%$file%'"; 
+$deleteurl = "DELETE FROM url  WHERE id ='$file'"; 
 
 $connect->query($deleteurl);
-
-
-$deleteurl ="DELETE FROM calc WHERE name = '$file' "; 
-
-$connect->query($deleteurl);
-
 
 }
 
