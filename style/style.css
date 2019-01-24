@@ -72,7 +72,7 @@ font-size:2em;
 
 .divform{
 
-background-Color:blue; border: 2px solid white; border-radius: 25px; font-size:1em;  color:white; padding:3%;
+background-Color:blue; border: 2px solid white; border-radius: 25px; font-size:1em;  color:white; 
 }
 
 .divlien{
@@ -145,13 +145,13 @@ border-radius:20px 20px;  color:white; padding:1%; font-size:1.5em;  margin-righ
 
 .divheader{
 
- background-color:blue; border:2px solid white; border-radius:25px; padding:1%;  font-size:1.5em; margin:1%;
+ background-color:blue; border:2px solid white; border-radius:25px; padding:1%;  font-size:1.5em;
+
 }
 
 #b,#b1{
 
-color:white; background-color:blue; font-size:1em;  border-radius:30px;
-
+color:white; background-color:blue; font-size:1em;  
 }
 
 #b3{
