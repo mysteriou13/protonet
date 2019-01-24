@@ -1,5 +1,5 @@
 
-<div id class = "divcardre" >
+<div  class = "divcardre" >
 
 <form id = "connection"  class = "formconnection" action = "<?php echo $_SERVER['PHP_SELF']; ?>" method = "POST">
 

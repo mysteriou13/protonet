@@ -1,4 +1,4 @@
-<div  class = "divservice">
+<div  class = "divheader">
 <?php
 
 $service = "listservice.php#service";
@@ -14,7 +14,7 @@ $page = "/".$service;
 
 $link1 = $link.$page;
 ?>
-  <a id = "b"  href = '<?php echo $link1; ?>'>
+  <a id  href = '<?php echo $link1; ?>'>
 liste des service
 </a>
 
