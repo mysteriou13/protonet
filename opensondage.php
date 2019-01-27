@@ -14,7 +14,6 @@ $date = "https://framadate.vecchionet.com/create_poll.php?type=";
 <center>
 Opensondage:
 </center>
-xx
 </div>
 
 <div  style = "display:flex; justify-content:center;">
