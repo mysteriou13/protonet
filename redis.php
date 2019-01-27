@@ -1,10 +1,10 @@
  <?php
 
- include("../admin/connect.php");
+ include("/var/www/html/vecchionet.com/admin/connect.php");
 
- include("./delete.php");
+ include("/var/www/html/vecchionet.com/delete.php");
  
- include("./date.php");
+ include("/var/www/html/vecchionet.com/date.php");
 
 $affichedate = new affichedate();
 

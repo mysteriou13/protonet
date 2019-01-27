@@ -99,7 +99,7 @@ hebergeur de service libre  et etique corse
 <div class = "divflex">
 
 
-<div  class = "divheader">
+<div   class = "divheader">
 <?php 
 
 $page = "index.php";
@@ -114,7 +114,7 @@ $page = "/index.php";
 $link1 = $link.$page;
 
 ?>
-<a id = "b"  href = "<?php echo  $link1; ?>">
+<a  href = "<?php echo  $link1; ?>">
 accueil
 </a>
 </div>
@@ -157,7 +157,7 @@ $link1 = "https://terraliberta.vecchionet.com";
 
 ?>
 
-<a id = "b" href = 'terraliberta.php'> premium </a>
+<a href = 'terraliberta.php'> premium </a>
 
 </div>
 
@@ -177,7 +177,7 @@ $link1 = $link.$page;
 
 ?>
 
-  <a id = "b"  href = '<?php echo $link1;?>'>
+  <a   href = '<?php echo $link1;?>'>
 CGU
 </a>
 
@@ -202,7 +202,7 @@ $link1 = $link.$page;
 
 
 ?>
- <a id = "b" href = '<?php echo $link1; ?>'>
+ <a  href = '<?php echo $link1; ?>'>
 soutenir
 </a>
 
@@ -229,7 +229,7 @@ $link1 = $link.$page;
 
 ?>
 
-         <a id = "b"   href ='<?php echo $link1;?>'>
+         <a   href ='<?php echo $link1;?>'>
 mention legal
 </a>
 
