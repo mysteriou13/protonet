@@ -66,7 +66,7 @@ echo '<meta http-equiv="refresh" content="0;url=index.php" /> ';
  
 if($valide == 0){
 
-echo "<center> erreur pseudo ou mot de pass incorrect </center>";
+echo "<center id = 'error' class = 'divheader'> erreur pseudo ou mot de pass incorrect </center>";
 
 }
 }
