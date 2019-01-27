@@ -1,36 +1,36 @@
-<div  class = "divdisplay" id = "newcalc">
-<a id = "b"  href = "calc.php"> nouveau tableur </a>
+<div  class = "divheader" id = "newcalc">
+<a   href = "calc.php"> nouveau tableur </a>
 
 </div>
 
 
-<div class = "divdisplay" id = "newpad">
-<a id = "b" href = "pad.php">nouveau pad </a>
+<div class = "divheader" id = "newpad">
+<a href = "pad.php">nouveau pad </a>
 
  </div>
 
 
-<div class = "divdisplay" id = "sondage">
+<div class = "divheader" id = "sondage">
 
-<a id = "b" href = "./framadate.php">sondage</a>
+<a  href = "./framadate.php">sondage</a>
 </div>
 
-<div class = "divdisplay" id  = "edition">
-<a id = "b" href = "./edit.php">edition d'image</a>
+<div class = "divheader" id  = "edition">
+<a   href = "./edit.php">edition d'image</a>
 </div>
 
 
-<div class = "divdisplay" id = "projet">
-<a id = "b" href = "https://kanboard.vecchionet.com">gestion de projet</a>
+<div class = "divheader" id = "projet">
+<a  href = "https://kanboard.vecchionet.com">gestion de projet</a>
 </div>
 
 <div class= "parametre">
-<a id = "b" href = "parametre.php"> parametre </a>
+<a  href = "parametre.php"> parametre </a>
 
 </div>
-<div class = "divfichier">
+<div class = "divheader">
 
-<a id = "b" href = "listfichier.php" > mes  documents </a>
+<a  href = "listfichier.php" > mes  documents </a>
 
 </div>
 
@@ -50,6 +50,6 @@ $link1 = $link.$page;
 ?>
 
 
-<a id = "b" href = "<?php echo $link1?>">deconnection</a>
+<a  href = "<?php echo $link1?>">deconnection</a>
 
 </div>
