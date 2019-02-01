@@ -157,7 +157,7 @@ $link1 = "https://terraliberta.vecchionet.com";
 
 ?>
 
-<a href = 'terraliberta.php'> premium </a>
+<a href = 'terraliberta.php'>terraliberta</a>
 
 </div>
 
