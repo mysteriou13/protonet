@@ -81,7 +81,7 @@ include("divlistement.php");
 <center style  = "font-size:2em; margin:1em">
 
 <div style= "display:<?php echo $display;?>">
-<strong id = "b">
+<strong id = "b5">
 
 liste des documents
 
