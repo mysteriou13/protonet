@@ -1,6 +1,10 @@
 <?php
 
+session_start();
+
 include_once("/var/www/html/vecchionet.com/mail.php");
+
+include_once("/var/www/html/admin/connect.php");
 
 $e = new email();
 
@@ -8,7 +12,13 @@ $domaine =  $_SERVER['SERVER_NAME'];
 
 $url = str_replace("vecchionet.com",1,$domaine);
 
-session_start();
+$pseudo = null;
+
+if(isset($_SESSION['pseudo']) && !empty($_SESSION['pseudo'])){
+
+$pseudo = $mysqli->real_escape_string($_SESSION['pseudo']);
+
+}
 
 $domaine =  $_SERVER['SERVER_NAME'];
 

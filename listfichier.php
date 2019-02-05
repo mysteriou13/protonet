@@ -75,15 +75,27 @@ include("header.php");
 
 include("divlistement.php");
 
+$doc = "SELECT COUNT(*)name FROM url WHERE pseudo = '$pseudo'";
+
+$doc1 = $mysqli->query($doc);
+
+$doc2 = $doc1->fetch_assoc();
+
+
+if($doc2['name'] == 0){
+
+$display = "none";
+
+}
 
 ?>
 
 <center style  = "font-size:2em; margin:1em">
 
-<div style= "display:<?php echo $display;?>">
-<strong id = "b">
+<div >
+<strong id = "b5">
 
-liste des documents
+Mes documents
 
 </strong>
 </br>
@@ -91,6 +103,22 @@ liste des documents
 </center>
 
 </div>
+
+<div style = "display:flex;">
+
+<div  class = "divheader" id = "newcalc">
+<a   href = "calc.php"> nouveau tableur </a>
+
+</div>
+
+
+<div class = "divheader" id = "newpad">
+<a href = "pad.php">nouveau pad </a>
+</div>
+ 
+</div>
+</br>
+
 <div id = "ongletliste" style =" margin-left:2%; display:flex;">
 
 <div onclick = "affichediv(this.id,'<?php echo $link?>','pad','<?php echo $order;?>')" id= "ongletpad" class = "typedoc">
@@ -104,14 +132,12 @@ calc
 </div>
 
 </div>
-<div>
 
-</div>
 </br>
 
 <div style = "display:flex; flex-wrap:wrap;">
 
-<div>
+<div style = "display:<?php echo $display?>">
 
 <form  action = "<?PHP $_SERVER['PHP_SELF'];?>" method = "POST">
 
@@ -122,7 +148,7 @@ calc
 </div>
 
 
-<div>
+<div style ="display:<?php echo $display;?>">
 
 <form action  = "<?PHP $_SERVER['PHP_SELF']?>" method = "POST">
 

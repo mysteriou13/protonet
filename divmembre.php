@@ -1,14 +1,3 @@
-<div  class = "divheader" id = "newcalc">
-<a   href = "calc.php"> nouveau tableur </a>
-
-</div>
-
-
-<div class = "divheader" id = "newpad">
-<a href = "pad.php">nouveau pad </a>
-
- </div>
-
 
 <div class = "divheader" id = "sondage">
 
