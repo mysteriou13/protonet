@@ -95,7 +95,7 @@ $display = "none";
 <div >
 <strong id = "b5">
 
-liste des documents
+Mes documents
 
 </strong>
 </br>
