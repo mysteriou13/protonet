@@ -24,7 +24,9 @@ while($liste3 = $list2->fetch_assoc() ){
 
  $url = $liste3["name"];
 
- $calc  = "SELECT * FROM calc WHERE name LIKE '%$url%' ";
+ $url = $mysqli->real_escape_string($url);
+
+ $calc  = "SELECT * FROM url WHERE name ='$url' ";
 
 $calc1 = $mysqli->query($calc);
 
