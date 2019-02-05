@@ -24,8 +24,6 @@ $datelink = "SELECT * FROM url";
 
 $datelink1 = $mysqli->query($datelink);
 
-$deletefile->deleteurl("padx",$mysqli);
-
 while($datalink2 = $datelink1->fetch_assoc()){
 
 $name = $datalink2['id'];
