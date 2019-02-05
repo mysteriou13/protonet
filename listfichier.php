@@ -104,6 +104,21 @@ liste des documents
 
 </div>
 
+<div style = "display:flex;">
+
+<div  class = "divheader" id = "newcalc">
+<a   href = "calc.php"> nouveau tableur </a>
+
+</div>
+
+
+<div class = "divheader" id = "newpad">
+<a href = "pad.php">nouveau pad </a>
+</div>
+ 
+</div>
+</br>
+
 <div id = "ongletliste" style =" margin-left:2%; display:flex;">
 
 <div onclick = "affichediv(this.id,'<?php echo $link?>','pad','<?php echo $order;?>')" id= "ongletpad" class = "typedoc">
