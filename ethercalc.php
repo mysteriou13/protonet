@@ -16,7 +16,7 @@ $url = "https://ethercalc.vecchionet.com/";
  <div id = "b1" >
 <center>
 <?php 
-//include_once("formdoc.php");
+include_once("formdoc.php");
 ?>
 </center>
 
