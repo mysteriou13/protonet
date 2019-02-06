@@ -9,6 +9,13 @@ include_once("header.php");
 
 $email = $_SERVER['PHP_SELF']."?email=1";
 
+
+if(empty($_SESSION['pseudo'])){
+
+header("Location:index.php");
+
+}
+
 ?>
 
 <h1 id= "b" >
@@ -23,7 +30,7 @@ parametre
 
   <div id = "b">
 <?php 
-$pseudo = $mysqli->real_escape_string($_SESSION['pseudo']);
+
 
 $select = "SELECT * FROM membre WHERE pseudo = '$pseudo'";
 
@@ -36,7 +43,6 @@ $select2 = $select1->fetch_assoc();
 ?> 
 
 <div  class = "divcadre">
-
 <center>
 
 <div>
