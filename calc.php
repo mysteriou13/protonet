@@ -9,7 +9,7 @@ include_once("header.php");
 
 <center>
 
-<p>
+<p id = "b3">
 vecchiocalc est un instance  ehtercalc tableur  permetant de travailler en plusieur simultanément  sur un même document
 
 </p>
