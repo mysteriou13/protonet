@@ -6,7 +6,9 @@ include_once("./head.php");
 
 <center>
 
-<p>
+<p id = "b3">
+vecchiopad est un instance etherpad-lite, editeur de text  permetant de travailler en plusieur simultanément  sur un même document
+</p>
 
 <button  onClick = "parent.location = 'etherpad.php?pad=+7days&durer=7jour'"> pad 1  semaine </button>
 
