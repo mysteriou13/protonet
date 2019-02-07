@@ -9,6 +9,11 @@ include_once("header.php");
 
 <center>
 
+<p>
+vecchiocalc est un instance  ehtercalc tableur  permetant de travailler en plusieur simultanément  sur un même document
+
+</p>
+
 <p style = "margin-top:5em;">
   
   <button  onClick = "parent.location = 'ethercalc.php?calc=+7days&durer=7jour'"> calc 1  semaine </button>
