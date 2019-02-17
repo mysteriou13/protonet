@@ -5,6 +5,23 @@ var div = document.getElementById(id);
 
  div.style.display = dis;
 
+}
+
+function changedisplay(i){
+
+var div = document.getElementById(i);
+
+var dis = div.style.display;
+
+if(dis == "block"){
+
+div.style.display = "none";
+
+}else{
+
+div.style.display = "block";
+
+}
 
 }
 
