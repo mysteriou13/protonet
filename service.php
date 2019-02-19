@@ -1,5 +1,5 @@
 
-<div id = "b3" >
+<div id = "b3"  style = "background-color:darkblue;">
 <center>
 
 <p id = "service">
@@ -12,8 +12,8 @@ liste des service
 
 </div>
 
-<center id = "b">
-<div >
+<center >
+<div   style = "border:2px solid white; border-radius:25px 25px; background-color:darkblue;">
  <button  id = "b3" onClick="parent.location='https://kanboard.vecchionet.com'">
 <strong>
 Kanboard
