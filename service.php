@@ -4,7 +4,7 @@
 
 <p id = "service">
 
-liste des service
+liste des services
 
 </p>
 
