@@ -1,18 +1,10 @@
-<div class = "divinscription">
-<?php
 
-$page = "inscription.php";
+<div   class = "divheader">
 
-if($localhost == 0){
-
-$page = "/".$page;
-
-}
-
-
- $link1 = $link.$page."#inscription";
- ?>
-
- <a href = "<?php echo $link1; ?>" id = "b">inscription</a>
+<a  href = "inscription.php#inscription">
+inscription
+</a>
 
 </div>
+
+
