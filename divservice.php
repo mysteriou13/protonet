@@ -15,7 +15,7 @@ $page = "/".$service;
 $link1 = $link.$page;
 ?>
   <a id  href = '<?php echo $link1; ?>'>
-liste des service
+service en ligne
 </a>
 
 </div>
