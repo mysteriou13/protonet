@@ -246,6 +246,12 @@ mention legal
 </div>
 
 <div class = "divheader">
+
+<a href = "contact.php"> contact </a>
+
+</div>
+
+<div class = "divheader">
 <a href = "faq.php"> faq </a>
 </div>
 
@@ -262,6 +268,8 @@ include_once("formconnection.php");
 
 
 ?>
+
+
 
 </header>
 
