@@ -11,6 +11,9 @@ include_once("header.php");
 
 <p id = "b3">
 vecchiocalc est un instance  ehtercalc tableur  permetant de travailler en plusieur simultanément  sur un même document
+</br>
+
+<a href = "https://github.com/audreyt/ethercalc" target = "_blank"> lien vers le code source </a>
 
 </p>
 
