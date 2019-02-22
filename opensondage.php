@@ -12,7 +12,11 @@ $date = "https://framadate.vecchionet.com/create_poll.php?type=";
 
 <div id = "b3">
 <center>
-Opensondage:
+
+ Opensondage est un logciel libre de sondage en ligne
+
+<a href = "https://github.com/leblanc-simon/OpenSondage" target ="_blank"> lien code source</a>
+
 </center>
 </div>
 
