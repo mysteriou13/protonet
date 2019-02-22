@@ -25,7 +25,7 @@ gestionaire de projet
 
 <button id = "b3"  onClick = "location = 'edit.php'">
 <strong>
-Svg-Edit
+vecchioedit
 </strong>
 </br>
 logiciel d'&eacute;dition d'images </br> et de retouche de photo 
