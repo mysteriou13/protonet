@@ -63,7 +63,7 @@ $date = $mysqli->real_escape_string($date);
  
    </div>
 
-  <div style = "width:100%; display:flex; flex-wrap:wrap; background-color:darkblue; margin:3%;  border:2px solid white; border-radius:25px;  font-size:2em;">
+  <div style = "width:100%; display:flex; flex-wrap:wrap; background-color:darkblue;   border:2px solid white; border-radius:25px;  font-size:2em;">
 
 <div>
 
