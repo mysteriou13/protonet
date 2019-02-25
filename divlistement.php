@@ -26,6 +26,8 @@ $anner = null;
 while($liste3 = $list2->fetch_assoc() ){
 
  $name = $liste3["name"];
+ 
+ $id = $liste3['id'];
 
  $lien = $liste3['url'];
 
