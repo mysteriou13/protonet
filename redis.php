@@ -1,6 +1,5 @@
  <?php
-
- include("/var/www/html/vecchionet.com/admin/connect.php");
+ include("/var/www/html/admin/connect.php");
 
  include("/var/www/html/vecchionet.com/delete.php");
  
@@ -24,6 +23,7 @@ $datelink = "SELECT * FROM url";
 
 $datelink1 = $mysqli->query($datelink);
 
+
 while($datalink2 = $datelink1->fetch_assoc()){
 
 $name = $datalink2['id'];
@@ -38,16 +38,17 @@ $url1 = $mysqli->query($url);
 
 $url2 = $url1->fetch_assoc();
 
-$linkday = $affichedate->getjour($date);
+$linkday = $url2['jour'];
 
-$linkmouth = $affichedate->getmois($date);
+$linkmouth = $url2['mois'];
 
-$linkyear = $affichedate->getanner($date);
+$linkyear = $url2['anner'];
 
 if($day > $linkday){
 if($linkmouth ==  $mouth){
 if($linkyear == $year){
 if($url2['type'] == "calc"){
+
 
 $deletefile->deletecalc($name,$mysqli);
 
