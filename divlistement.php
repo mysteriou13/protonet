@@ -47,7 +47,7 @@ while($liste3 = $list2->fetch_assoc() ){
 
  $calc2 = $calc1->fetch_assoc();
  
- $delete = "deletefile.php?type=".$type."&name=$name;&id=$id";
+ $delete = "deletefile.php?type=".$type."&name=$name&id=$id";
 
 
 echo "<div style = 'margin-left:2%; margin-right:2%; font-size:1.5em; background-color:blue; color:white;  display:flex;  width:1OO%; justify-content:space-around;  margin-bottom:1%;'>";
