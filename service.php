@@ -15,6 +15,7 @@ liste des services
 <center >
 <div   style = "border:2px solid white; border-radius:25px 25px; background-color:darkblue;">
 
+<div>
  <button  id = "b3" onClick="parent.location='https://kanboard.vecchionet.com'">
 <strong>
 Kanboard
@@ -22,7 +23,9 @@ Kanboard
 </br>
 gestionaire de projet
 </button>
+</div>
 
+<div>
  <button  id = "b3" onClick="parent.location='terraliberta.php'">
 <strong>
 terraliberta
@@ -30,9 +33,12 @@ terraliberta
 </br>
 espace de travail de colaboratif
 </button>
+</div>
 
 </br>
 </br>
+
+<div>
 <button id = "b3"  onClick = "location = 'edit.php'">
 <strong>
 vecchioedit
@@ -40,8 +46,9 @@ vecchioedit
 </br>
 logiciel d'&eacute;dition d'images </br> et de retouche de photo 
 </button>
+</div>
 
-
+<div>
 <button id = "b3"  onClick = "location = './opensondage.php'">
 <strong>
 opensondage
@@ -50,23 +57,28 @@ opensondage
 créer vos sondages 
 
 </button>
+</div>
 
 </br>
 </br>
 
+<div>
 <button id = "b3"  onClick = "parent.location = 'pad.php'">
 <strong>
 Vecchiopad
 </br>
 editeur de text colaboratif  en temp réel
 </button>
+</div>
 
+<div>
 <button id = "b3" onClick = "parent.location = 'calc.php'">
 <strong>
 Vecchiocalc
 </br>
 tableur colaboratif  en temp réel
 </button>
+</div>
 
 </div>
 
