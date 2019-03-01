@@ -23,7 +23,7 @@ Kanboard
 gestionaire de projet
 </button>
 
- <button  id = "b3" onClick="parent.location='https://vecchionet.com/terraliberta.php'">
+ <button  id = "b3" onClick="parent.location='terraliberta.php'">
 <strong>
 terraliberta
 </strong>
@@ -41,8 +41,6 @@ vecchioedit
 logiciel d'&eacute;dition d'images </br> et de retouche de photo 
 </button>
 
-</br>
-</br>
 
 <button id = "b3"  onClick = "location = './opensondage.php'">
 <strong>
