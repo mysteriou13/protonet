@@ -150,27 +150,6 @@ include("divservice.php");
 
 ?>
 
-<div  class = "divheader">
-<?php 
-
-$service = "terraliberta.php#premium";
-
-$link1 = "http://localhost/terraliberta/";
-
-if($localhost == 0){
-
-$link1 = "https://terraliberta.vecchionet.com";
-
-}
-
-
-
-?>
-
-<a href = 'terraliberta.php'>terraliberta</a>
-
-</div>
-
 <div class  = "divheader">
 
 <?php 
