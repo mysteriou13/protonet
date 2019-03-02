@@ -1,21 +1,21 @@
 
-<div id = "b3"  style = "background-color:darkblue;">
-<center>
+<div   style = " border:2px solid white; border-radius:25px 25px; background-color:darkblue;">
 
-<p id = "service">
+<div id = "b3">
+
+<p>
+<center id = "service">
 
 liste des services
 
-</p>
-
 </center>
+</p>
 
 </div>
 
-<center >
-<div   style = "border:2px solid white; border-radius:25px 25px; background-color:darkblue;">
+<div style = " display:flex; flex-wrap:wrap; justify-content:space-around; ">
 
-<div>
+<div style = "margin-top:3%;">
  <button  id = "b3" onClick="parent.location='https://kanboard.vecchionet.com'">
 <strong>
 Kanboard
@@ -25,7 +25,7 @@ gestionaire de projet
 </button>
 </div>
 
-<div>
+<div style = "margin:3%;">
  <button  id = "b3" onClick="parent.location='terraliberta.php'">
 <strong>
 terraliberta
@@ -35,10 +35,13 @@ espace de travail de colaboratif
 </button>
 </div>
 
-</br>
-</br>
 
-<div>
+
+</div>
+
+<div style = "display:flex; flex-wrap:wrap; justify-content:space-around">
+
+<div style = "margin:3%;">
 <button id = "b3"  onClick = "location = 'edit.php'">
 <strong>
 vecchioedit
@@ -48,7 +51,7 @@ logiciel d'&eacute;dition d'images </br> et de retouche de photo
 </button>
 </div>
 
-<div>
+<div style = "margin:3%;">
 <button id = "b3"  onClick = "location = './opensondage.php'">
 <strong>
 opensondage
@@ -59,10 +62,12 @@ créer vos sondages
 </button>
 </div>
 
-</br>
-</br>
+</div>
 
-<div>
+
+<div style = "display:flex; flex-wrap:wrap; justify-content:space-around">
+
+<div style = "margin:3%;">
 <button id = "b3"  onClick = "parent.location = 'pad.php'">
 <strong>
 Vecchiopad
@@ -71,7 +76,7 @@ editeur de text colaboratif  en temp réel
 </button>
 </div>
 
-<div>
+<div style ="margin:3%;">
 <button id = "b3" onClick = "parent.location = 'calc.php'">
 <strong>
 Vecchiocalc
@@ -79,7 +84,8 @@ Vecchiocalc
 tableur colaboratif  en temp réel
 </button>
 </div>
+</div>
+</div>
 
 </div>
 
-</center>
