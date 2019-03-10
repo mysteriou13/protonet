@@ -7,6 +7,12 @@
 
  $paypal = "/terraliberta/paypal";
 
+if(empty($_SESSION['pseudo'])){
+
+ header('Location:index.php');
+
+}
+
 if($_SERVER['SERVER_NAME'] == "localhost" ){
 
  $u = "http";
