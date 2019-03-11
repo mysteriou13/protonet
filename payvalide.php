@@ -1,3 +1,4 @@
+<html>
 <body>
 <?php 
 include("./header.php");
@@ -56,12 +57,13 @@ $dateDepartTimestamp = strtotime($dateDepart);
 $date1 = str_replace("-","",$date1);
 
  }
- 
-$u = 'UPDATE ebo SET date = "'.$date1.'" WHERE pseudo = "'.$pseudo.'"'; 
 
+if($_POST['payment_status']  == "Completed"){ 
+
+$u = 'UPDATE ebo SET date = "'.$date1.'" WHERE pseudo = "'.$pseudo.'"'; 
 $mysqli->query($u); 
 
-
+}
 
 
 ?>
