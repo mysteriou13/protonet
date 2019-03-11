@@ -3,6 +3,24 @@
  include_once("header.php");
  include_once("iframe.php");
 
+ $id =  "SELECT COUNT(*)idtransaction FROM transaction";
+
+ $id1 = $mysqli->query($id);
+
+ $id2 = $id1->fetch_assoc();
+
+if(empty($id2['id'])){
+
+$id2['id'] = 0;
+
+}else{
+
+$id2['id'] = $id2['id']+1;
+
+}
+
+ $idtransanction =  $id2['id'].uniqid().time().sha1($pseudo);
+
  $nameserver = 'localhost';
 
  $paypal = "/terraliberta/paypal";
