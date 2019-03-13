@@ -14,7 +14,7 @@
 </div>
 
 <div class= "parametre">
-<a  href = "parametre.php"> parametre </a>
+<a  href = "parametre.php">mon compte</a>
 
 </div>
 
