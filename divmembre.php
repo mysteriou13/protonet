@@ -14,9 +14,16 @@
 </div>
 
 <div class= "parametre">
-<a  href = "parametre.php"> parametre </a>
+<a  href = "parametre.php">mon compte</a>
 
 </div>
+
+<div class = "divheader">
+
+<a href = "terraliberta.php">terraliberta </a>
+
+</div>
+
 <div class = "divheader">
 
 <a  href = "listfichier.php" > mes  documents </a>

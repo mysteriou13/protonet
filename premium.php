@@ -105,7 +105,7 @@ echo $dayabo-$day."jours &nbsp;";
 
 ?>
 
-<a href = "modepremium.php" >commander</a>
+<a href = "paypal.php" >commander</a>
 
 </center>
 

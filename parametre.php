@@ -18,15 +18,21 @@ header("Location:index.php");
 
 ?>
 
-<h1 id= "b" >
+<div id= "b" >
 
+<div style = "font-size:2em;">
 <center>
-<label>
-parametre
-<label>
-</center>
 
-</h1>
+<a href = "parametre.php">parametre</a>
+&nbsp;&nbsp;
+
+<a href = "paypal.php"> abonnement </a>
+
+</center>
+</div>
+
+</div>
+</br>
 
   <div id = "b">
 <?php 
@@ -60,6 +66,7 @@ email : <?php echo $select2['email']?> etat:
 
 <?php 
 
+
 $verif =  $select2['verifemail']; 
 
 if($verif == 0){
@@ -75,7 +82,7 @@ $length =  rand(10, 50);
 $token = bin2hex(random_bytes($length));
 
 
-$link ="http://vecchionet.com/terraliberta/membre/verifemail.php/?email=$token";
+$link ="http://vecchionet.com.terraliberta/membre/verifemail.php/?email=$token";
 
 $message = "pour confirmé votre adress mail copier  dans votre navigateur web : :".$link;
 
