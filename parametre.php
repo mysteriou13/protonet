@@ -24,8 +24,9 @@ header("Location:index.php");
 <center>
 
 <a href = "parametre.php">parametre</a>
+&nbsp;&nbsp;
 
-abonement
+<a href = "paypal.php"> abonement</a>
 
 </center>
 </div>
