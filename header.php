@@ -59,7 +59,7 @@ $localhost = 0;
 if(isset($_SESSION['pseudo']) && !empty($_SESSION['pseudo'])){
 if($mode == "premium"){
 
-header("Location:modepremium.php");
+header("Location:paypal.php");
 
 }
 }
