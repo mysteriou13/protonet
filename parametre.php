@@ -18,15 +18,20 @@ header("Location:index.php");
 
 ?>
 
-<h1 id= "b" >
+<div id= "b" >
 
+<div style = "font-size:2em;">
 <center>
-<label>
-parametre
-<label>
-</center>
 
-</h1>
+<a href = "parametre.php">parametre</a>
+
+abonement
+
+</center>
+</div>
+
+</div>
+</br>
 
   <div id = "b">
 <?php 
