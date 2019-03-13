@@ -103,10 +103,10 @@ function c(a){
 
 </br>
 
-<center>
 
-<div id = "b">
+<div id = "b" style = "border-radius:25px 25px; display:flex; justify-content:space-around">
 
+<div>
 <label>1 mois /5 euro</label>  <input type = "radio"   onclick = "c('a1')" name = "abo"  id = "1">  &nbsp; &nbsp;
 
 <label>3 mois /10 euro</label> <input type = "radio" name = "abo" onclick = "c('a2')"   id = "1">  &nbsp; &nbsp;
@@ -116,6 +116,12 @@ function c(a){
 <label> 12 mois / 30 euro </label>  <input type = "radio" name = "abo" onclick = "c('a4')" id = "1" > &nbsp; &nbsp;
 </div>
 
+<div>
 <?php 
 include("boutonpaypal.php");
 ?>
+</div>
+
+</div>
+</div>
+
