@@ -18,7 +18,7 @@ $id2['id'] = 0;
 $id2['id'] = $id2['id']+1;
 
 }
-
+ 
  $idtransanction =  $id2['id'].uniqid().time().sha1($pseudo);
 
  $nameserver = 'localhost';
@@ -101,9 +101,11 @@ function c(a){
 
 </script>
 
-<center>
-duréer abonnement:</br>
+</br>
 
+<center>
+
+<div id = "b">
 
 <label>1 mois /5 euro</label>  <input type = "radio"   onclick = "c('a1')" name = "abo"  id = "1">  &nbsp; &nbsp;
 
@@ -112,8 +114,8 @@ duréer abonnement:</br>
 <label> 6 mois / 20 euro </label>  <input type = "radio" name = "abo" onclick = "c('a3')" id  = "1" > &nbsp; &nbsp;
 
 <label> 12 mois / 30 euro </label>  <input type = "radio" name = "abo" onclick = "c('a4')" id = "1" > &nbsp; &nbsp;
+</div>
 
 <?php 
 include("boutonpaypal.php");
 ?>
-
