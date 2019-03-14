@@ -29,7 +29,7 @@ parametre
 <?php include("premium.php")?>
 </br>
 
-  <div id = "b">
+  <div id = "b3">
 <?php 
 
 
@@ -43,20 +43,17 @@ $select2 = $select1->fetch_assoc();
 
 ?> 
 
-<div  class = "divcadre">
+<div >
 <center>
 
 <div>
-<label>
 pseudo : <?php echo $select2['pseudo']?>
-</label>
-
 <div>
 
 </div>
 
-<div >
-<label>
+<div>
+
 email : <?php echo $select2['email']?> etat: 
 
 <?php 
@@ -95,7 +92,6 @@ echo "verfi&eacute;";
 
 }
 ?>
-<label>
 </center>
 </div>
 
