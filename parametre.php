@@ -18,17 +18,13 @@ header("Location:index.php");
 
 ?>
 
-<div id= "b" >
+<div id= "b3" >
 
-<div style = "font-size:2em;">
 <center>
 
 parametre
-&nbsp;&nbsp;
-
 
 </center>
-</div>
 </div>
 <?php include("premium.php")?>
 </br>
