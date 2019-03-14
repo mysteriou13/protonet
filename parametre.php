@@ -23,15 +23,14 @@ header("Location:index.php");
 <div style = "font-size:2em;">
 <center>
 
-<a href = "parametre.php">parametre</a>
+parametre
 &nbsp;&nbsp;
 
-<a href = "paypal.php"> abonnement </a>
 
 </center>
 </div>
-
 </div>
+<?php include("premium.php")?>
 </br>
 
   <div id = "b">
