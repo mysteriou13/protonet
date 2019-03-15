@@ -1,14 +1,11 @@
-<html>
-<body>
 <?php 
-
 include("date.php");
 
 $date  = new affichedate();
 
 $pseudo = $_SESSION['pseudo'];
 
-if(empty($pseudo)){
+if(empty($_SESSION['pseudo'])){
 
 echo '<meta http-equiv="refresh" content="0;url=index.php" /> ';
 
@@ -111,5 +108,3 @@ echo $dayabo-$day."jours &nbsp;";
 
 </div>
 
-</body>
-</html>
