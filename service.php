@@ -1,10 +1,10 @@
 
 <div   style = " border:2px solid white; border-radius:25px 25px; background-color:darkblue;">
 
-<div id = "b3">
+<div id = "b3" >
 
 <p>
-<center id = "service">
+<center >
 
 liste des services
 
