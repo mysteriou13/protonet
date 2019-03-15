@@ -10,18 +10,18 @@ include("header.php");
 
 ?>
 
+</br>
 <div id = "b3">
 
 <center>
 
-<h1>
 Faq
-</h1>
 
 </center>
 
 </div>
-
+</br>
+</br>
 
 <div>
 
