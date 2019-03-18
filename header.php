@@ -6,6 +6,15 @@ include_once("/var/www/html/vecchionet.com/mail.php");
 
 include_once("/var/www/html/admin/connect.php");
 
+   $ua = $_SERVER['HTTP_USER_AGENT'];
+   $mobile = null;
+if (preg_match('/iphone/i',$ua) || preg_match('/android/i',$ua) || preg_match('/blackberry/i',$ua) || preg_match('/symb/i',$ua) || preg_match('/ipad/i',$ua) || preg_match('/ipod/i',$ua) || preg_match('/phone/i',$ua) )
+{
+$mobile = true;
+}else{
+$mobile  = false;
+}
+
 $e = new email();
 
 $domaine =  $_SERVER['SERVER_NAME'];
