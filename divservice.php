@@ -1,20 +1,19 @@
 <div  class = "divheader">
 <?php
 
+
+if($mobile == true){
+
 $service = "listservice.php#service";
 
-$page = $service;
 
-if($localhost == 0){
-
-$page = "/".$service;
-
-
+}else{
+$service = "listservice.php";
 }
 
-$link1 = $link.$page;
+
 ?>
-  <a id  href = '<?php echo $link1; ?>'>
+  <a id  href = '<?php echo $service; ?>'>
 service en ligne
 </a>
 
