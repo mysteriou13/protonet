@@ -8,12 +8,16 @@ include_once("/var/www/html/admin/connect.php");
 
    $ua = $_SERVER['HTTP_USER_AGENT'];
    $mobile = null;
+   $dismobile = "none";
 if (preg_match('/iphone/i',$ua) || preg_match('/android/i',$ua) || preg_match('/blackberry/i',$ua) || preg_match('/symb/i',$ua) || preg_match('/ipad/i',$ua) || preg_match('/ipod/i',$ua) || preg_match('/phone/i',$ua) )
 {
 $mobile = true;
+$dismobile = "block";
 }else{
 $mobile  = false;
+$dismobile = "none";
 }
+
 
 $e = new email();
 
@@ -121,19 +125,16 @@ hebergeur de service libre  et etique corse
 <div   class = "divheader">
 <?php 
 
-$page = "index.php";
+$page = "./index.php";
 
-if($localhost == 0){
+if($mobile == true){
 
-$page = "/index.php";
+$page = $page."#index";
 
 }
 
-
-$link1 = $link.$page;
-
 ?>
-<a  href = "<?php echo  $link1; ?>">
+<a  href = "<?php echo  $page; ?>">
 accueil
 </a>
 </div>

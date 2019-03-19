@@ -16,9 +16,20 @@ $link =  "http://".$_SERVER['SERVER_NAME']."/document";
 
   $src = $link."/presentation.html";
 
-
 ?>
 
-<iframe src  ="<?php echo $src?>" style = "height:100%; width:100%; background-color:blue">
+<div id = "b3" style = "display:<?php echo $dismobile;?>;">
+
+<div id = "index">
+<center>
+
+<a href = "index.php"> haut de page </a>
+
+</center>
+</div>
+
+</div>
+
+<iframe  src  ="<?php echo $src?>" style = "height:100%; width:100%; background-color:blue">
 
 </iframe>
