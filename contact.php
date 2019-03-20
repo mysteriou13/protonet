@@ -7,6 +7,13 @@ include("header.php");
 
 ?>
 
+<div id = "b3" style = "display:<?php echo $dismobile?>">
+
+<center>
+<a id = "contact" href = "contact.php"> haute de page </a>
+</center>
+
+</div>
 
 <div id = "b3">
 
