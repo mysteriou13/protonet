@@ -39,7 +39,7 @@ $wrap = "nowrap";
 
 
  <div  style = " width:100%; color:white;  display:flex; flex-wrap:<?php echo $wrap;?>;  justify-content:space-around;">
-<div style  = " width:100%; background-color:darkblue; border:2px solid white; border-radius:25px; margin-right:1%; font-size:2em" >
+<div style  = "height:100%; width:100%; background-color:darkblue; border:2px solid white; border-radius:25px; margin-right:1%; font-size:2em" >
    <div>
  
     <center style = "background-color:blue; margin:3%; border:2px solid  white; border-radius:25px; ">
@@ -71,6 +71,7 @@ $wrap = "nowrap";
    </div>
  
    </div>
+
 
   <div style = "width:100%; display:flex; flex-wrap:wrap; background-color:darkblue;   border:2px solid white; border-radius:25px;  font-size:2em;">
 
