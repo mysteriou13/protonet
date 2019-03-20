@@ -215,21 +215,20 @@ soutenir
 
 <?php 
 
+
+if($mobile == true ){
+
+$page = "legal.php#legal";
+
+}else{
+
  $page = "legal.php";
-
-if($localhost == 0){
-
-$page = "/legal.php";
 
 }
 
-
-$link1 = $link.$page;
-
-
 ?>
 
-         <a   href ='<?php echo $link1;?>'>
+   <a   href ='<?php echo $page;?>'>
 mention legal
 </a>
 
