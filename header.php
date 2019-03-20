@@ -163,20 +163,21 @@ include("divservice.php");
 <div class  = "divheader">
 
 <?php 
+
+if($mobile){
+
+$page = "CGU.php#CGU";
+
+
+}else{
+
 $page = "CGU.php";
-
-  if($localhost == 0){
-
-$page = "/".$page;
 
 }
 
-
-$link1 = $link.$page;
-
 ?>
 
-  <a   href = '<?php echo $link1;?>'>
+  <a   href = '<?php echo $page;?>'>
 CGU
 </a>
 
