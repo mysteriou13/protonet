@@ -10,6 +10,13 @@ include_once("head.php");
 include_once("header.php");
 ?>
 
+ <div id = "b3" style = "display:<?php echo $dismobile?>">
+
+ <center>
+ <a id = "legal" href = "legal.php"> haute de page </a> 
+ </center>
+
+</div>
 
 <div id = "b" >
 

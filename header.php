@@ -6,6 +6,19 @@ include_once("/var/www/html/vecchionet.com/mail.php");
 
 include_once("/var/www/html/admin/connect.php");
 
+   $ua = $_SERVER['HTTP_USER_AGENT'];
+   $mobile = null;
+   $dismobile = "none";
+if (preg_match('/iphone/i',$ua) || preg_match('/android/i',$ua) || preg_match('/blackberry/i',$ua) || preg_match('/symb/i',$ua) || preg_match('/ipad/i',$ua) || preg_match('/ipod/i',$ua) || preg_match('/phone/i',$ua) )
+{
+$mobile = true;
+$dismobile = "block";
+}else{
+$mobile  = false;
+$dismobile = "none";
+}
+
+
 $e = new email();
 
 $domaine =  $_SERVER['SERVER_NAME'];
@@ -112,19 +125,16 @@ hebergeur de service libre  et etique corse
 <div   class = "divheader">
 <?php 
 
-$page = "index.php";
+$page = "./index.php";
 
-if($localhost == 0){
+if($mobile == true){
 
-$page = "/index.php";
+$page = $page."#index";
 
 }
 
-
-$link1 = $link.$page;
-
 ?>
-<a  href = "<?php echo  $link1; ?>">
+<a  href = "<?php echo  $page; ?>">
 accueil
 </a>
 </div>
@@ -153,20 +163,21 @@ include("divservice.php");
 <div class  = "divheader">
 
 <?php 
+
+if($mobile){
+
+$page = "CGU.php#CGU";
+
+
+}else{
+
 $page = "CGU.php";
-
-  if($localhost == 0){
-
-$page = "/".$page;
 
 }
 
-
-$link1 = $link.$page;
-
 ?>
 
-  <a   href = '<?php echo $link1;?>'>
+  <a   href = '<?php echo $page;?>'>
 CGU
 </a>
 
@@ -204,21 +215,20 @@ soutenir
 
 <?php 
 
+
+if($mobile == true ){
+
+$page = "legal.php#legal";
+
+}else{
+
  $page = "legal.php";
-
-if($localhost == 0){
-
-$page = "/legal.php";
 
 }
 
-
-$link1 = $link.$page;
-
-
 ?>
 
-         <a   href ='<?php echo $link1;?>'>
+   <a   href ='<?php echo $page;?>'>
 mention legal
 </a>
 
@@ -226,7 +236,19 @@ mention legal
 
 <div class = "divheader">
 
-<a href = "contact.php"> contact </a>
+<?php 
+
+if($mobile == true){
+$page = "contact.php#contact";
+
+}else{
+$page = "contact.php";
+
+}
+
+?>
+
+<a href = "<?php echo $page?>"> contact </a>
 
 </div>
 
