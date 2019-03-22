@@ -29,16 +29,6 @@ liste des services
 
 <div style = " display:flex; flex-wrap:wrap; justify-content:space-around; ">
 
-<div style = "margin-top:3%;">
- <button  id = "b3" onClick="parent.location='https://kanboard.vecchionet.com'">
-<strong>
-Kanboard
-</strong>
-</br>
-gestionaire de projet
-</button>
-</div>
-
 <div style = "margin:3%;">
  <button  id = "b3" onClick="parent.location='terraliberta.php'">
 <strong>
