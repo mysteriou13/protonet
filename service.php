@@ -33,7 +33,7 @@ liste des services
 <strong>
 
 <center>
-<a href = "opensonage.php">terraliberta </a>
+<a href = "terraliberta.php">terraliberta </a>
 </center>
 
 </strong>
@@ -60,7 +60,7 @@ logiciel d'&eacute;dition d'images </br> et de retouche de photo
 <div  id = "b3" >
 <center>
 <strong>
-<a href = "opensonage.php"> opensonage </a>
+<a href = "opensondage.php"> opensondage </a>
 </strong>
 </center>
 créer vos sondages
