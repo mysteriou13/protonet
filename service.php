@@ -1,5 +1,5 @@
 
-  <div id = "b3" style = "display:<?php echo $dismobile;?>;">
+<div id = "b3" style = "display:<?php echo $dismobile;?>;">
 
 <div id = "service">
 <center>
@@ -29,14 +29,16 @@ liste des services
 
 <div style = " display:flex; flex-wrap:wrap; justify-content:space-around; ">
 
-<div style = "margin:3%;">
- <button  id = "b3" onClick="parent.location='terraliberta.php'">
+<div id ="b3" style = "margin:1%; padding:1%;">
 <strong>
-terraliberta
+
+<center>
+<a href = "opensonage.php">terraliberta </a>
+</center>
+
 </strong>
-</br>
-espace de travail de colaboratif
-</button>
+
+ espace de travail de colaboratif 
 </div>
 
 
@@ -45,49 +47,52 @@ espace de travail de colaboratif
 
 <div style = "display:flex; flex-wrap:wrap; justify-content:space-around">
 
-<div style = "margin:3%;">
-<button id = "b3"  onClick = "location = 'edit.php'">
+<div  id = "b3" >
+<center>
 <strong>
-vecchioedit
+<a href = "edit.php"> vecchioedit </a>
 </strong>
-</br>
+</center>
+
 logiciel d'&eacute;dition d'images </br> et de retouche de photo 
-</button>
 </div>
 
-<div style = "margin:3%;">
-<button id = "b3"  onClick = "location = './opensondage.php'">
+<div  id = "b3" >
+<center>
 <strong>
-opensondage
+<a href = "opensonage.php"> opensonage </a>
 </strong>
-</br>
-créer vos sondages 
-
-</button>
-</div>
-
+</center>
+créer vos sondages
 </div>
 
 
+
+</div>
 <div style = "display:flex; flex-wrap:wrap; justify-content:space-around">
 
-<div style = "margin:3%;">
-<button id = "b3"  onClick = "parent.location = 'pad.php'">
+<div id = "b3" style = "margin:3%;">
+<center>
 <strong>
-Vecchiopad
-</br>
+<a href = "pad.php"> Vecchiopad: </a>
+</strong>
+</center>
+
 editeur de text colaboratif  en temp réel
-</button>
 </div>
 
-<div style ="margin:3%;">
-<button id = "b3" onClick = "parent.location = 'calc.php'">
+<div id = "b3" style ="margin:3%;">
+
+<center>
 <strong>
-Vecchiocalc
-</br>
+
+<a href = "calc.php"> Vecchiocalc </a>
+</strong>
+</center>
 tableur colaboratif  en temp réel
-</button>
+
 </div>
+
 </div>
 </div>
 
