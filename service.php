@@ -47,7 +47,7 @@ liste des services
 
 <div style = "display:flex; flex-wrap:wrap; justify-content:space-around">
 
-<div  id = "b3" >
+<div  id = "b3" style = "padding:3%;" >
 <center>
 <strong>
 <a href = "edit.php"> vecchioedit </a>
