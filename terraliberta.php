@@ -40,13 +40,11 @@ include("./premium.php");
 
 ?>
 
-<div>
 
 <iframe id = "terra" src = "<?php echo $terra;?>" style = " border:1px solid cyan; height:100%; width:100%;">
 
 </iframe>
 
-</div>
 
 </body>
 </html>
