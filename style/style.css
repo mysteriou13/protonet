@@ -168,7 +168,7 @@ color:white; background-color:blue; font-size:1em;
 
 #b4{
 
-display:block; color:white; background-color:blue; font-size:2em;  border-radius:30px;
+display:block; color:white; background-color:darkblue; font-size:2em; border:2px solid white;  border-radius:30px;
 
 
 }
