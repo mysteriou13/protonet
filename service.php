@@ -29,7 +29,7 @@ liste des services
 
 <div style = " display:flex; flex-wrap:wrap; justify-content:space-around; ">
 
-<div id ="b3" style = "margin:1%; padding:1%;">
+<div id ="b4" style = "margin:1%; padding:1%;">
 <strong>
 
 <center>
@@ -47,7 +47,7 @@ liste des services
 
 <div style = "display:flex; flex-wrap:wrap; justify-content:space-around">
 
-<div  id = "b3" style = "
+<div  id = "b4" style = "
 <?php 
 if($mobile == true){
 
@@ -66,7 +66,7 @@ echo "padding:3%;";
 logiciel d'&eacute;dition d'images </br> et de retouche de photo 
 </div>
 
-<div  id = "b3" >
+<div  id = "b4" >
 <center>
 <strong>
 <a href = "opensondage.php"> opensondage </a>
@@ -80,7 +80,7 @@ créer vos sondages
 </div>
 <div style = "display:flex; flex-wrap:wrap; justify-content:space-around">
 
-<div id = "b3" style = "margin:3%;">
+<div id = "b4" style = "margin:3%;">
 <center>
 <strong>
 <a href = "pad.php"> Vecchiopad: </a>
@@ -90,7 +90,7 @@ créer vos sondages
 editeur de text colaboratif  en temp réel
 </div>
 
-<div id = "b3" style ="margin:3%;">
+<div id = "b4" style ="margin:3%;">
 
 <center>
 <strong>
