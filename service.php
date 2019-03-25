@@ -11,7 +11,7 @@
 
 </div>
 
-<div id = "b3" style = "margin:1%;">
+<div id = "b3">
 
 <p>
 <center >
@@ -23,13 +23,12 @@ liste des services
 
 </div>
 
-
+</br>
 
 <div   style = " border:2px solid white; border-radius:25px 25px; background-color:darkblue;">
 
-<div style = " display:flex; flex-wrap:wrap; justify-content:space-around; ">
-
-<div id ="b3" style = "margin:1%; padding:1%;">
+<div class = "divcardre">
+<div id ="b4">
 <strong>
 
 <center>
@@ -45,9 +44,9 @@ liste des services
 
 </div>
 
-<div style = "display:flex; flex-wrap:wrap; justify-content:space-around">
+<div class = "divcardre">
 
-<div  id = "b3" style = "
+<div  id = "b4" style = "
 <?php 
 if($mobile == true){
 
@@ -66,7 +65,7 @@ echo "padding:3%;";
 logiciel d'&eacute;dition d'images </br> et de retouche de photo 
 </div>
 
-<div  id = "b3" >
+<div  id = "b4" >
 <center>
 <strong>
 <a href = "opensondage.php"> opensondage </a>
@@ -78,19 +77,18 @@ créer vos sondages
 
 
 </div>
-<div style = "display:flex; flex-wrap:wrap; justify-content:space-around">
-
-<div id = "b3" style = "margin:3%;">
+<div class = "divcardre">
+<div id = "b4" >
 <center>
 <strong>
-<a href = "pad.php"> Vecchiopad: </a>
+<a href = "pad.php"> Vecchiopad </a>
 </strong>
 </center>
 
 editeur de text colaboratif  en temp réel
 </div>
 
-<div id = "b3" style ="margin:3%;">
+<div id = "b4" >
 
 <center>
 <strong>
