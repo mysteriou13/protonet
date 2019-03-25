@@ -61,8 +61,7 @@ font-size:2em;:
 
 .divcardre{
 
-margin:1%;
-
+display:flex; flex-wrap:wrap; justify-content:space-around;
 }
 
 .formconnection{

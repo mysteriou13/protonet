@@ -27,8 +27,7 @@ liste des services
 
 <div   style = " border:2px solid white; border-radius:25px 25px; background-color:darkblue;">
 
-<div style = " display:flex; flex-wrap:wrap; justify-content:space-around; ">
-
+<div class = "divcardre">
 <div id ="b4">
 <strong>
 
@@ -45,7 +44,7 @@ liste des services
 
 </div>
 
-<div style = "display:flex; flex-wrap:wrap; justify-content:space-around">
+<div class = "divcardre">
 
 <div  id = "b4" style = "
 <?php 
@@ -78,8 +77,7 @@ créer vos sondages
 
 
 </div>
-<div style = "display:flex; flex-wrap:wrap; justify-content:space-around">
-
+<div class = "divcardre">
 <div id = "b4" >
 <center>
 <strong>
