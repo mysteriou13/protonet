@@ -81,7 +81,7 @@ créer vos sondages
 <div id = "b4" >
 <center>
 <strong>
-<a href = "pad.php"> Vecchiopad: </a>
+<a href = "pad.php"> Vecchiopad </a>
 </strong>
 </center>
 
