@@ -11,7 +11,7 @@
 
 </div>
 
-<div id = "b3" style = "margin:1%;">
+<div id = "b3">
 
 <p>
 <center >
@@ -23,13 +23,13 @@ liste des services
 
 </div>
 
-
+</br>
 
 <div   style = " border:2px solid white; border-radius:25px 25px; background-color:darkblue;">
 
 <div style = " display:flex; flex-wrap:wrap; justify-content:space-around; ">
 
-<div id ="b4" style = "margin:1%; padding:1%;">
+<div id ="b4">
 <strong>
 
 <center>
@@ -80,7 +80,7 @@ créer vos sondages
 </div>
 <div style = "display:flex; flex-wrap:wrap; justify-content:space-around">
 
-<div id = "b4" style = "margin:3%;">
+<div id = "b4" >
 <center>
 <strong>
 <a href = "pad.php"> Vecchiopad: </a>
@@ -90,7 +90,7 @@ créer vos sondages
 editeur de text colaboratif  en temp réel
 </div>
 
-<div id = "b4" style ="margin:3%;">
+<div id = "b4" >
 
 <center>
 <strong>
