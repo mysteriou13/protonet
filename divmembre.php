@@ -9,10 +9,6 @@
 </div>
 
 
-<div class = "divheader" id = "projet">
-<a  href = "https://kanboard.vecchionet.com">gestion de projet</a>
-</div>
-
 <div class= "parametre">
 <a  href = "parametre.php">mon compte</a>
 
