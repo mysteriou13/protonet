@@ -1,7 +1,7 @@
 
 <div class = "divheader" id = "sondage">
 
-<a  href = "./framadate.php">sondage</a>
+<a  href = "./opensondage.php">sondage</a>
 </div>
 
 <div class = "divheader" id  = "edition">
