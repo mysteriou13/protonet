@@ -24,17 +24,20 @@ $terra = "http://localhost/terraliberta/";
 
 }else{
 
-$terra =  "https://terraliberta.vecchionet.com/";
+$terra =  "https://terraliberta.vecchionet.com/index.php";
 
 }
 
-if(!isset($_SESSION['pseudo'])){
+
+if(empty($_SESSION['pseudo'])){
 
 include("./servicepremium.php");
 
 }else{
 
 include("./premium.php");
+
+$terra = $terra."?pseudo=".$pseudo;
 
 }
 
