@@ -27,7 +27,7 @@ liste des services
 
 <div   style = " border:2px solid white; border-radius:25px 25px; background-color:darkblue;">
 
-<div class = "divcardre">
+<div class = "divcardre" style = "margin-top:2%; margin-bottom:2%;">
 <div id ="b4">
 <strong>
 
@@ -44,7 +44,7 @@ liste des services
 
 </div>
 
-<div class = "divcardre">
+<div class = "divcardre" style = "margin-bottom:3%;">
 
 <div  id = "b4" style = "
 <?php 
@@ -77,7 +77,8 @@ créer vos sondages
 
 
 </div>
-<div class = "divcardre">
+
+<div class = "divcardre" style = "margin-bottom:2%;">
 <div id = "b4" >
 <center>
 <strong>
