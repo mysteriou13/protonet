@@ -43,6 +43,11 @@ $terra = $terra."?pseudo=".$pseudo;
 
 ?>
 
+<div>
+
+<img src = "./image/terraliberta.png"/ style = " height:auto; max-width:100%; margin:1%;"> 
+
+</div>
 
 <iframe id = "terra" src = "<?php echo $terra;?>" style = " border:1px solid cyan; height:100%; width:100%;">
 
