@@ -3,6 +3,7 @@ include_once("header.php");
 include_once("./head.php");
 ?>
 
+<img src = "./image/etherpad.png" style = "width:99%;">
 
 <center>
 
