@@ -43,9 +43,9 @@ $terra = $terra."?pseudo=".$pseudo;
 
 ?>
 
-<div>
+<div style = " border-radius:10px; border:9px solid blue; maring:1%;">
 
-<img src = "./image/terraliberta.png"/ style = " height:auto; max-width:100%; margin:1%;"> 
+<img src = "./image/terraliberta.png"/ style = " height:auto; max-width:99%; "> 
 
 </div>
 
