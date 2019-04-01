@@ -51,6 +51,13 @@ $typesondage = htmlspecialchars($_GET['type']);
 
 }
 
+
+if(!isset($_GET['type'])){
+
+echo '<img src = "./image/opensondage.png" style = "max-width:99%;">';
+
+}
+
 ?>
 
 <div style = "display:<?php echo $polldisplay;?>">
