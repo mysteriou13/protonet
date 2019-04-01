@@ -10,7 +10,7 @@ include_once("header.php");
 <center>
 
 <p id = "b3">
-vecchiocalc est un instance  ehtercalc tableur  permetant de travailler en plusieur simultanément  sur un même document
+vecchiocalc est un instance  ethercalc tableur  permetant de travailler en plusieur simultanément  sur un même document
 </br>
 
 <a href = "https://github.com/audreyt/ethercalc" target = "_blank"> lien vers le code source </a>
