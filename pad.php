@@ -1,10 +1,16 @@
+<html>
+<body>
+
 <?php 
 include_once("header.php");
 include_once("./head.php");
 ?>
 
+<div>
 <img src = "./image/etherpad.png" style = "width:99%;">
+</div>
 
+<div>
 <center>
 
 <p id = "b3">
@@ -33,4 +39,7 @@ vecchiopad est un instance etherpad-lite, editeur de text  permetant de travaill
  
  </p>
 </center>
+</div>
 
+</body>
+</html>
