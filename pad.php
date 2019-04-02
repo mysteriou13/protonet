@@ -7,10 +7,6 @@ include_once("./head.php");
 ?>
 
 <div>
-<img src = "./image/etherpad.png" style = "width:99%;">
-</div>
-
-<div>
 <center>
 
 <p id = "b3">
