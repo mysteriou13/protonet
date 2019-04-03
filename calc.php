@@ -17,6 +17,21 @@ vecchiocalc est un instance  ethercalc tableur  permetant de travailler en plusi
 
 </p>
 
+<div style = "
+
+<?php 
+
+if($mobile == false){
+echo "display:flex;";
+
+}
+?>
+
+
+
+">
+<div>
+
 <p style = "margin-top:5em;">
   
   <button  onClick = "parent.location = 'ethercalc.php?calc=+7days&durer=7jour'"> calc 1  semaine </button>
@@ -36,6 +51,13 @@ vecchiocalc est un instance  ethercalc tableur  permetant de travailler en plusi
 
  
  </p>
+</div>
+
+<div >
+<img src = "./image/ethercalc.png">
+</div>
+
+</div>
 
 </html>
 </body>
