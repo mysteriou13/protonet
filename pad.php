@@ -4,7 +4,21 @@
 <?php 
 include_once("header.php");
 include_once("./head.php");
+
+
 ?>
+
+<div style = "
+
+<?php 
+
+if($mobile == false){
+echo "display:flex;";
+
+}
+?>
+
+">
 
 <div>
 <center>
@@ -35,6 +49,13 @@ vecchiopad est un instance etherpad-lite, editeur de text  permetant de travaill
  
  </p>
 </center>
+</div>
+
+
+<div>
+<img src = "./image/etherpad.png"   >
+</div>
+
 </div>
 
 </body>
