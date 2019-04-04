@@ -5,6 +5,7 @@ include_once("head.php");
 include_once("header.php");
 include_once("iframe.php");
 
+
 if(isset($_SESSION['pseudo']) && !empty($_SESSION['pseudo'])){
 
 $dis = "none";
@@ -43,7 +44,19 @@ $terra = $terra."?pseudo=".$pseudo;
 
 ?>
 
-<div  style = "border-radius:20px; background-color:blue; padding:2%;">
+<div  style = "
+<?php
+
+if(!empty($_SESSION['pseudo'])){
+
+echo "display:none;";
+
+}
+
+echo" border-radius:20px; background-color:blue; padding:2%";
+
+?>
+">
 
 <img src = "./image/terraliberta.png"/ style = " height:auto; max-width:100%; "> 
 
