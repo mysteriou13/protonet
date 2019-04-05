@@ -38,8 +38,8 @@ $wrap = "nowrap";
 </h1>
 
 
- <div  style = " width:100%; color:white;  display:flex; flex-wrap:<?php echo $wrap;?>;  justify-content:space-around;">
-<div style  = "height:100%; width:100%; background-color:darkblue; border:2px solid white; border-radius:25px; margin-right:1%; font-size:2em" >
+ <div  style = " color:white;  display:flex; flex-wrap:<?php echo $wrap;?>;  justify-content:space-around;">
+<div style  = "background-color:darkblue; border:2px solid white; border-radius:25px;  font-size:2em" >
    <div>
  
     <center style = "background-color:blue; margin:3%; border:2px solid  white; border-radius:25px; ">
@@ -62,7 +62,7 @@ $wrap = "nowrap";
   
      </div>
 
-   <div style = "background-color:blue; margin:3%;  padding-right:5%;  border:2px solid white; border-radius:25px;">
+   <div style = " background-color:blue;  padding-right:5%;  border:2px solid white; border-radius:25px;">
 <center>
    <a href = "aboinscription.php?mode=basic" style  = "color:white;"> devenir basic </a>
 </center> 
@@ -73,7 +73,7 @@ $wrap = "nowrap";
    </div>
 
 
-  <div style = "width:100%; display:flex; flex-wrap:wrap; background-color:darkblue;   border:2px solid white; border-radius:25px;  font-size:2em;">
+  <div style = " display:flex; flex-wrap:wrap; background-color:darkblue;   border:2px solid white; border-radius:25px;  font-size:2em;">
 
 <div>
 
@@ -86,7 +86,7 @@ premium 5 euro/mois
 </strong>
  </center>
 
-  <div style = "width:100%;">
+  <div >
    
      <div style = "background-color:blue; margin:3%;border:2px solid white; border-radius:25px">
    <center>  
