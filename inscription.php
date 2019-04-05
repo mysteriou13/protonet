@@ -39,7 +39,17 @@ $wrap = "nowrap";
 
 
  <div  style = " color:white;  display:flex; flex-wrap:<?php echo $wrap;?>;  justify-content:space-around;">
-<div style  = "background-color:darkblue; border:2px solid white; border-radius:25px;  font-size:2em" >
+<div style  = " 
+<?php 
+
+if($mobile == false){
+
+echo "margin-right:1%;";
+
+}
+
+?>
+background-color:darkblue; border:2px solid white; border-radius:25px;  font-size:2em" >
    <div>
  
     <center style = "background-color:blue; margin:3%; border:2px solid  white; border-radius:25px; ">
