@@ -44,35 +44,11 @@ $terra = $terra."?pseudo=".$pseudo;
 
 ?>
 
-<div style = "display:flex;">
 
-<div style = "width:50%;">
-
-<iframe id = "terra" src = "<?php echo $terra;?>" >
+<iframe  src = "<?php echo $terra;?>"  style = "height:100%; width:100%;">
 
 </iframe>
 
-</div>
-
-
-<div  style = "
-<?php
-
-if(!empty($_SESSION['pseudo'])){
-
-echo "display:none;";
-
-}
-
-echo" border-radius:20px; background-color:blue; padding:2%";
-
-?>
-">
-
-<img src = "./image/terraliberta.png"/ style = " height:auto; width:100%; "> 
-</div>
-
-</div>
 
 </body>
 </html>
