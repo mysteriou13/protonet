@@ -44,9 +44,8 @@ liste des services
 
 </div>
 
-<div class = "divcardre" style = "margin-bottom:3%;">
 
-<div class = "divcardre" style = "margin-bottom:2%;">
+<div class = "divcardre" style = " margin-bottom:2%;">
 <div id = "b3" >
 <center>
 <strong>
@@ -72,5 +71,4 @@ tableur colaboratif  en temp réel
 </div>
 </div>
 
-</div>
 
