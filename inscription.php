@@ -66,7 +66,7 @@ background-color:darkblue; border:2px solid white; border-radius:25px;  font-siz
        
         <div style = "background-color:blue; margin:3%; border:2px solid white; border-radius:25px; ">
         <center>
-        rangement des  document dans le classeur
+        rangement des  documents dans le classeur
        </center>
      </div>
   
