@@ -1,13 +1,4 @@
 
-<div class = "divheader" id = "sondage">
-
-<a  href = "./opensondage.php">sondage</a>
-</div>
-
-<div class = "divheader" id  = "edition">
-<a   href = "./edit.php">edition d'image</a>
-</div>
-
 
 <div class= "parametre">
 <a  href = "parametre.php">mon compte</a>
