@@ -87,7 +87,7 @@ echo "<div>";
 
 echo "&nbsp; &nbsp"; echo "<a href = '$delete' >"; echo "supprimer"; echo "</a>";
 
-echo "</dibv>";
+echo "</div>";
 
 echo "</div>";
 
