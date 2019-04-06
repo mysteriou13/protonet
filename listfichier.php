@@ -4,6 +4,13 @@
 
 session_start();
 
+include("head.php");
+
+include("header.php");
+
+include("divlistement.php");
+
+
 
 if(empty($_GET)){
 
@@ -68,12 +75,6 @@ if(isset($_POST['ASC'])){
 $order = "ASC";
 
 }
-
-include("head.php");
-
-include("header.php");
-
-include("divlistement.php");
 
 $doc = "SELECT COUNT(*)name FROM url WHERE pseudo = '$pseudo'";
 
