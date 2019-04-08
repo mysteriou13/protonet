@@ -117,10 +117,8 @@ Mes documents
 <a href = "pad.php">nouveau pad </a>
 </div>
  
-</div>
-</br>
 
-<div id = "ongletliste" style =" margin-left:2%; display:flex;">
+<div  style =" margin-left:2%; display:flex;">
 
 <div onclick = "affichediv(this.id,'<?php echo $link?>','pad','<?php echo $order;?>')" id= "ongletpad" class = "typedoc">
 
@@ -134,9 +132,7 @@ calc
 
 </div>
 
-</br>
 
-<div style = "display:flex; flex-wrap:wrap;">
 
 <div style = "display:<?php echo $display?>">
 
@@ -157,8 +153,8 @@ calc
 
 </form>
 
-</div>
 
+</div>
 </div>
 
 <div  id = "listongletcalc"style ="display:none;">
