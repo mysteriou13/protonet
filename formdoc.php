@@ -1,140 +1,4 @@
-<?php 
 
-
-$date = date('dmy');
-
-$time = time();
-
-$fin = date("dmy", strtotime($idcalc));
-
-$jour = $mysqli->real_escape_string(date("d"));
-
-$mois = $mysqli->real_escape_string(date("m"));
-
-$anner = $mysqli->real_escape_string(date("y"));
-
-
-$durer = htmlspecialchars($_GET['durer']);
-
-$date = htmlspecialchars($date);
-
-$link = htmlspecialchars(time());
-
-$type = $mysqli->real_escape_string($type);
-
-$fin = $mysqli->real_escape_string($fin);
-
-$time = $mysqli->real_escape_string($time);
-
-
- $t = 0;
-
- $t1 = 5;
-
-
-$calc = "SELECT COUNT(*)name FROM calc WHERE name = '$link'";
-
-$calc1 = $mysqli->query($calc);
-
-$calc2 = $calc1->fetch_assoc();
-
-
-$calc3 = "SELECT * FROM calc WHERE date = '$link'";
-
-$calc4 = $mysqli->query($calc3);
-
-$calc5 = $calc4->fetch_assoc();
-
-
-if($calc2['name'] == 1 && isset($_SESSION['pseudo'])){
-
-$link = $link+1;
-
-$link = $mysqli->real_escape_string($link);
-
-}
-
-
- $url = $url.$link;
-
- $url = $mysqli->real_escape_string($url);
-
-if(isset($_POST[$type]) && !empty($_POST[$type])){
-
-$pseudo = $_SESSION['pseudo'];
-
-$calc =  $_POST[$type];
-
-$calc = $mysqli->real_escape_string($calc);
-
-$type = $mysqli->real_escape_string($type);
-
-
-$pseudo = $mysqli->real_escape_string($_SESSION['pseudo']);
-
-$insert = 'INSERT INTO url VALUES(NULL,"'.$pseudo.'","'.$url.'","'.$calc.'","'.$type.'", "'.$jour.'", "'.$mois.'", "'.$anner.'","'.$fin.'")'; 
-
-$name = "SELECT COUNT(*)name FROM url WHERE pseudo = '$pseudo' && name = '$calc' ";
-
-$name1 = $mysqli->query($name);
-
-$name2 = $name1->fetch_assoc();
-
-if($name2['name'] == 0){
-
-$mysqli->query($insert);
-
-}
-
-}
-
-if($calc2['name'] == 0  && !isset($_SESSION['pseudo']) or isset($_POST[$type]) && !empty($_POST[$type]) && isset($_SESSION['pseudo']) && !empty($_SESSION['pseudo'])){
-if($name2['name'] == 0){
-
-$pseudo = $_SESSION['pseudo'];
-
-if(isset($_POST[$type]) && !empty($_POST[$type])){
-
-$calc =  $_POST[$type];
-
-}else{
-
-$calc = $link;
-
-}
-
-$calc = $mysqli->real_escape_string($calc);
-
-$type = $mysqli->real_escape_string($type);
-
-
-$pseudo = $mysqli->real_escape_string($_SESSION['pseudo']);
-
-
-$name = "SELECT COUNT(*)name FROM url WHERE pseudo = '$pseudo' && name = '$calc' ";
-
-$name1 = $mysqli->query($name);
-
-$name2 = $name1->fetch_assoc();
-
-
-if($type == "calc"){
-
-echo '<meta http-equiv="refresh" content="durée;URL=affichecalc.php?calc='.$link.'"> ';
-
-}
-
-if($type == "pad"){
-
-echo '<meta http-equiv="refresh" content="durée;URL=affichepad.php?pad='.$link.'"> ';
-
-}
-
- }
-
- }
-?>
- 
  <form action = "<?php $_SERVER['PHP_SELF']?>" method = "POST">
 
   <strong>
@@ -184,4 +48,90 @@ echo "nom  du document existe déja";
   </p>
  </form>
 
+<?php 
 
+$pseudo = $mysqli->real_escape_string($_SESSION['pseudo']);
+
+$name = null;
+
+$lien = null;
+
+$fin = null;
+
+$nb = "SELECT COUNT(*)id  FROM url WHERE pseudo = '$pseudo'";
+
+$nb1 = $mysqli->query($nb);
+
+$nb2 = $nb1->fetch_assoc(); 
+
+$nblien =  $nb2['id']+1;
+
+$nblien = $pseudo.$nblien;
+
+$nomlien = $nb2['id'];
+
+$jour = $mysqli->real_escape_string(date("d"));
+
+$mois = $mysqli->real_escape_string(date("m"));
+
+$anner = $mysqli->real_escape_string(date("y"));
+
+
+if(isset($_POST[$type]) && !empty($_POST[$type]) ){
+
+
+$name = $mysqli->real_escape_string($_POST[$type]);
+
+if($type == "pad"){
+
+$type = "pad";
+
+$lien = "https://etherpad.vecchionet.com/p/".$nblien;
+
+
+}
+
+if($type == "calc"){
+
+$type = "calc";
+
+$lien = "https://ethercalc.vecchionet.com/".$nblien;
+
+}
+
+$fin = date("dmy",strtotime($_POST['pad']));
+
+
+$name = $mysqli->real_escape_string($name);
+
+}
+
+
+$fin = $mysqli->real_escape_string($fin);
+
+$lien = $mysqli->real_escape_string($lien);
+
+$type =  $mysqli->real_escape_string($type);
+
+echo $u = 'INSERT INTO url  VALUES(NULL,"'.$pseudo.'","'.$lien.'","'.$name.'","'.$type.'","'.$jour.'","'.$mois.'", "'.$anner.'","'.$fin.'")';
+
+$verif = "SELECT COUNT(*)name FROM url WHERE pseudo = '.$pseudo.' && name = '.$name.'";
+
+$verif1 = $mysqli->query($verif);
+
+$verif2 = $verif1->fetch_assoc();
+
+if(isset($_POST[$type]) && !empty($_POST[$type]) ){
+
+if($verif2['name'] == 0){
+
+header("Location:affiche.php?lien=$lien");
+
+
+//$mysqli->query($u);
+
+}
+
+}
+
+?>
