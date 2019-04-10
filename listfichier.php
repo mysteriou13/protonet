@@ -105,32 +105,37 @@ Mes documents
 
 </div>
 
-<div style = "display:flex;">
 
-<div  class = "divheader" id = "newcalc">
+
+<div id = "ongletliste" style =" width:100%; margin-left:2%; display:flex; justify-content:space-around; ">
+
+<p class = "divheader">
+
+<a href = "pad.php" >nouveau pad </a>
+
+</p>
+
+<p  class = "divheader" id = "newcalc">
+
 <a   href = "calc.php"> nouveau tableur </a>
 
-</div>
+</p>
 
-
-<div class = "divheader" id = "newpad">
-<a href = "pad.php">nouveau pad </a>
-</div>
- 
-
-<div id = "ongletliste" style =" width:100%; margin-left:2%; display:flex;">
-
+<p>
 <button onclick = "affichediv(this.id,'<?php echo $link?>','pad','<?php echo $order;?>')" id= "ongletpad" class = "typedoc">
 
 liste pad
 
 </button>
+</p>
 
+<p>
 <button onclick = "affichediv(this.id,'<?php echo $link;?>','calc','<?php echo $order;?>')" id= "ongletcalc" class = "typedoc">
 
 liste calc
 
 </button>
+</p>
 
 <form  action = "<?PHP $_SERVER['PHP_SELF'];?>" method = "POST">
 
@@ -146,7 +151,6 @@ liste calc
 
 </div>
 
-</div>
 
 
 
