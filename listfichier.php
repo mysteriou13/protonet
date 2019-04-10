@@ -105,51 +105,43 @@ Mes documents
 
 </div>
 
-<div style = "display:flex;">
 
-<div  class = "divheader" id = "newcalc">
+
+<div id = "ongletliste" style =" width:100%; margin-left:2%; display:flex; justify-content:space-around; ">
+
+<p class = "divheader">
+
+<a href = "pad.php" >nouveau pad </a>
+
+</p>
+
+<p  class = "divheader" id = "newcalc">
+
 <a   href = "calc.php"> nouveau tableur </a>
 
-</div>
+</p>
 
+<p>
+<button onclick = "affichediv(this.id,'<?php echo $link?>','pad','<?php echo $order;?>')" id= "ongletpad" class = "typedoc">
 
-<div class = "divheader" id = "newpad">
-<a href = "pad.php">nouveau pad </a>
-</div>
- 
-</div>
-</br>
+liste pad
 
-<div id = "ongletliste" style =" margin-left:2%; display:flex;">
+</button>
+</p>
 
-<div onclick = "affichediv(this.id,'<?php echo $link?>','pad','<?php echo $order;?>')" id= "ongletpad" class = "typedoc">
+<p>
+<button onclick = "affichediv(this.id,'<?php echo $link;?>','calc','<?php echo $order;?>')" id= "ongletcalc" class = "typedoc">
 
- pad
+liste calc
 
-</div>
-
-<div onclick = "affichediv(this.id,'<?php echo $link;?>','calc','<?php echo $order;?>')" id= "ongletcalc" class = "typedoc">
-calc
-</div>
-
-</div>
-
-</br>
-
-<div style = "display:flex; flex-wrap:wrap;">
-
-<div style = "display:<?php echo $display?>">
+</button>
+</p>
 
 <form  action = "<?PHP $_SERVER['PHP_SELF'];?>" method = "POST">
 
 <input class = "button" type = "submit" value = "Ordre croissant" id = "ASC" name = "ASC" >
 
 </form>
-
-</div>
-
-
-<div style ="display:<?php echo $display;?>">
 
 <form action  = "<?PHP $_SERVER['PHP_SELF']?>" method = "POST">
 
@@ -159,7 +151,8 @@ calc
 
 </div>
 
-</div>
+
+
 
 <div  id = "listongletcalc"style ="display:none;">
 
