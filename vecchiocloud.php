@@ -21,9 +21,10 @@ Héberger vos documents en ligne
 </br>
 
 <div id ="b4" style =" padding-left:1%;  padding-right:1%";>
-Qu’est ce que c’est ?
+<center>Qu’est ce que c’est ?
 </br>
 vecchiocloud est un service d'hebergement de fichier
+</center>
 </div>
 
 
