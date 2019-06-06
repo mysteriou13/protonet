@@ -13,8 +13,6 @@ include("header.php");
 
 <center>
 vecchiocloud
-</br>
-Héberger vos documents en ligne
 </center>
 
 </div>
