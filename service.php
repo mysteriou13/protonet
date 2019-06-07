@@ -45,29 +45,6 @@ liste des services
 </div>
 
 
-<div class = "divcardre" style = " margin-bottom:2%;">
-<div id = "b3" >
-<center>
-<strong>
-<a href = "pad.php"> Vecchiopad </a>
-</strong>
-</center>
-
-editeur de text colaboratif  en temp réel
-</div>
-
-<div id = "b3" >
-
-<center>
-<strong>
-
-<a href = "calc.php"> Vecchiocalc </a>
-</strong>
-</center>
-tableur colaboratif  en temp réel
-
-</div>
-
 </div>
 </div>
 
