@@ -3,7 +3,6 @@
 <?php
 include_once("head.php");
 include_once("header.php");
-include_once("./install/connect.php");
 
 $validepseudo = 0;
 $validepass = 0;
