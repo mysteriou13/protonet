@@ -185,30 +185,6 @@ CGU
 </div>
 
 
-<div class = "divheader">
-
-<?php 
-
- $page = "soutenir.php";
-
- if($localhost == 0){
-
-$page = "/soutenir.php";
-
-}
-
-
-$link1 = $link.$page;
-
-
-?>
- <a  href = '<?php echo $link1; ?>'>
-soutenir
-</a>
-
-
-</div>
-
 
 
 <div class = "divheader">
