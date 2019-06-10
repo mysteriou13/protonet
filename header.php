@@ -148,11 +148,7 @@ include("divinscription.php");
 
 }
 
-if(isset($_SESSION['pseudo'])){
 
-include("divmembre.php");
-
-}
 
 include("divservice.php");
 
@@ -230,8 +226,14 @@ $page = "contact.php";
 <a href = "faq.php"> faq </a>
 </div>
 
-</div>
+<?php 
+if(isset($_SESSION['pseudo'])){
 
+include("divmembre.php");
+
+}
+?>
+</div>
 <div id = "inscription" >
 <?php 
 
