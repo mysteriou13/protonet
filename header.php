@@ -154,9 +154,7 @@ include("divmembre.php");
 
 }
 
-if(!isset($_SESSION['pseudo'])){
 include("divservice.php");
-}
 
 ?>
 
