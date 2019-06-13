@@ -116,9 +116,9 @@ font-size:2em; margin-top:1em;
 
 }
 
-#service{
-border:2px solid white; border-radius:25px ;
-
+#service,.service {
+ border-radius:25px ;
+ margin:20px;
 }
 
 .divflex{
