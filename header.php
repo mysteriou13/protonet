@@ -112,11 +112,13 @@ $terraliberta = $terra."/terraliberta";
 
 <h1>
 <center>
-vecchionet
+<u>vecchionet.com</u>
+
 </br>
-hebergeur de service libre  et etique corse 
-</center>
+ le cloud qui respecteux de la  vie priv&eacute;
 </h1>
+
+</center>
 
 
 <div class = "divflex">
