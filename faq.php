@@ -25,7 +25,7 @@ Faq
 
 <div>
 
-<button onclick = "changedisplay('q1')" > En quoi vecchionet se démarque des autres site? </button>
+<button id="b3" onclick = "changedisplay('q1')" > En quoi vecchionet se démarque des autres site? </button>
 
 <div id = "b">
 
@@ -37,7 +37,7 @@ vecchionet se  démarque par le respect total de la vie privé et la liberté de
 
 </div>
 
-<button onclick = "changedisplay('q2')">
+<button id ="b3" onclick = "changedisplay('q2')">
 a qui s'adress vecchionet?
 
 </button>

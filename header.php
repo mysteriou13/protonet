@@ -148,15 +148,9 @@ include("divinscription.php");
 
 }
 
-if(isset($_SESSION['pseudo'])){
 
-include("divmembre.php");
 
-}
-
-if(!isset($_SESSION['pseudo'])){
 include("divservice.php");
-}
 
 ?>
 
@@ -184,30 +178,6 @@ CGU
 
 </div>
 
-
-<div class = "divheader">
-
-<?php 
-
- $page = "soutenir.php";
-
- if($localhost == 0){
-
-$page = "/soutenir.php";
-
-}
-
-
-$link1 = $link.$page;
-
-
-?>
- <a  href = '<?php echo $link1; ?>'>
-soutenir
-</a>
-
-
-</div>
 
 
 
@@ -256,8 +226,14 @@ $page = "contact.php";
 <a href = "faq.php"> faq </a>
 </div>
 
-</div>
+<?php 
+if(isset($_SESSION['pseudo'])){
 
+include("divmembre.php");
+
+}
+?>
+</div>
 <div id = "inscription" >
 <?php 
 

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+<?php 
+include("head.php");
+?>
+<body>
+<?php 
+include("header.php");
+?>
+
+<div id = "service" style = "display:<?php echo $dismobile?>">
+
+<div id = "b3">
+<center>
+
+<a href = "vecchiocloud.php">haut de page</a>
+
+</center>
+</div>
+
+
+</div>
+
+<div id = "b3">
+
+<center>
+ vecchiocloud
+</center>
+
+</div>
+</br>
+
+<div id ="b4" style =" padding-left:1%;  padding-right:1%";>
+<center>Qu’est ce que c’est ?
+</br>
+vecchiocloud est un service d'hebergement de fichier
+</center>
+</div>
+
+
+</body>
+</html>
+
