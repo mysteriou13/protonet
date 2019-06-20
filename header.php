@@ -115,7 +115,7 @@ $terraliberta = $terra."/terraliberta";
 <u>vecchionet.com</u>
 
 </br>
- le cloud qui respecteux de la  vie priv&eacute;
+ le cloud  respecteux de la  vie priv&eacute;
 </h1>
 
 </center>
