@@ -150,11 +150,30 @@ include("divinscription.php");
 
 }
 
+?>
+
+<div  class = "divheader">
+<?php
 
 
-include("divservice.php");
+if($mobile == true){
+
+$service = "vecchiocloud.php#service";
+
+
+}else{
+$service = "vecchiocloud.php";
+}
+
 
 ?>
+ <a id  href = '<?php echo $service; ?>'>
+nos offres
+</a>
+
+</div>
+
+
 
 <div class  = "divheader">
 
