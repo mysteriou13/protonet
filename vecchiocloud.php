@@ -9,35 +9,17 @@ include("head.php");
 include("header.php");
 ?>
 
-<div id = "service" style = "display:<?php echo $dismobile?>">
-
-<div id = "b3">
-<center>
-
-<a href = "vecchiocloud.php">haut de page</a>
-
-</center>
-</div>
-
-
-</div>
-
-<div id = "b3">
+<div  id="b4"style ="padding:1%;">
 
 <center>
- vecchiocloud
+<u><strong>vecchiobox</strong></u>
+</br>
+solution hébergement de fichier
 </center>
 
-</div>
-</br>
+  <img>
 
-<div id ="b4" style =" padding-left:1%;  padding-right:1%";>
-<center>Qu’est ce que c’est ?
-</br>
-vecchiocloud est un service d'hebergement de fichier
-</center>
 </div>
-
 
 </body>
 </html>
