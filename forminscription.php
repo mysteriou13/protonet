@@ -1,4 +1,9 @@
 
+<center>
+
+<div id = "b3">
+
+<div    class = "container">
 <form action = "<?php $_SERVER['PHP_SELF']?>" method  ="POST">
 
 
@@ -33,7 +38,7 @@ echo "pseudo pris";
    ?>
 
 </br>
- mot de pass <input type = "password" name  = "pass">
+<label> mot de pass <input type = "password" name  = "pass"></label>
 <?php
 if(isset($_POST['pass']) && !empty($_POST['pass'])){
 
@@ -118,6 +123,9 @@ echo "vous devez accepter les CGU";
 </br>
 </br>
 </form>
+</center>
+</div>
+</div>
 <?php 
 
 $errorpseudo = null;

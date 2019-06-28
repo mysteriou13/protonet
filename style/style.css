@@ -32,14 +32,25 @@ color:white;
 
 }
 
+label{
+
+font-size:1.5em;
+
+}
+
 .divservice{
 
  background-color:blue; border:2px solid white; border-radius:25px; font-size:1.5em;
 
 }
 
-label{
-font-size:2em;
+
+.container {
+  width: 50%;
+}
+
+.container input {
+  width: 100%;
 }
 
 #error{

@@ -36,14 +36,10 @@ $wrap = "nowrap";
 
 </h1>
 
-<div id ="b3">
-<center>
 <?php
 
 include("forminscription.php");
 ?>
-</center>
-</div>
 <script>
 
 var a = document.getElementById("connection");
