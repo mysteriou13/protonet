@@ -38,7 +38,7 @@ echo "pseudo pris";
    ?>
 
 </br>
-<label> mot de pass <input type = "password" name  = "pass"></label>
+ mot de pass <input type = "password" name  = "pass">
 <?php
 if(isset($_POST['pass']) && !empty($_POST['pass'])){
 

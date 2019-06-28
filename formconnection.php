@@ -2,11 +2,12 @@
 <div>
 
 <form id = "connection"  class = "formconnection" action = "<?php echo $_SERVER['PHP_SELF']; ?>" method = "POST">
-
 <div  class = "divflex">
 
 <div   class = "divform">
-<label> pseudo </label> <input name = "pseudo" type = "text">
+
+<center><label> pseudo </label> <input name = "pseudo" type = "text"></center>
+
 </div>
 
 <div  class = "divform">
@@ -24,7 +25,6 @@
 </div>
 
 </div>
-
 </form>
 
 <?php
