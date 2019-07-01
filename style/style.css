@@ -88,7 +88,9 @@ font-size:2em;
 
 .divform{
 
-background-Color:blue; border: 2px solid white; border-radius: 25px; font-size:1em;  color:white; 
+background-Color:blue; border: 2px solid white; border-radius: 25px; 
+ color:white;
+padding:1%; 
 }
 
 .divlien{
