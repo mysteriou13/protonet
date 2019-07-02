@@ -11,13 +11,26 @@ include("header.php");
 
 <div  id="b4"style ="padding:1%;">
 
+<p>
+
 <center>
-<u><strong>vecchiobox</strong></u>
+
+<strong>vecchiobox</strong>
 </br>
-solution hébergement de fichier
+ Qu’est ce que c’est ?
 </center>
 
-  <img>
+</p>
+
+<p>
+
+<center>
+
+un service d'hergement de fichier synchronisés entre vos ordinateurs, tablettes, mobiles
+
+</center>
+
+</p>
 
 </div>
 
