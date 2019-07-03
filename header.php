@@ -121,7 +121,7 @@ $terraliberta = $terra."/terraliberta";
 </center>
 
 
-<div class = "divflex">
+<div class = "divflex" >
 
 
 <div   class = "divheader">
