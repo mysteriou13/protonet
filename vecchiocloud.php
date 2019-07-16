@@ -9,7 +9,7 @@ include("head.php");
 include("header.php");
 ?>
 
-<div  id ="b4" style = "margin-top:1%;padding:1%; 
+<div   style = "margin-top:1%;padding:1%; 
 
 <?php
 
@@ -22,7 +22,22 @@ echo "display:flex;";
 ?>
  ">
 
-<div style ="margin:1%; padding-left:2%;  border:3px solid white; border-radius:25px; 
+<div
+<?php
+
+if($mobile == 1){
+
+echo 'id="b5"';
+
+}else{
+
+echo 'id="b4"';
+
+}
+
+?>
+ style ="margin:1%; padding-left:2%;  border:3px solid white; border-radius:25px; 
+
 <?php 
 
 if($mobile == 0){
@@ -46,7 +61,7 @@ et que vous pouvez partager facilement avec vos contacts.
 
 <div style = "width:100%;">
 
-<img src ="./image/nextcloud.png"   style ="border-radius:25px; width:100%;">
+<img src ="./image/nextcloud.png"   style ="border-radius:25px; height:100%; width:100%;">
 
 </div>
 
