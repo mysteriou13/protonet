@@ -9,7 +9,7 @@ include("head.php");
 include("header.php");
 ?>
 
-<div   style = "margin-top:1%;padding:1%; 
+<div id ="b5"  style = "margin-top:1%;padding:1%; 
 
 <?php
 
@@ -64,8 +64,6 @@ et que vous pouvez partager facilement avec vos contacts.
 <img src ="./image/nextcloud.png"   style ="border-radius:25px; height:100%; width:100%;">
 
 </div>
-
-
 
 
 </div>
