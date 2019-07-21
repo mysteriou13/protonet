@@ -18,20 +18,18 @@ header("Location:index.php");
 
 ?>
 
-</br>
+
+
 
 <div id= "b3" >
 
 <center>
-
 parametre
-
 </center>
-</div>
-<?php include("premium.php")?>
-</br>
 
-  <div id = "b3">
+</div>
+
+  <div id = "b3" >
 <?php 
 
 
@@ -45,16 +43,13 @@ $select2 = $select1->fetch_assoc();
 
 ?> 
 
-<div >
-<center>
 
-<div>
+<div id  = "padleft">
 pseudo : <?php echo $select2['pseudo']?>
-<div>
-
 </div>
 
-<div>
+
+<div id = "padleft">
 
 email : <?php echo $select2['email']?> etat: 
 
@@ -94,7 +89,6 @@ echo "verfi&eacute;";
 
 }
 ?>
-</center>
 </div>
 
 
