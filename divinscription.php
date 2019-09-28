@@ -1,7 +1,20 @@
 
+<?php 
+
+$page = "./inscription.php";
+
+if($mobile == true){
+
+$page = $page."#inscription";
+
+}
+
+?>
+
+
 <div   class = "divheader">
 
-<a  href = "inscription.php#inscription">
+<a  href = "<?php echo $page;?>">
 inscription
 </a>
 
