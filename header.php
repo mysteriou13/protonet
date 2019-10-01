@@ -270,6 +270,3 @@ include_once("formconnection.php");
 
 
 </header>
-
-
-
