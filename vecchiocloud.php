@@ -9,6 +9,21 @@ include("head.php");
 include("header.php");
 ?>
 
+
+</br>
+
+<div>
+
+<center>
+<a target= "_blank" href ="https://next.vecchionet.com"  class = "divheader">
+connection au cloud
+</a>
+</center>
+
+</div>
+
+</br>
+
 <div id ="b5"  style = "margin-top:1%;padding:1%; 
 
 <?php
