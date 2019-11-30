@@ -18,11 +18,11 @@ include_once("header.php");
 
 </div>
 
-<div id = "b" >
+<div id = "b4" >
 
-<div class = "p1">
+<div >
 <center>
-reponsable du site
+responsable du site
 <div>
 </div>
 </br>
@@ -32,7 +32,7 @@ nom :massa
 pr&eacute;nom: anthony
 </br>
 </br>
-email:massaanthony@vecchionet.com
+email:mrmassaanthony@gmail.com
 </br>
 </br>
 adress:casa d'arutoli rte de muratello bat i apt 43 20137 porto-vecchio
