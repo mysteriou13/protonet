@@ -7,7 +7,8 @@ include("header.php");
 
 ?>
 
-<div id = "b3" style = "display:<?php echo $dismobile?>">
+
+<div id = "b4" style = "margin:1%; display:<?php echo $dismobile?>">
 
 <center>
 <a id = "contact" href = "contact.php"> haute de page </a>
@@ -15,18 +16,23 @@ include("header.php");
 
 </div>
 
-<div id = "b3">
 
+<div id = "capsule" class ="b6">
+
+<div class ="b3"  style ="padding:1%;">
 <center>
 
-<div>
-contact
-</div>
 
+<div id = "b6">
+
+formulaire contact
+
+</div>
+</br>
 <div>
 <form action = "<?php $_SERVER['PHP_SELF']?>" method = "POST">
 
-<div> 
+<div id = "b6"> 
 *email <input type = "text" name = "email">
 <?php 
 if(isset($_POST['email']) && empty($_POST['email'])){
@@ -47,8 +53,12 @@ echo "email invalide";
 
 </div>
 
-<div>
+</br>
+
+<div  id ="b6">
+
 *titre <input type = "text" name = "titre">
+
 <?php 
 if(isset($_POST['titre'])  && empty($_POST['titre'])){
 
@@ -59,11 +69,19 @@ echo "champs vide";
 ?>
 </div>
 
-<div>
+</br>
 
-message <textarea name = "message" style = "height:20%; width:90%;">
+<div id ="b6">
+
+message 
+</br>
+
+<textarea name = "message" style = "height:20%; width:90%;">
 
 </textarea>
+
+</br>
+</br>
 
 <?php 
 
@@ -78,7 +96,13 @@ echo "champs vide";
 </div>
 
 <div>
-<input type = "submit"  value  = "envoyer">
+</br>
+
+<button  id = "envoyer" class ="b4" type = "submit"  value  = "envoyer">
+envoyer
+
+</button>
+
 </div>
 
 <?php 
@@ -112,5 +136,21 @@ $e->envoiemail("elio007@hotmail.fr",$titre,$message,$email);
 
 </div>
 
+</div>
+
+
+
 </body>
 </html>
+
+ <script>
+
+document.getElementById("envoyer").style.fontSize ="1.5em";
+
+if(mobile == 0){
+  document.getElementById("capsule").style.paddingTop = "1%"; 
+}
+
+ </script>
+
+

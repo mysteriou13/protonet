@@ -178,22 +178,29 @@ padding-left:30%;
 color:white; background-color:blue; font-size:1em;  
 }
 
-#b3{
+.b3,#b3{
 
  border:3px solid white;  color:white; background-color:darkblue; font-size:1.5em;  border-radius:20px;
 
 }
 
-#b4{
+.b4,#b4{
 
 display:block; color:white; background-color:blue; font-size:2em; border:2px solid white;  border-radius:30px;
 
-
 }
+
+
 
 #b5{
 
 display:block; color:white; background-color:blue;   border-radius:30px;
+
+}
+
+#b6{
+
+display:block; color:white; background-color:blue;  border:2px solid white;  border-radius:30px;
 
 
 }
