@@ -29,7 +29,7 @@ $wrap = "nowrap";
 
    <p>
 
-    <center style = "border:2px solid white; border-radius:25px;" id = "b">
+    <center  id = "b3">
      inscription
     </center>
    </p>
