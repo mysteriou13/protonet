@@ -30,7 +30,7 @@ parametre
 </div>
 </br>
 
-  <div id = "b3" >
+  <div id = "b4" >
 <?php 
 
 
@@ -44,16 +44,17 @@ $select2 = $select1->fetch_assoc();
 
 ?> 
 
-
-<div id  = "padleft">
+<center>
 pseudo : <?php echo $select2['pseudo']?>
+</center>
+
 </div>
 
+</br>
 
-<div id = "padleft">
-
+<div id = "b4">
+<center>
 email : <?php echo $select2['email']?> etat: 
-
 <?php 
 
 
@@ -90,11 +91,10 @@ echo "verfi&eacute;";
 
 }
 ?>
+</center>
 </div>
 
 
-</div>
-  </div>
 
 </body>
 </html>
