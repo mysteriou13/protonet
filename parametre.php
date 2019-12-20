@@ -20,14 +20,15 @@ header("Location:index.php");
 
 
 
-
-<div id= "b3" >
+</br>
+<div id= "b4" >
 
 <center>
 parametre
 </center>
 
 </div>
+</br>
 
   <div id = "b3" >
 <?php 
