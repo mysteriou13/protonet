@@ -1,26 +1,33 @@
 
-<div>
+</br>
+<div id= "b3">
 
 <form id = "connection"  class = "formconnection" action = "<?php echo $_SERVER['PHP_SELF']; ?>" method = "POST">
-<div  class = "divflex">
+<div  >
 
-<div   class = "divform">
+<div id="b6">
 
-<center><label> pseudo </label> <input name = "pseudo" type = "text"></center>
+<center> pseudo <input name = "pseudo" type = "text"></center>
 
 </div>
 
-<div  class = "divform">
-<label> mot de pass </label><input name = "pass" type = "password">
+</br>
+
+<div id= "b6">
+
+<center>  mot de pass <input name = "pass" type = "password"></center>
+
 </div>
 
-<div>
-<input  type = "submit"  class = "inputconnect" value = "connection">
+</br>
+
+<div >
+<center><input  id = "b3" type = "submit"   value = "connection"></center>
 </div>
+</br>
 
-<div  class = "divlien">
-
-<a  href = "oublipass.php"> mot de pass oubli&eacute; </a>
+<div  >
+<center><a  href = "oublipass.php"> mot de pass oubli&eacute; </a></center>
 
 </div>
 
