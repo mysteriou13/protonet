@@ -11,6 +11,8 @@ include("head.php");
 <?php
 include("./header.php");
 
+include("formconnection.php");
+
 ?>
 
 </body>
