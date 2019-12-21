@@ -1,10 +1,12 @@
 
+<div id ="b3" style ="padding:1%;">
+
 <center>
-
-
 <form action = "<?php $_SERVER['PHP_SELF']?>" method  ="POST">
 
-<div id= "b3"> pseudo  <input type  ="text"  name = "pseudo"></div>
+
+<div id= "b6"> pseudo  <input type  ="text"  name = "pseudo"></div>
+
 
 <?php
 
@@ -36,7 +38,7 @@ echo "pseudo pris";
 
 </br>
 
-<div id ="b3"> mot de pass <input type = "password" name  = "pass"></div>
+<div id ="b6"> mot de pass <input type = "password" name  = "pass"></div>
 
 <?php
 if(isset($_POST['pass']) && !empty($_POST['pass'])){
@@ -62,7 +64,7 @@ $validepass = 0;
 ?>
 </br>
 
-<div id = "b3"> email <input type  = "text" name  = "email"></div>
+<div id = "b6"> email <input type  = "text" name  = "email"></div>
 
 </br>
 
@@ -104,7 +106,7 @@ $erroremail  = 0;
 
 
  ?>
-<div id="b3">
+<div id="b6">
  accepter  les <a  href = "<?php echo $link."/CGU.php"?>"> CGU </a> <input  name = "CGU"  type = "checkbox">
 
 <?php 
@@ -188,4 +190,4 @@ header("Location:$modelink");
 }
 ?>
 
-
+</div>
