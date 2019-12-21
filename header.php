@@ -256,17 +256,6 @@ include("divmembre.php");
 ?>
 </div>
 <div id = "inscription" >
-<?php 
-
-if(!isset($_SESSION['pseudo']) && $base != "terraliberta.php"){
-
-include_once("formconnection.php");
-
-}
-
-
-?>
-
 
 
 </header>
