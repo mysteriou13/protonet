@@ -22,21 +22,6 @@ $wrap = "nowrap";
 
 }
 
-?>
-
-
-<h1 id  = "inscription">
-
-   <p>
-
-    <center  id = "b3">
-     inscription
-    </center>
-   </p>
-
-</h1>
-
-<?php
 
 include("forminscription.php");
 ?>

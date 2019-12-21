@@ -1,5 +1,15 @@
 
+</br>
 <div id ="b3" style ="padding:1%;">
+
+   <p>
+
+    <center  id = "b4">
+     inscription
+    </center>
+   </p>
+
+
 
 <center>
 <form action = "<?php $_SERVER['PHP_SELF']?>" method  ="POST">
