@@ -131,7 +131,7 @@ echo "vous devez accepter les CGU";
 </div>
 </br>
 
- <input id = "b3"  type = "submit" name = "val" value = "valider">
+ <button id = "b4"  type = "submit" name = "val" value = "valider">valider</button>
 
 </br>
 </br>
