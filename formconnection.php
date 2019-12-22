@@ -22,7 +22,7 @@
 </br>
 
 <div >
-<center><input  id = "b3" type = "submit"   value = "connection"></center>
+<center><button  id = "b4" class ="button" type = "submit"   value = "connection">connection </button></center>
 </div>
 </br>
 
