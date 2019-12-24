@@ -2,6 +2,16 @@
 </br>
 <div id= "b3">
 
+    <p>
+
+    <center  id = "b4">
+     connection
+    </center>
+   </p>
+
+
+
+
 <form id = "connection"  class = "formconnection" action = "<?php echo $_SERVER['PHP_SELF']; ?>" method = "POST">
 <div  >
 
