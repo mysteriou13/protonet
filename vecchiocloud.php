@@ -16,7 +16,7 @@ include("header.php");
 
 <center>
 <a target= "_blank" href ="https://next.vecchionet.com"  class = "divheader">
-connection au cloud
+connection a nextcloud
 </a>
 </center>
 
