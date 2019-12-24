@@ -67,7 +67,7 @@ echo "width:50%";
 
 
 
-<strong>vecchiobox</strong> un service d'hebergement chiffr&eacute; de fichier synchronis&eacute;s entre vos ordinateurs, tablettes, mobiles
+<strong>nextcloud</strong> un service d'hebergement chiffr&eacute; de fichier synchronis&eacute;s entre vos ordinateurs, tablettes, mobiles
 
 et que vous pouvez partager facilement avec vos contacts.
 
