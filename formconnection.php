@@ -22,7 +22,7 @@
 </br>
 
 <div >
-<center><button  id = "b4" class ="button" type = "submit"   value = "connection">connection </button></center>
+<center><button  id = "b4" class ="button" type = "submit"   value = "connection">valider </button></center>
 </div>
 </br>
 
