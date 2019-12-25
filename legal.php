@@ -10,16 +10,6 @@ include_once("head.php");
 include_once("header.php");
 ?>
 
- <div style = "display:<?php echo $dismobile?>">
-
-<center>
-<button id ="b4" class ="divheader">
- <a id = "legal" href = "legal.php"> haute de page </a> 
-</button>
-</center>
-</div>
-</br>
-
 <div>
 <center id = "b4" class= "divheader">
 responsable du site
