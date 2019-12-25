@@ -8,14 +8,6 @@ include("header.php");
 ?>
 
 
-<div id = "b4" style = "margin:1%; display:<?php echo $dismobile?>">
-
-<center>
-<a id = "contact" href = "contact.php"> haute de page </a>
-</center>
-
-</div>
-
 
 <div id = "capsule" class ="b6">
 
