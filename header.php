@@ -177,22 +177,7 @@ nextcloud
 
 <div class  = "divheader">
 
-<?php 
-
-if($mobile){
-
-$page = "CGU.php#CGU";
-
-
-}else{
-
-$page = "CGU.php";
-
-}
-
-?>
-
-  <a   href = '<?php echo $page;?>'>
+  <a   href = 'CGU.php'>
 CGU
 </a>
 
