@@ -6,7 +6,6 @@
 include_once("head.php");
 include_once("header.php");
 ?>
-
 <div>
 <center id = "b4" class= "divheader">
 responsable du site
