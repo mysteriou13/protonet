@@ -9,18 +9,6 @@ include("header.php");
 
 
 
-<div id = "capsule" class ="b6">
-
-<div class ="b3"  style ="padding:1%;">
-<center>
-
-
-<div id = "b6">
-
-formulaire contact
-
-</div>
-</br>
 <div>
 <form action = "<?php $_SERVER['PHP_SELF']?>" method = "POST">
 
