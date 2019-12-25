@@ -2,9 +2,6 @@
 <body>
 
 <?php 
-session_start();
-
-$d = "corsicanet";
 
 include_once("head.php");
 include_once("header.php");
