@@ -189,22 +189,7 @@ CGU
 
 <div class = "divheader">
 
-<?php 
-
-
-if($mobile == true ){
-
-$page = "legal.php#legal";
-
-}else{
-
- $page = "legal.php";
-
-}
-
-?>
-
-   <a   href ='<?php echo $page;?>'>
+   <a   href ='legal.php'>
 mention legal
 </a>
 
