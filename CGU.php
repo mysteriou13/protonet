@@ -25,14 +25,6 @@ $link =  "http://".$_SERVER['SERVER_NAME']."/document";
 </br>
 </br>
 
-<div id = "b3" style = "display:<?php echo $dismobile?>">
-
-<center>
-<a id = "CGU" href  = "CGU.php"> haute de page</a>
-</center>
-
-</div>
-
   <iframe src = "<?php echo $src;?>" id = "b" >
   </iframe>
 

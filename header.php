@@ -158,7 +158,7 @@ include("divinscription.php");
 
 if($mobile == true){
 
-$service = "vecchiocloud.php#service";
+$service = "vecchiocloud.php";
 
 
 }else{
