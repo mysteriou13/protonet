@@ -21,7 +21,8 @@ header("Location:index.php");
 
 
 </br>
-<div id= "b4" >
+<div id ="b3">
+<div>
 
 <center>
 parametre
@@ -30,7 +31,7 @@ parametre
 </div>
 </br>
 
-  <div id = "b4" >
+  <div>
 <?php 
 
 
@@ -52,7 +53,7 @@ pseudo : <?php echo $select2['pseudo']?>
 
 </br>
 
-<div id = "b4">
+<div >
 <center>
 email : <?php echo $select2['email']?> etat: 
 <?php 
@@ -93,7 +94,7 @@ echo "verfi&eacute;";
 ?>
 </center>
 </div>
-
+</div>
 
 
 </body>
