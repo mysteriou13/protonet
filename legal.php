@@ -6,14 +6,18 @@
 include_once("head.php");
 include_once("header.php");
 ?>
+
+</br>
+<div id ="b3">
+
 <div>
-<center id = "b4" class= "divheader">
+<center  >
 responsable du site
 </center>
 </div>
 </br>
 
-<div id ="b4">
+<div >
 <center>
 nom :massa
 </center>
@@ -21,26 +25,28 @@ nom :massa
 
 </br>
 
-<div id = "b4">
+<div >
 <center>
 pr&eacute;nom: anthony
 </center>
 </div>
 </br>
 
-<div id= "b4">
+<div >
 <center>
 email:mrmassaanthony@gmail.com
 </center>
 </div>
 </br>
 
-<div id = "b4">
+<div >
 <center>
 adress:casa d'arutoli rte de muratello bat i apt 43 20137 porto-vecchio
 </center>
 </div>
 </center>
+</div>
+
 </div>
 
 </body>
