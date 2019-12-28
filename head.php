@@ -13,7 +13,6 @@ mobile = 1;
 
 <link rel = "stylesheet" href = "./style/style.css">
  
-<link rel = "icon" href = "<?php $icon ?>" >
 
 <script src = "./javascript/onglet.js"> </script>
 
