@@ -24,11 +24,7 @@ mobile = 1;
 
 
 <title>
-
-<?php 
-echo $title = "vecchionet";
-?>
-
+vecchionet.com
 </title>
   
 
