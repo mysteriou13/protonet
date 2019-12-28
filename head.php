@@ -13,7 +13,6 @@ mobile = 1;
 
 <link rel = "stylesheet" href = "./style/style.css">
  
-<script src = "./javascript/mobile.js"> </script>
 
 <meta charset = "UTF-8">
 

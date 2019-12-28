@@ -9,7 +9,6 @@ include("head.php");
 include("header.php");
 ?>
 
-
 </br>
 
 <div>
@@ -24,18 +23,7 @@ connection a nextcloud
 
 </br>
 
-<div id="textnextcloud" class ="b5"  style = "margin-top:1%;padding:1%; 
-
-<?php
-
-if($mobile == 0){
-
-echo "display:flex;";
-
-}
-
-?>
- ">
+<div id="textnextcloud" class ="b5"  style = "margin-top:1%;padding:1%;">
 
 <div
 <?php
@@ -82,6 +70,15 @@ et que vous pouvez partager facilement avec vos contacts.
 
 
 </div>
+
+<script src = "./javascript/mobile.js"></script>
+
+<script>
+
+displaymobile(mobile,"flex");
+
+</script>
+
 
 </body>
 </html>
