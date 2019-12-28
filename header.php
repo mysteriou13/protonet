@@ -2,7 +2,7 @@
 
 session_start();
 
-include_once("/var/www/html/vecchionet.com/mail.php");
+include_once("./mail.php");
 
 include_once("/var/www/html/admin/connect.php");
 
