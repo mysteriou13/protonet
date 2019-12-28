@@ -54,18 +54,7 @@ $pseudo = $mysqli->real_escape_string($_SESSION['pseudo']);
 
 
 <div   class = "divheader">
-<?php 
-
-$page = "./index.php";
-
-if($mobile == true){
-
-$page = $page."#index";
-
-}
-
-?>
-<a  href = "<?php echo  $page; ?>">
+<a  href = "index.php">
 accueil
 </a>
 </div>
@@ -73,7 +62,7 @@ accueil
 
 <?php 
 
-if(!isset($_SESSION['pseudo']) && $url == 1 or  $localhost == 1 && !isset($_SESSION['pseudo']) ){
+if(!isset($_SESSION['pseudo']) ){
 
 include("divinscription.php");
 
