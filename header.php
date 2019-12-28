@@ -52,14 +52,6 @@ $display = "none";
 
 
 
-$link = $protole.$domaine;
-
-$terra =  str_replace("vecchionet.com","",$link);
-
-$terra = str_replace("localhost//","localhost/",$terra);
-
-$terraliberta = $terra."/terraliberta";
-
 ?>
 
 
