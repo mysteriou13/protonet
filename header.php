@@ -33,41 +33,7 @@ $pseudo = $mysqli->real_escape_string($_SESSION['pseudo']);
 
 }
 
-$domaine =  $_SERVER['SERVER_NAME'];
 
-$protocole = null;
-
-$page = null;
-
-$localhost = null;
-
-$display = null;
-
-$none = null;
-
-$admin = "../admin/connect.php";
-
-$mode = htmlspecialchars($_GET['mode']);
-
-$base =  basename($_SERVER['PHP_SELF']);
-
-if($domaine == "localhost"){
-
-$localhost = 1;
-
-$protole = "http://";
-
-$domaine = $domaine."/vecchionet.com/";
-
-}else{
-
-$domaine = "vecchionet.com/";
-
-$protole = "https://";
-
-$localhost = 0;
-
-}
 
 if(isset($_SESSION['pseudo']) && !empty($_SESSION['pseudo'])){
 if($mode == "premium"){
