@@ -18,10 +18,8 @@ $mobile  = false;
 $dismobile = "none";
 }
 
-
 $e = new email();
 
-$domaine =  $_SERVER['SERVER_NAME'];
 
 $url = str_replace("vecchionet.com",1,$domaine);
 
@@ -32,12 +30,6 @@ if(isset($_SESSION['pseudo']) && !empty($_SESSION['pseudo'])){
 $pseudo = $mysqli->real_escape_string($_SESSION['pseudo']);
 
 }
-
-
-
-
-
-
 
 
 ?>
