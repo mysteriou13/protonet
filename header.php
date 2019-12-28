@@ -36,19 +36,7 @@ $pseudo = $mysqli->real_escape_string($_SESSION['pseudo']);
 
 
 
-if(isset($_SESSION['pseudo']) && !empty($_SESSION['pseudo'])){
 
-$display = "block";
-
-$none = "none";
-
-}else{
-
-$none = "block";
-
-$display = "none";
-
-}
 
 
 
