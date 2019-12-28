@@ -35,14 +35,6 @@ $pseudo = $mysqli->real_escape_string($_SESSION['pseudo']);
 
 
 
-if(isset($_SESSION['pseudo']) && !empty($_SESSION['pseudo'])){
-if($mode == "premium"){
-
-header("Location:paypal.php");
-
-}
-}
-
 include($admin);
 
 if(isset($_SESSION['pseudo']) && !empty($_SESSION['pseudo'])){
