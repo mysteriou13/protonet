@@ -102,19 +102,8 @@ mention legal
 
 <div class = "divheader">
 
-<?php 
 
-if($mobile == true){
-$page = "contact.php#contact";
-
-}else{
-$page = "contact.php";
-
-}
-
-?>
-
-<a href = "<?php echo $page?>"> contact </a>
+<a href = "./contact.php"> contact </a>
 
 </div>
 
