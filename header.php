@@ -119,7 +119,6 @@ include("divmembre.php");
 }
 ?>
 </div>
-<div id = "inscription" >
 
 
 </header>
