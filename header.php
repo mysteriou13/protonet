@@ -35,7 +35,6 @@ $pseudo = $mysqli->real_escape_string($_SESSION['pseudo']);
 
 
 
-include($admin);
 
 if(isset($_SESSION['pseudo']) && !empty($_SESSION['pseudo'])){
 
