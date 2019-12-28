@@ -18,11 +18,6 @@ $mobile  = false;
 $dismobile = "none";
 }
 
-$e = new email();
-
-
-$url = str_replace("vecchionet.com",1,$domaine);
-
 $pseudo = null;
 
 if(isset($_SESSION['pseudo']) && !empty($_SESSION['pseudo'])){
