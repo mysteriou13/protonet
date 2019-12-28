@@ -4,7 +4,7 @@ session_start();
 
 include_once("./mail.php");
 
-include_once("/var/www/html/admin/connect.php");
+include_once("../admin/connect.php");
 
    $ua = $_SERVER['HTTP_USER_AGENT'];
    $mobile = null;
