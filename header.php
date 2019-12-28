@@ -71,21 +71,8 @@ include("divinscription.php");
 ?>
 
 <div  class = "divheader">
-<?php
 
-
-if($mobile == true){
-
-$service = "vecchiocloud.php";
-
-
-}else{
-$service = "vecchiocloud.php";
-}
-
-
-?>
- <a id  href = '<?php echo $service; ?>'>
+ <a id  href = './vecchiocloud.php'>
 nextcloud
 </a>
 
