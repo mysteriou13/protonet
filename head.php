@@ -1,32 +1,3 @@
-<?php 
-
-$domaine = $_SERVER['SERVER_NAME'];
-
-if($domaine == "localhost"){
-
-$localhost = 1;
-
-$protole = "http://";
-
-$domaine = $domaine."/vecchionet.com/";
-
-}else{
-
-$domaine = "vecchionet.com";
-
-$protole = "https://";
-
-$localhost = 0;
-
-}
-
-$domaine = $protole.$domaine;
-
-
-$linkstyle = $domaine."/style/style.css";
-
-?>
-
 <script>
  var mobile = 0;
 
@@ -40,7 +11,7 @@ mobile = 1;
 
 <head>
 
-<link rel = "stylesheet" href = "<?php echo $linkstyle;?>">
+<link rel = "stylesheet" href = "./style/style.css">
  
 <link rel = "icon" href = "<?php $icon ?>" >
 
