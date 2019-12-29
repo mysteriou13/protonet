@@ -1,8 +1,8 @@
 
-function displaymobile(mobile,dis){
+function displaymobile(mobile,dis,id){
 
 if(mobile == 0){
-document.getElementById("textnextcloud").style.display = dis; 
+document.getElementById(id).style.display = dis; 
 }
 
 }

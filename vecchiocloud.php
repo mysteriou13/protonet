@@ -74,7 +74,7 @@ et que vous pouvez partager facilement avec vos contacts.
 
 <script>
 
-displaymobile(mobile,"flex");
+displaymobile(mobile,"flex","textnextcloud");
 
 
 </script>
