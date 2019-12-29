@@ -23,8 +23,7 @@ connection a nextcloud
 
 </br>
 
-<div id="textnextcloud" class ="b5"  style = "margin-top:1%;padding:1%;">
-
+<div id="textnextcloud" class ="b5">
 <div
 <?php
 
@@ -76,6 +75,7 @@ et que vous pouvez partager facilement avec vos contacts.
 <script>
 
 displaymobile(mobile,"flex");
+
 
 </script>
 
