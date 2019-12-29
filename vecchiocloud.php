@@ -25,20 +25,7 @@ connection a nextcloud
 
 <div id = "nextcloud" class ="b5">
 <div id = "textnextcloud" class = "b4";
-<?php
-
-if($mobile == 1){
-
-echo 'id="b5"';
-
-}else{
-
-echo 'id="b4"';
-
-}
-
-?>
- style =" 
+style =" 
 
 <?php 
 
@@ -76,6 +63,7 @@ et que vous pouvez partager facilement avec vos contacts.
 
 displaymobile(mobile,"flex","nextcloud");
 
+changeclassmobile("textnextcloud","b4","b5",mobile);
 
 </script>
 
