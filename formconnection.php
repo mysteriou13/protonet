@@ -25,21 +25,15 @@
 
 <div id= "b6">
 
-<center>  mot de pass <input name = "pass" type = "password"></center>
+<center>  mot de pass <input name = "pass" type = "password"> <a  href = "oublipass.php"> mot de pass oubli&eacute; </a></center>
 
 </div>
 
-</br>
 
 <div >
 <center><button  id = "b4" class ="button" type = "submit"   value = "connection">valider </button></center>
 </div>
 </br>
-
-<div  >
-<center><a  href = "oublipass.php"> mot de pass oubli&eacute; </a></center>
-
-</div>
 
 </div>
 </form>
