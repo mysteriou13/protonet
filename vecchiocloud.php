@@ -45,15 +45,7 @@ et que vous pouvez partager facilement avec vos contacts.
 
 <script src = "./javascript/mobile.js"></script>
 
-<script>
-
-displaymobile(mobile,"flex","nextcloud");
-
-changeclassmobile("textnextcloud","b4","b5",mobile);
-
-changewidthmobile("textnextcloud",mobile);
-
-</script>
+<script src = "./javascript/vecchiocloud.js"> </script>
 
 
 </body>
