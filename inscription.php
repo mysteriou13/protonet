@@ -25,15 +25,6 @@ $wrap = "nowrap";
 
 include("forminscription.php");
 ?>
-<script>
-
-var a = document.getElementById("connection");
-
-a.style.display = "none";
-
-</script>
-
-
 
 </body>
 </html>
