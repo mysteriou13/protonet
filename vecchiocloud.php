@@ -25,20 +25,6 @@ connection a nextcloud
 
 <div id = "nextcloud" class ="b5">
 <div id = "textnextcloud" class = "b4";
-style =" 
-
-<?php 
-
-if($mobile == 0){
-
-echo "width:50%";
-
-}
-
-?>
-
-">
-
 
 
 <strong>nextcloud</strong> un service d'hebergement chiffr&eacute; de fichier synchronis&eacute;s entre vos ordinateurs, tablettes, mobiles
@@ -64,6 +50,8 @@ et que vous pouvez partager facilement avec vos contacts.
 displaymobile(mobile,"flex","nextcloud");
 
 changeclassmobile("textnextcloud","b4","b5",mobile);
+
+changewidthmobile("textnextcloud",mobile);
 
 </script>
 

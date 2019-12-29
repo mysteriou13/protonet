@@ -27,4 +27,15 @@ document.getElementById(id).className = oldclass;
 
 }
 
+function changewidthmobile(id,mobile){
+
+var div =  document.getElementById(id);
+
+if(mobile ==  0){
+
+div.style.width = "50%";
+
+}
+
+}
 
