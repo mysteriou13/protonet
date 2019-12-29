@@ -23,8 +23,8 @@ connection a nextcloud
 
 </br>
 
-<div id="nextcloud" class ="b5">
-<div
+<div id = "nextcloud" class ="b5">
+<div id = "textnexcloud" class = "b4";
 <?php
 
 if($mobile == 1){
