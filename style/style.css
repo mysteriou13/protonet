@@ -38,6 +38,13 @@ font-size:1.5em;
 
 }
 
+
+#textnextcloud{
+
+margin:1%; padding-left:2%;  border:3px solid white; border-radius:25px;
+
+}
+
 .divservice{
 
  background-color:blue; border:2px solid white; border-radius:25px; font-size:1.5em;

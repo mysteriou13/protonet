@@ -24,7 +24,7 @@ connection a nextcloud
 </br>
 
 <div id = "nextcloud" class ="b5">
-<div id = "textnexcloud" class = "b4";
+<div id = "textnextcloud" class = "b4";
 <?php
 
 if($mobile == 1){
@@ -38,7 +38,7 @@ echo 'id="b4"';
 }
 
 ?>
- style ="margin:1%; padding-left:2%;  border:3px solid white; border-radius:25px; 
+ style =" 
 
 <?php 
 
