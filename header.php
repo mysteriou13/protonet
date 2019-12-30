@@ -6,17 +6,7 @@ include_once("./mail.php");
 
 include_once("../admin/connect.php");
 
-   $ua = $_SERVER['HTTP_USER_AGENT'];
-   $mobile = null;
-   $dismobile = "none";
-if (preg_match('/iphone/i',$ua) || preg_match('/android/i',$ua) || preg_match('/blackberry/i',$ua) || preg_match('/symb/i',$ua) || preg_match('/ipad/i',$ua) || preg_match('/ipod/i',$ua) || preg_match('/phone/i',$ua) )
-{
-$mobile = true;
-$dismobile = "block";
-}else{
-$mobile  = false;
-$dismobile = "none";
-}
+
 
 $pseudo = null;
 
