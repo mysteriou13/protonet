@@ -7,9 +7,6 @@ include_once("./mail.php");
 include_once("../admin/connect.php");
 
 
-
-$pseudo = null;
-
 if(isset($_SESSION['pseudo']) && !empty($_SESSION['pseudo'])){
 
 $pseudo = $mysqli->real_escape_string($_SESSION['pseudo']);
