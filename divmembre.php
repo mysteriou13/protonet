@@ -21,6 +21,6 @@ $link1 = $link.$page;
 ?>
 
 
-<a  href = "<?php echo $link1?>">deconnection</a>
+<a  href = "./deconnect.php">deconnection</a>
 
 </div>

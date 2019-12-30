@@ -2,9 +2,9 @@
 
 session_start();
 
-include_once("/var/www/html/vecchionet.com/mail.php");
+include_once("./mail.php");
 
-include_once("/var/www/html/admin/connect.php");
+include_once("../admin/connect.php");
 
    $ua = $_SERVER['HTTP_USER_AGENT'];
    $mobile = null;
@@ -18,13 +18,6 @@ $mobile  = false;
 $dismobile = "none";
 }
 
-
-$e = new email();
-
-$domaine =  $_SERVER['SERVER_NAME'];
-
-$url = str_replace("vecchionet.com",1,$domaine);
-
 $pseudo = null;
 
 if(isset($_SESSION['pseudo']) && !empty($_SESSION['pseudo'])){
@@ -32,60 +25,6 @@ if(isset($_SESSION['pseudo']) && !empty($_SESSION['pseudo'])){
 $pseudo = $mysqli->real_escape_string($_SESSION['pseudo']);
 
 }
-
-$domaine =  $_SERVER['SERVER_NAME'];
-
-$protocole = null;
-
-$page = null;
-
-$localhost = null;
-
-$display = null;
-
-$none = null;
-
-$admin = "../admin/connect.php";
-
-$mode = htmlspecialchars($_GET['mode']);
-
-$base =  basename($_SERVER['PHP_SELF']);
-
-
-
-if(isset($_SESSION['pseudo']) && !empty($_SESSION['pseudo'])){
-if($mode == "premium"){
-
-header("Location:paypal.php");
-
-}
-}
-
-include($admin);
-
-if(isset($_SESSION['pseudo']) && !empty($_SESSION['pseudo'])){
-
-$display = "block";
-
-$none = "none";
-
-}else{
-
-$none = "block";
-
-$display = "none";
-
-}
-
-
-
-$link = $protole.$domaine;
-
-$terra =  str_replace("vecchionet.com","",$link);
-
-$terra = str_replace("localhost//","localhost/",$terra);
-
-$terraliberta = $terra."/terraliberta";
 
 ?>
 
@@ -109,18 +48,7 @@ $terraliberta = $terra."/terraliberta";
 
 
 <div   class = "divheader">
-<?php 
-
-$page = "./index.php";
-
-if($mobile == true){
-
-$page = $page."#index";
-
-}
-
-?>
-<a  href = "<?php echo  $page; ?>">
+<a  href = "index.php">
 accueil
 </a>
 </div>
@@ -128,7 +56,7 @@ accueil
 
 <?php 
 
-if(!isset($_SESSION['pseudo']) && $url == 1 or  $localhost == 1 && !isset($_SESSION['pseudo']) ){
+if(!isset($_SESSION['pseudo']) ){
 
 include("divinscription.php");
 
@@ -137,21 +65,8 @@ include("divinscription.php");
 ?>
 
 <div  class = "divheader">
-<?php
 
-
-if($mobile == true){
-
-$service = "vecchiocloud.php";
-
-
-}else{
-$service = "vecchiocloud.php";
-}
-
-
-?>
- <a id  href = '<?php echo $service; ?>'>
+ <a id  href = './vecchiocloud.php'>
 nextcloud
 </a>
 
@@ -181,19 +96,8 @@ mention legal
 
 <div class = "divheader">
 
-<?php 
 
-if($mobile == true){
-$page = "contact.php#contact";
-
-}else{
-$page = "contact.php";
-
-}
-
-?>
-
-<a href = "<?php echo $page?>"> contact </a>
+<a href = "./contact.php"> contact </a>
 
 </div>
 
@@ -209,7 +113,6 @@ include("divmembre.php");
 }
 ?>
 </div>
-<div id = "inscription" >
 
 
 </header>

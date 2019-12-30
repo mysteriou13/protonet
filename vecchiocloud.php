@@ -9,7 +9,6 @@ include("head.php");
 include("header.php");
 ?>
 
-
 </br>
 
 <div>
@@ -24,47 +23,8 @@ connection a nextcloud
 
 </br>
 
-<div id ="b5"  style = "margin-top:1%;padding:1%; 
-
-<?php
-
-if($mobile == 0){
-
-echo "display:flex;";
-
-}
-
-?>
- ">
-
-<div
-<?php
-
-if($mobile == 1){
-
-echo 'id="b5"';
-
-}else{
-
-echo 'id="b4"';
-
-}
-
-?>
- style ="margin:1%; padding-left:2%;  border:3px solid white; border-radius:25px; 
-
-<?php 
-
-if($mobile == 0){
-
-echo "width:50%";
-
-}
-
-?>
-
-">
-
+<div id = "nextcloud" class ="b5">
+<div id = "textnextcloud" class = "b4";
 
 
 <strong>nextcloud</strong> un service d'hebergement chiffr&eacute; de fichier synchronis&eacute;s entre vos ordinateurs, tablettes, mobiles
@@ -82,6 +42,11 @@ et que vous pouvez partager facilement avec vos contacts.
 
 
 </div>
+
+<script src = "./javascript/mobile.js"></script>
+
+<script src = "./javascript/vecchiocloud.js"> </script>
+
 
 </body>
 </html>
