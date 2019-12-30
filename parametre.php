@@ -9,6 +9,7 @@ include_once("header.php");
 
 $email = $_SERVER['PHP_SELF']."?email=1";
 
+$e = new email();
 
 if(empty($_SESSION['pseudo'])){
 
