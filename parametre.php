@@ -20,6 +20,7 @@ header("Location:index.php");
 ?>
 
 
+<div id ="listebutton"> <div> <button id="b4">parametre</button></div> <div><button id ="b4"> compte nextcloud</button> <div> </div>
 
 </br>
 <div id ="b3">
@@ -97,6 +98,6 @@ echo "verfi&eacute;";
 </div>
 </div>
 
-
+<script src= "./javascript/parametre.js"> </script>
 </body>
 </html>
