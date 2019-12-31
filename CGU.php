@@ -8,6 +8,7 @@ include_once("head.php");
 $link = "";
 
 
+
 if($localhost == 1){
 
 $link =  "http://".$_SERVER['SERVER_NAME']."/document"; 

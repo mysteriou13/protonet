@@ -6,6 +6,7 @@ include_once("./mail.php");
 
 include_once("../admin/connect.php");
 
+$localhost = null; 
 
 if(isset($_SESSION['pseudo']) && !empty($_SESSION['pseudo'])){
 

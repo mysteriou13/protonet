@@ -3,7 +3,6 @@
 
 $link = "";
 
-$localhost = null;
 
 if($localhost == 1){
 
