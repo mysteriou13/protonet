@@ -7,7 +7,7 @@ include("header.php");
 
 ?>
 
-
+</br>
 
 <div id = "capsule" class ="b6">
 
