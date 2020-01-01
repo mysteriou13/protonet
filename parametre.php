@@ -20,11 +20,11 @@ header("Location:index.php");
 ?>
 
 
-<div id ="listebutton"> <div id ="parametre"> <button  class="b4">parametre</button></div> 
-<div id = "nextcloud"><button   class ="b4"> compte nextcloud</button></div>  </div>
+<div id ="listebutton"> <div onclick = "affiche('parametre')" > <button  class="b4">parametre</button></div> 
+<div  onclick = "affiche('nextcloud')"><button   class ="b4"> compte nextcloud</button></div>  </div>
 
 </br>
-<div id ="b3">
+<div id = "parametre" class ="b3">
 <div>
 
 <center>
@@ -34,7 +34,7 @@ parametre
 </div>
 </br>
 
-  <div>
+  <div >
 <?php 
 
 
@@ -97,6 +97,10 @@ echo "verfi&eacute;";
 ?>
 </center>
 </div>
+</div>
+
+ <div id="nextcloud">
+dd
 </div>
 
 <script src= "./javascript/parametre.js"> </script>
