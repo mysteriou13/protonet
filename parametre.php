@@ -20,7 +20,7 @@ header("Location:index.php");
 ?>
 
 
-<div id ="listebutton"> <div> <button id="b4">parametre</button></div> <div><button id ="b4"> compte nextcloud</button> <div> </div>
+<div id ="listebutton"> <div> <button class="b4">parametre</button></div> <div><button class ="b4"> compte nextcloud</button> <div> </div>
 
 </br>
 <div id ="b3">
