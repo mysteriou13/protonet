@@ -99,7 +99,7 @@ echo "verfi&eacute;";
 </div>
 </div>
 
- <div id="nextcloud">
+ <div id="nextcloud" class = "b3">
 dd
 </div>
 
