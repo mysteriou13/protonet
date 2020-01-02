@@ -20,8 +20,9 @@ header("Location:index.php");
 ?>
 
 
-<div id ="listebutton"> <div onclick = "affiche('parametre')" > <button  class="b4">parametre</button></div> 
-<div  onclick = "affiche('nextcloud')"><button   class ="b4"> compte nextcloud</button></div>  </div>
+<div id ="listebutton"> <div  onclick = "affiche('parametre','buttonparametre')" > <button id="buttonparametre"  class="b4">parametre</button></div> 
+
+<div  onclick = "affiche('nextcloud','buttonnextcloud')"><button id ="buttonnextcloud"  class ="b4"> compte nextcloud</button></div>  </div>
 
 </br>
 <div id = "parametre" class ="b3">

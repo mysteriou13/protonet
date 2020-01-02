@@ -5,18 +5,20 @@ list.style.display="flex";
 
 document.getElementById('nextcloud').style.display = "none";
 
-function affiche(id){
+function affiche(id,idbutton){
 var button = ['parametre','nextcloud'];
 
-for(var i = 0; i < button.length; i++){
+var listebutton = ['buttonparametre','buttonnextcloud'];
 
-var div =  document.getElementById(id);
+  for(var i = 0; i < button.length; i++){
 
-if(id != button[i]){
+
+ if(id != button[i]){
 
  document.getElementById(button[i]).style.display ="none";
+ 
 
-}else{
+    }else{
 
  document.getElementById(button[i]).style.display ="block";
 
@@ -24,6 +26,21 @@ if(id != button[i]){
 }
 
 }
+
+ for(var i = 0; i < listebutton.length; i++){
+
+  if(idbutton == listebutton[i]){
+
+   document.getElementById(idbutton).style.backgroundColor = "darkblue";
+
+}else{
+  document.getElementById(listebutton[i]).style.backgroundColor = "blue";
+
+
+
+  }
+
+  }
 
 }
 
