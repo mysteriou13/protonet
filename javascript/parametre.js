@@ -7,6 +7,9 @@ comptenext.style.fontSize="1em";
 
 comptenext.style.marginTop = "0%";
 
+comptenext.style.margin = "1%";
+
+
 var list = document.getElementById("listebutton");
           
 list.style.display="flex";
