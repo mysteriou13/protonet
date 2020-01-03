@@ -100,9 +100,11 @@ echo "verfi&eacute;";
 </div>
 </div>
 
- <div id="nextcloud" class = "b3">
-dd
-</div>
+<div id="nextcloud" class="b3" >
+ <button id ="comptenextcloud" class = "b4"> mon compte </button>
+
+ </div>
+
 
 <script src= "./javascript/parametre.js"> </script>
 </body>
