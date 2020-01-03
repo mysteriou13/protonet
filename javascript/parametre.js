@@ -1,6 +1,9 @@
 
 document.getElementById('buttonparametre').style.backgroundColor ="darkblue";
 
+document.getElementById('comptenextcloud').style.fontSize="1em";
+
+
 var list = document.getElementById("listebutton");
           
 list.style.display="flex";
