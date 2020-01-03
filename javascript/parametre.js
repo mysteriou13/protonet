@@ -5,6 +5,7 @@ var comptenext = document.getElementById('comptenextcloud');
 
 comptenext.style.fontSize="1em";
 
+comptenext.style.marginTop = "0%";
 
 var list = document.getElementById("listebutton");
           
