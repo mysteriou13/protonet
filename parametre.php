@@ -101,7 +101,7 @@ echo "verfi&eacute;";
 </div>
 
 <div id="nextcloud" class="b3" >
- <button id ="comptenextcloud" class = "b4"> mon compte </button>
+ <button id ="comptenextcloud" class = "b4">  compte personel </button>
 
  </div>
 
