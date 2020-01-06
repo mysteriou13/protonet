@@ -46,6 +46,12 @@ $select1 = $mysqli->query($select);
 $select2 = $select1->fetch_assoc();
 
 
+$next = "SELECT COUNT(*)pseudo FROM nextcloud WHERE pseudo = '.$pseudo.'";
+
+$next1 = $mysqli->query($next);
+
+$next2 = $next1->fetch_assoc();
+
 
 ?> 
 
