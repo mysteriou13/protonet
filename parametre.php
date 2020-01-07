@@ -109,6 +109,18 @@ echo "verfi&eacute;";
 <div id="nextcloud" class="b3" >
  <button id ="comptenextcloud" class = "b4">  compte personel </button>
 
+<di:>
+<?php 
+ if($next2['pseudo'] == 0){
+
+ echo "&nbsp;pas encore de compte nextcloud";
+
+ }   
+
+?>
+
+ </div>
+
  </div>
 
 
