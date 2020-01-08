@@ -4,7 +4,7 @@
 $link = "";
 
 
-if($localhost == 1){
+if($_SERVER['SERVER_NAME'] == "localhost"){
 
 $link =  "http://".$_SERVER['SERVER_NAME']."/document"; 
 
