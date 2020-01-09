@@ -17,22 +17,6 @@ header("Location:index.php");
 
 }
 
-
-$select = "SELECT * FROM membre WHERE pseudo = '$pseudo'";
-
-$select1 = $mysqli->query($select);
-
-$select2 = $select1->fetch_assoc();
-
-
-$next = "SELECT COUNT(*)pseudo FROM nextcloud WHERE pseudo = '$pseudo'";
-
-$next1 = $mysqli->query($next);
-
-$next2 = $next1->fetch_assoc();
-
-
-
 ?>
 
 
@@ -52,7 +36,24 @@ parametre
 </br>
 
   <div >
- 
+<?php 
+
+
+$select = "SELECT * FROM membre WHERE pseudo = '$pseudo'";
+
+$select1 = $mysqli->query($select);
+
+$select2 = $select1->fetch_assoc();
+
+
+$next = "SELECT COUNT(*)pseudo FROM nextcloud WHERE pseudo = '.$pseudo.'";
+
+$next1 = $mysqli->query($next);
+
+$next2 = $next1->fetch_assoc();
+
+
+?> 
 
 <center>
 pseudo : <?php echo $select2['pseudo']?>
@@ -110,6 +111,8 @@ echo "verfi&eacute;";
 
 <div>
 <?php 
+echo $next2['pseudo'];
+
  if($next2['pseudo'] == 0){
 
  echo "&nbsp;pas encore de compte nextcloud";
