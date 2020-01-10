@@ -18,8 +18,17 @@ var list = document.getElementById("listebutton");
           
 list.style.display="flex";
 
+var path  = window.location.hash.substr(1);
 
-document.getElementById('nextcloud').style.display = "none";
+if(path == ''){
+
+this.affiche('parametre','buttonparametre');
+
+}else{
+
+this.affiche(path,'button'+path);
+
+}
 
 }
 
@@ -29,8 +38,9 @@ var button = ['parametre','nextcloud'];
 
 var listebutton = ['buttonparametre','buttonnextcloud'];
 
-  for(var i = 0; i < button.length; i++){
+document.location.href="parametre.php#"+id;
 
+  for(var i = 0; i < button.length; i++){
 
  if(id != button[i]){
 
