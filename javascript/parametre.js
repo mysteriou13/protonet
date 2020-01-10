@@ -1,4 +1,8 @@
 
+class parametre{
+
+constructor(){
+
 document.getElementById('buttonparametre').style.backgroundColor ="darkblue";
 
 var comptenext = document.getElementById('comptenextcloud');
@@ -17,7 +21,10 @@ list.style.display="flex";
 
 document.getElementById('nextcloud').style.display = "none";
 
-function affiche(id,idbutton){
+}
+
+
+ affiche(id,idbutton){
 var button = ['parametre','nextcloud'];
 
 var listebutton = ['buttonparametre','buttonnextcloud'];
@@ -56,3 +63,4 @@ var listebutton = ['buttonparametre','buttonnextcloud'];
 
 }
 
+}
