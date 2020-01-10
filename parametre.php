@@ -114,7 +114,16 @@ echo "verfi&eacute;";
 
  echo "&nbsp;pas encore de compte nextcloud";
 
- }   
+ }else{
+
+$cloud = "SELECT * FROM nextcloud WHERE pseudo = '$pseudo'";
+
+$cloud1 = $mysqli->query($cloud); 
+
+$cloud2 = $cloud1-> fetch_assoc();
+
+
+}
 
 ?>
 
