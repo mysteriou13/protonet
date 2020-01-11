@@ -73,6 +73,23 @@ document.location.href="parametre.php#"+id;
 
 }
 
+display(){
 
+var div = document.getElementById("perso").style.display;
+
+var dis = document.getElementById("perso");
+
+if(dis.style.display === '' ||  dis.style.display == "block"){
+
+dis.style.display ="none";
+
+}else{
+
+dis.style.display ="block";
+
+
+}
+
+}
 
 }

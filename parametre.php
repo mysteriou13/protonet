@@ -105,11 +105,12 @@ echo "verfi&eacute;";
 </div>
 
 <div id="nextcloud" class="b3" >
- <button id ="comptenextcloud" class = "b4">  compte personel </button>
+ <button id ="comptenextcloud" onclick = "par.display();"class = "b4">  compte personel </button>
 
 <div id ="perso">
 
 <?php 
+
  if($next2['pseudo'] == 0){
 
  echo "&nbsp;pas encore de compte nextcloud";
@@ -136,6 +137,7 @@ $cloud2 = $cloud1-> fetch_assoc();
 
 <script>
 var par = new parametre();
+
 </script>
 
 </body>
