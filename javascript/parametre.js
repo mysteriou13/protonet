@@ -73,4 +73,6 @@ document.location.href="parametre.php#"+id;
 
 }
 
+
+
 }

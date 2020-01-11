@@ -35,7 +35,6 @@ $next2 = $next1->fetch_assoc();
 
 ?>
 
-
 <div id ="listebutton"> <div  onclick = "par.affiche('parametre','buttonparametre')" > <button id="buttonparametre"  class="b4">parametre</button></div> 
 
 <div  onclick = "par.affiche('nextcloud','buttonnextcloud')"><button id ="buttonnextcloud"  class ="b4">  nextcloud</button></div>  </div>
@@ -108,7 +107,8 @@ echo "verfi&eacute;";
 <div id="nextcloud" class="b3" >
  <button id ="comptenextcloud" class = "b4">  compte personel </button>
 
-<div>
+<div id ="perso">
+
 <?php 
  if($next2['pseudo'] == 0){
 
