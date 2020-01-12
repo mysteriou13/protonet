@@ -3,9 +3,12 @@ class parametre{
 
 constructor(){
 
-document.getElementById('buttonparametre').style.backgroundColor ="darkblue";
-
 var comptenext = document.getElementById('comptenextcloud');
+
+var perso  =document.getElementById("perso");
+
+
+document.getElementById('buttonparametre').style.backgroundColor ="darkblue";
 
 comptenext.style.fontSize="1em";
 
@@ -29,6 +32,14 @@ this.affiche('parametre','buttonparametre');
 this.affiche(path,'button'+path);
 
 }
+
+perso.style.margin ="1%";
+
+perso.style.padding = "1%";
+
+perso.style.border = "solid";
+
+perso.style.borderRadius =  "25px";
 
 }
 
