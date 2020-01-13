@@ -31,6 +31,12 @@ $next1 = $mysqli->query($next);
 
 $next2 = $next1->fetch_assoc();
 
+$cloud = "SELECT * FROM nextcloud WHERE pseudo = '$pseudo'";
+
+$cloud1 = $mysqli->query($cloud); 
+
+$cloud2 = $cloud1-> fetch_assoc();
+
 
 
 ?>
@@ -109,23 +115,42 @@ echo "verfi&eacute;";
 
 <div id ="perso">
 
+
+
+ <style>
+
+    th, td {
+   background-color:blue;
+   color:white;
+   border-radius:25px;
+  font-size:1.5em;
+  border: 3px solid white;
+}
+
+ </style>
+
+<table style="width:100%">
+  <tr>
+    <th>pseudo</th>
+    <th>email</th> 
+    <th>date de fin abonement compte nextcloud</th>
+  </tr>
+  <tr>
+    <td> <center> <?php echo $cloud2['pseudo']; ?> </center> </td>
+    <td> <center> <?php echo $cloud2['email']; ?> </center> </td>
+    <td> <center> <?php echo $cloud2['date']; ?>  </center></td>
+  </tr>
+
+</table>
+
+
 <?php 
 
  if($next2['pseudo'] == 0){
 
  echo "&nbsp;pas encore de compte nextcloud";
 
- }else{
-
-$cloud = "SELECT * FROM nextcloud WHERE pseudo = '$pseudo'";
-
-$cloud1 = $mysqli->query($cloud); 
-
-$cloud2 = $cloud1-> fetch_assoc();
-
-
-}
-
+ }
 ?>
 
  </div>
