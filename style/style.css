@@ -10,6 +10,15 @@ border-radius:20px;
 
 }
 
+    th, td {
+   background-color:blue;
+   color:white;
+   border-radius:25px;
+  font-size:1.5em;
+  border: 3px solid white;
+}
+
+
 h1{
 
 color:white; font-size:2em;

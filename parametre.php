@@ -111,23 +111,12 @@ echo "verfi&eacute;";
 </div>
 
 <div id="nextcloud" class="b3" >
+
  <button id ="comptenextcloud" onclick = "par.display();"class = "b4">  compte personel + </button>
 
 <div id ="perso">
 
 
-
- <style>
-
-    th, td {
-   background-color:blue;
-   color:white;
-   border-radius:25px;
-  font-size:1.5em;
-  border: 3px solid white;
-}
-
- </style>
 
 <table style="width:100%">
   <tr>
