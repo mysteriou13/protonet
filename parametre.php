@@ -112,7 +112,7 @@ echo "verfi&eacute;";
 
 <div id="nextcloud" class="b3" >
 
- <button id ="comptenextcloud" onclick = "par.display();"class = "b4">  compte personel + </button>
+ <button id ="comptenextcloud" onclick = "par.display();"class = "b4">  compte personel  </button>
 
 <div id ="perso">
 

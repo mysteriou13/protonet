@@ -94,28 +94,16 @@ if(dis.style.display === '' ||  dis.style.display == "block"){
 
 dis.style.display ="none";
 
-this.rep("+","-");
-
-
 }else{
 
 dis.style.display ="block";
 
-this.rep("-","+");
 
 }
 
 
 }
 
-rep(remp,nou){
-var text = document.getElementById("comptenextcloud").innerHTML;
 
-
-var res = text.replace(remp,nou);
-
- document.getElementById("comptenextcloud").innerHTML =res;
-
-}
 
 }
