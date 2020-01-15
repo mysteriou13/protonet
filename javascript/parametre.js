@@ -3,9 +3,7 @@ class parametre{
 
 constructor(){
 
-var perso  =document.getElementById("perso");
 
-var menunextcloud = document.getElementById("menunextcloud"); 
 
 document.getElementById('buttonparametre').style.backgroundColor ="darkblue";
 
