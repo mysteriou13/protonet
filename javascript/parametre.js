@@ -7,6 +7,9 @@ var comptenext = document.getElementById('comptenextcloud');
 
 var perso  =document.getElementById("perso");
 
+var menunextcloud = document.getElementById("menunextcloud"); 
+
+menunextcloud.style.width = "100%";
 
 document.getElementById('buttonparametre').style.backgroundColor ="darkblue";
 

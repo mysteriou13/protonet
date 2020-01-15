@@ -112,13 +112,21 @@ echo "verfi&eacute;";
 
 <div id="nextcloud" class="b3" >
 
- <button id ="comptenextcloud" onclick = "par.display();"class = "b4">  compte personel  </button>
+<div id = "boxbutton" >
+
+<div id = "menunextcloud" >
+ <button id ="comptenextcloud"  onclick = "par.display();"class = "b4"> mon compte nextcloud  </button>
+</div>
+
+<div id = "comptethier" >
+<button id="buttonthier" >compte tiers nextcloud </button>
+</div>
+
+</div>
 
 <div id ="perso">
 
-
-
-<table style="width:100%">
+<table>
   <tr>
     <th>pseudo</th>
     <th>email</th> 

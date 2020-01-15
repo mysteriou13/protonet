@@ -10,6 +10,11 @@ border-radius:20px;
 
 }
 
+table{
+
+width:100%;
+
+}
     th, td {
    background-color:blue;
    color:white;
@@ -17,6 +22,7 @@ border-radius:20px;
   font-size:1.5em;
   border: 3px solid white;
 }
+
 
 
 h1{
@@ -47,6 +53,26 @@ font-size:1.5em;
 
 }
 
+#buttonthier{
+font-size:1.5em;
+}
+
+#comptethier{
+
+width:100%;
+}
+
+#boxbutton{
+
+display:flex;  justify-content: space-around;
+
+}
+
+#comptenextcloud{
+
+width:90%;
+
+}
 
 #textnextcloud{
 
