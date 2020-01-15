@@ -3,19 +3,11 @@ class parametre{
 
 constructor(){
 
-var comptenext = document.getElementById('comptenextcloud');
-
 var perso  =document.getElementById("perso");
 
 var menunextcloud = document.getElementById("menunextcloud"); 
 
 document.getElementById('buttonparametre').style.backgroundColor ="darkblue";
-
-comptenext.style.fontSize="1em";
-
-comptenext.style.marginTop = "0%";
-
-comptenext.style.margin = "1%";
 
 
 var list = document.getElementById("listebutton");
