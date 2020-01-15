@@ -3,11 +3,6 @@ class parametre{
 
 constructor(){
 
-
-
-document.getElementById('buttonparametre').style.backgroundColor ="darkblue";
-
-
 var list = document.getElementById("listebutton");
           
 list.style.display="flex";
