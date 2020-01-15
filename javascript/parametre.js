@@ -26,13 +26,8 @@ this.affiche(path,'button'+path);
 
 }
 
-perso.style.margin ="1%";
 
-perso.style.padding = "1%";
 
-perso.style.border = "solid";
-
-perso.style.borderRadius =  "25px";
 
 }
 
