@@ -26,9 +26,18 @@ this.affiche(path,'button'+path,button,listebutton);
 
 
 
- affiche(id,idbutton,button,listebutton){
+ affiche(id,idbutton,button,listebutton,sousid){
+
+
+if(sousid == null){
 
 document.location.href="parametre.php#"+id;
+
+}else{
+
+document.location.href="parametre.php#"+id+"#"+sousid;
+
+}
 
   for(var i = 0; i < button.length; i++){
 

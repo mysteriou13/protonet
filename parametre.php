@@ -42,9 +42,9 @@ $cloud2 = $cloud1-> fetch_assoc();
 ?>
 
 <div id ="listebutton"> <div  
-onclick = "par.affiche('parametre','buttonparametre',button,listebutton)" > <button id="buttonparametre"  class="b4">parametre</button></div> 
+onclick = "par.affiche('parametre','buttonparametre',button,listebutton,null)" > <button id="buttonparametre"  class="b4">parametre</button></div> 
 
-<div  onclick = "par.affiche('nextcloud','buttonnextcloud',button,listebutton)"><button id ="buttonnextcloud"  class ="b4">  nextcloud</button></div>  </div>
+<div  onclick = "par.affiche('nextcloud','buttonnextcloud',button,listebutton,null)"><button id ="buttonnextcloud"  class ="b4">  nextcloud</button></div>  </div>
 
 </br>
 <div id = "parametre" class ="b3">
@@ -117,12 +117,12 @@ echo "verfi&eacute;";
 
 <div id = "menunextcloud" >
  <button id ="comptenextcloud"  
-onclick = "par.affiche('perso','comptenextcloud',divbutton,cloudbutton)"class = "b4"> mon compte nextcloud  </button>
+onclick = "par.affiche('perso','comptenextcloud',divbutton,cloudbutton,'nextcloud')"class = "b4"> mon compte nextcloud  </button>
 </div>
 
 <div id = "comptethier" >
 <button id="buttonthier" 
-onclick ="par.affiche('thiercloud','buttonthier',divbutton,cloudbutton) " >compte tiers nextcloud </button>
+onclick ="par.affiche('thiercloud','buttonthier',divbutton,cloudbutton,'nextcloud') " >compte tiers nextcloud </button>
 </div>
 
 </div>

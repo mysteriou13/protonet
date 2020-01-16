@@ -1,0 +1,56 @@
+[1mdiff --git a/javascript/parametre.js b/javascript/parametre.js[m
+[1mindex 1a18951..18c08a1 100644[m
+[1m--- a/javascript/parametre.js[m
+[1m+++ b/javascript/parametre.js[m
+[36m@@ -26,10 +26,19 @@[m [mthis.affiche(path,'button'+path,button,listebutton);[m
+ [m
+ [m
+ [m
+[31m- affiche(id,idbutton,button,listebutton){[m
+[32m+[m[32m affiche(id,idbutton,button,listebutton,sousid){[m
+[32m+[m
+[32m+[m
+[32m+[m[32mif(sousid == null){[m
+ [m
+ document.location.href="parametre.php#"+id;[m
+ [m
+[32m+[m[32m}else{[m
+[32m+[m
+[32m+[m[32mdocument.location.href="parametre.php#"+id+"#"+sousid;[m
+[32m+[m
+[32m+[m[32m}[m
+[32m+[m
+   for(var i = 0; i < button.length; i++){[m
+ [m
+  if(id != button[i]){[m
+[1mdiff --git a/parametre.php b/parametre.php[m
+[1mindex 9254b0e..8393815 100644[m
+[1m--- a/parametre.php[m
+[1m+++ b/parametre.php[m
+[36m@@ -42,9 +42,9 @@[m [m$cloud2 = $cloud1-> fetch_assoc();[m
+ ?>[m
+ [m
+ <div id ="listebutton"> <div  [m
+[31m-onclick = "par.affiche('parametre','buttonparametre',button,listebutton)" > <button id="buttonparametre"  class="b4">parametre</button></div> [m
+[32m+[m[32monclick = "par.affiche('parametre','buttonparametre',button,listebutton,null)" > <button id="buttonparametre"  class="b4">parametre</button></div>[m[41m [m
+ [m
+[31m-<div  onclick = "par.affiche('nextcloud','buttonnextcloud',button,listebutton)"><button id ="buttonnextcloud"  class ="b4">  nextcloud</button></div>  </div>[m
+[32m+[m[32m<div  onclick = "par.affiche('nextcloud','buttonnextcloud',button,listebutton,null)"><button id ="buttonnextcloud"  class ="b4">  nextcloud</button></div>  </div>[m
+ [m
+ </br>[m
+ <div id = "parametre" class ="b3">[m
+[36m@@ -117,12 +117,12 @@[m [mecho "verfi&eacute;";[m
+ [m
+ <div id = "menunextcloud" >[m
+  <button id ="comptenextcloud"  [m
+[31m-onclick = "par.affiche('perso','comptenextcloud',divbutton,cloudbutton)"class = "b4"> mon compte nextcloud  </button>[m
+[32m+[m[32monclick = "par.affiche('perso','comptenextcloud',divbutton,cloudbutton,'nextcloud')"class = "b4"> mon compte nextcloud  </button>[m
+ </div>[m
+ [m
+ <div id = "comptethier" >[m
+ <button id="buttonthier" [m
+[31m-onclick ="par.affiche('thiercloud','buttonthier',divbutton,cloudbutton) " >compte tiers nextcloud </button>[m
+[32m+[m[32monclick ="par.affiche('thiercloud','buttonthier',divbutton,cloudbutton,'nextcloud') " >compte tiers nextcloud </button>[m
+ </div>[m
+ [m
+ </div>[m
