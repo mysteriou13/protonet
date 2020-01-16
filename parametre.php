@@ -116,11 +116,13 @@ echo "verfi&eacute;";
 <div id = "boxbutton" >
 
 <div id = "menunextcloud" >
- <button id ="comptenextcloud"  onclick = "par.display();"class = "b4"> mon compte nextcloud  </button>
+ <button id ="comptenextcloud"  
+onclick = "par.affiche('perso','comptenextcloud',divbutton,cloudbutton)"class = "b4"> mon compte nextcloud  </button>
 </div>
 
 <div id = "comptethier" >
-<button id="buttonthier" >compte tiers nextcloud </button>
+<button id="buttonthier" 
+onclick ="par.affiche('thiercloud','buttonthier',divbutton,cloudbutton) " >compte tiers nextcloud </button>
 </div>
 
 </div>
