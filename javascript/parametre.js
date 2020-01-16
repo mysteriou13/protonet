@@ -3,10 +3,6 @@ class parametre{
 
 constructor(button,listebutton){
 
-var list = document.getElementById("listebutton");
-          
-list.style.display="flex";
-
 var path  = window.location.hash.substr(1);
 
 if(path == ''){
