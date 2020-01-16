@@ -1,7 +1,7 @@
 
 class parametre{
 
-constructor(){
+constructor(button){
 
 var list = document.getElementById("listebutton");
           
@@ -11,22 +11,19 @@ var path  = window.location.hash.substr(1);
 
 if(path == ''){
 
-this.affiche('parametre','buttonparametre');
+this.affiche('parametre','buttonparametre',button);
 
 }else{
 
-this.affiche(path,'button'+path);
+this.affiche(path,'button'+path,button);
+
+}
 
 }
 
 
+ affiche(id,idbutton,button){
 
-
-}
-
-
- affiche(id,idbutton){
-var button = ['parametre','nextcloud'];
 
 var listebutton = ['buttonparametre','buttonnextcloud'];
 

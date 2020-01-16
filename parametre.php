@@ -41,9 +41,10 @@ $cloud2 = $cloud1-> fetch_assoc();
 
 ?>
 
-<div id ="listebutton"> <div  onclick = "par.affiche('parametre','buttonparametre')" > <button id="buttonparametre"  class="b4">parametre</button></div> 
+<div id ="listebutton"> <div  
+onclick = "par.affiche('parametre','buttonparametre',button)" > <button id="buttonparametre"  class="b4">parametre</button></div> 
 
-<div  onclick = "par.affiche('nextcloud','buttonnextcloud')"><button id ="buttonnextcloud"  class ="b4">  nextcloud</button></div>  </div>
+<div  onclick = "par.affiche('nextcloud','buttonnextcloud',button)"><button id ="buttonnextcloud"  class ="b4">  nextcloud</button></div>  </div>
 
 </br>
 <div id = "parametre" class ="b3">
@@ -162,7 +163,10 @@ thiercould
 <script src= "./javascript/parametre.js"> </script>
 
 <script>
-var par = new parametre();
+
+var button = ['parametre','nextcloud'];
+
+var par = new parametre(button);
 
 </script>
 
