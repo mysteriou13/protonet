@@ -1,7 +1,7 @@
 
 class parametre{
 
-constructor(button){
+constructor(button,listebutton){
 
 var list = document.getElementById("listebutton");
           
@@ -11,21 +11,18 @@ var path  = window.location.hash.substr(1);
 
 if(path == ''){
 
-this.affiche('parametre','buttonparametre',button);
+this.affiche('parametre','buttonparametre',button,listebutton);
 
 }else{
 
-this.affiche(path,'button'+path,button);
+this.affiche(path,'button'+path,button,listebutton);
 
 }
 
 }
 
 
- affiche(id,idbutton,button){
-
-
-var listebutton = ['buttonparametre','buttonnextcloud'];
+ affiche(id,idbutton,button,listebutton){
 
 document.location.href="parametre.php#"+id;
 
