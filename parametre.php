@@ -168,6 +168,10 @@ var button = ['parametre','nextcloud'];
 
 var listebutton = ['buttonparametre','buttonnextcloud'];
 
+var cloudbutton = ['comptenextcloud','buttonthier'];
+
+var divbutton =['perso','thiercloud'];
+
 var par = new parametre(button,listebutton);
 
 </script>
