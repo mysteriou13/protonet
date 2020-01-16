@@ -3,6 +3,13 @@ class parametre{
 
 constructor(button,listebutton){
 
+this.path();
+
+}
+
+
+path(){
+
 var path  = window.location.hash.substr(1);
 
 if(path == ''){
@@ -16,6 +23,7 @@ this.affiche(path,'button'+path,button,listebutton);
 }
 
 }
+
 
 
  affiche(id,idbutton,button,listebutton){
