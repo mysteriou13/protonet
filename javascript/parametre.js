@@ -1,59 +1,91 @@
 
 class parametre{
 
-constructor(button,listebutton){
+constructor(button,listebutton,listdiv){
 
-this.path();
-
-}
-
-
-path(){
-
-var path  = window.location.hash.substr(1);
-
-if(path == ''){
-
-this.affiche('parametre','buttonparametre',button,listebutton);
-
-}else{
-
-this.affiche(path,'button'+path,button,listebutton);
-
-}
+this.path(listdiv,listebutton);
 
 }
 
 
+path(lisdiv,listebutton){
 
- affiche(id,idbutton,button,listebutton,sousid){
+var path  = window.location.hash;
 
+var path1 = path.split("#");
+
+var nbpath = path1.length;
+
+
+if(nbpath == 1){
+
+this.affiche('parametre',listebutton,button,listebutton,null);
+
+}
+
+if(nbpath == 2){
+
+this.affiche(path1[1],listebutton,button,listebutton,null);
+
+}
+
+if(nbpath == 3){
+
+this.affiche(path1[1],listebutton,listdiv,listebutton,path1[2],path1);
+
+}
+
+}
+
+
+
+ affiche(id,idbutton,button,listebutton,sousid,tabid){
 
 if(sousid == null){
 
 document.location.href="parametre.php#"+id;
+  for(var i = 0; i < button.length; i++){
+
+ if(id == button[i]){
+
+ document.getElementById(button[i]).style.display ="block";
+ 
+
+    }else{
+
+ document.getElementById(button[i]).style.display ="none";
+
+
+}
+
+}
+
 
 }else{
+
+  for(var i = 0; i < button.length; i++){
+
+ if( id == button[i] ||  sousid == button[i]){
+
+ document.getElementById(button[i]).style.display ="block";
+ 
+
+    }else{
+
+ document.getElementById(button[i]).style.display ="none";
+
+
+}
+
+}
+
 
 document.location.href="parametre.php#"+id+"#"+sousid;
 
 }
 
-  for(var i = 0; i < button.length; i++){
-
- if(id != button[i]){
-
- document.getElementById(button[i]).style.display ="none";
- 
-
-    }else{
-
- document.getElementById(button[i]).style.display ="block";
 
 
-}
-
-}
 
  for(var i = 0; i < listebutton.length; i++){
 
@@ -91,7 +123,5 @@ dis.style.display ="block";
 
 
 }
-
-
 
 }

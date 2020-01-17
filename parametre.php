@@ -174,7 +174,10 @@ var cloudbutton = ['comptenextcloud','buttonthier'];
 
 var divbutton =['perso','thiercloud'];
 
-var par = new parametre(button,listebutton);
+var listdiv = ['perso','thiercloud','parametre','nextcloud'];
+
+
+var par = new parametre(button,listebutton,listdiv);
 
 </script>
 
