@@ -1,14 +1,14 @@
 
 class parametre{
 
-constructor(button,listebutton,listdiv){
+constructor(listebutton,listediv,listesousbutton,listesousdiv){
 
-this.path(listdiv,listebutton);
+this.path(listebutton,listediv,listesousbutton,listesousdiv);
 
 }
 
 
-path(lisdiv,listebutton){
+path(listebutton,listediv,listesousbutton,listesousdiv){
 
 var path  = window.location.hash;
 
@@ -16,112 +16,83 @@ var path1 = path.split("#");
 
 var nbpath = path1.length;
 
-
-if(nbpath == 1){
-
-this.affiche('parametre',listebutton,button,listebutton,null);
+if(path1[3] == null){
+path1[3] = "comptenexloud";
 
 }
 
-if(nbpath == 2){
-
-this.affiche(path1[1],listebutton,button,listebutton,null);
-
+this.affiche(path1[1],path1[2],listebutton,listediv,path1[3],listesousbutton,path1[4],listesousdiv);
 }
 
-if(nbpath == 3){
-
-this.affiche(path1[1],listebutton,listdiv,listebutton,path1[2],path1);
-
-}
-
-}
+ affiche(button,div,listebutton,listediv,sousbutton,listesousbutton,sousdiv,listesousdiv){
 
 
-
- affiche(id,idbutton,button,listebutton,sousid,tabid){
-
-if(sousid == null){
-
-document.location.href="parametre.php#"+id;
-  for(var i = 0; i < button.length; i++){
-
- if(id == button[i]){
-
- document.getElementById(button[i]).style.display ="block";
- 
-
-    }else{
-
- document.getElementById(button[i]).style.display ="none";
+document.location.href ="#"+button+"#"+div+"#"+sousbutton+"#"+sousdiv;
 
 
-}
+ for(var i =0; i < listebutton.length; i++ ){
 
-}
+  if(listebutton[i]  == button){
+  
+  document.getElementById(listebutton[i]).style.backgroundColor = "darkblue";
 
+  }else{
 
-}else{
-
-  for(var i = 0; i < button.length; i++){
-
- if( id == button[i] ||  sousid == button[i]){
-
- document.getElementById(button[i]).style.display ="block";
- 
-
-    }else{
-
- document.getElementById(button[i]).style.display ="none";
-
-
-}
-
-}
-
-
-document.location.href="parametre.php#"+id+"#"+sousid;
-
-}
-
-
-
-
- for(var i = 0; i < listebutton.length; i++){
-
-  if(idbutton == listebutton[i]){
-
-   document.getElementById(idbutton).style.backgroundColor = "darkblue";
-
-}else{
-  document.getElementById(listebutton[i]).style.backgroundColor = "blue";
-
-
+    document.getElementById(listebutton[i]).style.backgroundColor = "blue";
 
   }
 
+  } 
+
+  for(var i =0; i < listediv.length; i++ ){
+
+  if(listediv[i]  == div){
+
+  document.getElementById(listediv[i]).style.display = "block";
+
+  }else{
+
+    document.getElementById(listediv[i]).style.display = "none";
+
   }
 
+  } 
+
+ for( var i = 0; i < listesousbutton.length; i++){
+  
+
+  if(listesousbutton[i] == sousbutton){   
+   document.getElementById(sousbutton).style.backgroundColor = "darkblue";
+
+   }else{
+   document.getElementById(listesousbutton[i]).style.backgroundColor = "blue";
+
+
+
+ }
+
+
+
+
+ }
+
+  for(var i =0; i < listesousbutton.length; i++){
+   
+   if(sousdiv == listesousdiv[i]){
+  
+    document.getElementById(listesousdiv[i]).style.display = "block";
+   
+   }else{
+
+ document.getElementById(listesousdiv[i]).style.display = "none";
+
+   }
+
+   }
+
 }
 
-display(){
-
-var div = document.getElementById("perso").style.display;
-
-var dis = document.getElementById("perso");
-
-if(dis.style.display === '' ||  dis.style.display == "block"){
-
-dis.style.display ="none";
-
-}else{
-
-dis.style.display ="block";
 
 
-}
-
-
-}
 
 }

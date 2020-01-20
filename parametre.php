@@ -42,9 +42,9 @@ $cloud2 = $cloud1-> fetch_assoc();
 ?>
 
 <div id ="listebutton"> <div  
-onclick = "par.affiche('parametre','buttonparametre',button,listebutton,null)" > <button id="buttonparametre"  class="b4">parametre</button></div> 
+onclick = "par.affiche('buttonparametre','parametre',listebutton,listediv)" > <button id="buttonparametre"  class="b4">parametre</button></div> 
 
-<div  onclick = "par.affiche('nextcloud','buttonnextcloud',button,listebutton,null)"><button id ="buttonnextcloud"  class ="b4">  nextcloud</button></div>  </div>
+<div  onclick = "par.affiche('buttonnextcloud','nextcloud',listebutton,listediv,'comptenextcloud',listesousbutton,'perso',listesousdiv)"><button id ="buttonnextcloud"  class ="b4">  nextcloud</button></div>  </div>
 
 </br>
 <div id = "parametre" class ="b3">
@@ -117,12 +117,12 @@ echo "verfi&eacute;";
 
 <div id = "menunextcloud" >
  <button id ="comptenextcloud"  
-onclick = "par.affiche('perso','comptenextcloud',divbutton,cloudbutton,'nextcloud')"class = "b4"> mon compte nextcloud  </button>
+onclick = "par.affiche('buttonnextcloud','nextcloud',listebutton,listediv,this.id,listesousbutton,'perso',listesousdiv)"> mon compte nextcloud  </button>
 </div>
 
 <div id = "comptethier" >
 <button id="buttonthier" 
-onclick ="par.affiche('thiercloud','buttonthier',divbutton,cloudbutton,'nextcloud') " >compte tiers nextcloud </button>
+onclick ="par.affiche('buttonnextcloud','nextcloud',listebutton,listediv,this.id,listesousbutton,'thiercloud',listesousdiv) " >compte tiers nextcloud </button>
 </div>
 
 </div>
@@ -156,7 +156,7 @@ onclick ="par.affiche('thiercloud','buttonthier',divbutton,cloudbutton,'nextclou
  </div>
 
 <div id = "thiercloud">
-thiercould
+thiercloud
 </div>
 
  </div>
@@ -166,18 +166,19 @@ thiercould
 
 <script>
 
-var button = ['parametre','nextcloud'];
+var path = window.location.hash;
+
+var path1 = path.split("#");
+
+var listediv = ['parametre','nextcloud'];
 
 var listebutton = ['buttonparametre','buttonnextcloud'];
 
-var cloudbutton = ['comptenextcloud','buttonthier'];
+var listesousbutton = ['comptenextcloud','buttonthier'];
 
-var divbutton =['perso','thiercloud'];
+var listesousdiv = ['perso', 'thiercloud'];
 
-var listdiv = ['perso','thiercloud','parametre','nextcloud'];
-
-
-var par = new parametre(button,listebutton,listdiv);
+var par = new parametre(listebutton,listediv,listesousbutton,listesousdiv);
 
 </script>
 

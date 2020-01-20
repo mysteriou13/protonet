@@ -1,7 +1,8 @@
 
 
 <div class= "parametre">
-<a  href = "parametre.php">mon compte</a>
+<a  href = "parametre.php" onclick="">mon compte</a>
+
 
 </div>
 
