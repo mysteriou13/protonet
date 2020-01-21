@@ -16,6 +16,18 @@ var path1 = path.split("#");
 
 var nbpath = path1.length;
 
+if(path1[1] == null){
+
+path1[1] = "buttonparametre";
+
+}
+
+if(path1[2] == null){
+
+path1[2] = "parametre";
+
+}
+
 if(path1[3] == null){
 path1[3] = "comptenexloud";
 
