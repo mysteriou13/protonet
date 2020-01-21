@@ -4,11 +4,9 @@
 include_once("header.php");
 include_once("head.php");
 
-$link = "";
 
 
-
-if($localhost == 1){
+if($localhost == null){
 
 $link =  "http://".$_SERVER['SERVER_NAME']."/document"; 
 
@@ -18,7 +16,7 @@ $link =  "http://".$_SERVER['SERVER_NAME']."/document";
 
 }
 
-  $src = $link."/CGU.html";
+ $src = $link."/CGU.html";
 
 ?>
 
