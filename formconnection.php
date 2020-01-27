@@ -1,45 +1,22 @@
 
-</br>
-<div id= "b3">
+<form id ="connection" action = "<?php echo $_SERVER['PHP_SELF']?>" method ="POST">
 
-    <p>
+<center>
+<table>
 
-    <center  id = "b4">
-     connection
-    </center>
-   </p>
+<tr> <td> pseudo  <input name="pseudo" type= "text"> <td>  mot de pass  <input name="pass" type= "password"></td>
 
 
+<tr>
+ <td><center> <input class= "button" type="submit"></center> </td></tr>
+</tr>
 
 
-<form id = "connection"  class = "formconnection" action = "<?php echo $_SERVER['PHP_SELF']; ?>" method = "POST">
-<div  >
-
-<div id="b6">
-
-<center> pseudo <input name = "pseudo" type = "text"></center>
-
-</div>
-
-</br>
-
-<div id= "b6">
-
-<center>  mot de pass <input name = "pass" type = "password"> <a  href = "oublipass.php"> mot de pass oubli&eacute; </a></center>
-
-</div>
-
-
-<div >
-<center><button  id = "b4" class ="button" type = "submit"   value = "connection">valider </button></center>
-</div>
-</br>
-
-</div>
+</table>
+</center>
 </form>
 
 <?php
-
 if(isset($_POST['pseudo']) && !empty($_POST['pseudo']) && 
     isset($_POST['pass']) && !empty($_POST['pass']) ){
 
@@ -84,7 +61,4 @@ echo "<center id = 'error' class = 'divheader'> erreur pseudo ou mot de pass inc
 
 ?>
 
-
 </div>
-
-

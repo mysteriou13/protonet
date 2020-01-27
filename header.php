@@ -99,8 +99,15 @@ if(isset($_SESSION['pseudo'])){
 include("divmembre.php");
 
 }
+
+
+if(!isset($_SESSION['pseudo'])){
+
+include("formconnection.php");
+
+}
+
 ?>
+
 </div>
-
-
 </header>

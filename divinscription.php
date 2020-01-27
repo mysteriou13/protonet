@@ -9,9 +9,4 @@ inscription
 </div>
 
 
-<div class = "divheader">
-
-<a href ="connect.php"> connection</a>
-
-</div>
 
