@@ -1,26 +1,12 @@
 
-<div class= "divflex">
 
-<form id ="connection" action = "<?php echo $_SERVER['PHP_SELF']?>" method ="POST">
+<form id ="connection" class="button" action = "<?php echo $_SERVER['PHP_SELF']?>" method ="POST">
 
-<center>
-<table>
+<label> pseudo</label>  <input  name="pseudo" type= "text">   <label>mot de pass</label>  <input name="pass" type= "password">
+ <input class= "button" type="submit">
 
-<div>
-<tr> <td> pseudo  <input name="pseudo" type= "text"> <td>  mot de pass  <input name="pass" type= "password"></td>
-</div>
-
-<div>
-<tr>
- <td><center> <input class= "button" type="submit"></center> </td></tr>
-</tr>
-</div>
-
-</table>
-</center>
 </form>
 
-</div>
 <?php
 if(isset($_POST['pseudo']) && !empty($_POST['pseudo']) && 
     isset($_POST['pass']) && !empty($_POST['pass']) ){
@@ -66,4 +52,3 @@ echo "<center id = 'error' class = 'divheader'> erreur pseudo ou mot de pass inc
 
 ?>
 
-</div>

@@ -12,10 +12,10 @@ border-radius:20px;
 
 table{
 
-width:100%;
 
 }
     th, td {
+
    background-color:blue;
    color:white;
    border-radius:25px;

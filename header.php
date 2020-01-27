@@ -100,7 +100,11 @@ include("divmembre.php");
 
 }
 
+?>
+</div>
 
+<div>
+<?php
 if(!isset($_SESSION['pseudo'])){
 
 include("formconnection.php");
@@ -108,6 +112,5 @@ include("formconnection.php");
 }
 
 ?>
-
 </div>
 </header>
