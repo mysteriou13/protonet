@@ -1,21 +1,26 @@
 
+<div class= "divflex">
+
 <form id ="connection" action = "<?php echo $_SERVER['PHP_SELF']?>" method ="POST">
 
 <center>
 <table>
 
+<div>
 <tr> <td> pseudo  <input name="pseudo" type= "text"> <td>  mot de pass  <input name="pass" type= "password"></td>
+</div>
 
-
+<div>
 <tr>
  <td><center> <input class= "button" type="submit"></center> </td></tr>
 </tr>
-
+</div>
 
 </table>
 </center>
 </form>
 
+</div>
 <?php
 if(isset($_POST['pseudo']) && !empty($_POST['pseudo']) && 
     isset($_POST['pass']) && !empty($_POST['pass']) ){
