@@ -3,7 +3,7 @@
 <form id ="connection" class="button" action = "<?php echo $_SERVER['PHP_SELF']?>" method ="POST">
 
 <label> pseudo</label>  <input  name="pseudo" type= "text">   <label>mot de pass</label>  <input name="pass" type= "password">
- <input class= "button" type="submit">
+ <input class= "button" type="submit" value = "connection">
 
 </form>
 
