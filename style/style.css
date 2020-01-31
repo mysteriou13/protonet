@@ -14,6 +14,23 @@ table{
 
 
 }
+
+#tab{
+
+width:100%;
+
+}
+
+#td{
+
+padding-left:40%;
+}
+
+caption{
+
+color:white;
+font-size:2em;
+}
     th, td {
 
    background-color:blue;

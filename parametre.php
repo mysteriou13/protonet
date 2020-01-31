@@ -47,30 +47,24 @@ onclick = "par.affiche('buttonparametre','parametre',listebutton,listediv)" > <b
 <div  onclick = "par.affiche('buttonnextcloud','nextcloud',listebutton,listediv,'comptenextcloud',listesousbutton,'perso',listesousdiv)"><button id ="buttonnextcloud"  class ="b4">  nextcloud</button></div>  </div>
 
 </br>
-<div id = "parametre" class ="b3">
-<div>
 
-<center>
+<div id = "parametre" class= "b3">
+<table id ="tab">
+
+<caption >
 parametre
-</center>
+</caption>
 
-</div>
-</br>
+<tr>
 
-  <div >
- 
-
-<center>
+<td id = "td">
 pseudo : <?php echo $select2['pseudo']?>
-</center>
+</td>
 
-</div>
+</tr>
 
-</br>
-
-<div >
-<center>
-email : <?php echo $select2['email']?> etat: 
+<tr>
+<td id="td">
 <?php 
 
 
@@ -107,8 +101,12 @@ echo "verfi&eacute;";
 
 }
 ?>
-</center>
-</div>
+
+</td>
+</tr>
+
+</table>
+
 </div>
 
 <div id="nextcloud" class="b3" >
