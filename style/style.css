@@ -71,6 +71,12 @@ font-size:1.5em;
 
 }
 
+#changepass{
+
+display:none;
+
+}
+
 #listebutton{
 
 display:flex;
@@ -269,7 +275,7 @@ padding-left:30%;
 
 }
 
-#b,#b1{
+#b,#b1,.b{
 
 color:white; background-color:blue; font-size:1em;  
 }

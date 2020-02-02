@@ -63,6 +63,17 @@ pseudo : <?php echo $select2['pseudo']?>
 
 </tr>
 
+
+<td id= "td">
+
+<button class="b" onclick ="par.display('changepass')"> changer de mot de pass </button>
+
+</tr>
+
+<?php 
+include("changepass.php");
+?>
+
 <tr>
 <td id="td">
 <?php 

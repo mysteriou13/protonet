@@ -1,35 +1,22 @@
-<html>
-<body>
-<?php 
-include_once("head.php");
-
-include_once("header.php");
-
-
-?>
-
-<div  class  = "strong">
+<td  id ="changepass">
 
 <center>
-
  changer de mot pass
+</center>
 
 <form action = "<?php $_SERVER['PHP_SELF']?>" method  = "POST">
 
 nouveau  mot de pass<input type  = "password" name = "newpass">
-
 </br>
 
 confirm mot de pass<input type = "password" name = "confirpass">
 
-</br>
 
 <input type = "submit" value = "envoyer">
+
 </form>
 
-</center>
-
-</div>
+</td>
 
 <?php 
 
@@ -76,5 +63,3 @@ echo "erreur  les deux mot de pass ne sont pas";
 
 ?>
 
-</body>
-</html>
