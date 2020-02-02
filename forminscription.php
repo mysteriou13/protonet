@@ -1,22 +1,18 @@
 
-</br>
-<div id ="b3" style ="padding:1%;">
 
-   <p>
+<table>
 
-    <center  id = "b4">
-     inscription
-    </center>
-   </p>
+<caption id = "b3">
+inscription
+</caption>
 
-
-
-<center>
 <form action = "<?php $_SERVER['PHP_SELF']?>" method  ="POST">
 
+<tr>
 
-<div id= "b6"> pseudo  <input type  ="text"  name = "pseudo"></div>
+<td id ="td"> pseudo  <input type  ="text"  name = "pseudo"></td>
 
+</tr>
 
 <?php
 
@@ -46,9 +42,8 @@ echo "pseudo pris";
 }
    ?>
 
-</br>
 
-<div id ="b6"> mot de pass <input type = "password" name  = "pass"></div>
+<tr> <td id = "td"> mot de pass <input type = "password" name  = "pass"> </td> </tr>
 
 <?php
 if(isset($_POST['pass']) && !empty($_POST['pass'])){
@@ -72,11 +67,9 @@ $validepass = 0;
 }
 
 ?>
-</br>
 
-<div id = "b6"> email <input type  = "text" name  = "email"></div>
+<tr> <td id = "td"> email <input type  = "text" name  = "email"></td> </tr>
 
-</br>
 
 <?php
 
@@ -116,7 +109,8 @@ $erroremail  = 0;
 
 
  ?>
-<div id="b6">
+<tr>
+<td id ="td">
  accepter  les <a  href = "<?php echo $link."/CGU.php"?>"> CGU </a> <input  name = "CGU"  type = "checkbox">
 
 <?php 
@@ -128,15 +122,16 @@ echo "vous devez accepter les CGU";
 }
 
 ?>
-</div>
-</br>
+</td>
+</tr>
 
- <button id = "b4"  type = "submit" name = "val" value = "valider">valider</button>
+<tr>
+<td id= "td">
+ <button class="b" type = "submit" name = "val" value = "valider">valider</button>
+</td>
+</tr>
 
-</br>
-</br>
 </form>
-</center>
 
 <?php 
 
@@ -200,4 +195,4 @@ header("Location:$modelink");
 }
 ?>
 
-</div>
+</table>
