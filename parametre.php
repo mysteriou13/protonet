@@ -171,7 +171,7 @@ thiercloud
  </div>
 
 
-<script src= "./javascript/parametre.js"> </script>
+<script src= "./script/parametre.js"> </script>
 
 <script>
 
