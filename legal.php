@@ -7,47 +7,41 @@ include_once("head.php");
 include_once("header.php");
 ?>
 
-</br>
-<div id ="b3">
 
-<div>
-<center  >
+<table>
+
+<tr>
+<td class="td">
 responsable du site
-</center>
-</div>
-</br>
+</td>
+</tr>
 
-<div >
-<center>
-nom :massa
-</center>
-</div>
+<tr>
+<td id= "td">nom :massa</td>
 
-</br>
+</tr>
 
-<div >
-<center>
-pr&eacute;nom: anthony
-</center>
-</div>
-</br>
+<tr>
 
-<div >
-<center>
+<td id ="td">
+
 email:mrmassaanthony@gmail.com
-</center>
-</div>
-</br>
 
-<div >
-<center>
+</td>
+
+</tr>
+
+
+<tr>
+
+<td id ="td">
 adress:casa d'arutoli rte de muratello bat i apt 43 20137 porto-vecchio
-</center>
-</div>
-</center>
-</div>
 
-</div>
+</td>
+
+</tr>
+
+</table>
 
 </body>
 </html>
