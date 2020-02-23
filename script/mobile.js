@@ -1,3 +1,7 @@
+
+class mobile{
+
+typescreen(){
  var mobile = 0;
 
  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
@@ -6,10 +10,12 @@ mobile = 1;
 
 }
 
+return mobile;
+}
+ 
+displaymobile(dis,id){
 
-function displaymobile(mobile,dis,id){
-
-if(mobile == 0){
+if(this.typescreen() == 0){
 
 document.getElementById(id).style.display = dis; 
 
@@ -17,10 +23,9 @@ document.getElementById(id).style.display = dis;
 
 }
 
-function affichemobile(mobile,id){
+affichemobile(id){
 
-
-if(mobile == 1){
+if(this.typescreen() == 1){
 
 document.getElementById(id).style.display = "block"; 
 
@@ -34,9 +39,9 @@ document.getElementById(id).style.display = "none";
 
 }
 
-function cachemobile(mobile,id){
+cachemobile(id){
 
-if(mobile == 1){
+if(this.typescreen() == 1){
 
 document.getElementById(id).style.display = "none"; 
 
@@ -50,15 +55,14 @@ document.getElementById(id).style.display = "block";
 
 }
 
-
-function changeclassmobile(id,oldclass,newclass,mobile){
+ changeclassmobile(id,oldclass,newclass){
 
 var oldclass = oldclass;
 
 
 var newclass = newclass;
 
-if(mobile == 1){
+if(this.typescreen() == 1){
 
  document.getElementById(id).className = newclass;
 
@@ -71,11 +75,11 @@ document.getElementById(id).className = oldclass;
 
 }
 
-function changewidthmobile(id,mobile){
+changewidthmobile(id){
 
 var div =  document.getElementById(id);
 
-if(mobile ==  0){
+if(this.typescreen() ==  0){
 
 div.style.width = "50%";
 
@@ -83,3 +87,4 @@ div.style.width = "50%";
 
 }
 
+}

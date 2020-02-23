@@ -113,16 +113,20 @@ include("formconnection.php");
 
 ?>
 
+
+</div>
+
 <script type="text/javascript" src = "./script/mobile.js"> </script>
 
 <script>
 
-affichemobile(mobile,"connectionmobile");
+var mob = new mobile;
 
-cachemobile(mobile,"connection");
+mob.affichemobile("connectionmobile");
+
+mob.cachemobile("connection");
 
 </script>
 
 
-</div>
 </header>

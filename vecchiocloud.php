@@ -43,10 +43,16 @@ et que vous pouvez partager facilement avec vos contacts.
 
 </div>
 
-<script src = "./script/mobile.js"></script>
 
-<script src = "./script/vecchiocloud.js"> </script>
 
+<script>
+mob.displaymobile("flex","nextcloud");
+
+mob.changeclassmobile("textnextcloud","b4","b5");
+
+mob.changewidthmobile("textnextcloud");
+
+</script>
 
 </body>
 </html>

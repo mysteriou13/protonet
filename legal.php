@@ -43,13 +43,11 @@ adress:casa d'arutoli rte de muratello bat i apt 43 20137 porto-vecchio
 
 </table>
 
-<script type="text/javascript" src="./script/mobile.js">
 
-</script>
 
 <script>
 
-if(mobile == 1){
+if(mob.typescreen() == 1){
 var td = document.getElementsByTagName("td");
 
 td[0].style.fontSize="1.3em";

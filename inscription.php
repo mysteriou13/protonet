@@ -15,11 +15,10 @@ $date = $mysqli->real_escape_string($date);
 include("forminscription.php");
 ?>
 
-<script type ="text/javascript" src="./script/mobile.js"> </script>
 
 <script>
 
-if(mobile == 1){
+if(mob.typescreen() == 1){
 var td = document.getElementsByTagName("td");
 
 td[0].style.fontSize="1.3em";
