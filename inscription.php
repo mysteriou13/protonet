@@ -15,5 +15,27 @@ $date = $mysqli->real_escape_string($date);
 include("forminscription.php");
 ?>
 
+<script type ="text/javascript" src="./script/mobile.js"> </script>
+
+<script>
+
+if(mobile == 1){
+var td = document.getElementsByTagName("td");
+
+td[0].style.fontSize="1.3em";
+
+for(var i =0; i<td.length; i++){
+
+td[i].style.fontSize = "1.3em";
+
+td[i].style.paddingLeft = "0%";
+
+
+
+}
+
+}
+</script>
+
 </body>
 </html>
