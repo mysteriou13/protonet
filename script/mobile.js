@@ -10,10 +10,46 @@ mobile = 1;
 function displaymobile(mobile,dis,id){
 
 if(mobile == 0){
+
 document.getElementById(id).style.display = dis; 
+
 }
 
 }
+
+function affichemobile(mobile,id){
+
+
+if(mobile == 1){
+
+document.getElementById(id).style.display = "block"; 
+
+}else{
+
+document.getElementById(id).style.display = "none"; 
+
+
+}
+
+
+}
+
+function cachemobile(mobile,id){
+
+if(mobile == 1){
+
+document.getElementById(id).style.display = "none"; 
+
+}else{
+
+document.getElementById(id).style.display = "block"; 
+
+
+}
+
+
+}
+
 
 function changeclassmobile(id,oldclass,newclass,mobile){
 

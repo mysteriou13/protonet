@@ -11,6 +11,7 @@ include("./header.php");
 include("./divindex.php");
 
 ?>
+
 </body>
 </html>
 

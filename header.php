@@ -112,5 +112,17 @@ include("formconnection.php");
 }
 
 ?>
+
+<script type="text/javascript" src = "./script/mobile.js"> </script>
+
+<script>
+
+affichemobile(mobile,"connectionmobile");
+
+cachemobile(mobile,"connection");
+
+</script>
+
+
 </div>
 </header>
