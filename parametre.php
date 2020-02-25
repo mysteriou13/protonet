@@ -139,16 +139,21 @@ onclick ="par.affiche('buttonnextcloud','nextcloud',listebutton,listediv,this.id
 <div id ="perso">
 
 <table>
-  <tr>
-    <th>pseudo</th>
-    <th>email</th> 
-    <th>date de fin abonement compte nextcloud</th>
-  </tr>
-  <tr>
-    <td> <center> <?php echo $cloud2['pseudo']; ?> </center> </td>
-    <td> <center> <?php echo $cloud2['email']; ?> </center> </td>
-    <td> <center> <?php echo $cloud2['date']; ?>  </center></td>
-  </tr>
+
+<tr>
+<th>pseudo</th> <td> <?php echo $cloud2['pseudo']; ?></td>
+</tr>
+
+<tr>
+<th>email</th> <td> <?php echo $cloud2['email']?></td>
+</tr>
+
+<tr>
+
+<th> date de fin abonement compte nextcloud</th>
+<td> <?php echo $cloud2['date']?></td>
+
+</tr>
 
 </table>
 
