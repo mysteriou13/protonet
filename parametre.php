@@ -170,7 +170,55 @@ onclick ="par.affiche('buttonnextcloud','nextcloud',listebutton,listediv,this.id
  </div>
 
 <div id = "thiercloud">
-thiercloud
+</br>
+<?php 
+
+$pseudo = $mysqli->real_escape_string($_SESSION['pseudo']);
+
+$pseudo1 = "SELECT *  FROM nextcloud WHERE createur = '$pseudo'";
+
+$pseudo2 = $mysqli->query($pseudo1);
+
+
+$thier1 = "SELECT COUNT(*)createur  FROM nextcloud WHERE createur = '$pseudo'";
+
+$thier2 = $mysqli->query($thier1);
+
+$thier3 = $thier2->fetch_assoc();
+
+
+
+if($thier3['createur'] == 1){
+
+$pseudo3 = $pseudo2->fetch_assoc();
+
+if($pseudo3['pseudo'] == $pseudo3['createur']){
+
+echo "pas de compte thiercloud";
+
+}
+}
+
+
+
+while($pseudo4 = $pseudo2->fetch_assoc() ){
+
+if($pseudo4['pseudo'] != $_SESSION['pseudo']){
+
+echo "<table>";
+echo "<tr>"; echo "<th>";echo "pseudo"; echo "</th>"; echo "<td>"; echo $pseudo4['pseudo']; echo "</td>";  echo"</tr>";
+echo "<tr>"; echo "<th>";echo "date de fin d'abonoment"; echo "</th>"; echo "<td>"; echo $pseudo4['date']; echo "</td>";  echo"</tr>";
+echo "</table>";
+
+echo "</br>";
+
+}
+
+}
+
+?>
+
+
 </div>
 
  </div>
