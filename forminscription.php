@@ -111,7 +111,7 @@ $erroremail  = 0;
  ?>
 <tr>
 <td id ="td">
- accepter  les <a  href = "<?php echo $link."/CGU.php"?>"> CGU </a> <input  name = "CGU"  type = "checkbox">
+ accepter  les <a  href = "./CGU.php" target="_blank"> CGU </a> <input  name = "CGU"  type = "checkbox">
 
 <?php 
 
