@@ -152,8 +152,6 @@ $pass = password_hash($pass,PASSWORD_DEFAULT);
 
 $pass = $mysqli->real_escape_string($pass);
 
-$display = "block";
-
 $date = date("d").date("m").date("y");
 
 $date = $mysqli->real_escape_string($date);
@@ -177,21 +175,12 @@ $i = 'INSERT INTO membre VALUES(NULL,"'.$pseudo.'","'.$pass.'","'.$email.'","'.$
 
  $date = $mysqli->real_escape_string($date);
 
-$ebo = 'INSERT INTO  ebo VALUES(NULL,"'.$pseudo.'","'.$date.'")';
-
-$mysqli->query($i);
-
-$mysqli->query($ebo);
-
 $return = "https://www.vecchionet.com";
-
-$link ="http://vecchionet.com/terraliberta/membre/verifemail.php/?email=$token";
 
 $message = "pour confirmé votre inscription  copier  dans votre navigateur web : :".$link;
 
 $e->envoiemail($email,"confirmation inscription",$message,"massanthony@vecchionet.com");
 
-header("Location:$modelink");
 }
 ?>
 
