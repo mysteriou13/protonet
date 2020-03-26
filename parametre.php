@@ -41,12 +41,11 @@ $cloud2 = $cloud1-> fetch_assoc();
 
 ?>
 
+
 <div id ="listebutton"> <div  
 onclick = "par.affiche('buttonparametre','parametre',listebutton,listediv)" > <button id="buttonparametre"  class="b4">parametre</button></div> 
 
 <div  onclick = "par.affiche('buttonnextcloud','nextcloud',listebutton,listediv,'comptenextcloud',listesousbutton,'perso',listesousdiv)"><button id ="buttonnextcloud"  class ="b4">  nextcloud</button></div>  </div>
-
-</br>
 
 <div id = "parametre" class= "b3">
 <table id ="tab">
@@ -120,6 +119,7 @@ echo "verfi&eacute;";
 
 </div>
 
+
 <div id="nextcloud" class="b3" >
 
 <div id = "boxbutton" >
@@ -137,6 +137,18 @@ onclick ="par.affiche('buttonnextcloud','nextcloud',listebutton,listediv,this.id
 </div>
 
 <div id ="perso">
+
+<center>
+
+<a href = "comptenextcloudoperso.php">
+<button id ="b">
+renouveller compte  nextcloud
+</button>
+</a>
+
+</center>
+
+</br>
 
 <table>
 
