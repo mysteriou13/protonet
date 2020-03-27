@@ -2,6 +2,12 @@
 
 <?php
 include("head.php");
+if(empty($_SESSION['pseudo'])){
+
+header("Location:index.php");
+
+}
+
 ?>
 
 <body>
