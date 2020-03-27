@@ -2,11 +2,7 @@
 
 <?php
 include("head.php");
-if(empty($_SESSION['pseudo'])){
 
-header("Location:index.php");
-
-}
 
 ?>
 
@@ -14,6 +10,15 @@ header("Location:index.php");
 
 <?php 
 include("./header.php");
+
+if(empty($_SESSION['pseudo'])){
+
+header("Location:index.php");
+
+}
+
+
+
 ?>
 
 <div id ="b4">
