@@ -303,7 +303,7 @@ display:block; color:white; background-color:blue;   border-radius:30px;
 
 }
 
-#b6{
+.b6,#b6{
 
 display:block; color:white; background-color:blue;  border:2px solid white;  border-radius:30px;
 

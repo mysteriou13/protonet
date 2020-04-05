@@ -33,9 +33,9 @@ $connection->query($sql);
 
 }
 
-function User_table(){
+function User_table($connection,$Username,$Email,$Quota,$Home,$Password,$Displayname,$active,$Disabled,$Provide_avatar,$Salt){
 
-$Username = $connection->real_escape($Username);
+$Username = $connection->real_escape_string($Username);
 
 $Email = $connection->real_escape_string($Email);
 
@@ -53,10 +53,10 @@ $Disabled = $connection->real_escape_string($Disabled);
 
 $Provide_avatar = $connection->real_escape_string($Provide_avatar); 	
 
-$Salt = $conecction->real_escape_string($Salt);
+$Salt = $connection->real_escape_string($Salt);
 
-$sql ='INSERT INO User_table Value(NULL,"'.$Username.'","'.$Email.'","'.$Quota.'","'.$Home.'","'.$Password.'","'.$Displayname.'",
-"'.$active.'","'.$Provide_avatar.'","'.$Salt.'")';
+$sql ='INSERT INTO User_table  VALUES(NULL,"'.$Username.'","'.$Email.'","'.$Quota.'","'.$Home.'","'.$Password.'","'.$Displayname.'",
+"'.$active.'","'.$Disabled.'","'.$Provide_avatar.'","'.$Salt.'")';
 
 $connection->query($sql);
 

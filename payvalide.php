@@ -3,67 +3,42 @@
 <?php 
 include("./header.php");
 include("./head.php");
+include("./sqlbackend/sqlbackend.php");
 
-$paypal = str_replace("vecchionet.com", "terraliberta/paypal/index.php",$link);
+$back = new sqlbackend();
 
- $pseudo = $_SESSION['pseudo'];
+$admin = $_POST['admin'];
 
- $a = $_GET['nb'];
- 
- $a = htmlspecialchars($a);
+$display = $_POST['display'];
 
- $a2 = "+".$a."month";
+$groupename = $_POST['groupename'];
 
- $date =  date(dmy);
+$username = $_POST['username'];
 
- $pseudo = $mysqli->real_escape_string($pseudo);  
- 
-$abo =  'SELECT * FROM ebo WHERE pseudo = "'.$pseudo.'"';
+$email = $_POST['email'];
 
-$abo1 = $mysqli->query($abo);
- 
-$abo2 = $abo1->fetch_assoc();
+$quota = $_POST['quota'];
 
+$home = $_POST['quota'];
 
-$jour = substr($abo2['date'], 0, 2);
- 
- $mois = substr($abo2['date'],2,2); 
+$password = $_POST['password'];
 
-$anner = substr($abo2['date'],4,4);
+$displayname =$_POST['displayname'];
 
-$abodate = $abo2['date'];
+$active = $_POST['actibe'];
 
+$disabled = $_POST['disabled'];
 
-if(date(m) >  $mois && date(y)  == $anner or $anner < date(y)){
+$Provide_avatar = $_POST['Provide_avatar'];
 
-  $date1 =  date(dmy, strtotime("$a2"));
+$salt = $_POST['salt'], 
 
- $date1 = $mysqli->real_escape_string($date1);
+$back->grouptable($nextcloud,$admin,$displayname,$groupename);
 
- }
+$back->User_group_table($nextcloud,$username,$groupname);
 
- 
+$back->User_table($nextcloud,$username,$email,$quota,$Home,$password,$displayname,$active,$disabled,$Provide_avatar,$salt);
 
-if(date(y) == $anner && $mois > date(m)){
-
- 
-$dateDepart = $jour.'-'.$mois.'-'.$anner;
-
-$dateDepartTimestamp = strtotime($dateDepart);
- $dateFin  = date('d-m-y', strtotime($a2,$dateDepartTimestamp));
-
- $date1 = $mysqli->real_escape_string($dateFin);
-
-$date1 = str_replace("-","",$date1);
-
- }
-
-if($_POST['payment_status']  == "Completed"){ 
-
-$u = 'UPDATE ebo SET date = "'.$date1.'" WHERE pseudo = "'.$pseudo.'"'; 
-$mysqli->query($u); 
-
-}
 
 
 ?>
