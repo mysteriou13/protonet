@@ -41,6 +41,11 @@ accueil
 </a>
 </div>
 
+<div class ="divheader">
+
+<a href="tarif.php"> tarif </a>
+
+</div>
 
 <?php 
 
