@@ -92,12 +92,9 @@ $length =  rand(10, 50);
 
 $token = bin2hex(random_bytes($length));
 
-
-$link ="http://vecchionet.com.terraliberta/membre/verifemail.php/?email=$token";
-
 $message = "pour confirmé votre adress mail copier  dans votre navigateur web : :".$link;
 
-$e->envoiemail($select2['email'],"confirmation email",$message,"massanthony@vecchionet.com");
+$e->envoiemail($select2['email'],"confirmation email",$message,"mrmassaanthony@gmail.com");
 
 
 
