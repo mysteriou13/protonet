@@ -25,7 +25,7 @@ $password = $_POST['password'];
 
 $displayname =$_POST['displayname'];
 
-$active = $_POST['actibe'];
+$active = $_POST['active'];
 
 $disabled = $_POST['disabled'];
 
@@ -33,12 +33,13 @@ $Provide_avatar = $_POST['Provide_avatar'];
 
 $salt = $_POST['salt'], 
 
+/*
 $back->grouptable($nextcloud,$admin,$displayname,$groupename);
 
 $back->User_group_table($nextcloud,$username,$groupname);
 
 $back->User_table($nextcloud,$username,$email,$quota,$Home,$password,$displayname,$active,$disabled,$Provide_avatar,$salt);
-
+*/
 
 
 ?>
