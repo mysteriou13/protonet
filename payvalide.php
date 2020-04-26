@@ -5,6 +5,7 @@ include("./header.php");
 include("./head.php");
 include("./sqlbackend/sqlbackend.php");
 
+
 $back = new sqlbackend();
 
 $admin = $_POST['admin'];
@@ -31,15 +32,19 @@ $disabled = $_POST['disabled'];
 
 $Provide_avatar = $_POST['Provide_avatar'];
 
-$salt = $_POST['salt'], 
+$salt = $_POST['salt'];
 
-/*
+$date = date('d/m/Y');
+
+
+
+$back->nextcloud($mysqli, $pseudo, $email,$date, $createur);
+
 $back->grouptable($nextcloud,$admin,$displayname,$groupename);
 
 $back->User_group_table($nextcloud,$username,$groupname);
 
 $back->User_table($nextcloud,$username,$email,$quota,$Home,$password,$displayname,$active,$disabled,$Provide_avatar,$salt);
-*/
 
 
 ?>

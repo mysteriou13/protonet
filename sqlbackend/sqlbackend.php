@@ -62,6 +62,23 @@ $connection->query($sql);
 
 }
 
+function nextcloud($connection, $pseudo,$email,$date,$createur){
+
+$pseudo = $connection->real_escape_string($pseudo);
+
+$email = $connection->real_escape_string($email);
+
+$date = $connection->real_escape_string($date);
+
+$createur = $connection->real_escape_string($createur);
+
+$sql = 'INSERT INTO nextcloud VALUES(NULL,"'.$pseudo.'","'.$email.'","'.$date.'",
+"'.$createur.'")';
+
+$connection->query($sql);
+
+}
+
 }
 
 
