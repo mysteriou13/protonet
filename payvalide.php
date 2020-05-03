@@ -8,43 +8,48 @@ include("./sqlbackend/sqlbackend.php");
 
 $back = new sqlbackend();
 
-$admin = $_POST['admin'];
+$date = date("d/m/Y");
 
-$display = $_POST['display'];
+$tab = explode("_",$tab);
 
-$groupename = $_POST['groupename'];
+if(isset($_POST['custom']) ){
 
-$username = $_POST['username'];
+$tab = $_POST['custom'];
 
-$email = $_POST['email'];
+$admin = $tab[1];
 
-$quota = $_POST['quota'];
+$display = $tab[2];
 
-$home = $_POST['quota'];
+$groupename = $tab[3];
 
-$password = $_POST['password'];
+ $username = $tab[4];
+ $email = $tab[5];
 
-$displayname =$_POST['displayname'];
+ $quota = $tab[6];
+ $home = $tab[7];
+ $password = $tab[8];
+ $displayname = $tab[9];
+ $active = $tab[10];
+ $disabled = $tab[11];
+ $avatar = $tab[12];
+ $salt = $tab[13];
+ $createur = $tab[14];
+ $pseudo = $tab[14];
 
-$active = $_POST['active'];
+$back = new sqlbackend(); 
+$back->grouptable($mysqli,$admin,$displayname,$groupename);
 
-$disabled = $_POST['disabled'];
+$back->grouptable($mysqli,$admin,$displayname,$groupename);
 
-$Provide_avatar = $_POST['Provide_avatar'];
+$back->User_group_table($mysqli,$username,$groupename);
 
-$salt = $_POST['salt'];
+$back->User_table($mysqli,$username,$email,$quota,$home,$password,$displayname,$active,$disabled,$avatar,$salt);
 
-$date = date('d/m/Y');
+$back->nextcloud($mysqli,$pseudo,$email,$date,$createur);
+
+}
 
 
-
-$back->nextcloud($mysqli, $pseudo, $email,$date, $createur);
-
-$back->grouptable($nextcloud,$admin,$displayname,$groupename);
-
-$back->User_group_table($nextcloud,$username,$groupname);
-
-$back->User_table($nextcloud,$username,$email,$quota,$Home,$password,$displayname,$active,$disabled,$Provide_avatar,$salt);
 
 
 ?>

@@ -4,14 +4,16 @@ class sqlbackend{
 function grouptable($connection,$admin,$displayname,$groupename){
 
 
-$admin = $connection->real_escape_string($admin); 
+ $admin = $connection->real_escape_string($admin); 
 
-$displayname = $connection->real_escape_string($displayname); 
+
+ $displayname = $connection->real_escape_string($displayname); 
 
 $groupename = $connection->real_escape_string($groupename); 
 
 
-$sql = 'INSERT INTO Group_table VALUES(NULL,"'.$admin.'","'.$displayname.'","'.$groupename.'")';
+$sql = 'INSERT INTO Group_table VALUES(NULL,"'.$admin.'","'.$displayname.'","'.
+$groupename.'")';
 
 $connection->query($sql);
 
@@ -20,8 +22,6 @@ $connection->query($sql);
 
 
 function User_group_table($connection,$Username,$Groupname){
-
-
 
 $Username = $connection->real_escape_string($Username);
 
