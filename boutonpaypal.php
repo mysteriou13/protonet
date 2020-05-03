@@ -62,15 +62,16 @@ $active."_"."$disable"."_".$avatar."_"."$salt"."_".$createur;
 <center>
 type de compte
 </br>
-<input type="radio"  id = "perso" name  = "perso" value = "perso" onclick = "changetype(this.id)">perso
+<input type="radio"  id = "perso" name  = "perso" value = "perso" 
+onclick = "bou.dis()">perso
 
-<input type="radio" id = "thier" name  = "perso" value="thier" onclick = "changetype(this.id)" >thier
+<input type="radio" id = "thier" name  = "perso" value="thier" onclick = "bou.dis(this.id)" >thier
 
 </br>
 nombre de gigaoctet <input type="number" id = "nb" name="nb"  min = '1' max = '10'>
 
 </br>
-<input id = "sub" type = "button"  value = "valider" onclick = "dis(id)">
+<input id = "sub" type = "button"  value = "valider" onclick = "bou.dis()">
 </center>
 
 </form>
@@ -101,76 +102,13 @@ nombre de gigaoctet <input type="number" id = "nb" name="nb"  min = '1' max = '1
 </form>
 </div>
 
-<?php
- 
-echo "<script>";
-
-
-if(isset($_POST['perso'])  && !empty($_POST['perso']) ){
-
-echo "
-var pay = document.getElementById('paypal');
-
-pay.style.display = 'block'; ";
-
-}else{
-
-echo "
-var pay = document.getElementById('paypal');
-
-pay.style.display = 'none'; ";
-
-}
-
-if(isset($_GET['type']) && !empty($_GET['type'])){
-
-
-echo '
-<script>
-
-document.getElementById("paypal").style.display = "block"; 
-
-</script>';
-
-}
-
-echo "</script>";
-
-if(isset($_GET['nb']) && !empty($_GET['nb'])){
-
-echo "<script>
-document.getElementById('nb').value="; echo $_GET['nb'];
-
-echo "</script>";
-
-}
-
-if(isset($_GET['nb']) && !empty($_GET['nb'])){
-if(isset($_GET['type']) && !empty($_GET['type'])){
-
-echo "<script> document.getElementById('paypal').style.display = 'block'
-</script>
-";
-
-
-
-}
-}else{
-echo "<script>document.getElementById('paypal').style.display = 'none'</script>";
-
-
-}
-
-?>
-<script type = "text/javascript" src ="./script/bouton.js">
+<script type = "text/javascript" src ="./script/boutonpaypal.js">
 </script>
 
 <script>
 
-var type = "<?php echo $_GET['type']?>";
 
-document.getElementById(type).checked =true; 
-
+var bou = new boutonpaypal(); 
 
 </script>
 
