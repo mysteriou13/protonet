@@ -1,81 +1,36 @@
 
-<?php
-$createur = $_SESSION['pseudo'];
-
-if(isset($_GET['type']) && !empty($_GET['type'])){
-
- $type = htmlspecialchars($_GET['type']);
-
-}else{
-
-$type = null;
-}
-
-$admin = "mysteriou";
-
-$display = "test";
-
-$groupename = "test";
-
-$username = $pseudo;
-
-$email = $sql2['email'];
-
-$group = "test";
-
-if(isset($_GET['nb']) && !empty($_GET['nb']) ){
-
-$quota = htmlspecialchars($_GET['nb']);
-
-}else{
-
-$quota = null; 
-
-} 
-   
-$home = "/var/www/html/nextcloud/data/";
- 
-$password = sha1("test");
-
-$displayname = "test";
-
-$active = "true";
-    
-$disable = "true";
-    
-$avatar ="avatar";
-    
-$salt = "salt";
-
-   $next = "nextcloud"."_".$admin."_".$display."_".$groupename."_".$username."_".$email."_
-".$quota."_".$home."_".$password."_".$displayname."_".
-$active."_"."$disable"."_".$avatar."_"."$salt"."_".$createur;
-
-?>
 
 </br>
-
+<input type = "hidden" id = "pseudo" value = "<?php echo $_SESSION['pseudo']; ?>">
 <div id = "b6">
 
-
-<form action  = "<?php $_SERVER['PHP_SELF']?>" method = "POST">
 <center>
+<form action  = "<?php $_SERVER['PHP_SELF']?>" method = "POST">
 type de compte
 </br>
-<input type="radio"  id = "perso" name  = "perso" value = "perso" 
-onclick = "bou.dis()">perso
 
-<input type="radio" id = "thier" name  = "perso" value="thier" onclick = "bou.dis(this.id)" >thier
+perso <input type="radio"  id = "perso" name  = "perso" value = "perso" 
+onclick = "bou.dis()">
 
+thier<input type="radio" id = "thier" name  = "perso" value="thier" onclick = "bou.dis()" >
 </br>
-nombre de gigaoctet <input type="number" id = "nb" name="nb"  min = '1' max = '10'>
-
+<div id="passperso">
+pour le compte nextcloud</br>
+utiliser le mot de pass  du site<input type ="radio" id = "passcloud"
+ name ="passcloud" onclick="bou.dis()"> mot de pass différent <input type = "radio" id = "newpass" name ="passcloud" onclick = "bou.dis()">
 </br>
-<input id = "sub" type = "button"  value = "valider" onclick = "bou.dis()">
+
+<div id = "divpass">
+ mot de pass  <input type = "password" id = "passcourant" name = "passnextcloud" value = ""> </div>
+</div>
+
+ nombre de gigaoctet<input type="number" id = "nb" name="nb"  min = '1' max = '10'>
+
+<input id = "sub" type = "button"  value = "valider" onclick = "bou.div()">
 </center>
 
 </form>
-
+</center>
 
 <div id = "radionull">
 
@@ -88,13 +43,13 @@ nombre de gigaoctet <input type="number" id = "nb" name="nb"  min = '1' max = '1
 
 <input type="hidden" name="business" value="mrmassaanthony@gmail.com">
 
-<input type="hidden" name="item_name" value="<?php echo $item;?>">
+<input type="hidden" id = "item_name" name="item_name" value="<?php echo $item;?>">
 
 <input type="hidden" name="amount" value="1.99">
 <input type="hidden" name="currency_code" value="EUR">
 
 
-<input type="hidden" name="custom" value="<?php echo $next?>">
+<input type="hidden" id = "custom" name="custom" value =" ">
 
    <input type="image" src="https://www.sandbox.paypal.com/fr_XC/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - la solution de paiement en ligne la plus simple et la plus sécurisée !">
 </center>
