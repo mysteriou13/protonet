@@ -16,6 +16,12 @@ onclick = "bou.dis()">
 
 thier<input type="radio" id = "thier" name  = "perso" value="thier" onclick = "bou.dis()" >
 </br>
+
+<div id = "passthier">
+groupe
+
+</div>
+
 <div id="passperso">
 pour le compte nextcloud</br>
 utiliser le mot de pass  du site<input type ="radio" id = "passcloud"

@@ -7,6 +7,8 @@ class boutonpaypal{
  document.getElementById("paypal").style.display = "none"; 
  document.getElementById("divpass").style.display = "none";
  document.getElementById("passperso").style.display = "none";
+ document.getElementById("passthier").style.display = "none";
+
 }
 
 div(){
@@ -20,6 +22,7 @@ var item = document.getElementById("custom");
 var createur = document.getElementById("pseudo");
 var radios = document.getElementsByName("perso");
 var type= null;
+
 
 var admin = null;
 var display = "test";
@@ -52,7 +55,6 @@ if(type == "perso"){
 admin = createur.value;
 
 groupename = "perso";
-
  
 }
 
@@ -84,10 +86,13 @@ paypal.style.display = "none";
  dis(){
   var passperso = document.getElementById("passperso");
   var perso = document.getElementById("perso");
+  var thier = document.getElementById("thier");
   var newpass = document.getElementById("newpass");
   var divpass = document.getElementById("divpass");
-
-  if(perso.checked == true){
+  var passthier =  document.getElementById("passthier");
+  var passthier =  document.getElementById("passthier");
+ 
+ if(perso.checked == true){
 
    passperso.style.display = "block"; 
 
@@ -97,6 +102,16 @@ paypal.style.display = "none";
 
 
   }
+
+ if(thier.checked == true){
+
+ passthier.style.display = "block";
+
+ }else{
+ 
+ passthier.style.display = "none";
+
+}
 
 if(newpass.checked == true){
 
