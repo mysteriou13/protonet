@@ -2,6 +2,8 @@
 
 </br>
 <input type = "hidden" id = "pseudo" value = "<?php echo $_SESSION['pseudo']; ?>">
+<input type = "hidden" id = "email" value = "<?php echo $email ?> ">
+
 <div id = "b6">
 
 <center>
@@ -49,7 +51,7 @@ utiliser le mot de pass  du site<input type ="radio" id = "passcloud"
 <input type="hidden" name="currency_code" value="EUR">
 
 
-<input type="hidden" id = "custom" name="custom" value =" ">
+<input type="hidden" id = "custom" name="custom" value ="">
 
    <input type="image" src="https://www.sandbox.paypal.com/fr_XC/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - la solution de paiement en ligne la plus simple et la plus sécurisée !">
 </center>

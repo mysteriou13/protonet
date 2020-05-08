@@ -6,7 +6,7 @@ class boutonpaypal{
 
  document.getElementById("paypal").style.display = "none"; 
  document.getElementById("divpass").style.display = "none";
-
+ document.getElementById("passperso").style.display = "none";
 }
 
 div(){
@@ -25,7 +25,7 @@ var admin = null;
 var display = "test";
 var groupename = null;
 var username = createur.value;
-var email = "courant";
+var email = document.getElementById("email").value;
 var quota = nb.value;
 var home = "/var/www/html/nextcloud/data/";
 var password ="courant";
@@ -52,6 +52,7 @@ if(type == "perso"){
 admin = createur.value;
 
 groupename = "perso";
+
  
 }
 
