@@ -14,7 +14,7 @@ type de compte
 perso <input type="radio"  id = "perso" name  = "perso" value = "perso" 
 onclick = "bou.dis()">
 
-thier<input type="radio" id = "thier" name  = "perso" value="thier" onclick = "bou.dis()" >
+groupe<input type="radio" id = "thier" name  = "perso" value="thier" onclick = "bou.dis()" >
 </br>
 
 <div id = "passthier">
