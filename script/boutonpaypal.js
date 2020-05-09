@@ -8,6 +8,8 @@ class boutonpaypal{
  document.getElementById("divpass").style.display = "none";
  document.getElementById("passperso").style.display = "none";
  document.getElementById("passthier").style.display = "none";
+ document.getElementById("divnb").style.display = "none";
+var textnb = document.getElementById("textnb");
 
 }
 
@@ -91,21 +93,23 @@ paypal.style.display = "none";
   var divpass = document.getElementById("divpass");
   var passthier =  document.getElementById("passthier");
   var passthier =  document.getElementById("passthier");
+  document.getElementById("divnb").style.display = "block";
  
  if(perso.checked == true){
 
    passperso.style.display = "block"; 
-
+   textnb.innerHTML = "nombre de gigaotect"; 
   }else{
 
  passperso.style.display = "none";
-
+  
 
   }
 
  if(thier.checked == true){
-
+ 
  passthier.style.display = "block";
+ textnb.innerHTML = "nombre de compte"; 
 
  }else{
  

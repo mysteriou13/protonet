@@ -18,7 +18,6 @@ groupe<input type="radio" id = "thier" name  = "perso" value="thier" onclick = "
 </br>
 
 <div id = "passthier">
-groupe
 
 </div>
 
@@ -32,7 +31,9 @@ utiliser le mot de pass  du site<input type ="radio" id = "passcloud"
  mot de pass  <input type = "password" id = "passcourant" name = "passnextcloud" value = ""> </div>
 </div>
 
- nombre de gigaoctet<input type="number" id = "nb" name="nb"  min = '1' max = '10'>
+ <div id = "divnb"> <label id = "textnb"> nombre de gigaoctect</label>  <input type="number" id = "nb" name="nb"  min = '1' max = '10'>
+
+</div>
 
 <input id = "sub" type = "button"  value = "valider" onclick = "bou.div()">
 </center>
