@@ -11,27 +11,87 @@
 type de compte
 </br>
 
-perso <input type="radio"  id = "perso" name  = "perso" value = "perso" 
-onclick = "bou.dis()">
+<table>
+<tr>
 
+<td>
+
+<center>
+personel <input type="radio"  id = "perso" name  = "perso" value = "perso" 
+onclick = "bou.dis()">
+</center>
+
+</td>
+
+<td>
+<center>
 groupe<input type="radio" id = "thier" name  = "perso" value="thier" onclick = "bou.dis()" >
+</center>
+
+</td>
+
 </br>
+
+</tr>
+
+</table>
 
 <div id = "passthier">
 
 </div>
 
 <div id="passperso">
-pour le compte nextcloud</br>
-utiliser le mot de pass  du site<input type ="radio" id = "passcloud"
- name ="passcloud" onclick="bou.dis()"> mot de pass différent <input type = "radio" id = "newpass" name ="passcloud" onclick = "bou.dis()">
-</br>
+<table>
+<tr>
+
+<td>
+utiliser le mot de pass  du site
+<input type ="radio" id = "passcloud" name ="passcloud" onclick="bou.dis()"> 
+</td>
+
+<td>
+
+<center>
+mot de pass différent <input type = "radio" id = "newpass" name ="passcloud" onclick = "bou.dis()">
+</center>
+
+</td>
+
+</tr>
+
+</table>
 
 <div id = "divpass">
- mot de pass  <input type = "password" id = "passcourant" name = "passnextcloud" value = ""> </div>
+
+<table>
+<tr>
+<td>
+
+<center>
+ mot de pass  <input type = "password" id = "passcourant" name = "passnextcloud" value = "">
+</center>
+
+</td>
+</tr>
+</table>
+ </div>
+
 </div>
 
- <div id = "divnb"> <label id = "textnb"> nombre de gigaoctect</label>  <input type="number" id = "nb" name="nb"  min = '1' max = '10'>
+ <div id = "divnb"> 
+<table>
+<tr>
+<td>
+
+<center>
+
+<div> <span id = "textnb"> nombre de gigaoctect</span>   <input type="number" id = "nb" name="nb"  min = '1' max = '10'> </div>
+
+</center>
+
+</td>
+</tr>
+</table>
 
 </div>
 
