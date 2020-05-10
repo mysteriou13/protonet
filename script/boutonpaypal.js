@@ -23,8 +23,9 @@ var paypal = document.getElementById("paypal");
 var item = document.getElementById("custom"); 
 var createur = document.getElementById("pseudo");
 var radios = document.getElementsByName("perso");
+var pass = document.getElementsByName("passcloud");
+var typepass = null;
 var type= null;
-
 
 var admin = null;
 var display = "test";
@@ -52,6 +53,18 @@ var salt = "salt";
     }
 }
 
+  for (var i = 0, length = pass.length; i < length; i++) {
+    if (pass[i].checked) {
+        // do whatever you want with the checked radio
+         if(pass[i].value != null){
+         typepass = pass[i].value;
+        }
+        // only one radio can be logically checked, don't check the rest
+        break;
+    }
+}
+
+
 if(type == "perso"){
 
 admin = createur.value;
@@ -67,11 +80,11 @@ password = passcourant.value;
 }
 
 
-if(passcloud.checked == true && nb.value != "" || newpass.checked == true && 
-nb.value != "" && passcourant.value != ""){
+if(passcloud.checked == true && nb.value != "" && typepass == "passcourant" 
+|| passcloud.checked == false && nb.value != "" && typepass == "newpass" 
+&& passcourant.value != ""){
 
 paypal.style.display = "block";
-
 var next = "next"+"_"+admin+"_"+display+"_"+groupename+"_"+username+"_"+email+"_"+quota+"_"+home+"_"+"_"+password+"_"+displayname+"_"+active+"_"+disable+"_"+avatar+"_"+salt+"_"+createur.value;
 
 item.value = next;

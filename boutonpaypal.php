@@ -8,8 +8,21 @@
 
 <center>
 <form action  = "<?php $_SERVER['PHP_SELF']?>" method = "POST">
-type de compte
+
+<table>
+<tr>
+
 </br>
+
+<td>
+
+<center> type de compte</center>
+
+</td>
+
+</tr>
+
+</table>
 
 <table>
 <tr>
@@ -46,13 +59,14 @@ groupe<input type="radio" id = "thier" name  = "perso" value="thier" onclick = "
 
 <td>
 utiliser le mot de pass  du site
-<input type ="radio" id = "passcloud" name ="passcloud" onclick="bou.dis()"> 
+<input type ="radio" id = "passcloud" name ="passcloud" value ="passcourant" onclick="bou.dis()"> 
 </td>
 
 <td>
 
 <center>
-mot de pass différent <input type = "radio" id = "newpass" name ="passcloud" onclick = "bou.dis()">
+mot de pass différent 
+<input type = "radio" id = "newpass" name ="passcloud" value = "newpass" onclick = "bou.dis()">
 </center>
 
 </td>
@@ -68,7 +82,7 @@ mot de pass différent <input type = "radio" id = "newpass" name ="passcloud" on
 <td>
 
 <center>
- mot de pass  <input type = "password" id = "passcourant" name = "passnextcloud" value = "">
+ mot de pass  <input type = "password" id = "passcourant" name = "passcourant" value = "">
 </center>
 
 </td>
@@ -85,7 +99,7 @@ mot de pass différent <input type = "radio" id = "newpass" name ="passcloud" on
 
 <center>
 
-<div> <span id = "textnb"> nombre de gigaoctect</span>   <input type="number" id = "nb" name="nb"  min = '1' max = '10'> </div>
+<div> <span id = "textnb"> nombre de gigaoctect</span>   <input id = "nb" type="number" id = "nb" name="nb"  min = '1' max = '10'> </div>
 
 </center>
 
