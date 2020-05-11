@@ -43,7 +43,7 @@ $Quota = $connection->real_escape_string($Quota);
 
 $Home = $connection->real_escape_string($Home);
 
-$Password = $connection->real_escape_string(sha1($Password));
+$Password = $connection->real_escape_string($Password);
 
 $Displayname = $connection->real_escape_string($Displayname);
 
