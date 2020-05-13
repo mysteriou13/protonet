@@ -47,7 +47,7 @@ var salt = "salt";
   for (var i = 0, length = radios.length; i < length; i++) {
     if (radios[i].checked) {
         // do whatever you want with the checked radio
-         if(radios[i].value != null){
+        if(radios[i].value != null){
          type = radios[i].value;
         }
         // only one radio can be logically checked, don't check the rest
@@ -86,12 +86,14 @@ password = "courant";
 }
 
 
+
 if(passcloud.checked == true && nb.value != "" && typepass == "passcourant" 
 || type == "thier"  && nb.value != "" || typepass == "newpass" && nb.value != "" && newpass.value != "" && divpass.style.display == "block" && passcourant.value != ""){
 
 
 paypal.style.display = "block";
-var next = "next"+"_"+admin+"_"+display+"_"+groupename+"_"+username+"_"+email+"_"+quota+"_"+home+"_"+password+"_"+displayname+"_"+active+"_"+disable+"_"+avatar+"_"+salt+"_"+createur.value;
+var next = "next"+"_"+admin+"_"+display+"_"+groupename+"_"+username+"_"+email+"_"+quota+"_"+home+"_"+password+"_"+displayname+"_"+active+"_"+disable+"_"+avatar+"_"+salt+"_"+createur.value+"_"+type;
+
 
 item.value = next;
 
@@ -171,7 +173,7 @@ var salt = "salt";
 
 
 paypal.style.display = "block";
-var next = "next"+"_"+admin+"_"+display+"_"+groupename+"_"+username+"_"+email+"_"+quota+"_"+home+"_"+password+"_"+displayname+"_"+active+"_"+disable+"_"+avatar+"_"+salt+"_"+createur.value;
+var next = "next"+"_"+admin+"_"+display+"_"+groupename+"_"+username+"_"+email+"_"+quota+"_"+home+"_"+password+"_"+displayname+"_"+active+"_"+disable+"_"+avatar+"_"+salt+"_"+createur.value+"_"+type;
 
 item.value = next;
 

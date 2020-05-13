@@ -47,6 +47,10 @@ $disabled = $tab[11];
 $avatar = $tab[12];
 $salt = $tab[13];
 $createur = $tab[14];
+$type = $tab[15]; 
+
+
+if($type == "perso"){
 
 $back = new sqlbackend();
 
@@ -59,6 +63,47 @@ $back->User_table($mysqli,$username,$email,$quota,$home,$password,$displayname,$
 
 $back->nextcloud($mysqli,$pseudo,$email,$date,$createur);
 
+
+}
+
+if($type == "thier"){
+
+$group = "thier";
+
+$group = $mysqli->real_escape_string($group);
+
+$quota = $mysqli->real_escape_string($quota);
+
+$nb = 'SELECT * FROM nbgroupe WHERE pseudo = "'.$pseudo.'"';
+
+$nb1 = $mysqli->query($nb);
+
+$nb2 = $nb1->fetch_assoc();
+
+if($nb2['nb'] != null){
+
+$upnb = $nb2['nb']+$quota;
+
+$upnb = $mysqli->real_escape_string($upnb);
+
+$up = 'UPDATE nbgroupe SET nb  = "'.$upnb.'" WHERE pseudo =  "'.$pseudo.'"';
+
+$mysqli->query($up);
+
+
+}else{
+
+$up =  'INSERT INTO nbgroupe VALUES (NULL,"'.$pseudo.'","'.$group.'","'.$quota.'")';
+
+$mysqli->query($up);
+
+
+
+}
+
+
+
+}
 
 
 ?>
