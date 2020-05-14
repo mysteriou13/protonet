@@ -137,7 +137,7 @@ onclick ="par.affiche('buttonnextcloud','nextcloud',listebutton,listediv,this.id
 
 <center>
 
-<a href = "comptenextcloudoperso.php">
+<a href = "paypal.php">
 <button id ="b">
 renouveller compte  nextcloud
 </button>
