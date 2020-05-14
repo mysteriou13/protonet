@@ -128,7 +128,7 @@ onclick = "par.affiche('buttonnextcloud','nextcloud',listebutton,listediv,this.i
 
 <div id = "comptethier" >
 <button id="buttonthier" 
-onclick ="par.affiche('buttonnextcloud','nextcloud',listebutton,listediv,this.id,listesousbutton,'thiercloud',listesousdiv) " >compte tiers nextcloud </button>
+onclick ="par.affiche('buttonnextcloud','nextcloud',listebutton,listediv,this.id,listesousbutton,'thiercloud',listesousdiv) "> groupe nextcloud </button>
 </div>
 
 </div>
@@ -179,6 +179,7 @@ renouveller compte  nextcloud
  </div>
 
 <div id = "thiercloud">
+
 </br>
 <?php 
 
