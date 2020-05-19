@@ -9,6 +9,7 @@ class boutonpaypal{
  document.getElementById("passperso").style.display = "none";
  document.getElementById("passthier").style.display = "none";
  document.getElementById("divnb").style.display = "none";
+
 var textnb = document.getElementById("textnb");
 
 }
@@ -25,9 +26,12 @@ var createur = document.getElementById("pseudo");
 var radios = document.getElementsByName("perso");
 var pass = document.getElementsByName("passcloud");
 var divpass = document.getElementById("divpass");
+  var rad = document.getElementsByName("rad");
+
 
 var typepass = null;
-var type= null;
+var type = null;
+var typerad = null;
 
 var admin = null;
 var display = "test";
@@ -65,6 +69,17 @@ var salt = "salt";
         break;
     }
 }
+  for (var i = 0, length = rad.length; i < length; i++) {
+    if (rad[i].checked) {
+        // do whatever you want with the checked radio
+         if(rad[i].value != null){
+         typerad = rad[i].value;
+        }
+        // only one radio can be logically checked, don't check the rest
+        break;
+    }
+}
+
 
 
 if(type == "perso"){
@@ -92,8 +107,7 @@ if(passcloud.checked == true && nb.value != "" && typepass == "passcourant"
 
 
 paypal.style.display = "block";
-var next = "next"+"_"+admin+"_"+display+"_"+groupename+"_"+username+"_"+email+"_"+quota+"_"+home+"_"+password+"_"+displayname+"_"+active+"_"+disable+"_"+avatar+"_"+salt+"_"+createur.value+"_"+type;
-
+var next = "next"+"_"+admin+"_"+display+"_"+groupename+"_"+username+"_"+email+"_"+quota+"_"+home+"_"+password+"_"+displayname+"_"+active+"_"+disable+"_"+avatar+"_"+salt+"_"+createur.value+"_"+type+"_"+typerad;
 
 item.value = next;
 
@@ -144,7 +158,10 @@ var salt = "salt";
   var divpass = document.getElementById("divpass");
   var passthier =  document.getElementById("passthier");
   var passthier =  document.getElementById("passthier");
-  document.getElementById("divnb").style.display = "block";
+  var rad = document.getElementsByName("rad");
+
+  var typerad = null;
+
 
   for (var i = 0, length = radios.length; i < length; i++) {
     if (radios[i].checked) {
@@ -168,13 +185,24 @@ var salt = "salt";
     }
 }
 
+  for (var i = 0, length = rad.length; i < length; i++) {
+    if (rad[i].checked) {
+        // do whatever you want with the checked radio
+         if(rad[i].value != null){
+         typerad = rad[i].value;
+        }
+        // only one radio can be logically checked, don't check the rest
+        break;
+    }
+}
+
+
  if(passcloud.checked == true && nb.value != "" && typepass == "passcourant" 
 || type == "thier"  && nb.value != "" || typepass == "newpass" && nb.value != "" && newpass.value != "" && divpass.style.display == "block" && passcourant.value != ""){
 
 
 paypal.style.display = "block";
-var next = "next"+"_"+admin+"_"+display+"_"+groupename+"_"+username+"_"+email+"_"+quota+"_"+home+"_"+password+"_"+displayname+"_"+active+"_"+disable+"_"+avatar+"_"+salt+"_"+createur.value+"_"+type;
-
+var next = "next"+"_"+admin+"_"+display+"_"+groupename+"_"+username+"_"+email+"_"+quota+"_"+home+"_"+password+"_"+displayname+"_"+active+"_"+disable+"_"+avatar+"_"+salt+"_"+createur.value+"_"+type+"_"+typerad;
 item.value = next;
 
 }else{
@@ -187,8 +215,22 @@ paypal.style.display = "none";
 
  if(perso.checked == true){
 
+if(typerad != null){
+
+ document.getElementById("divnb").style.display = "block";
+
+}
+
    passperso.style.display = "block"; 
+   if(typerad == "sto"){   
    textnb.innerHTML = "nombre de gigaotect"; 
+   }
+
+  if(typerad == "abo"){
+  textnb.innerHTML = "nombre de mois";
+
+   }
+
   }else{
 
  passperso.style.display = "none";

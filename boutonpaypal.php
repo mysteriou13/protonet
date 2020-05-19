@@ -73,6 +73,23 @@ mot de pass différent
 
 </tr>
 
+<tr id  = "tdrad">
+
+<td>
+
+prolonger l'abonement <input type = "radio" name = "rad" value = "abo" 
+onclick = "bou.dis()">
+
+</td>
+
+
+<td>
+espace de stockage <input type = "radio" name = "rad" value = "sto" 
+onclick ="bou.dis()">
+</td>
+
+</tr>
+
 </table>
 
 <div id = "divpass">
