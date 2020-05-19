@@ -9,6 +9,7 @@ class boutonpaypal{
  document.getElementById("passperso").style.display = "none";
  document.getElementById("passthier").style.display = "none";
  document.getElementById("divnb").style.display = "none";
+ document.getElementById("passcloud").checked = true;
 
 var textnb = document.getElementById("textnb");
 
@@ -212,6 +213,18 @@ paypal.style.display = "none";
 
 }
 
+if(type == "thier"){
+
+divnb.style.display = "block";
+
+textnb.innerHTML = "nombre de compte";
+
+}else{
+
+divnb.style.display = "none";
+
+
+}
 
  if(perso.checked == true){
 
