@@ -5,13 +5,13 @@
 <div  id = "formconnection">
 <div>
 
-<label> pseudo</label> <input type = "text">
+<label> pseudo</label> <input type = "text" name = "pseudo">
 
 </div>
 
 <div>
 
-<label> mot de pass </label> <input type = "password">
+<label> mot de pass </label> <input type = "password" name = "pass">
 
 </div>
 
@@ -30,7 +30,6 @@
 <?php
 if(isset($_POST['pseudo']) && !empty($_POST['pseudo']) && 
     isset($_POST['pass']) && !empty($_POST['pass']) ){
-
 $pseudo = $mysqli->real_escape_string($_POST['pseudo']);
 
 $pass = $mysqli->real_escape_string($_POST['pass']);
