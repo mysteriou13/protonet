@@ -180,9 +180,10 @@ font-size:2em;:
 display:flex; flex-wrap:wrap; justify-content:space-around;
 }
 
-.formconnection{
-display:block; margin:1%;
+#formconnection{
+display:flex;  border-radius:20px; 
 
+ flex-wrap: wrap; color:white; background-color: blue;
 }
 
 .inputconnect{

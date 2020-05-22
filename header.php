@@ -108,7 +108,8 @@ include("divmembre.php");
 ?>
 </div>
 
-<div>
+</div>
+
 <?php
 if(!isset($_SESSION['pseudo'])){
 
@@ -119,7 +120,6 @@ include("formconnection.php");
 ?>
 
 
-</div>
 
 <script type="text/javascript" src = "./script/mobile.js"> </script>
 

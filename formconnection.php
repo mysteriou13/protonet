@@ -1,54 +1,31 @@
 
 
-<form id ="connectionmobile" class="button" action = "<?php echo $_SERVER['PHP_SELF']?>" method ="POST">
+<form  action = "<?php echo $_SERVER['PHP_SELF']?>" method ="POST">
 
-<table>
+<div  id = "formconnection">
+<div>
 
-<tr>
-
-<td>
- pseudo  <input  name="pseudo" type= "text">  
-</td>
-
-</tr>
-
-<tr>
-
-<td>
- mot de pass  <input name="pass" type= "password">
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-<center>
- <input class= "button" type="submit" value = "connection">
-</center>
-
-</td>
-
-</tr>
-
-</table>
+<label> pseudo</label> <input type = "text">
 
 </div>
 
+<div>
+
+<label> mot de pass </label> <input type = "password">
+
+</div>
+
+<div>
+
+<label> <input type = "submit" value = "connection"> </label>
+
+</div>
+
+</div>
 
 </form>
 
 
-
-<form id ="connection" class="button" action = "<?php echo $_SERVER['PHP_SELF']?>" method ="POST">
-
-
-<label> pseudo</label>  <input  name="pseudo" type= "text">   <label>mot de pass</label>  <input name="pass" type= "password">
- <input class= "button" type="submit" value = "connection">
-</div>
-
-
-</form>
 
 <?php
 if(isset($_POST['pseudo']) && !empty($_POST['pseudo']) && 
