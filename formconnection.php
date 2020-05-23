@@ -21,6 +21,12 @@
 
 </div>
 
+
+<div>
+<label> &nbsp; <a href = "oublipass.php">mot de pass oublier</label>
+</div>
+
+
 </div>
 
 </form>
