@@ -1,65 +1,170 @@
 
-<div  id = "a1" style = "display:none">
 
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="MNMXGZ7B73BKN">
+</br>
+<input type = "hidden" id = "pseudo" value = "<?php echo $_SESSION['pseudo']; ?>">
+<input type = "hidden" id = "email" value = "<?php echo $email ?> ">
 
-<button type="submit" id = "button"  border="0">commander </button>
+<div id = "b6">
 
-<input type="hidden" name="notify_url" value="https://vecchionet.com/payvalide.php">
+<center>
+<form action  = "<?php $_SERVER['PHP_SELF']?>" method = "POST">
 
-<input type="hidden" name="item_number" value="1">
-<input type = "hidden" name  = "pseudo" value = "<?php echo $_SESSION['pseudo']?>">
-<img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
+<table>
+<tr>
 
-</form>
+</br>
 
-</div>
+<td>
 
-<div style = "display:none"  id = "a2">
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="JRL9BP97TLT7A">
-   <input type="hidden" name="notify_url" value="https://vecchionet.com/payvalide.php">
+<center> type de compte</center>
 
+</td>
 
-<input type="hidden" name="item_number" value="3">
-<input type = "hidden" name  = "pseudo" value = "<?php echo $_SESSION['pseudo']?>">
+</tr>
 
-<button type="submit"  border="0" > commander </button>
-</form>
-</div>
+</table>
 
-<div style = "display:none"  id = "a3">
+<table>
+<tr>
 
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="B553KWLBMTE2J">
-<button type="submit"  border="0" >commander </button>
+<td>
 
-   <input type="hidden" name="notify_url" value="https://vecchionet.com/payvalide.php">
-
-<input type="hidden" name="item_number" value="6">
-<input type = "hidden" name  = "pseudo" value = "<?php echo $_SESSION['pseudo']?>">
-
-</form>
-</div>
-
-<div style = "display:none" id = "a4">
-
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="DMV3D7WQGKG2J">
-<button type="submit" border="0" name="submit" > commander </button>
-<input type="hidden" name="notify_url" value="https://vecchionet.com/payvalide.php">
-
-<input type="hidden" name="item_number" value="12">
-<input type = "hidden" name  = "pseudo" value = "<?php echo $_SESSION['pseudo']?>">
-
-<img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
-</form>
-</div>
+<center>
+personel <input type="radio"  id = "perso" name  = "perso" value = "perso" 
+onclick = "bou.dis()">
 </center>
+
+</td>
+
+<td>
+<center>
+groupe<input type="radio" id = "thier" name  = "perso" value="thier" onclick = "bou.dis()" >
+</center>
+
+</td>
+
+</br>
+
+</tr>
+
+</table>
+
+<div id = "passthier">
+
+</div>
+
+<div id="passperso">
+<table>
+<tr>
+
+<td>
+utiliser le mot de pass  du site
+<input type ="radio" id = "passcloud" name ="passcloud" value ="passcourant" onclick="bou.dis()"> 
+</td>
+
+<td>
+
+<center>
+mot de pass différent 
+<input type = "radio" id = "newpass" name ="passcloud" value = "newpass" onclick = "bou.dis()">
+</center>
+
+</td>
+
+</tr>
+
+<tr id  = "tdrad">
+
+<td>
+
+prolonger l'abonement <input type = "radio" name = "rad" value = "abo" 
+onclick = "bou.dis()">
+
+</td>
+
+
+<td>
+espace de stockage <input type = "radio" name = "rad" value = "sto" 
+onclick ="bou.dis()">
+</td>
+
+</tr>
+
+</table>
+
+<div id = "divpass">
+
+<table>
+<tr>
+<td>
+
+<center>
+ mot de pass  <input type = "password" id = "passcourant" name = "passcourant" value = "">
+</center>
+
+</td>
+</tr>
+</table>
+ </div>
+
+</div>
+
+ <div id = "divnb"> 
+<table>
+<tr>
+<td>
+
+<center>
+
+<div> <span id = "textnb"> nombre de gigaoctect</span>   <input id = "nb" type="number" id = "nb" name="nb"  min = '1' max = '10'> </div>
+
+</center>
+
+</td>
+</tr>
+</table>
+
+</div>
+
+<input id = "sub" type = "button"  value = "valider" onclick = "bou.div()">
+</center>
+
+</form>
+</center>
+
+<div id = "radionull">
+
+</div>
+
+<div id = "paypal">
+<center>
+  <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_xclick">
+
+<input type="hidden" name="business" value="mrmassaanthony@gmail.com">
+
+<input type="hidden" id = "item_name" name="item_name" value="<?php echo $item;?>">
+
+<input type="hidden" name="amount" value="1.99">
+<input type="hidden" name="currency_code" value="EUR">
+
+
+<input type="hidden" id = "custom" name="custom" value ="">
+
+   <input type="image" src="https://www.sandbox.paypal.com/fr_XC/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - la solution de paiement en ligne la plus simple et la plus sécurisée !">
+</center>
+
 </form>
 </div>
+
+<script type = "text/javascript" src ="./script/boutonpaypal.js">
+</script>
+
+<script>
+
+
+var bou = new boutonpaypal(); 
+
+</script>
+
+

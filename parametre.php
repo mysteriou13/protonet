@@ -41,12 +41,11 @@ $cloud2 = $cloud1-> fetch_assoc();
 
 ?>
 
+
 <div id ="listebutton"> <div  
 onclick = "par.affiche('buttonparametre','parametre',listebutton,listediv)" > <button id="buttonparametre"  class="b4">parametre</button></div> 
 
 <div  onclick = "par.affiche('buttonnextcloud','nextcloud',listebutton,listediv,'comptenextcloud',listesousbutton,'perso',listesousdiv)"><button id ="buttonnextcloud"  class ="b4">  nextcloud</button></div>  </div>
-
-</br>
 
 <div id = "parametre" class= "b3">
 <table id ="tab">
@@ -93,12 +92,9 @@ $length =  rand(10, 50);
 
 $token = bin2hex(random_bytes($length));
 
-
-$link ="http://vecchionet.com.terraliberta/membre/verifemail.php/?email=$token";
-
 $message = "pour confirmé votre adress mail copier  dans votre navigateur web : :".$link;
 
-$e->envoiemail($select2['email'],"confirmation email",$message,"massanthony@vecchionet.com");
+$e->envoiemail($select2['email'],"confirmation email",$message,"mrmassaanthony@gmail.com");
 
 
 
@@ -120,6 +116,7 @@ echo "verfi&eacute;";
 
 </div>
 
+
 <div id="nextcloud" class="b3" >
 
 <div id = "boxbutton" >
@@ -131,12 +128,24 @@ onclick = "par.affiche('buttonnextcloud','nextcloud',listebutton,listediv,this.i
 
 <div id = "comptethier" >
 <button id="buttonthier" 
-onclick ="par.affiche('buttonnextcloud','nextcloud',listebutton,listediv,this.id,listesousbutton,'thiercloud',listesousdiv) " >compte tiers nextcloud </button>
+onclick ="par.affiche('buttonnextcloud','nextcloud',listebutton,listediv,this.id,listesousbutton,'thiercloud',listesousdiv) "> groupe nextcloud </button>
 </div>
 
 </div>
 
 <div id ="perso">
+
+<center>
+
+<a href = "paypal.php">
+<button id ="b">
+renouveller compte  nextcloud
+</button>
+</a>
+
+</center>
+
+</br>
 
 <table>
 
@@ -170,6 +179,7 @@ onclick ="par.affiche('buttonnextcloud','nextcloud',listebutton,listediv,this.id
  </div>
 
 <div id = "thiercloud">
+
 </br>
 <?php 
 
