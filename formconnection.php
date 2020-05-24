@@ -23,7 +23,7 @@
 
 
 <div>
-<label> &nbsp; <a href = "oublipass.php">mot de pass oublier</label>
+<label> &nbsp; <a href = "oublipass.php">mot de pass oublier </a> </label>
 </div>
 
 
