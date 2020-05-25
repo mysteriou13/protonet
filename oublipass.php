@@ -4,10 +4,8 @@
 
 <?php
 include("./header.php");
-
-
 include("./head.php");
-include("./mail.php");
+
 $mail = new email();
 
 
