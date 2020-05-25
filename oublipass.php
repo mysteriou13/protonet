@@ -59,9 +59,9 @@ $token2 = $token1->fetch_assoc();
 
 $token3 = $token2['tokenemail'];
 
-$link = "https://www.vecchionet.com/newpass.php/?email=$token3";
+$link = "https://www.vecchionet.com/newpass.php/?token=$token3";
 
-$message = "pour changer cliquer sur ce lien".$link;
+$message = "pour changer de mot de pass cliquer sur ce lien".$link;
 
 if($sql2['email'] == 1){
 

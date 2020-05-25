@@ -55,7 +55,7 @@ $u = "UPDATE membre set pass = '$pass' WHERE tokenemail = '$token'";
 
 }else{
 
-echo "erreur  les deux mot de pass ne sont pas";
+echo "erreur  les deux mot de pass ne sont pas indentique";
 
 }
 
