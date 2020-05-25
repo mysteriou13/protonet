@@ -1,18 +1,18 @@
 
 <html>
-<?php
-
-include("./head.php");
-include("./mail.php");
-$mail = new email();
-
-?>
 <body>
 
 <?php
 include("./header.php");
 
+
+include("./head.php");
+include("./mail.php");
+$mail = new email();
+
+
 ?>
+
 
 <div id ="b4">
 
@@ -32,7 +32,7 @@ réinitialiser mot de pass
 <div>
 adress mail  <input type = "text" name = "email">
 
-<input type = "submit">
+<input type = "submit" value = "valider">
 
 </div>
 
@@ -59,9 +59,9 @@ $token2 = $token1->fetch_assoc();
 
 $token3 = $token2['tokenemail'];
 
-$link = "https://www.vecchionet.com/newpass.php/?token=$token3";
+$link = "https://vecchionet.com/newpass.php?token=$token3";
 
-$message = "pour changer de mot de pass cliquer sur ce lien".$link;
+$message = "pour changer de mot de pass cliquer sur ce lien ".$link;
 
 if($sql2['email'] == 1){
 
