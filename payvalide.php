@@ -87,15 +87,15 @@ $selectnext2['pseudo'];
 
 $next = 'UPDATE nextcloud SET date = "'.$quota.'" WHERE pseudo = "'.$pseudo.'"';
 
-$back->grouptable($mysqli,$admin,$displayname,$groupename);
+$back->grouptable($nextcloud,$admin,$displayname,$groupename);
 
-$back->User_group_table($mysqli,$username,$groupename);
+$back->User_group_table($nextcloud,$username,$groupename);
 
-$back->User_table($mysqli,$username,$email,$quota,$home,$password,$displayname,$active,$disabled,$avatar,$salt);
+$back->User_table($nextcloud,$username,$email,$quota,$home,$password,$displayname,$active,$disabled,$avatar,$salt);
 
 if($selectnext2['pseudo'] == null){
 
-$back->nextcloud($mysqli,$pseudo,$email,$quota,$createur);
+$back->nextcloud($nextcloud,$pseudo,$email,$quota,$createur);
 
 }else{
 
