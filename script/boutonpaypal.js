@@ -10,13 +10,6 @@ class boutonpaypal{
  document.getElementById("passthier").style.display = "none";
  document.getElementById("divnb").style.display = "none";
  document.getElementById("passcloud").checked = true;
-
-var textnb = document.getElementById("textnb");
-
-}
-
-div(){
-
 var newpass = document.getElementById("newpass");
 var passcloud = document.getElementById("passcloud");
 var passcourant = document.getElementById("passcourant");
@@ -24,10 +17,14 @@ var nb = document.getElementById("nb");
 var paypal = document.getElementById("paypal");
 var item = document.getElementById("custom"); 
 var createur = document.getElementById("pseudo");
+
 var radios = document.getElementsByName("perso");
 var pass = document.getElementsByName("passcloud");
 var divpass = document.getElementById("divpass");
-  var rad = document.getElementsByName("rad");
+
+var rad = document.getElementsByName("rad");
+
+var radios = document.getElementsByName("perso");
 
 
 var typepass = null;
@@ -38,7 +35,7 @@ var admin = null;
 var display = "test";
 var groupename = null;
 var username = createur.value;
-var email = document.getElementById("email").value;
+var email = document.getElementById("email");
 var quota = nb.value;
 var home = "/var/www/html/nextcloud/data/";
 var password ="courant";
@@ -48,172 +45,250 @@ var disable = "true";
 var avatar = "avatar";
 var salt = "salt";
 
+var textnb = document.getElementById("textnb");
 
-  for (var i = 0, length = radios.length; i < length; i++) {
+}
+
+returnpasscourant(){
+var passcourant = document.getElementById("passcourant");
+
+return passcourant.value;
+
+}
+
+
+returndivpass(){
+
+var divpass = document.getElementById("divpass");
+
+return divpass.style.display;
+
+}
+
+returnnewpass(){
+
+var newpass = document.getElementById("newpass");
+
+returnpass.value;
+
+}
+
+returnnewpass(){
+
+ var newpass = document.getElementById("newpass");
+  return newpass.value;
+
+}
+
+
+returntyperpassword(){
+
+var password = document.getElementById("passcloud");
+
+return password.value;
+
+}
+
+returnhome(){
+
+var home = "/var/www/html/nextcloud/data/";
+
+return home;
+
+}
+
+returnnb(){
+
+var nb = document.getElementById("nb");
+
+return nb.value;
+
+}
+
+returnemail(){
+
+var email = document.getElementById("email");
+
+return email.value;
+
+}
+
+returnusername(){
+
+var username = createur.value;
+
+return username;
+
+}
+ 
+
+returngroupename(){
+
+var groupename = null;
+
+return groupename;
+
+
+}
+
+returndisplay(){
+
+var display = "test";
+
+return display;
+
+}
+
+typeradios(){
+var radios = document.getElementsByName("perso");
+
+ for (var i = 0, length = radios.length; i < length; i++) {
     if (radios[i].checked) {
         // do whatever you want with the checked radio
         if(radios[i].value != null){
-         type = radios[i].value;
+         this.type = radios[i].value;
         }
         // only one radio can be logically checked, don't check the rest
         break;
     }
 }
 
-  for (var i = 0, length = pass.length; i < length; i++) {
+return this.type;
+
+}
+
+returntypepass(){
+ var pass = document.getElementsByName("passcloud");
+
+ for (var i = 0, length = pass.length; i < length; i++) {
     if (pass[i].checked) {
         // do whatever you want with the checked radio
          if(pass[i].value != null){
-         typepass = pass[i].value;
+         this.typepass = pass[i].value;
         }
         // only one radio can be logically checked, don't check the rest
         break;
     }
 }
+
+return this.typepass;
+
+}
+
+returnrad(){
+var rad = document.getElementsByName("rad");
+
+
   for (var i = 0, length = rad.length; i < length; i++) {
     if (rad[i].checked) {
         // do whatever you want with the checked radio
          if(rad[i].value != null){
-         typerad = rad[i].value;
+         this.typerad = rad[i].value;
         }
         // only one radio can be logically checked, don't check the rest
         break;
     }
 }
 
+return this.typerad;
+
+}
+
+valuecreateur(){
+
+var createur = document.getElementById("pseudo");
+
+return createur.value;
+
+}
+
+divpassdisplay(){
+var divpass = document.getElementById("divpass");
+
+return divpass.style.display.value;
+
+}
+
+passcloudcheck(){
+
+var passcloud = document.getElementById("passcloud");
+
+return passcloud.checked;
+
+}
+
+returnbvalue(){
+
+var nb = document.getElementById("nb");
+return nb.value;
+
+}
+
+returnpaypal(block){
+var paypal = document.getElementById("paypal");
+
+return paypal.style.display = block;
+
+}
+
+returnitem(valeur){
+
+var item = document.getElementById("custom"); 
+
+return item.value = valeur;
+
+}
+
+returnnext(){
+
+if(this.passcloudcheck()== true &&  this.returnbvalue() != "" && this.returntypepass() == "passcourant" 
+|| this.typeradios() == "thier"  && this.returnnbvalue() != "" || this.returntypepass() == "newpass" && this.returnbvalue() != "" && this.returnnewpass() != "" && this.this.returndivpass() == "block" && this.returnpasscourant() != ""){
+
+this.returnpaypal("block");
+
+var next = "next"+"_"+this.admin+"_"+this.returndisplay()+"_"+this.returngroupename()+"_"+this.valuecreateur()+"_"+this.returnemail()+"_"+this.returnnb()+"_"+
+this.returnhome()+"_"+this.returntyperpassword()+"_"+this.displayname+"_"+this.active+"_"+this.disable+"_"+this.avatar+"_"+this.salt+"_"+this.valuecreateur()+"_"+this.typeradios()+"_"+this.returnrad();
 
 
-if(type == "perso"){
+}else{
 
-admin = createur.value;
+this.returnpaypal("none");
 
-groupename = "perso";
+
+}
+
+}
+
+div(){
+
+if(this.typeradios() == "perso"){
+
+this.admin = this.valuecreateur();
+this.groupename = "perso";
  
 }
 
-if(divpass.style.display == "block"){
+if(this.divpassdisplay() == "block"){
 
-password = passcourant.value;
-
-}else{
-
-password = "courant";
-
-}
-
-
-
-if(passcloud.checked == true && nb.value != "" && typepass == "passcourant" 
-|| type == "thier"  && nb.value != "" || typepass == "newpass" && nb.value != "" && newpass.value != "" && divpass.style.display == "block" && passcourant.value != ""){
-
-
-paypal.style.display = "block";
-var next = "next"+"_"+admin+"_"+display+"_"+groupename+"_"+username+"_"+email+"_"+quota+"_"+home+"_"+password+"_"+displayname+"_"+active+"_"+disable+"_"+avatar+"_"+salt+"_"+createur.value+"_"+type+"_"+typerad;
-
-item.value = next;
+this.password = passcourant.value;
 
 }else{
 
-paypal.style.display = "none";
-
+this.password = "courant";
 
 }
 
+this.returnnext();
 
 } 
+
+
+
  dis(){
-
-var newpass = document.getElementById("newpass");
-var passcloud = document.getElementById("passcloud");
-var passcourant = document.getElementById("passcourant");
-var nb = document.getElementById("nb");
-var paypal = document.getElementById("paypal");
-var item = document.getElementById("custom"); 
-var createur = document.getElementById("pseudo");
-var radios = document.getElementsByName("perso");
-var pass = document.getElementsByName("passcloud");
-var divpass = document.getElementById("divpass");
-
-var type = null;
-var typepass = null;
-
-var admin = null;
-var display = "test";
-var groupename = null;
-var username = createur.value;
-var email = document.getElementById("email").value;
-var quota = nb.value;
-var home = "/var/www/html/nextcloud/data/";
-var password ="courant";
-var displayname = "test";
-var active = true;
-var disable = "true";
-var avatar = "avatar";
-var salt = "salt";
+ 
 
 
-  var passperso = document.getElementById("passperso");
-  var perso = document.getElementById("perso");
-  var thier = document.getElementById("thier");
-  var newpass = document.getElementById("newpass");
-  var divpass = document.getElementById("divpass");
-  var passthier =  document.getElementById("passthier");
-  var passthier =  document.getElementById("passthier");
-  var rad = document.getElementsByName("rad");
-
-  var typerad = null;
-
-
-  for (var i = 0, length = radios.length; i < length; i++) {
-    if (radios[i].checked) {
-        // do whatever you want with the checked radio
-         if(radios[i].value != null){
-         type = radios[i].value;
-        }
-        // only one radio can be logically checked, don't check the rest
-        break;
-    }
-}
-
-  for (var i = 0, length = pass.length; i < length; i++) {
-    if (pass[i].checked) {
-        // do whatever you want with the checked radio
-         if(pass[i].value != null){
-         typepass = pass[i].value;
-        }
-        // only one radio can be logically checked, don't check the rest
-        break;
-    }
-}
-
-  for (var i = 0, length = rad.length; i < length; i++) {
-    if (rad[i].checked) {
-        // do whatever you want with the checked radio
-         if(rad[i].value != null){
-         typerad = rad[i].value;
-        }
-        // only one radio can be logically checked, don't check the rest
-        break;
-    }
-}
-
-
- if(passcloud.checked == true && nb.value != "" && typepass == "passcourant" 
-|| type == "thier"  && nb.value != "" || typepass == "newpass" && nb.value != "" && newpass.value != "" && divpass.style.display == "block" && passcourant.value != ""){
-
-
-paypal.style.display = "block";
-var next = "next"+"_"+admin+"_"+display+"_"+groupename+"_"+username+"_"+email+"_"+quota+"_"+home+"_"+password+"_"+displayname+"_"+active+"_"+disable+"_"+avatar+"_"+salt+"_"+createur.value+"_"+type+"_"+typerad;
-item.value = next;
-
-}else{
-
-paypal.style.display = "none";
-
-
-}
-
-if(type == "thier"){
+if(this.typeradios() == "thier"){
 
 divnb.style.display = "block";
 
@@ -226,20 +301,22 @@ divnb.style.display = "none";
 
 }
 
+
  if(perso.checked == true){
 
-if(typerad != null){
+if(this.returnrad() != null){
 
  document.getElementById("divnb").style.display = "block";
 
 }
 
    passperso.style.display = "block"; 
-   if(typerad == "sto"){   
+   
+   if(this.returnrad() == "sto"){   
    textnb.innerHTML = "nombre de gigaotect"; 
    }
 
-  if(typerad == "abo"){
+  if(this.returnrad() == "abo"){
   textnb.innerHTML = "nombre de mois";
 
    }
@@ -272,6 +349,8 @@ divpass.style.display = "none";
 
 }
 
+
+this.returnnext();
 }
 
 }
