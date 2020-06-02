@@ -63,7 +63,7 @@ pseudo : <?php echo $select2['pseudo']?>
 </tr>
 
 
-<td id= "td">
+<td id = "td1" class = "td">
 
 <button class="b" onclick ="par.display('changepass')"> changer de mot de pass </button>
 
@@ -237,6 +237,12 @@ echo "</br>";
 <script src= "./script/parametre.js"> </script>
 
 <script>
+
+if(mob.typescreen() == 1){
+
+document.getElementById("td1").style.paddingLeft = "0%";
+
+}
 
 var path = window.location.hash;
 
