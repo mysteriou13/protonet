@@ -1,14 +1,14 @@
 
 class parametre{
 
-constructor(listebutton,listediv,listesousbutton,listesousdiv){
+constructor(listebutton,listediv,listesousdiv){
 
-this.path(listebutton,listediv,listesousbutton,listesousdiv);
+this.path(listebutton,listediv,listesousdiv);
 
 }
 
 
-path(listebutton,listediv,listesousbutton,listesousdiv){
+path(listebutton,listediv,listesousdiv){
 
 var path  = window.location.hash;
 
@@ -70,37 +70,9 @@ document.location.href ="#"+button+"#"+div+"#"+sousbutton+"#"+sousdiv;
 
   } 
 
- for( var i = 0; i < listesousbutton.length; i++){
+ 
+
   
-
-  if(listesousbutton[i] == sousbutton){   
-   document.getElementById(sousbutton).style.backgroundColor = "darkblue";
-
-   }else{
-   document.getElementById(listesousbutton[i]).style.backgroundColor = "blue";
-
-
-
- }
-
-
-
-
- }
-
-  for(var i =0; i < listesousbutton.length; i++){
-   
-   if(sousdiv == listesousdiv[i]){
-  
-    document.getElementById(listesousdiv[i]).style.display = "block";
-   
-   }else{
-
- document.getElementById(listesousdiv[i]).style.display = "none";
-
-   }
-
-   }
 
 }
 

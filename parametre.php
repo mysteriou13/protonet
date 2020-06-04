@@ -119,20 +119,6 @@ echo "verfi&eacute;";
 
 <div id="nextcloud" class="b3" >
 
-<div id = "boxbutton" >
-
-<div id = "menunextcloud" >
- <button id ="comptenextcloud"  
-onclick = "par.affiche('buttonnextcloud','nextcloud',listebutton,listediv,this.id,listesousbutton,'perso',listesousdiv)"> mon compte nextcloud  </button>
-</div>
-
-<div id = "comptethier" >
-<button id="buttonthier" 
-onclick ="par.affiche('buttonnextcloud','nextcloud',listebutton,listediv,this.id,listesousbutton,'thiercloud',listesousdiv) "> groupe nextcloud </button>
-</div>
-
-</div>
-
 <div id ="perso">
 
 <center>
@@ -162,6 +148,48 @@ renouveller compte  nextcloud
 <th> date de fin abonement compte nextcloud</th>
 <td> <?php echo $cloud2['date']?></td>
 
+<?php 
+$nb = "SELECT *  FROM  nbgroupe  WHERE pseudo = '$pseudo'";
+
+$nb1 = $mysqli->query($nb);
+
+$nb2 = $nb1->fetch_assoc();
+
+
+
+$thier1 = "SELECT COUNT(*)pseudo  FROM nbgroupe WHERE pseudo = '$pseudo'";
+
+$thier2 = $mysqli->query($thier1);
+
+$thier3 = $thier2->fetch_assoc();
+
+
+
+if($thier3['pseudo'] == 0){
+
+$pseudo3 = $pseudo2->fetch_assoc();
+
+echo "pas de compte thiercloud";
+
+}
+
+if($thier3['pseudo'] == 1){
+
+echo "<table>";
+
+echo "<tr>";
+
+echo "<td>nombre de compte :".$nb2['nb']."</td>";
+
+echo "</tr>";
+
+echo "</table>";
+
+}
+
+?>
+
+
 </tr>
 
 </table>
@@ -189,25 +217,6 @@ $pseudo1 = "SELECT *  FROM nextcloud WHERE createur = '$pseudo'";
 
 $pseudo2 = $mysqli->query($pseudo1);
 
-
-$thier1 = "SELECT COUNT(*)createur  FROM nextcloud WHERE createur = '$pseudo'";
-
-$thier2 = $mysqli->query($thier1);
-
-$thier3 = $thier2->fetch_assoc();
-
-
-
-if($thier3['createur'] == 1){
-
-$pseudo3 = $pseudo2->fetch_assoc();
-
-if($pseudo3['pseudo'] == $pseudo3['createur']){
-
-echo "pas de compte thiercloud";
-
-}
-}
 
 
 
@@ -252,11 +261,11 @@ var listediv = ['parametre','nextcloud'];
 
 var listebutton = ['buttonparametre','buttonnextcloud'];
 
-var listesousbutton = ['comptenextcloud','buttonthier'];
+var listesousbutton = [null,null];
 
 var listesousdiv = ['perso', 'thiercloud'];
 
-var par = new parametre(listebutton,listediv,listesousbutton,listesousdiv);
+var par = new parametre(listebutton,listediv,listesousdiv);
 
 </script>
 
