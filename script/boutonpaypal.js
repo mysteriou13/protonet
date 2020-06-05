@@ -49,6 +49,14 @@ var textnb = document.getElementById("textnb");
 
 }
 
+returnitem(val){
+
+var item = document.getElementById("custom"); 
+
+return item.value = val;
+
+}
+
 returnpasscourant(){
 var passcourant = document.getElementById("passcourant");
 
@@ -242,12 +250,14 @@ return item.value = valeur;
 returnnext(){
 
 if(this.passcloudcheck()== true &&  this.returnbvalue() != "" && this.returntypepass() == "passcourant" 
-|| this.typeradios() == "thier"  && this.returnnbvalue() != "" || this.returntypepass() == "newpass" && this.returnbvalue() != "" && this.returnnewpass() != "" && this.this.returndivpass() == "block" && this.returnpasscourant() != ""){
+|| this.typeradios() == "thier"  && this.returnbvalue() != "" || this.returntypepass() == "newpass" && this.returnbvalue() != "" && this.returnnewpass() != "" && this.this.returndivpass() == "block" && this.returnpasscourant() != ""){
 
 this.returnpaypal("block");
 
 var next = "next"+"_"+this.admin+"_"+this.returndisplay()+"_"+this.returngroupename()+"_"+this.valuecreateur()+"_"+this.returnemail()+"_"+this.returnnb()+"_"+
 this.returnhome()+"_"+this.returntyperpassword()+"_"+this.displayname+"_"+this.active+"_"+this.disable+"_"+this.avatar+"_"+this.salt+"_"+this.valuecreateur()+"_"+this.typeradios()+"_"+this.returnrad();
+
+this.returnitem(next);
 
 
 }else{

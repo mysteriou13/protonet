@@ -155,7 +155,7 @@ quota($quota,$pseudo,$nextcloud);
 
 if($type == "thier"){
 
-$group = "thier";
+ $group = "thier";
 
 $group = $mysqli->real_escape_string($group);
 
@@ -184,7 +184,26 @@ $up =  'INSERT INTO nbgroupe VALUES (NULL,"'.$pseudo.'","'.$group.'","'.$quota.'
 
 $mysqli->query($up);
 
+$gid = $group.$_SESSION['pseudo'];
 
+$gid =  $nextcloud->real_escape_string($gid);
+
+$uid =  $_SESSION['pseudo'];
+
+
+$uid = $nextcloud->real_escape_string($uid);
+ $oc_groups =  'INSERT INTO oc_groups VALUES("'.$gid.'", "'.$uid.'")';
+
+$nextcloud->query($oc_groups);
+
+
+$oc_group_admin = 'INSERT INTO oc_group_admin VALUES("'.$gid.'", "'.$uid.'")';
+
+$nextcloud->query($oc_group_admin);
+
+$oc_group_user = 'INSERT INTO oc_group_user VALUES("'.$gid.'", "'.$uid.'")';
+
+$nextcloud->query($oc_group_user);
 
 }
 
