@@ -165,12 +165,7 @@ $thier3 = $thier2->fetch_assoc();
 
 
 
-if($thier3['pseudo'] == 0){
 
-
-echo "pas de compte thiercloud";
-
-}
 
 if($thier3['pseudo'] == 1){
 
