@@ -45,7 +45,7 @@ $cloud2 = $cloud1-> fetch_assoc();
 <div id ="listebutton"> <div  
 onclick = "par.affiche('buttonparametre','parametre',listebutton,listediv)" > <button id="buttonparametre"  class="b4">parametre</button></div> 
 
-<div  onclick = "par.affiche('buttonnextcloud','nextcloud',listebutton,listediv,'comptenextcloud',listesousbutton,'perso',listesousdiv)"><button id ="buttonnextcloud"  class ="b4">  nextcloud</button></div>  </div>
+<div  onclick = "par.affiche('buttonnextcloud','nextcloud',listebutton,listediv,'comptenextcloud','perso',listesousdiv)"><button id ="buttonnextcloud"  class ="b4">  nextcloud</button></div>  </div>
 
 <div id = "parametre" class= "b3">
 <table id ="tab">
@@ -125,7 +125,20 @@ echo "verfi&eacute;";
 
 <a href = "paypal.php">
 <button id ="b">
-renouveller compte  nextcloud
+<?php 
+if($next2['pseudo'] == 1){
+
+
+echo "renouveller";
+
+}else{
+
+echo "commander";
+
+}
+
+?>
+ compte  nextcloud
 </button>
 </a>
 
@@ -133,69 +146,19 @@ renouveller compte  nextcloud
 
 </br>
 
-<table>
-
-<tr>
-<th>pseudo</th> <td> <?php echo $cloud2['pseudo']; ?></td>
-</tr>
-
-<tr>
-<th>email</th> <td> <?php echo $cloud2['email']?></td>
-</tr>
-
-<tr>
-
-<th> date de fin abonement compte nextcloud</th>
-<td> <?php echo $cloud2['date']?></td>
-
-<?php 
-$nb = "SELECT *  FROM  nbgroupe  WHERE pseudo = '$pseudo'";
-
-$nb1 = $mysqli->query($nb);
-
-$nb2 = $nb1->fetch_assoc();
-
-
-
-$thier1 = "SELECT COUNT(*)pseudo  FROM nbgroupe WHERE pseudo = '$pseudo'";
-
-$thier2 = $mysqli->query($thier1);
-
-$thier3 = $thier2->fetch_assoc();
-
-
-
-
-
-if($thier3['pseudo'] == 1){
-
-echo "<table>";
-
-echo "<tr>";
-
-echo "<td>nombre de compte :".$nb2['nb']."</td>";
-
-echo "</tr>";
-
-echo "</table>";
-
-}
-
-?>
-
-
-</tr>
-
-</table>
-
 
 <?php 
 
  if($next2['pseudo'] == 0){
 
- echo "&nbsp;pas encore de compte nextcloud";
+ echo "<center>pas encore de compte nextcloud </center>";
 
- }
+ }else{
+
+include("./tablenextcloud.php");
+  }
+
+
 ?>
 
  </div>
@@ -255,7 +218,6 @@ var listediv = ['parametre','nextcloud'];
 
 var listebutton = ['buttonparametre','buttonnextcloud'];
 
-var listesousbutton = [null,null];
 
 var listesousdiv = ['perso', 'thiercloud'];
 

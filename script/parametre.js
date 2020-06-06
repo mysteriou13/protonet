@@ -33,10 +33,10 @@ path1[3] = "comptenexloud";
 
 }
 
-this.affiche(path1[1],path1[2],listebutton,listediv,path1[3],listesousbutton,path1[4],listesousdiv);
+this.affiche(path1[1],path1[2],listebutton,listediv,path1[3],path1[4],listesousdiv);
 }
 
- affiche(button,div,listebutton,listediv,sousbutton,listesousbutton,sousdiv,listesousdiv){
+ affiche(button,div,listebutton,listediv,sousbutton,sousdiv,listesousdiv){
 
 
 document.location.href ="#"+button+"#"+div+"#"+sousbutton+"#"+sousdiv;
