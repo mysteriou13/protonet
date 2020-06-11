@@ -36,13 +36,7 @@ $token = $mysqli->real_escape_string($token);
 
 if($new == $confir){
 
-$tokenemail = "SELECT COUNT(*)tokenemail FROM membre WHERE tokenemail = '$token'";
-
-$tokenemail1 = $mysqli->real_escape_string($tokenemail);
-
-$tokenemail2 = $tokenemail1->fetch_assoc();
-
-$pass = password_hash($confir,PASSSWORD_DEFAULT);
+$pass = password_hash($confir,PASSWORD_DEFAULT);
 
 if($new == $confir){
 
@@ -50,12 +44,14 @@ $u = "UPDATE membre set pass = '$pass' WHERE tokenemail = '$token'";
 
  $mysqli->query($u);
 
+echo "mot de pass changer";
+
 }
 
 
 }else{
 
-echo "erreur  les deux mot de pass ne sont pas";
+echo "erreur  les deux mot de pass ne sont pas indentique";
 
 }
 

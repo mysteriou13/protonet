@@ -1,12 +1,6 @@
 <?php 
 
 
-include("head.php");
-
-include("header.php");
-
-
-
 
 function quota($val,$pseudo,$mysqli){
 

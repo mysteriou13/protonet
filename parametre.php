@@ -45,7 +45,7 @@ $cloud2 = $cloud1-> fetch_assoc();
 <div id ="listebutton"> <div  
 onclick = "par.affiche('buttonparametre','parametre',listebutton,listediv)" > <button id="buttonparametre"  class="b4">parametre</button></div> 
 
-<div  onclick = "par.affiche('buttonnextcloud','nextcloud',listebutton,listediv,'comptenextcloud',listesousbutton,'perso',listesousdiv)"><button id ="buttonnextcloud"  class ="b4">  nextcloud</button></div>  </div>
+<div  onclick = "par.affiche('buttonnextcloud','nextcloud',listebutton,listediv,'comptenextcloud','perso',listesousdiv)"><button id ="buttonnextcloud"  class ="b4">  nextcloud</button></div>  </div>
 
 <div id = "parametre" class= "b3">
 <table id ="tab">
@@ -63,7 +63,7 @@ pseudo : <?php echo $select2['pseudo']?>
 </tr>
 
 
-<td id= "td">
+<td id = "td1" class = "td">
 
 <button class="b" onclick ="par.display('changepass')"> changer de mot de pass </button>
 
@@ -119,27 +119,26 @@ echo "verfi&eacute;";
 
 <div id="nextcloud" class="b3" >
 
-<div id = "boxbutton" >
-
-<div id = "menunextcloud" >
- <button id ="comptenextcloud"  
-onclick = "par.affiche('buttonnextcloud','nextcloud',listebutton,listediv,this.id,listesousbutton,'perso',listesousdiv)"> mon compte nextcloud  </button>
-</div>
-
-<div id = "comptethier" >
-<button id="buttonthier" 
-onclick ="par.affiche('buttonnextcloud','nextcloud',listebutton,listediv,this.id,listesousbutton,'thiercloud',listesousdiv) "> groupe nextcloud </button>
-</div>
-
-</div>
-
 <div id ="perso">
 
 <center>
 
 <a href = "paypal.php">
 <button id ="b">
-renouveller compte  nextcloud
+<?php 
+if($next2['pseudo'] == 1){
+
+
+echo "renouveller";
+
+}else{
+
+echo "commander";
+
+}
+
+?>
+ compte  nextcloud
 </button>
 </a>
 
@@ -147,33 +146,19 @@ renouveller compte  nextcloud
 
 </br>
 
-<table>
-
-<tr>
-<th>pseudo</th> <td> <?php echo $cloud2['pseudo']; ?></td>
-</tr>
-
-<tr>
-<th>email</th> <td> <?php echo $cloud2['email']?></td>
-</tr>
-
-<tr>
-
-<th> date de fin abonement compte nextcloud</th>
-<td> <?php echo $cloud2['date']?></td>
-
-</tr>
-
-</table>
-
 
 <?php 
 
  if($next2['pseudo'] == 0){
 
- echo "&nbsp;pas encore de compte nextcloud";
+ echo "<center>pas encore de compte nextcloud </center>";
 
- }
+ }else{
+
+include("./tablenextcloud.php");
+  }
+
+
 ?>
 
  </div>
@@ -189,25 +174,6 @@ $pseudo1 = "SELECT *  FROM nextcloud WHERE createur = '$pseudo'";
 
 $pseudo2 = $mysqli->query($pseudo1);
 
-
-$thier1 = "SELECT COUNT(*)createur  FROM nextcloud WHERE createur = '$pseudo'";
-
-$thier2 = $mysqli->query($thier1);
-
-$thier3 = $thier2->fetch_assoc();
-
-
-
-if($thier3['createur'] == 1){
-
-$pseudo3 = $pseudo2->fetch_assoc();
-
-if($pseudo3['pseudo'] == $pseudo3['createur']){
-
-echo "pas de compte thiercloud";
-
-}
-}
 
 
 
@@ -238,6 +204,12 @@ echo "</br>";
 
 <script>
 
+if(mob.typescreen() == 1){
+
+document.getElementById("td1").style.paddingLeft = "0%";
+
+}
+
 var path = window.location.hash;
 
 var path1 = path.split("#");
@@ -246,11 +218,10 @@ var listediv = ['parametre','nextcloud'];
 
 var listebutton = ['buttonparametre','buttonnextcloud'];
 
-var listesousbutton = ['comptenextcloud','buttonthier'];
 
 var listesousdiv = ['perso', 'thiercloud'];
 
-var par = new parametre(listebutton,listediv,listesousbutton,listesousdiv);
+var par = new parametre(listebutton,listediv,listesousdiv);
 
 </script>
 

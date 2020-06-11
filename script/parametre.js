@@ -1,14 +1,14 @@
 
 class parametre{
 
-constructor(listebutton,listediv,listesousbutton,listesousdiv){
+constructor(listebutton,listediv,listesousdiv){
 
-this.path(listebutton,listediv,listesousbutton,listesousdiv);
+this.path(listebutton,listediv,listesousdiv);
 
 }
 
 
-path(listebutton,listediv,listesousbutton,listesousdiv){
+path(listebutton,listediv,listesousdiv){
 
 var path  = window.location.hash;
 
@@ -33,10 +33,10 @@ path1[3] = "comptenexloud";
 
 }
 
-this.affiche(path1[1],path1[2],listebutton,listediv,path1[3],listesousbutton,path1[4],listesousdiv);
+this.affiche(path1[1],path1[2],listebutton,listediv,path1[3],path1[4],listesousdiv);
 }
 
- affiche(button,div,listebutton,listediv,sousbutton,listesousbutton,sousdiv,listesousdiv){
+ affiche(button,div,listebutton,listediv,sousbutton,sousdiv,listesousdiv){
 
 
 document.location.href ="#"+button+"#"+div+"#"+sousbutton+"#"+sousdiv;
@@ -70,37 +70,9 @@ document.location.href ="#"+button+"#"+div+"#"+sousbutton+"#"+sousdiv;
 
   } 
 
- for( var i = 0; i < listesousbutton.length; i++){
+ 
+
   
-
-  if(listesousbutton[i] == sousbutton){   
-   document.getElementById(sousbutton).style.backgroundColor = "darkblue";
-
-   }else{
-   document.getElementById(listesousbutton[i]).style.backgroundColor = "blue";
-
-
-
- }
-
-
-
-
- }
-
-  for(var i =0; i < listesousbutton.length; i++){
-   
-   if(sousdiv == listesousdiv[i]){
-  
-    document.getElementById(listesousdiv[i]).style.display = "block";
-   
-   }else{
-
- document.getElementById(listesousdiv[i]).style.display = "none";
-
-   }
-
-   }
 
 }
 
