@@ -8,6 +8,8 @@ include_once("../admin/connect.php");
 
 $localhost = null; 
 
+$e = new email();
+
 if(isset($_SESSION['pseudo']) && !empty($_SESSION['pseudo'])){
 
 $pseudo = $mysqli->real_escape_string($_SESSION['pseudo']);
