@@ -43,7 +43,7 @@ accueil
 </a>
 </div>
 
-<div class ="divheader">
+<div class ="divheader" style = "display:none">
 
 <a href="tarif.php"> tarif </a>
 
