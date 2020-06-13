@@ -37,7 +37,7 @@ $password = $sql2['pass'];
 
 }else{
 
-$password = sha1($password);
+$password = password_hash($password, PASSWORD_DEFAULT);
 
 }
  
