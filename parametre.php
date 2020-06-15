@@ -123,7 +123,7 @@ echo "verfi&eacute;";
 
 <center>
 
-<a href = "paypal.php">
+<a href = "newcompte.php">
 <button id ="b">
 <?php 
 if($next2['pseudo'] == 1){
