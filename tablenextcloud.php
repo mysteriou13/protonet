@@ -14,39 +14,47 @@
 <td> <?php echo $cloud2['date']?></td>
 
 <?php 
-$nb = "SELECT *  FROM  nbgroupe  WHERE pseudo = '$pseudo'";
 
-$nb1 = $mysqli->query($nb);
+$nb = 0;
 
-$nb2 = $nb1->fetch_assoc();
-
-
-
-$thier1 = "SELECT COUNT(*)pseudo  FROM nbgroupe WHERE pseudo = '$pseudo'";
+$thier1 = "SELECT * FROM nextcloud WHERE pseudo = '$pseudo'";
 
 $thier2 = $mysqli->query($thier1);
 
-$thier3 = $thier2->fetch_assoc();
 
+while($thier3 = $thier2->fetch_assoc()){
 
+if($thier3['pseudo'] != $thier3['createur'] ){
 
-
-
-if($thier3['pseudo'] == 1){
-
-echo "<table>";
-
-echo "<tr>";
-
-echo "<td>nombre de compte :".$nb2['nb']."</td>";
-
-echo "</tr>";
-
-echo "</table>";
+$nb++;
 
 }
 
+}
+
+
+
 ?>
+
+<table>
+
+<tr>
+
+<td>  nombre de compte : <?php
+
+if($nb >= 1){
+
+ echo $nb;
+
+}else{
+echo "pas de compte";
+
+}
+ ?></td>
+
+</tr>
+
+</table>
 
 
 </tr>
