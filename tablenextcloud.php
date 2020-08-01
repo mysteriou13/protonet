@@ -24,7 +24,7 @@ $thier2 = $mysqli->query($thier1);
 
 while($thier3 = $thier2->fetch_assoc()){
 
-if($thier3['pseudo'] != $thier3['createur'] ){
+if($thier3['pseudo'] == $thier3['createur'] ){
 
 $nb++;
 
@@ -46,11 +46,17 @@ if($nb >= 1){
 
  echo $nb;
 
+include("./boutongestcompte.php");
+
+
 }else{
 echo "pas de compte";
 
 }
- ?></td>
+
+ ?>
+
+</td>
 
 </tr>
 
@@ -61,4 +67,8 @@ echo "pas de compte";
 
 </table>
 
+<div id = "gestcompte" class = "b6">
+<center> gestion des compte </center>
+
+</div>
 
