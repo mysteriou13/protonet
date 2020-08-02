@@ -1,3 +1,4 @@
+<div>
 <table>
 
 <tr>
@@ -17,10 +18,9 @@
 
 $nb = 0;
 
-$thier1 = "SELECT * FROM nextcloud WHERE pseudo = '$pseudo'";
+$thier1 = "SELECT * FROM nextcloud WHERE createur = '$pseudo'";
 
 $thier2 = $mysqli->query($thier1);
-
 
 while($thier3 = $thier2->fetch_assoc()){
 
@@ -35,12 +35,14 @@ $nb++;
 
 
 ?>
+</table>
+
 
 <table>
 
 <tr>
 
-<td>  nombre de compte : <?php
+<td>  nombre de compte dans le groupe : <?php
 
 if($nb >= 1){
 
@@ -62,13 +64,53 @@ echo "pas de compte";
 
 </table>
 
+</div>
 
+
+<div id = "gestcompte" >
+
+</br>
+<center id= "b6"> liste des comptes du groupe </center>
+</br>
+
+<table> 
+<center>
+<tr>
 </tr>
+</center>
+
+<?php 
+
+$nb = 0;
+
+$thier2 = $mysqli->query($thier1);
+
+
+while($thier3 = $thier2->fetch_assoc()){
+
+
+if($thier3['pseudo'] != $thier3['createur'] ){
+
+$nb++;
+
+$login = $thier3['pseudo'];
+
+$quota = "SELECT * FROM oc_preferences  WHERE userid= '$login' && appid = 'files' && configkey = 'quota'";
+
+$quota = $nextcloud->query($quota);
+
+$quota1 = $quota->fetch_assoc(); 
+
+
+echo "<tr><td> nom:".$thier3['pseudo']."  <td> date de fin :".$thier3['date']."</td> "."<td> quota:".$quota1['configvalue']."</td> </tr>";
+}
+
+}
+
+
+?>
 
 </table>
-
-<div id = "gestcompte" class = "b6">
-<center> gestion des compte </center>
-
 </div>
+
 
