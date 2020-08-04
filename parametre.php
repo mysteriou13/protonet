@@ -209,7 +209,6 @@ if(mob.typescreen() == 1){
 document.getElementById("td1").style.paddingLeft = "0%";
 
 }
-document.getElementById("gestcompte").style.display = "none";
 
 var path = window.location.hash;
 
