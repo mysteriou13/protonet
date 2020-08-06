@@ -34,25 +34,15 @@ et que vous pouvez partager facilement avec vos contacts.
 </div>
 
 
-<div style = "width:100%;">
+<div >
 
-<img src ="./image/nextcloud.png"   style ="border-radius:25px; height:100%; width:100%;">
-
+<img src ="./image/nextcloud.png" id = "imgnextcloud">
 </div>
 
 
 </div>
 
 
-
-<script>
-mob.displaymobile("flex","nextcloud");
-
-mob.changeclassmobile("textnextcloud","b4","b5");
-
-mob.changewidthmobile("textnextcloud");
-
-</script>
 
 </body>
 </html>

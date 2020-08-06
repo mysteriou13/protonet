@@ -16,6 +16,11 @@ width:100%;
 
 }
 
+#imgnextcloud{
+border-radius:25px; height:100%; width:98%; padding:1%;
+
+}
+
 #tab{
 margin-left:20%;
 width:50%;
