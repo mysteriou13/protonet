@@ -19,6 +19,6 @@ $link =  "http://".$_SERVER['SERVER_NAME']."/document";
 ?>
 
 
-<iframe  src  ="<?php echo $src?>" style = "height:100%; width:100%; background-color:blue">
+<iframe  src  ="<?php echo $src?>">
 
 </iframe>
