@@ -9,7 +9,6 @@ include("header.php");
 
 </br>
 
-<div id = "capsule" class ="b6">
 
 <div class ="b3"  style ="padding:1%;">
 <center>
@@ -69,7 +68,7 @@ echo "champs vide";
 message 
 </br>
 
-<textarea name = "message" style = "height:20%; width:90%;">
+<textarea id ="message" name = "message" >
 
 </textarea>
 
@@ -129,20 +128,17 @@ $e->envoiemail("elio007@hotmail.fr",$titre,$message,$email);
 
 </div>
 
-</div>
-
-
-
 </body>
 </html>
 
  <script>
 
-document.getElementById("envoyer").style.fontSize ="1.5em";
+var message = document.getElementById("message");
 
-if(mobile == 0){
-  document.getElementById("capsule").style.paddingTop = "1%"; 
-}
+message.style.height ="20%";
+
+message.style.width ="90%";
+
 
  </script>
 
