@@ -90,7 +90,7 @@ echo "champs vide";
 <div>
 </br>
 
-<button  id = "envoyer" class ="b4" type = "submit"  value  = "envoyer">
+<button  id = "envoyer"  type = "submit"  value  = "envoyer">
 envoyer
 
 </button>
