@@ -11,27 +11,27 @@ include_once("header.php");
 <table>
 
 <tr>
-<td id="td">
-responsable du site
+<td >
+<center> responsable du site</center>
 </td>
 </tr>
 
 <tr>
-<td id="td">nom :massa</td>
+<td ><center> nom :massa</center> </td>
 
 </tr>
 
 <tr>
-<td id="td">prenom :anthony</td>
+<td> <center> prenom :anthony</center> </td>
 
 </tr>
 
 
 <tr>
 
-<td id="td" >
+<td>
 
-email:mrmassaanthony@gmail.com
+<center> email:mrmassaanthony@gmail.com</center>
 
 </td>
 
@@ -40,8 +40,9 @@ email:mrmassaanthony@gmail.com
 
 <tr>
 
-<td id ="td">
-adress:casa d'arutoli rte de muratello bat i apt 43 20137 porto-vecchio
+<td>
+
+<center> adress:casa d'arutoli rte de muratello bat i apt 43 20137 porto-vecchio</center>
 
 </td>
 
@@ -50,25 +51,6 @@ adress:casa d'arutoli rte de muratello bat i apt 43 20137 porto-vecchio
 </table>
 
 
-
-<script>
-
-if(mob.typescreen() == 1){
-var td = document.getElementsByTagName("td");
-
-td[0].style.fontSize="1.3em";
-
-for(var i =0; i<td.length; i++){
-
-td[i].style.fontSize = "1.3em";
-
-td[i].style.paddingLeft = "0%";
-
-}
-
-}
-
-</script>
 
 </body>
 </html>
