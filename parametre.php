@@ -65,7 +65,7 @@ pseudo : <?php echo $select2['pseudo']?>
 
 <td>
 
-<button class="b" onclick ="par.display('changepass')"> changer de mot de pass </button>
+<button  onclick ="par.display('changepass')"> changer de mot de pass </button>
 
 </tr>
 
@@ -124,7 +124,7 @@ echo "verfi&eacute;";
 <center>
 
 <a href = "newcompte.php">
-<button id ="b">
+<button>
 <?php 
 if($next2['pseudo'] == 1){
 
