@@ -129,7 +129,7 @@ echo "vous devez accepter les CGU";
 <tr>
 <td id= "td">
 
-<center> <button class="b" type = "submit" name = "val" value = "valider">valider</button></center>
+<center> <button type = "submit" name = "val" value = "valider">valider</button></center>
 </td>
 </tr>
 
