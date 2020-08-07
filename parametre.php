@@ -56,14 +56,14 @@ parametre
 
 <tr>
 
-<td id = "td">
+<td>
 pseudo : <?php echo $select2['pseudo']?>
 </td>
 
 </tr>
 
 
-<td id = "td1" class = "td">
+<td>
 
 <button class="b" onclick ="par.display('changepass')"> changer de mot de pass </button>
 
@@ -74,7 +74,7 @@ include("changepass.php");
 ?>
 
 <tr>
-<td id="td">
+<td>
 <?php 
 
 
