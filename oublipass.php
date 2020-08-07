@@ -12,27 +12,25 @@ $mail = new email();
 ?>
 
 
-<div id ="b4">
+<table>
 
+<caption id = "b3">
 <center>
 réinitialiser mot de pass
-<center>
+</center>
+</caption>
 
-</div>
 
 
-<div id = "b4">
 
-<center>
 
 <form action = "<?php $_SERVER['PHP_SELF']?>" method = "POST">
 
-<div>
-adress mail  <input type = "text" name = "email">
+<tr>
 
-<input type = "submit" value = "valider">
-
-</div>
+<td> <center>adress mail  <input type = "text" name = "email">
+<input type = "submit" value = "valider"></center></td>
+</tr>
 
 </form>
 
@@ -70,9 +68,8 @@ $mail->envoiemail($email,"changement de mot pass",$message, "mrmassaanthony@gmai
 
 ?>
 
-</center>
 
-</div>
+</table>
 
 </body>
 </html>
