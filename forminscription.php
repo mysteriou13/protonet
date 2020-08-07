@@ -1,6 +1,6 @@
 
 
-<table>
+<table >
 
 <caption id = "b3">
 inscription
@@ -10,7 +10,7 @@ inscription
 
 <tr>
 
-<td id ="td"> pseudo  <input type  ="text"  name = "pseudo"></td>
+<td id ="td"> <center>pseudo  <input type  ="text"  name = "pseudo"> </center></td>
 
 </tr>
 
@@ -43,7 +43,7 @@ echo "pseudo pris";
    ?>
 
 
-<tr> <td id = "td"> mot de pass <input type = "password" name  = "pass"> </td> </tr>
+<tr> <td id = "td"> <center> mot de pass <input type = "password" name  = "pass"> </center> </td> </tr>
 
 <?php
 if(isset($_POST['pass']) && !empty($_POST['pass'])){
@@ -68,7 +68,7 @@ $validepass = 0;
 
 ?>
 
-<tr> <td id = "td"> email <input type  = "text" name  = "email"></td> </tr>
+<tr>  <td id = "td"> <center> email <input type  = "text" name  = "email"></center> </td> </tr>
 
 
 <?php
@@ -111,7 +111,8 @@ $erroremail  = 0;
  ?>
 <tr>
 <td id ="td">
- accepter  les <a  href = "./CGU.php" target="_blank"> CGU </a> <input  name = "CGU"  type = "checkbox">
+<center>
+ accepter  les <a  href = "./CGU.php" target="_blank"> CGU </a> <input  name = "CGU"  type = "checkbox"></center>
 
 <?php 
 
@@ -127,7 +128,8 @@ echo "vous devez accepter les CGU";
 
 <tr>
 <td id= "td">
- <button class="b" type = "submit" name = "val" value = "valider">valider</button>
+
+<center> <button class="b" type = "submit" name = "val" value = "valider">valider</button></center>
 </td>
 </tr>
 
