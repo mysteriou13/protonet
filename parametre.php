@@ -1,4 +1,5 @@
 <html>
+
 <body>
 
 <?php 
@@ -57,7 +58,7 @@ parametre
 <tr>
 
 <td>
-pseudo : <?php echo $select2['pseudo']?>
+<center> pseudo : <?php echo $select2['pseudo']?></center>
 </td>
 
 </tr>
@@ -65,7 +66,7 @@ pseudo : <?php echo $select2['pseudo']?>
 
 <td>
 
-<button  onclick ="par.display('changepass')"> changer de mot de pass </button>
+<center> <button  onclick ="par.display('changepass')"> changer de mot de pass </button></center>
 
 </tr>
 
@@ -82,7 +83,7 @@ $verif =  $select2['verifemail'];
 
 if($verif == 0){
 
-echo "non verfi&eacute; &nbsp;"."<a href ="."'".$email."'"." style = 'color:white'>verifier email</a>";
+echo "<center> non verfi&eacute; &nbsp;"."<a href ="."'".$email."'"." style = 'color:white'>verifier email</a></center>";
 
 
 
@@ -204,11 +205,8 @@ echo "</br>";
 
 <script>
 
-if(mob.typescreen() == 1){
 
-document.getElementById("td1").style.paddingLeft = "0%";
 
-}
 
 var path = window.location.hash;
 
