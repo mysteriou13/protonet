@@ -12,7 +12,7 @@ include("./header.php");
 <center>
 <?php
 
-include("./changepass.php");
+include("./section/changepass.php");
 
 ?>
 </center>

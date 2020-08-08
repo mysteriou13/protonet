@@ -3,8 +3,8 @@
 
  <?php 
 
-  include("head.php");
-  include("header.php");
+  include("./section/head.php");
+  include("./section/header.php");
 ?>
 
  <div id = "b" style = "margin-top:2%; font-size:2em;">

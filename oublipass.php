@@ -3,8 +3,8 @@
 <body>
 
 <?php
-include("./header.php");
-include("./head.php");
+include("./section/header.php");
+include("./section/head.php");
 
 $mail = new email();
 

@@ -1,6 +1,6 @@
 <html>
 <?php 
-include("./head.php");
+include("./section/head.php");
 ?>
 <body>
 
@@ -8,7 +8,7 @@ include("./head.php");
 
 include("./section/header.php");
 
-include("./divindex.php");
+include("./section/divindex.php");
 
 ?>
 

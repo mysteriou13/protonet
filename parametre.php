@@ -4,9 +4,9 @@
 
 <?php 
 
-include_once("head.php");
+include_once("./section/head.php");
 
-include_once("header.php");
+include_once("./section/header.php");
 
 $email = $_SERVER['PHP_SELF']."?email=1";
 
@@ -71,7 +71,7 @@ parametre
 </tr>
 
 <?php 
-include("changepass.php");
+include("./section/changepass.php");
 ?>
 
 <tr>
@@ -156,7 +156,7 @@ echo "commander";
 
  }else{
 
-include("./tablenextcloud.php");
+include("./section/tablenextcloud.php");
   }
 
 

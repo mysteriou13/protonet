@@ -1,7 +1,7 @@
 <html>
 <body>
 <?php
-include("head.php");
+include("./section/head.php");
 include("./section/header.php");
 
 

@@ -1,7 +1,7 @@
 <html>
 <body>
 <?php
-include_once("head.php");
+include_once("./section/head.php");
 include_once("./section/header.php");
 
 $validepseudo = 0;
@@ -12,7 +12,7 @@ $wrap = null;
 $date = date("dmY");
 $date = $mysqli->real_escape_string($date);
 
-include("forminscription.php");
+include("./section/forminscription.php");
 ?>
 
 

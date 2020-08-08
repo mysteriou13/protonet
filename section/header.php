@@ -2,7 +2,7 @@
 
 session_start();
 
-include_once("./mail.php");
+include_once("./section/mail.php");
 
 include_once("../admin/connect.php");
 
@@ -96,10 +96,6 @@ mention legal
 
 </div>
 
-<div class = "divheader">
-<a href = "faq.php"> faq </a>
-</div>
-
 <?php 
 if(isset($_SESSION['pseudo'])){
 
@@ -121,19 +117,6 @@ include("formconnection.php");
 
 ?>
 
-
-
-<script type="text/javascript" src = "./script/mobile.js"> </script>
-
-<script>
-
-var mob = new mobile;
-
-mob.affichemobile("connectionmobile");
-
-mob.cachemobile("connection");
-
-</script>
 
 
 </header>
