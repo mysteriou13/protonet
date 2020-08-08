@@ -6,7 +6,7 @@ include("./head.php");
 
 <?php
 
-include("./header.php");
+include("./section/header.php");
 
 include("./divindex.php");
 

@@ -2,7 +2,7 @@
 <body>
 <?php
 include("head.php");
-include("header.php");
+include("./section/header.php");
 
 
 ?>

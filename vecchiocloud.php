@@ -6,7 +6,7 @@ include("head.php");
 ?>
 <body>
 <?php 
-include("header.php");
+include("./section/header.php");
 ?>
 
 </br>
