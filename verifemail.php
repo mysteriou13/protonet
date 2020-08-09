@@ -1,12 +1,12 @@
 
 <html>
 <?php
-include("./header.php");
+include("./section/head.php");
 ?>
 <body>
 <?php 
 
-include("./header.php");
+include("./section/header.php");
 
 $t = $_GET['email'];
 

@@ -49,7 +49,7 @@ onclick = "par.affiche('buttonparametre','parametre',listebutton,listediv)" > <b
 <div  onclick = "par.affiche('buttonnextcloud','nextcloud',listebutton,listediv,'comptenextcloud','perso',listesousdiv)"><button id ="buttonnextcloud"  class ="b4">  nextcloud</button></div>  </div>
 
 <div id = "parametre" class= "b3">
-<table id ="tab">
+<table>
 
 <caption >
 parametre
@@ -87,13 +87,27 @@ echo "<center> non verfi&eacute; &nbsp;"."<a href ="."'".$email."'"." style = 'c
 
 
 
-if(isset($_GET['email']) && !empty($_GET['email'])){
 
 $length =  rand(10, 50);
 
 $token = bin2hex(random_bytes($length));
 
-$message = "pour confirmé votre adress mail copier  dans votre navigateur web : :".$link;
+//$host = $_SERVER['HTTP_HOST'];
+
+$host = "vecchionet.com";
+
+if($host == "localhost"){
+
+ $link = "http://".$host."/vecchionet.com/verifemail.php?email=".$token;
+
+}else{
+
+ $link = "http://".$host."/verifemail.php?email".$token;
+
+
+}
+
+$message = "pour confirmé votre adress mail copier  dans votre navigateur web :".$link;
 
 $e->envoiemail($select2['email'],"confirmation email",$message,"mrmassaanthony@gmail.com");
 
@@ -101,14 +115,16 @@ $e->envoiemail($select2['email'],"confirmation email",$message,"mrmassaanthony@g
 
 }
 
-}
 
 if($verif == 1){
 
 echo "verfi&eacute;";
 
 }
+
 ?>
+
+
 
 </td>
 </tr>
