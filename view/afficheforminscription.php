@@ -1,5 +1,3 @@
-
-
 <table >
 
 <caption id = "b3">
@@ -10,9 +8,7 @@ inscription
 
 <tr>
 
-<td id ="td"> <center>pseudo  <input type  ="text"  name = "pseudo"> </center></td>
-
-</tr>
+<td id ="td"> <center>pseudo  <input type  ="text"  name = "pseudo">
 
 <?php
 
@@ -41,10 +37,12 @@ echo "pseudo pris";
 
 }
    ?>
+</center> </td>
+
+</tr>
 
 
-<tr> <td id = "td"> <center> mot de pass <input type = "password" name  = "pass"> </center> </td> </tr>
-
+<tr> <td id = "td"> <center> mot de pass <input type = "password" name  = "pass">
 <?php
 if(isset($_POST['pass']) && !empty($_POST['pass'])){
 
@@ -67,9 +65,9 @@ $validepass = 0;
 }
 
 ?>
+</center> </td> </tr>
 
-<tr>  <td id = "td"> <center> email <input type  = "text" name  = "email"></center> </td> </tr>
-
+<tr>  <td id = "td"> <center> email <input type  = "text" name  = "email">
 
 <?php
 
@@ -109,6 +107,8 @@ $erroremail  = 0;
 
 
  ?>
+</center> </td> </tr>
+
 <tr>
 <td id ="td">
 <center>
@@ -116,7 +116,7 @@ $erroremail  = 0;
 
 <?php 
 
-if(isset($_POST['val'])  && $_POST['CGU'] !== "on" ){
+if(isset($_POST['val'])  && isset($_POST['CGU']) && $_POST['CGU'] !== "on" ){
 
 echo "vous devez accepter les CGU";
 
@@ -132,58 +132,6 @@ echo "vous devez accepter les CGU";
 <center> <button type = "submit" name = "val" value = "valider">valider</button></center>
 </td>
 </tr>
-
 </form>
 
-<?php 
 
-$errorpseudo = null;
-$erropass = null;
-$errorformatemail  = null;
-$erroremail = null;
-
-$total = null;
-
-
-$total = $validepseudo+$validepass+$valideemail;
-
-
-if($total == 3 && isset($_POST['CGU']) && $_POST['CGU'] == "on"){
-
-$pass = password_hash($pass,PASSWORD_DEFAULT);
-
-$pass = $mysqli->real_escape_string($pass);
-
-$date = date("d").date("m").date("y");
-
-$date = $mysqli->real_escape_string($date);
-
-$length =  rand(10, 50);
-
-$token = bin2hex(random_bytes($length));
-
-$tokenmail = $mysqli->real_escape_string($token);
-
-$verifemail = 0;
-
-$verifemail = $mysqli->real_escape_string($verifemail);
-
-
-$i = 'INSERT INTO membre VALUES(NULL,"'.$pseudo.'","'.$pass.'","'.$email.'","'.$date.'", "'.$verifemail.'","'.$tokenmail.'")';
-
- $moth = date("m")+1; 
-
- $date = date("d").$moth.date("y");
-
- $date = $mysqli->real_escape_string($date);
-
-$return = "https://www.vecchionet.com";
-
-$message = "pour confirmé votre inscription  copier  dans votre navigateur web : :".$link;
-
-$e->envoiemail($email,"confirmation inscription",$message,"massanthony@vecchionet.com");
-
-}
-?>
-
-</table>

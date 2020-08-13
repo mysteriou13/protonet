@@ -12,7 +12,7 @@ $wrap = null;
 $date = date("dmY");
 $date = $mysqli->real_escape_string($date);
 
-include("./section/forminscription.php");
+require("./controller/forminscription.php");
 ?>
 
 
