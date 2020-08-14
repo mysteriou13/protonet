@@ -111,7 +111,7 @@ include("divmembre.php");
 <?php
 if(!isset($_SESSION['pseudo'])){
 
-include("formconnection.php");
+require("./controller/formconnection.php");
 
 }
 
