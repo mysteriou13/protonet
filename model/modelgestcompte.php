@@ -1,19 +1,5 @@
-<div id = "gestcompte" >
-
-</br>
-<center id= "b6">
-
- liste des comptes du groupe 
-
- </center>
-
-<table> 
-<center>
-<tr>
-</tr>
-</center>
-
 <?php 
+
 
 $thier1 = "SELECT * FROM nextcloud  WHERE createur = '$pseudo'";
 
@@ -42,8 +28,5 @@ echo "<tr> <td> <center> nom:".$thier3['pseudo']."</center></td>  <td> <center> 
 
 
 ?>
-
-</table>
-</div>
 
 

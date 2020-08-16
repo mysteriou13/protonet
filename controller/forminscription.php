@@ -3,6 +3,15 @@
 require("./model/modelinscription.php");
 require("./view/afficheforminscription.php");
 
+$validepseudo = 0;
+$validepass = 0;
+$valideemail = 0;
+$display = "none";
+$wrap = null;
+$date = date("dmY");
+$date = $mysqli->real_escape_string($date);
+
+
 $total = $validepseudo+$validepass+$valideemail;
 
 

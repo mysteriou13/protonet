@@ -1,8 +1,8 @@
 <html>
 <body >
 <?php
-include_once("./section/header.php");
-include_once("./section/head.php");
+include_once("./controller/header.php");
+include_once("./view/head.php");
 
 
 

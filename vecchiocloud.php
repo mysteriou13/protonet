@@ -2,11 +2,11 @@
 
 <html>
 <?php 
-include("./section/head.php");
+require("./view/head.php");
 ?>
 <body>
 <?php 
-include("./section/header.php");
+require("./controller/header.php");
 ?>
 
 </br>

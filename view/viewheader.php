@@ -1,25 +1,3 @@
-<?php
-
-session_start();
-
-include_once("./section/mail.php");
-
-include_once("../admin/connect.php");
-
-$localhost = null; 
-
-$e = new email();
-
-if(isset($_SESSION['pseudo']) && !empty($_SESSION['pseudo'])){
-
-$pseudo = $mysqli->real_escape_string($_SESSION['pseudo']);
-
-}
-
-?>
-
-
- 
 <header>
 <div >
 
@@ -53,7 +31,7 @@ accueil
 
 if(!isset($_SESSION['pseudo']) ){
 
-include("divinscription.php");
+require("./view/divinscription.php");
 
 }
 
@@ -99,7 +77,7 @@ mention legal
 <?php 
 if(isset($_SESSION['pseudo'])){
 
-include("divmembre.php");
+require("./view/divmembre.php");
 
 }
 

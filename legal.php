@@ -3,8 +3,8 @@
 
 <?php 
 
-include_once("./section/head.php");
-include_once("./section/header.php");
+require("./view/head.php");
+require("./controller/header.php");
 ?>
 
 

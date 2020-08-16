@@ -64,13 +64,4 @@ echo "pas de compte  dans le groupe";
 
 </div>
 
-<?php
-
-if($nb >= 1){
-
-include("./section/divgestcompte.php");
-
-}
- ?>
-
 
