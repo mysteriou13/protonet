@@ -1,3 +1,16 @@
+<html>
+
+<body>
+
+<?php 
+
+require("./section/head.php");
+
+?>
+
+<script src= "./script/parametre.js"> </script>
+
+<script>
 
 var path = window.location.hash;
 
@@ -11,5 +24,7 @@ var listesousdiv = ['perso', 'thiercloud'];
 
 var par = new parametre(listebutton,listediv,listesousdiv);
 
+</script>
 
-
+</body>
+</html>
